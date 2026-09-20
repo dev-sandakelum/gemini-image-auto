@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Automation Flow — macros/auto/</title>
+<style>
+  :root {
+    --bg: #0b0d0c;
+    --panel: #121513;
+    --panel-2: #171b19;
+    --panel-hi: #1b211d;
+    --line: #263029;
+    --line-soft: #1c231f;
+    --text: #dfe6e0;
+    --text-dim: #83938a;
+    --text-faint: #576259;
+    --accent: #7fd99a;
+    --accent-dim: #3f6b4f;
+    --accent-glow: rgba(127, 217, 154, 0.16);
+    --amber: #e0b96a;
+    --amber-dim: #6b5a35;
+    --amber-glow: rgba(224, 185, 106, 0.16);
+    --red: #d97f7f;
+    --red-dim: #6b3f3f;
+    --mono: "SFMono-Regular", "JetBrains Mono", Consolas, "Liberation Mono", Menlo, monospace;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  @media (prefers-color-scheme: light) {
+    :root:not([data-theme="dark"]) {
+      --bg: #0b0d0c; --panel: #121513; --panel-2: #171b19; --panel-hi: #1b211d;
+      --line: #263029; --line-soft: #1c231f; --text: #dfe6e0; --text-dim: #83938a; --text-faint: #576259;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0b0d0c; --panel: #121513; --panel-2: #171b19; --panel-hi: #1b211d;
+    --line: #263029; --line-soft: #1c231f; --text: #dfe6e0; --text-dim: #83938a; --text-faint: #576259;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    background-image:
+      radial-gradient(circle at 15% 0%, rgba(127,217,154,0.05), transparent 40%),
+      radial-gradient(circle at 85% 8%, rgba(224,185,106,0.04), transparent 40%);
+    color: var(--text);
+    font-family: var(--sans);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100%;
+  }
+
+  a { color: var(--accent); }
+  code, .mono { font-family: var(--mono); }
+
+  .wrap {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 48px 22px 100px;
+  }
+
+  /* ---------------- Header ---------------- */
+  header.top { margin-bottom: 30px; }
+
+  .kicker {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--accent);
+    letter-spacing: 0.08em;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 14px;
+  }
+  .kicker .dot {
+    width: 7px; height: 7px; border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 8px 1px var(--accent-glow);
+  }
+  .kicker .dot.live { animation: pulse 1.6s ease-in-out infinite; }
+  @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
+
+  h1 {
+    font-family: var(--mono);
+    font-size: clamp(24px, 4vw, 32px);
+    font-weight: 600;
+    margin: 0 0 12px;
+    color: #f2f5f2;
+    letter-spacing: -0.01em;
+  }
+  h1 .path { color: var(--text-dim); font-weight: 400; }
+
+  .lede { color: var(--text-dim); font-size: 15px; max-width: 66ch; margin: 0 0 20px; }
+  .lede code { color: var(--text); background: var(--panel-2); padding: 1px 6px; border-radius: 4px; border: 1px solid var(--line-soft); font-size: 0.9em; }
+
+  /* ---------------- Control bar ---------------- */
+  .control-bar {
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    margin: 0 -22px 30px;
+    padding: 12px 22px;
+    background: rgba(11,13,12,0.88);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--line-soft);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .control-bar .group { display: flex; align-items: center; gap: 8px; }
+
+  button.ctl {
+    font-family: var(--mono);
+    font-size: 12.5px;
+    background: var(--panel);
+    color: var(--text);
+    border: 1px solid var(--line);
+    padding: 8px 14px;
+    border-radius: 7px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    transition: border-color .15s ease, color .15s ease, background .15s ease;
+  }
+  button.ctl:hover { border-color: var(--accent-dim); color: var(--accent); }
+  button.ctl:active { transform: translateY(1px); }
+  button.ctl.primary { border-color: var(--accent-dim); color: var(--accent); background: var(--accent-glow); }
+  button.ctl.primary:hover { background: rgba(127,217,154,0.24); }
+  button.ctl:disabled { opacity: 0.4; cursor: not-allowed; }
+  button.ctl svg { flex: none; }
+
+  .spacer { flex: 1; }
+
+  .status-pill {
+    font-family: var(--mono);
+    font-size: 11.5px;
+    color: var(--text-dim);
+    padding: 7px 12px;
+    border: 1px solid var(--line-soft);
+    border-radius: 20px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }
+  .status-pill .dotstat { width: 6px; height: 6px; border-radius: 50%; background: var(--text-faint); flex: none; }
+  .status-pill.running .dotstat { background: var(--accent); animation: pulse 1.2s ease-in-out infinite; }
+  .status-pill.retry .dotstat { background: var(--amber); animation: pulse 1.2s ease-in-out infinite; }
+
+  /* ---------------- Legend ---------------- */
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin: 0 0 36px;
+    font-family: var(--mono);
+    font-size: 11.5px;
+    color: var(--text-dim);
+  }
+  .legend .item { display: flex; align-items: center; gap: 7px; }
+  .swatch { width: 11px; height: 11px; border-radius: 3px; flex: none; }
+  .swatch.ok { background: var(--accent); }
+  .swatch.retry { background: var(--amber); }
+  .swatch.gate { background: transparent; border: 1.5px solid var(--text-faint); border-radius: 50%; }
+
+  /* ---------------- Flow ---------------- */
+  .flow { position: relative; }
+
+  .spine {
+    position: absolute;
+    left: 27px;
+    top: 14px;
+    bottom: 14px;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--line), var(--line) 92%, transparent);
+    z-index: 0;
+  }
+  .spine .progress {
+    position: absolute;
+    top: 0; left: 0; width: 100%;
+    height: 0%;
+    background: linear-gradient(to bottom, var(--accent), var(--accent-dim));
+    transition: height .5s cubic-bezier(.4,0,.2,1);
+    border-radius: 2px;
+  }
+
+  .step {
+    position: relative;
+    display: flex;
+    gap: 20px;
+    padding-bottom: 6px;
+    z-index: 1;
+  }
+
+  .node {
+    flex: none;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: var(--panel);
+    border: 1.5px solid var(--line);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--text-dim);
+    position: relative;
+    transition: border-color .25s ease, color .25s ease, background .25s ease, box-shadow .25s ease, transform .25s ease;
+  }
+  .node.active {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: var(--accent-glow);
+    box-shadow: 0 0 0 4px rgba(127,217,154,0.08), 0 0 22px rgba(127,217,154,0.18);
+    transform: scale(1.06);
+  }
+  .node.active.amber {
+    border-color: var(--amber);
+    color: var(--amber);
+    background: var(--amber-glow);
+    box-shadow: 0 0 0 4px rgba(224,185,106,0.08), 0 0 22px rgba(224,185,106,0.18);
+  }
+  .node.done { border-color: var(--accent-dim); color: var(--accent); background: rgba(127,217,154,0.05); }
+
+  .card {
+    flex: 1;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 16px 18px;
+    margin: 6px 0 30px;
+    min-width: 0;
+    cursor: pointer;
+    transition: border-color .25s ease, background .25s ease, box-shadow .25s ease;
+    user-select: none;
+  }
+  .card:hover { border-color: var(--line); background: var(--panel-hi); }
+  .card.active {
+    border-color: var(--accent-dim);
+    background: var(--panel-hi);
+    box-shadow: 0 0 0 1px var(--accent-dim), 0 6px 24px -8px rgba(127,217,154,0.25);
+  }
+  .card.active.amber { border-color: var(--amber-dim); box-shadow: 0 0 0 1px var(--amber-dim), 0 6px 24px -8px rgba(224,185,106,0.25); }
+
+  .card .head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 6px;
+  }
+  .card h3 { margin: 0; font-size: 15px; font-weight: 600; color: #f2f5f2; font-family: var(--mono); display: flex; align-items: center; gap: 8px; }
+  .chev { color: var(--text-faint); font-size: 11px; transition: transform .2s ease; }
+  .card.expanded .chev { transform: rotate(90deg); color: var(--accent); }
+
+  .tag {
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 0.04em;
+    padding: 3px 8px;
+    border-radius: 20px;
+    border: 1px solid var(--line);
+    color: var(--text-dim);
+    white-space: nowrap;
+  }
+  .tag.file { color: var(--accent); border-color: var(--accent-dim); background: rgba(127,217,154,0.06); }
+
+  .card p.desc { margin: 0 0 12px; color: var(--text-dim); font-size: 13.5px; }
+
+  .actions { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 4px; }
+  .actions span {
+    font-family: var(--mono);
+    font-size: 11.5px;
+    color: var(--text);
+    background: var(--panel-2);
+    border: 1px solid var(--line-soft);
+    padding: 4px 9px;
+    border-radius: 6px;
+    white-space: nowrap;
+  }
+
+  .detail {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .3s ease, opacity .25s ease, margin-top .3s ease;
+    opacity: 0;
+  }
+  .card.expanded .detail {
+    max-height: 400px;
+    opacity: 1;
+    margin-top: 12px;
+  }
+  .detail-inner {
+    border-top: 1px solid var(--line-soft);
+    padding-top: 12px;
+    font-size: 12.5px;
+  }
+  .detail table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: var(--mono);
+    font-size: 12px;
+  }
+  .detail th, .detail td {
+    text-align: left;
+    padding: 6px 8px;
+    border-bottom: 1px solid var(--line-soft);
+    color: var(--text-dim);
+  }
+  .detail th { color: var(--text-faint); font-weight: 400; text-transform: uppercase; font-size: 10px; letter-spacing: 0.05em; }
+  .detail td:first-child { color: var(--text); }
+  .detail .btn-left { color: var(--accent); }
+  .detail .btn-right { color: var(--red); }
+  .detail .hint { color: var(--text-faint); font-size: 11.5px; margin-top: 8px; }
+
+  /* Decision node */
+  .decision { position: relative; z-index: 1; display: flex; gap: 20px; margin-bottom: 8px; transition: opacity .2s ease; }
+  .decision .node { border-color: var(--text-faint); color: var(--text); }
+  .decision .dcard {
+    flex: 1; border: 1px dashed var(--line); border-radius: 10px;
+    padding: 14px 18px; margin: 6px 0 28px; background: transparent;
+    transition: border-color .3s ease;
+  }
+  .decision.active .dcard { border-color: var(--amber-dim); border-style: solid; background: var(--amber-glow); }
+  .decision .dcard .q { font-family: var(--mono); font-size: 13.5px; color: #f2f5f2; margin-bottom: 10px; }
+  .branches { display: flex; gap: 10px; flex-wrap: wrap; }
+  .branch {
+    font-family: var(--mono); font-size: 11.5px; padding: 5px 10px; border-radius: 6px;
+    display: flex; align-items: center; gap: 6px; transition: background .3s ease, box-shadow .3s ease;
+  }
+  .branch.yes { background: rgba(127,217,154,0.08); color: var(--accent); border: 1px solid var(--accent-dim); }
+  .branch.no { background: rgba(255,255,255,0.03); color: var(--text-faint); border: 1px solid var(--line); }
+  .branch.taken { box-shadow: 0 0 0 2px currentColor inset; }
+
+  /* Phase labels */
+  .phase-label { position: relative; z-index: 1; display: flex; align-items: center; gap: 14px; margin: 40px 0 20px; }
+  .phase-label .node-sm { width: 12px; height: 12px; border-radius: 50%; background: var(--bg); border: 2px solid var(--amber-dim); flex: none; margin-left: 22px; }
+  .phase-label.ok .node-sm { border-color: var(--accent-dim); }
+  .phase-label span.txt { font-family: var(--mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--amber); }
+  .phase-label.ok span.txt { color: var(--accent); }
+  .phase-label .rule { flex: 1; height: 1px; background: var(--line-soft); }
+
+  .loop-block {
+    position: relative; margin-left: 44px; padding: 22px 20px 8px;
+    border: 1px solid var(--amber-dim); border-radius: 12px;
+    background: rgba(224, 185, 106, 0.035); margin-bottom: 30px;
+    transition: box-shadow .3s ease, background .3s ease;
+  }
+  .loop-block.active { background: rgba(224, 185, 106, 0.07); box-shadow: 0 0 0 1px var(--amber-dim), 0 8px 30px -10px rgba(224,185,106,0.3); }
+  .loop-block::before {
+    content: "retry until image appears";
+    position: absolute; top: -11px; left: 18px; background: var(--bg); padding: 0 8px;
+    font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.06em; color: var(--amber);
+  }
+  .loop-block .step { padding-bottom: 0; }
+  .loop-block .card { margin-bottom: 20px; }
+  .loop-back {
+    display: flex; align-items: center; gap: 10px; font-family: var(--mono); font-size: 11px;
+    color: var(--text-faint); padding: 8px 0 16px 76px;
+  }
+  .loop-back svg { flex: none; }
+  .loop-count {
+    font-family: var(--mono); font-size: 10.5px; color: var(--amber); background: var(--amber-glow);
+    border: 1px solid var(--amber-dim); border-radius: 12px; padding: 1px 8px; margin-left: auto;
+  }
+
+  .end-node { display: flex; gap: 20px; align-items: center; margin-top: 6px; transition: opacity .25s ease; }
+  .end-node .node { background: var(--accent-glow); border-color: var(--accent); color: var(--accent); }
+  .end-node .etext { font-family: var(--mono); font-size: 13px; color: var(--text-dim); }
+  .end-node .etext b { color: var(--accent); font-weight: 600; }
+
+  /* ---------------- Reference ---------------- */
+  .ref { margin-top: 74px; }
+  .ref h2 {
+    font-family: var(--mono); font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--text-dim); border-bottom: 1px solid var(--line-soft); padding-bottom: 12px; margin: 0 0 20px;
+    display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  }
+
+  .macro-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; margin-bottom: 64px; }
+  .macro-grid .mcard {
+    background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 14px;
+    cursor: pointer; transition: border-color .2s ease, transform .2s ease;
+  }
+  .macro-grid .mcard:hover { border-color: var(--accent-dim); transform: translateY(-2px); }
+  .macro-grid .mcard .fname { font-family: var(--mono); font-size: 12px; color: var(--accent); margin-bottom: 6px; word-break: break-all; }
+  .macro-grid .mcard .fpurpose { font-size: 12px; color: var(--text-dim); line-height: 1.4; }
+
+  input.filter {
+    font-family: var(--mono); font-size: 12px; background: var(--panel); border: 1px solid var(--line);
+    color: var(--text); padding: 7px 11px; border-radius: 7px; outline: none; width: 190px;
+  }
+  input.filter:focus { border-color: var(--accent-dim); }
+  input.filter::placeholder { color: var(--text-faint); }
+
+  table.clicks { width: 100%; border-collapse: collapse; font-family: var(--mono); font-size: 12.5px; }
+  table.clicks caption { text-align: left; color: var(--text); font-size: 13px; margin-bottom: 8px; font-weight: 600; }
+  table.clicks th, table.clicks td { text-align: left; padding: 8px 12px; border-bottom: 1px solid var(--line-soft); color: var(--text-dim); }
+  table.clicks th { color: var(--text-faint); font-weight: 400; text-transform: uppercase; font-size: 10.5px; letter-spacing: 0.06em; }
+  table.clicks td.btn-left { color: var(--accent); }
+  table.clicks td.btn-right { color: var(--red); }
+  table.clicks td:first-child { color: var(--text); }
+  table.clicks tr.hidden-row { display: none; }
+  table.clicks tr.match-row { background: rgba(127,217,154,0.05); }
+
+  .table-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px 40px; margin-bottom: 20px; }
+  .table-block { overflow-x: auto; }
+  @media (max-width: 720px) { .table-grid { grid-template-columns: 1fr; } }
+
+  footer.note {
+    margin-top: 64px; padding-top: 20px; border-top: 1px solid var(--line-soft);
+    font-family: var(--mono); font-size: 11.5px; color: var(--text-faint);
+  }
+
+  kbd {
+    font-family: var(--mono); font-size: 10.5px; background: var(--panel-2); border: 1px solid var(--line);
+    border-bottom-width: 2px; padding: 1px 6px; border-radius: 4px; color: var(--text-dim);
+  }
+
+  @media (max-width: 560px) {
+    .wrap { padding: 40px 14px 80px; }
+    .control-bar { margin: 0 -14px 26px; padding: 10px 14px; }
+    .node { width: 44px; height: 44px; font-size: 10.5px; }
+    .spine { left: 21px; }
+    .step, .decision { gap: 13px; }
+    .card, .dcard { padding: 13px; }
+    .loop-block { margin-left: 18px; padding: 18px 12px 4px; }
+    .loop-back { padding-left: 44px; }
+    button.ctl span.label { display: none; }
+  }
+
+  ::selection { background: var(--accent-glow); color: #fff; }
+  .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <div class="kicker"><span class="dot live"></span>WATCHER · POLLS EVERY 1S</div>
+    <h1>Automation Flow <span class="path">— macros/auto/</span></h1>
+    <p class="lede">
+      <code>src/watcher.js</code> watches <code>data/output-img/</code>. When the image count grows past <code>count.txt</code>,
+      it fires the macro cycle below. Press <b style="color:var(--text)">Play</b> to watch a cycle run, or click any step to open its details.
+    </p>
+  </header>
+
+  <div class="control-bar">
+    <div class="group">
+      <button class="ctl primary" id="btnPlay" aria-label="Play walkthrough">
+        <svg id="iconPlay" width="12" height="12" viewBox="0 0 12 12"><path d="M2 1 L11 6 L2 11 Z" fill="currentColor"/></svg>
+        <svg id="iconPause" width="12" height="12" viewBox="0 0 12 12" style="display:none;"><rect x="2" y="1" width="3" height="10" fill="currentColor"/><rect x="7" y="1" width="3" height="10" fill="currentColor"/></svg>
+        <span class="label">Play</span>
+      </button>
+      <button class="ctl" id="btnStep">
+        <svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 1 L8 6 L2 11 Z" fill="currentColor"/><rect x="9" y="1" width="1.6" height="10" fill="currentColor"/></svg>
+        <span class="label">Step</span>
+      </button>
+      <button class="ctl" id="btnRetry">
+        <svg width="12" height="12" viewBox="0 0 12 12"><path d="M2 6a4 4 0 1 1 1.2 2.9" stroke="currentColor" stroke-width="1.3" fill="none"/><path d="M2 9V6h3" stroke="currentColor" stroke-width="1.3" fill="none"/></svg>
+        <span class="label">Simulate retry</span>
+      </button>
+      <button class="ctl" id="btnReset">
+        <svg width="12" height="12" viewBox="0 0 12 12"><rect x="2" y="2" width="8" height="8" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+        <span class="label">Reset</span>
+      </button>
+    </div>
+    <div class="spacer"></div>
+    <div class="status-pill" id="statusPill"><span class="dotstat"></span><span id="statusText">idle — waiting for poll</span></div>
+  </div>
+
+  <div class="legend">
+    <div class="item"><span class="swatch gate"></span>decision point</div>
+    <div class="item"><span class="swatch ok"></span>happy path</div>
+    <div class="item"><span class="swatch retry"></span>retry loop</div>
+    <div class="item" style="margin-left:auto; color:var(--text-faint);">click any step to expand · <kbd>space</kbd> play/pause · <kbd>→</kbd> step</div>
+  </div>
+
+  <div class="flow" id="flow">
+    <div class="spine"><div class="progress" id="spineProgress"></div></div>
+
+    <!-- Poll tick -->
+    <div class="step" data-step="poll">
+      <div class="node" data-node="poll">1s</div>
+      <div class="card" data-card="poll">
+        <div class="head"><h3>Poll tick <span class="chev">▸</span></h3><span class="tag">every 1000ms</span></div>
+        <p class="desc">Count images in <code>output-img/</code>, read the last known count from <code>count.txt</code>.</p>
+        <div class="detail"><div class="detail-inner">
+          <p class="hint">This runs continuously in the background. Everything below only fires once <code>images &gt; count.txt</code>.</p>
+        </div></div>
+      </div>
+    </div>
+
+    <!-- Decision -->
+    <div class="decision" data-decision="gate1">
+      <div class="node" data-node="gate1">?</div>
+      <div class="dcard">
+        <div class="q">images&nbsp;&gt;&nbsp;count.txt ?</div>
+        <div class="branches">
+          <span class="branch no" data-branch="gate1-no">NO → idle, wait for next tick</span>
+          <span class="branch yes" data-branch="gate1-yes">YES → start cycle</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- write count -->
+    <div class="step" data-step="writecount">
+      <div class="node" data-node="writecount">•</div>
+      <div class="card" data-card="writecount">
+        <div class="head"><h3>Write count.txt <span class="chev">▸</span></h3><span class="tag">crash‑safe</span></div>
+        <p class="desc">New image count is written to <code>count.txt</code> before any macro runs.</p>
+        <div class="detail"><div class="detail-inner">
+          <p class="hint">Doing this first means a crash mid‑cycle can't cause the same image to trigger a duplicate run.</p>
+        </div></div>
+      </div>
+    </div>
+
+    <div class="step" data-step="cleanqueue">
+      <div class="node" data-node="cleanqueue">•</div>
+      <div class="card" data-card="cleanqueue">
+        <div class="head"><h3>Clean data/queue/ <span class="chev">▸</span></h3></div>
+        <p class="desc">Delete any leftover images from a previous run before starting fresh.</p>
+        <div class="detail"><div class="detail-inner">
+          <p class="hint">Guarantees the next "queue empty vs image found" check can't be fooled by a stale file.</p>
+        </div></div>
+      </div>
+    </div>
+
+    <!-- Macro 1 -->
+    <div class="step" data-step="m1">
+      <div class="node" data-node="m1">1</div>
+      <div class="card" data-card="m1">
+        <div class="head"><h3>add_prompt <span class="chev">▸</span></h3><span class="tag file">1.add_prompt.json</span></div>
+        <p class="desc">Paste the prompt and submit it to the AI.</p>
+        <div class="actions">
+          <span>click prompt field</span><span>Ctrl+V paste</span><span>click submit</span><span>wait 20s</span><span>click next / continue</span>
+        </div>
+        <div class="detail"><div class="detail-inner">
+          <table>
+            <thead><tr><th>#</th><th>Button</th><th>X</th><th>Y</th><th>Hold</th></tr></thead>
+            <tbody>
+              <tr><td>1</td><td class="btn-left">Left</td><td>641</td><td>967</td><td>160ms</td></tr>
+              <tr><td>2</td><td class="btn-left">Left</td><td>357</td><td>921</td><td>160ms</td></tr>
+              <tr><td>3</td><td class="btn-left">Left</td><td>357</td><td>921</td><td>160ms</td></tr>
+              <tr><td>4</td><td class="btn-left">Left</td><td>357</td><td>921</td><td>160ms</td></tr>
+              <tr><td>5</td><td>Ctrl+V</td><td>—</td><td>—</td><td>—</td></tr>
+              <tr><td>6</td><td class="btn-left">Left</td><td>996</td><td>911</td><td>120ms</td></tr>
+              <tr><td>7</td><td class="btn-left">Left</td><td>796</td><td>965</td><td>160ms</td></tr>
+            </tbody>
+          </table>
+        </div></div>
+      </div>
+    </div>
+
+    <!-- Macro 2 -->
+    <div class="step" data-step="m2">
+      <div class="node" data-node="m2">2</div>
+      <div class="card" data-card="m2">
+        <div class="head"><h3>download_image <span class="chev">▸</span></h3><span class="tag file">2.download_image.json</span></div>
+        <p class="desc">Scroll to the generated image and save it to disk via the right‑click menu.</p>
+        <div class="actions">
+          <span>click image area</span><span>End ×3</span><span>right‑click image</span><span>Save image as…</span><span>click Save</span>
+        </div>
+        <div class="detail"><div class="detail-inner">
+          <table>
+            <thead><tr><th>#</th><th>Button</th><th>X</th><th>Y</th><th>Hold</th></tr></thead>
+            <tbody>
+              <tr><td>1</td><td class="btn-left">Left</td><td>141</td><td>450</td><td>160ms</td></tr>
+              <tr><td>2</td><td>End ×3</td><td>—</td><td>—</td><td>—</td></tr>
+              <tr><td>3</td><td class="btn-right">Right</td><td>320</td><td>556</td><td>160ms</td></tr>
+              <tr><td>4</td><td class="btn-left">Left</td><td>379</td><td>633</td><td>160ms</td></tr>
+              <tr><td>5</td><td class="btn-left">Left</td><td>600</td><td>585</td><td>160ms</td></tr>
+            </tbody>
+          </table>
+        </div></div>
+      </div>
+    </div>
+
+    <!-- Decision: queue check -->
+    <div class="decision" data-decision="gate2">
+      <div class="node" data-node="gate2">?</div>
+      <div class="dcard">
+        <div class="q">check data/queue/</div>
+        <div class="branches">
+          <span class="branch yes" data-branch="gate2-yes">image found → move on</span>
+          <span class="branch no" data-branch="gate2-no">queue empty → retry loop</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- HAPPY PATH -->
+    <div class="phase-label ok" data-phase="happy">
+      <div class="node-sm"></div><span class="txt">Happy path</span><div class="rule"></div>
+    </div>
+
+    <div class="step" data-step="move1">
+      <div class="node" data-node="move1">•</div>
+      <div class="card" data-card="move1">
+        <div class="head"><h3>Move image <span class="chev">▸</span></h3></div>
+        <p class="desc"><code>queue/</code> → <code>temp/</code>, ready for <code>sorter.js</code> to process.</p>
+        <div class="detail"><div class="detail-inner"><p class="hint">Nothing is deleted here — the confirmed image is relocated so the next cycle's queue‑clean step starts empty.</p></div></div>
+      </div>
+    </div>
+
+    <div class="step" data-step="m3">
+      <div class="node" data-node="m3">3</div>
+      <div class="card" data-card="m3">
+        <div class="head"><h3>next <span class="chev">▸</span></h3><span class="tag file">3.next.json</span></div>
+        <p class="desc">Advance to the next item.</p>
+        <div class="actions"><span>wait 1.6s</span><span>click Next</span></div>
+        <div class="detail"><div class="detail-inner">
+          <table>
+            <thead><tr><th>#</th><th>Button</th><th>X</th><th>Y</th><th>Hold</th></tr></thead>
+            <tbody><tr><td>1</td><td class="btn-left">Left</td><td>796</td><td>965</td><td>160ms</td></tr></tbody>
+          </table>
+        </div></div>
+      </div>
+    </div>
+
+    <div class="end-node" data-end="done1">
+      <div class="node" data-node="done1">✓</div>
+      <div class="etext"><b>Cycle done</b> — wait for next poll tick</div>
+    </div>
+
+    <!-- RETRY PATH -->
+    <div class="phase-label" data-phase="retry">
+      <div class="node-sm"></div><span class="txt">Retry path — queue was empty</span><div class="rule"></div>
+    </div>
+
+    <div class="loop-block" data-loop="loop">
+      <div class="step" data-step="m4">
+        <div class="node" data-node="m4">4</div>
+        <div class="card" data-card="m4">
+          <div class="head"><h3>exit <span class="chev">▸</span></h3><span class="tag file">4.exit.json</span></div>
+          <p class="desc">Close or dismiss the current dialog before trying again.</p>
+          <div class="actions"><span>click exit / close</span><span>End ×2</span></div>
+          <div class="detail"><div class="detail-inner">
+            <table>
+              <thead><tr><th>#</th><th>Button</th><th>X</th><th>Y</th><th>Hold</th></tr></thead>
+              <tbody>
+                <tr><td>1</td><td class="btn-left">Left</td><td>1077</td><td>881</td><td>160ms</td></tr>
+                <tr><td>2</td><td>End ×1</td><td>—</td><td>—</td><td>—</td></tr>
+              </tbody>
+            </table>
+          </div></div>
+        </div>
+      </div>
+
+      <div class="step" data-step="m5">
+        <div class="node" data-node="m5">5</div>
+        <div class="card" data-card="m5">
+          <div class="head"><h3>wait <span class="chev">▸</span></h3><span class="tag file">5.wait.json</span></div>
+          <p class="desc">Give the AI more time before retrying the download.</p>
+          <div class="actions"><span>wait 10s</span><span>wait 1.6s</span><span>click Next</span></div>
+          <div class="detail"><div class="detail-inner">
+            <table>
+              <thead><tr><th>#</th><th>Button</th><th>X</th><th>Y</th><th>Hold</th></tr></thead>
+              <tbody><tr><td>1</td><td class="btn-left">Left</td><td>796</td><td>965</td><td>160ms</td></tr></tbody>
+            </table>
+          </div></div>
+        </div>
+      </div>
+
+      <div class="step" data-step="m2b">
+        <div class="node" data-node="m2b">2</div>
+        <div class="card" data-card="m2b">
+          <div class="head"><h3>download_image <span style="color:var(--text-faint); font-weight:400; font-size:12px;">(again)</span> <span class="chev">▸</span></h3><span class="tag file">2.download_image.json</span></div>
+          <p class="desc">Try the download once more.</p>
+          <div class="detail"><div class="detail-inner"><p class="hint">Same macro as step 2 — identical click sequence, just re‑run after the extra wait.</p></div></div>
+        </div>
+      </div>
+
+      <div class="loop-back">
+        <svg width="18" height="14" viewBox="0 0 18 14" fill="none">
+          <path d="M17 2 C17 8 12 12 2 12" stroke="#6b5a35" stroke-width="1.5"/>
+          <path d="M2 12 L2 7 M2 12 L7 12" stroke="#6b5a35" stroke-width="1.5"/>
+        </svg>
+        check queue again — loop back to <b style="color:var(--amber)">4.exit</b> until an image appears
+        <span class="loop-count" id="loopCount" style="display:none;">pass 1</span>
+      </div>
+    </div>
+
+    <div class="end-node" data-end="done2">
+      <div class="node" data-node="done2">✓</div>
+      <div class="etext">Image found mid‑loop → <b>move to temp</b> → <b>3.next</b> → cycle done</div>
+    </div>
+
+  </div>
+
+  <!-- Reference: macro files -->
+  <section class="ref">
+    <h2>Macro files</h2>
+    <div class="macro-grid">
+      <div class="mcard" data-jump="m1"><div class="fname">1.add_prompt.json</div><div class="fpurpose">Paste prompt and submit to AI</div></div>
+      <div class="mcard" data-jump="m2"><div class="fname">2.download_image.json</div><div class="fpurpose">Right‑click save the generated image</div></div>
+      <div class="mcard" data-jump="m3"><div class="fname">3.next.json</div><div class="fpurpose">Advance to next item after success</div></div>
+      <div class="mcard" data-jump="m4"><div class="fname">4.exit.json</div><div class="fpurpose">Close/dismiss current dialog on retry</div></div>
+      <div class="mcard" data-jump="m5"><div class="fname">5.wait.json</div><div class="fpurpose">Wait for AI before retrying download</div></div>
+    </div>
+  </section>
+
+  <!-- Reference: data folders -->
+  <section class="ref">
+    <h2>Data folders</h2>
+    <div class="macro-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); margin-bottom: 70px;">
+      <div class="mcard"><div class="fname">data/output-img/</div><div class="fpurpose">Watched folder — image count triggers the cycle</div></div>
+      <div class="mcard"><div class="fname">data/queue/</div><div class="fpurpose">Cleared before each cycle; download lands here</div></div>
+      <div class="mcard"><div class="fname">data/temp/</div><div class="fpurpose">Confirmed images moved here for sorter.js to process</div></div>
+      <div class="mcard"><div class="fname">data/count.txt</div><div class="fpurpose">Stores last known image count — written before macros run</div></div>
+    </div>
+  </section>
+
+  <!-- Reference: click positions with filter -->
+  <section class="ref">
+    <h2>
+      <span>Click positions <span style="text-transform:none; letter-spacing:normal; color:var(--text-faint);">(1920 × 1080)</span></span>
+      <input class="filter" id="clickFilter" type="text" placeholder="filter by button / coord…" autocomplete="off">
+    </h2>
+
+    <div class="table-grid" id="tableGrid">
+      <div class="table-block">
+        <table class="clicks" data-file="1.add_prompt.json">
+          <caption>1.add_prompt.json</caption>
+          <thead><tr><th>#</th><th>Button</th><th>X</th><th>Y</th><th>Hold</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td class="btn-left">Left</td><td>641</td><td>967</td><td>160ms</td></tr>
+            <tr><td>2</td><td class="btn-left">Left</td><td>357</td><td>921</td><td>160ms</td></tr>
+            <tr><td>3</td><td class="btn-left">Left</td><td>357</td><td>921</td><td>160ms</td></tr>
+            <tr><td>4</td><td class="btn-left">Left</td><td>357</td><td>921</td><td>160ms</td></tr>
+            <tr><td>5</td><td>Ctrl+V</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td>6</td><td class="btn-left">Left</td><td>996</td><td>911</td><td>120ms</td></tr>
+            <tr><td>7</td><td class="btn-left">Left</td><td>796</td><td>965</td><td>160ms</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="table-block">
+        <table class="clicks" data-file="2.download_image.json">
+          <caption>2.download_image.json</caption>
+          <thead><tr><th>#</th><th>Button</th><th>X</th><th>Y</th><th>Hold</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td class="btn-left">Left</td><td>141</td><td>450</td><td>160ms</td></tr>
+            <tr><td>2</td><td>End ×3</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td>3</td><td class="btn-right">Right</td><td>320</td><td>556</td><td>160ms</td></tr>
+            <tr><td>4</td><td class="btn-left">Left</td><td>379</td><td>633</td><td>160ms</td></tr>
+            <tr><td>5</td><td class="btn-left">Left</td><td>600</td><td>585</td><td>160ms</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="table-block">
+        <table class="clicks" data-file="3.next.json">
+          <caption>3.next.json</caption>
+          <thead><tr><th>#</th><th>Button</th><th>X</th><th>Y</th><th>Hold</th></tr></thead>
+          <tbody><tr><td>1</td><td class="btn-left">Left</td><td>796</td><td>965</td><td>160ms</td></tr></tbody>
+        </table>
+      </div>
+      <div class="table-block">
+        <table class="clicks" data-file="4.exit.json">
+          <caption>4.exit.json</caption>
+          <thead><tr><th>#</th><th>Button</th><th>X</th><th>Y</th><th>Hold</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td class="btn-left">Left</td><td>1077</td><td>881</td><td>160ms</td></tr>
+            <tr><td>2</td><td>End ×1</td><td>—</td><td>—</td><td>—</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="table-block">
+        <table class="clicks" data-file="5.wait.json">
+          <caption>5.wait.json</caption>
+          <thead><tr><th>#</th><th>Button</th><th>X</th><th>Y</th><th>Hold</th></tr></thead>
+          <tbody><tr><td>1</td><td class="btn-left">Left</td><td>796</td><td>965</td><td>160ms</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+    <p class="visually-hidden" id="filterEmpty">No matching rows</p>
+  </section>
+
+  <footer class="note">
+    Source: FLOW.md — macros/auto/. Click any step above to see its exact click sequence; use Play to animate a full cycle including a simulated retry.
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  // ---------- Expand/collapse cards ----------
+  document.querySelectorAll('.card[data-card]').forEach(function (card) {
+    card.addEventListener('click', function (e) {
+      card.classList.toggle('expanded');
+    });
+    card.setAttribute('tabindex', '0');
+    card.setAttribute('role', 'button');
+    card.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); card.click(); }
+    });
+  });
+
+  // Jump from macro-grid cards to the matching step + auto expand
+  document.querySelectorAll('.mcard[data-jump]').forEach(function (mc) {
+    mc.addEventListener('click', function () {
+      var id = mc.getAttribute('data-jump');
+      var card = document.querySelector('.card[data-card="' + id + '"]');
+      if (!card) return;
+      card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      card.classList.add('expanded');
+      card.style.transition = 'box-shadow .3s ease';
+      card.style.boxShadow = '0 0 0 2px var(--accent-dim)';
+      setTimeout(function () { card.style.boxShadow = ''; }, 900);
+    });
+    mc.setAttribute('tabindex', '0');
+    mc.setAttribute('role', 'button');
+  });
+
+  // ---------- Click-position filter ----------
+  var filterInput = document.getElementById('clickFilter');
+  var emptyNote = document.getElementById('filterEmpty');
+  filterInput.addEventListener('input', function () {
+    var q = filterInput.value.trim().toLowerCase();
+    var anyVisibleTable = false;
+    document.querySelectorAll('table.clicks').forEach(function (table) {
+      var rows = table.querySelectorAll('tbody tr');
+      var tableHasMatch = q === '';
+      rows.forEach(function (row) {
+        var text = row.textContent.toLowerCase();
+        var match = q === '' || text.indexOf(q) !== -1;
+        row.classList.toggle('hidden-row', !match);
+        row.classList.toggle('match-row', match && q !== '');
+        if (match) tableHasMatch = true;
+      });
+      var block = table.closest('.table-block');
+      block.style.display = tableHasMatch ? '' : 'none';
+      if (tableHasMatch) anyVisibleTable = true;
+    });
+    emptyNote.style.display = anyVisibleTable ? 'none' : 'block';
+  });
+
+  // ---------- Animated walkthrough ----------
+  var HAPPY_SEQUENCE = [
+    { node: 'poll', card: 'poll' },
+    { decision: 'gate1', branch: 'gate1-yes' },
+    { node: 'writecount', card: 'writecount' },
+    { node: 'cleanqueue', card: 'cleanqueue' },
+    { node: 'm1', card: 'm1' },
+    { node: 'm2', card: 'm2' },
+    { decision: 'gate2', branch: 'gate2-yes' },
+    { node: 'move1', card: 'move1' },
+    { node: 'm3', card: 'm3' },
+    { end: 'done1' }
+  ];
+
+  var RETRY_SEQUENCE = [
+    { node: 'poll', card: 'poll' },
+    { decision: 'gate1', branch: 'gate1-yes' },
+    { node: 'writecount', card: 'writecount' },
+    { node: 'cleanqueue', card: 'cleanqueue' },
+    { node: 'm1', card: 'm1' },
+    { node: 'm2', card: 'm2' },
+    { decision: 'gate2', branch: 'gate2-no' },
+    { loop: 'loop', node: 'm4', card: 'm4', amber: true, pass: 1 },
+    { loop: 'loop', node: 'm5', card: 'm5', amber: true, pass: 1 },
+    { loop: 'loop', node: 'm2b', card: 'm2b', amber: true, pass: 1 },
+    { loop: 'loop', node: 'm4', card: 'm4', amber: true, pass: 2 },
+    { loop: 'loop', node: 'm5', card: 'm5', amber: true, pass: 2 },
+    { loop: 'loop', node: 'm2b', card: 'm2b', amber: true, pass: 2 },
+    { node: 'move1', card: 'move1' },
+    { node: 'm3', card: 'm3' },
+    { end: 'done2' }
+  ];
+
+  var sequence = HAPPY_SEQUENCE;
+  var idx = -1;
+  var playing = false;
+  var timer = null;
+  var STEP_MS = 1100;
+
+  var btnPlay = document.getElementById('btnPlay');
+  var iconPlay = document.getElementById('iconPlay');
+  var iconPause = document.getElementById('iconPause');
+  var btnStep = document.getElementById('btnStep');
+  var btnRetry = document.getElementById('btnRetry');
+  var btnReset = document.getElementById('btnReset');
+  var statusPill = document.getElementById('statusPill');
+  var statusText = document.getElementById('statusText');
+  var spineProgress = document.getElementById('spineProgress');
+  var loopCountEl = document.getElementById('loopCount');
+
+  function clearAllActive() {
+    document.querySelectorAll('.node.active, .node.done').forEach(function (n) { n.classList.remove('active', 'done', 'amber'); });
+    document.querySelectorAll('.card.active').forEach(function (c) { c.classList.remove('active', 'amber'); });
+    document.querySelectorAll('.decision.active').forEach(function (d) { d.classList.remove('active'); });
+    document.querySelectorAll('.branch.taken').forEach(function (b) { b.classList.remove('taken'); });
+    document.querySelectorAll('.loop-block.active').forEach(function (l) { l.classList.remove('active'); });
+    document.querySelectorAll('.end-node').forEach(function (e) { e.style.opacity = '0.35'; });
+    loopCountEl.style.display = 'none';
+  }
+
+  function markDoneUpTo(i) {
+    for (var k = 0; k < i; k++) {
+      var s = sequence[k];
+      if (s.node) {
+        var n = document.querySelector('.node[data-node="' + s.node + '"]');
+        if (n) { n.classList.remove('active', 'amber'); n.classList.add('done'); }
+      }
+    }
+  }
+
+  function setStatus(mode, text) {
+    statusPill.classList.remove('running', 'retry');
+    if (mode) statusPill.classList.add(mode);
+    statusText.textContent = text;
+  }
+
+  function applyStep(i) {
+    clearAllActive();
+    markDoneUpTo(i);
+    var s = sequence[i];
+    if (!s) return;
+
+    var progressPct = Math.round(((i + 1) / sequence.length) * 100);
+    spineProgress.style.height = progressPct + '%';
+
+    if (s.decision) {
+      var dec = document.querySelector('.decision[data-decision="' + s.decision + '"]');
+      if (dec) dec.classList.add('active');
+      var node = document.querySelector('.node[data-node="' + s.decision + '"]');
+      if (node) node.classList.add('active');
+      if (s.branch) {
+        var br = document.querySelector('.branch[data-branch="' + s.branch + '"]');
+        if (br) br.classList.add('taken');
+      }
+      setStatus('running', 'evaluating: ' + (s.decision === 'gate1' ? 'images > count.txt?' : 'queue has image?'));
+    } else if (s.loop) {
+      var lb = document.querySelector('.loop-block[data-loop="' + s.loop + '"]');
+      if (lb) lb.classList.add('active');
+      var n2 = document.querySelector('.node[data-node="' + s.node + '"]');
+      var c2 = document.querySelector('.card[data-card="' + s.card + '"]');
+      if (n2) n2.classList.add('active', 'amber');
+      if (c2) c2.classList.add('active', 'amber');
+      loopCountEl.style.display = 'inline';
+      loopCountEl.textContent = 'pass ' + s.pass;
+      setStatus('retry', 'retrying — running ' + s.card.replace('m2b','2.download_image') .replace(/^m(\d)$/, '$1.') + (s.card.match(/^m\d$/) ? '.json' : '.json'));
+      // Friendlier label
+      var label = s.card === 'm4' ? '4.exit.json' : s.card === 'm5' ? '5.wait.json' : '2.download_image.json (retry)';
+      setStatus('retry', 'retry pass ' + s.pass + ' — running ' + label);
+    } else if (s.end) {
+      var en = document.querySelector('.end-node[data-end="' + s.end + '"]');
+      if (en) en.style.opacity = '1';
+      var nn = document.querySelector('.node[data-node="' + s.end + '"]');
+      if (nn) nn.classList.add('active');
+      setStatus(null, 'cycle complete ✓');
+    } else if (s.node) {
+      var n = document.querySelector('.node[data-node="' + s.node + '"]');
+      var c = document.querySelector('.card[data-card="' + s.card + '"]');
+      if (n) n.classList.add('active');
+      if (c) c.classList.add('active');
+      var label2 = {
+        poll: 'counting images…',
+        writecount: 'writing count.txt',
+        cleanqueue: 'clearing data/queue/',
+        m1: 'running 1.add_prompt.json',
+        m2: 'running 2.download_image.json',
+        move1: 'moving image to temp/',
+        m3: 'running 3.next.json'
+      }[s.node] || 'running…';
+      setStatus('running', label2);
+    }
+
+    if (c && c.hasAttribute('data-card')) {
+      c.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    } else if (s.decision) {
+      dec.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    } else if (s.loop) {
+      lb.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    } else if (s.end) {
+      en.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  }
+
+  function stepForward() {
+    if (idx >= sequence.length - 1) {
+      stopPlaying();
+      return false;
+    }
+    idx++;
+    applyStep(idx);
+    return true;
+  }
+
+  function stopPlaying() {
+    playing = false;
+    clearInterval(timer);
+    timer = null;
+    iconPlay.style.display = '';
+    iconPause.style.display = 'none';
+    btnPlay.querySelector('.label').textContent = 'Play';
+    if (idx >= sequence.length - 1) {
+      setStatus(null, 'cycle complete ✓ — press reset to run again');
+    }
+  }
+
+  function startPlaying() {
+    if (idx >= sequence.length - 1) { resetFlow(); }
+    playing = true;
+    iconPlay.style.display = 'none';
+    iconPause.style.display = '';
+    btnPlay.querySelector('.label').textContent = 'Pause';
+    timer = setInterval(function () {
+      var more = stepForward();
+      if (!more) stopPlaying();
+    }, STEP_MS);
+  }
+
+  function resetFlow() {
+    idx = -1;
+    clearAllActive();
+    spineProgress.style.height = '0%';
+    document.querySelectorAll('.card.expanded').forEach(function (c) { /* keep user expansions */ });
+    setStatus(null, 'idle — waiting for poll');
+  }
+
+  btnPlay.addEventListener('click', function () {
+    if (playing) { stopPlaying(); } else { startPlaying(); }
+  });
+
+  btnStep.addEventListener('click', function () {
+    if (playing) stopPlaying();
+    if (idx >= sequence.length - 1) resetFlow();
+    stepForward();
+  });
+
+  btnRetry.addEventListener('click', function () {
+    if (playing) stopPlaying();
+    sequence = RETRY_SEQUENCE;
+    resetFlow();
+    startPlaying();
+  });
+
+  btnReset.addEventListener('click', function () {
+    if (playing) stopPlaying();
+    sequence = HAPPY_SEQUENCE;
+    resetFlow();
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.target && (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA')) return;
+    if (e.key === ' ') {
+      e.preventDefault();
+      if (playing) stopPlaying(); else startPlaying();
+    } else if (e.key === 'ArrowRight') {
+      e.preventDefault();
+      if (playing) stopPlaying();
+      if (idx >= sequence.length - 1) resetFlow();
+      stepForward();
+    }
+  });
+
+  // initial state
+  resetFlow();
+})();
+</script>
+</body>
+</html>

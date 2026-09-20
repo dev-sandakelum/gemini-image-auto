@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Vertex Image Collector",
+  "version": "1.0",
+  "description": "Assist-only: tracks product image slots, copies prompts, and saves Gemini images with pipeline-correct filenames. You generate; it organizes.",
+  "permissions": ["storage", "downloads", "clipboardWrite"],
+  "host_permissions": ["https://*.googleusercontent.com/*", "http://127.0.0.1:7843/*"],
+  "background": { "service_worker": "background.js" },
+  "content_scripts": [
+    {
+      "matches": ["https://gemini.google.com/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}

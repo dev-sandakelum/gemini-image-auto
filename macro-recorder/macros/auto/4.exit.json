@@ -1,0 +1,33 @@
+{
+  "name": "4.exit",
+  "version": 1,
+  "recordedAt": "2026-09-17T16:03:19.400Z",
+  "actions": [
+    {
+      "type": "mouse",
+      "action": "click",
+      "button": "left",
+      "x": 1077,
+      "y": 881,
+      "holdMs": 160,
+      "delay": 0
+    },
+    {
+      "type": "wait",
+      "duration": 400,
+      "delay": 0
+    },
+    {
+      "type": "keyboard",
+      "action": "hotkey",
+      "keys": ["end"],
+      "label": "End",
+      "delay": 0
+    },
+    {
+      "type": "wait",
+      "duration": 400,
+      "delay": 0
+    }
+  ]
+}

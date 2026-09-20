@@ -1,0 +1,63 @@
+{
+  "name": "Form Filler Automation",
+  "description": "Reads lines from data/input.txt and types each one into a field, then submits.",
+  "start": "START",
+  "states": {
+
+    "START": {
+      "action": "readFile",
+      "path": "data/input.txt",
+      "next": "CHECK_LINE"
+    },
+
+    "CHECK_LINE": {
+      "condition": "checkFileHasNextLine",
+      "ifTrue": "READ_NEXT",
+      "ifFalse": "DONE"
+    },
+
+    "READ_NEXT": {
+      "action": "readNextLine",
+      "next": "CLICK_FIELD"
+    },
+
+    "CLICK_FIELD": {
+      "action": "click",
+      "button": "left",
+      "x": 742,
+      "y": 381,
+      "next": "CLEAR_FIELD"
+    },
+
+    "CLEAR_FIELD": {
+      "action": "hotkey",
+      "params": { "keys": ["ctrl", "a"] },
+      "next": "TYPE_TEXT",
+      "delay": 100
+    },
+
+    "TYPE_TEXT": {
+      "action": "typeText",
+      "text": "$currentLine",
+      "next": "SUBMIT",
+      "retry": "CLICK_FIELD",
+      "maxRetries": 2
+    },
+
+    "SUBMIT": {
+      "action": "pressKey",
+      "params": { "key": "enter" },
+      "next": "WAIT"
+    },
+
+    "WAIT": {
+      "action": "wait",
+      "duration": 1500,
+      "next": "CHECK_LINE"
+    },
+
+    "DONE": {
+      "terminal": true
+    }
+  }
+}

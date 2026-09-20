@@ -1,0 +1,12 @@
+{
+  "name": "5.wait",
+  "version": 1,
+  "recordedAt": "2026-09-17T16:03:19.400Z",
+  "actions": [
+    {
+      "type": "wait",
+      "duration": 10000,
+      "delay": 0
+    }
+  ]
+}

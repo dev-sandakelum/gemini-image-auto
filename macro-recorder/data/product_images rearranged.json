@@ -1,0 +1,4102 @@
+[
+  {
+    "product_id": 0,
+    "path": "/data/output-img/product-images/gpus/nova-rtx-9090-16gb-graphics-card/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Nova RTX 9090 16GB Graphics Card — front view",
+        "product_id": 0,
+        "path": "/data/output-img/product-images/gpus/nova-rtx-9090-16gb-graphics-card/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Nova RTX 9090 16GB Graphics Card — alternate angle",
+        "product_id": 0,
+        "path": "/data/output-img/product-images/gpus/nova-rtx-9090-16gb-graphics-card/"
+      },
+      {
+        "id": 3,
+        "name": "detail.jpg",
+        "alt": "Nova RTX 9090 16GB Graphics Card — close-up detail",
+        "product_id": 0,
+        "path": "/data/output-img/product-images/gpus/nova-rtx-9090-16gb-graphics-card/"
+      },
+      {
+        "id": 4,
+        "name": "context.jpg",
+        "alt": "Nova RTX 9090 16GB Graphics Card — in-use context",
+        "product_id": 0,
+        "path": "/data/output-img/product-images/gpus/nova-rtx-9090-16gb-graphics-card/"
+      },
+      {
+        "id": 5,
+        "name": "with-packaging.jpg",
+        "alt": "Nova RTX 9090 16GB Graphics Card — with retail packaging",
+        "product_id": 0,
+        "path": "/data/output-img/product-images/gpus/nova-rtx-9090-16gb-graphics-card/"
+      }
+    ]
+  },
+  {
+    "product_id": 1,
+    "path": "/data/output-img/product-images/cpus/apex-r9-9800x-12-core-processor/",
+    "images": [
+      {
+        "id": 6,
+        "name": "main.jpg",
+        "alt": "Apex R9 9800X 12-Core Processor — front view",
+        "product_id": 1,
+        "path": "/data/output-img/product-images/cpus/apex-r9-9800x-12-core-processor/"
+      },
+      {
+        "id": 7,
+        "name": "angle.jpg",
+        "alt": "Apex R9 9800X 12-Core Processor — alternate angle",
+        "product_id": 1,
+        "path": "/data/output-img/product-images/cpus/apex-r9-9800x-12-core-processor/"
+      },
+      {
+        "id": 8,
+        "name": "detail.jpg",
+        "alt": "Apex R9 9800X 12-Core Processor — close-up detail",
+        "product_id": 1,
+        "path": "/data/output-img/product-images/cpus/apex-r9-9800x-12-core-processor/"
+      },
+      {
+        "id": 9,
+        "name": "context.jpg",
+        "alt": "Apex R9 9800X 12-Core Processor — in-use context",
+        "product_id": 1,
+        "path": "/data/output-img/product-images/cpus/apex-r9-9800x-12-core-processor/"
+      },
+      {
+        "id": 10,
+        "name": "with-packaging.jpg",
+        "alt": "Apex R9 9800X 12-Core Processor — with retail packaging",
+        "product_id": 1,
+        "path": "/data/output-img/product-images/cpus/apex-r9-9800x-12-core-processor/"
+      }
+    ]
+  },
+  {
+    "product_id": 2,
+    "path": "/data/output-img/product-images/gpus/nova-rtx-9070-12gb-graphics-card/",
+    "images": [
+      {
+        "id": 11,
+        "name": "main.jpg",
+        "alt": "Nova RTX 9070 12GB Graphics Card — front view",
+        "product_id": 2,
+        "path": "/data/output-img/product-images/gpus/nova-rtx-9070-12gb-graphics-card/"
+      },
+      {
+        "id": 12,
+        "name": "angle.jpg",
+        "alt": "Nova RTX 9070 12GB Graphics Card — alternate angle",
+        "product_id": 2,
+        "path": "/data/output-img/product-images/gpus/nova-rtx-9070-12gb-graphics-card/"
+      },
+      {
+        "id": 13,
+        "name": "detail.jpg",
+        "alt": "Nova RTX 9070 12GB Graphics Card — close-up detail",
+        "product_id": 2,
+        "path": "/data/output-img/product-images/gpus/nova-rtx-9070-12gb-graphics-card/"
+      },
+      {
+        "id": 14,
+        "name": "context.jpg",
+        "alt": "Nova RTX 9070 12GB Graphics Card — in-use context",
+        "product_id": 2,
+        "path": "/data/output-img/product-images/gpus/nova-rtx-9070-12gb-graphics-card/"
+      },
+      {
+        "id": 15,
+        "name": "with-packaging.jpg",
+        "alt": "Nova RTX 9070 12GB Graphics Card — with retail packaging",
+        "product_id": 2,
+        "path": "/data/output-img/product-images/gpus/nova-rtx-9070-12gb-graphics-card/"
+      }
+    ]
+  },
+  {
+    "product_id": 3,
+    "path": "/data/output-img/product-images/ram/volt-64gb-ddr5-6000mhz-kit-2x32/",
+    "images": [
+      {
+        "id": 16,
+        "name": "main.jpg",
+        "alt": "Volt 64GB DDR5 6000MHz Kit (2×32) — front view",
+        "product_id": 3,
+        "path": "/data/output-img/product-images/ram/volt-64gb-ddr5-6000mhz-kit-2x32/"
+      },
+      {
+        "id": 17,
+        "name": "angle.jpg",
+        "alt": "Volt 64GB DDR5 6000MHz Kit (2×32) — alternate angle",
+        "product_id": 3,
+        "path": "/data/output-img/product-images/ram/volt-64gb-ddr5-6000mhz-kit-2x32/"
+      },
+      {
+        "id": 18,
+        "name": "detail.jpg",
+        "alt": "Volt 64GB DDR5 6000MHz Kit (2×32) — close-up detail",
+        "product_id": 3,
+        "path": "/data/output-img/product-images/ram/volt-64gb-ddr5-6000mhz-kit-2x32/"
+      },
+      {
+        "id": 19,
+        "name": "context.jpg",
+        "alt": "Volt 64GB DDR5 6000MHz Kit (2×32) — in-use context",
+        "product_id": 3,
+        "path": "/data/output-img/product-images/ram/volt-64gb-ddr5-6000mhz-kit-2x32/"
+      },
+      {
+        "id": 20,
+        "name": "with-packaging.jpg",
+        "alt": "Volt 64GB DDR5 6000MHz Kit (2×32) — with retail packaging",
+        "product_id": 3,
+        "path": "/data/output-img/product-images/ram/volt-64gb-ddr5-6000mhz-kit-2x32/"
+      }
+    ]
+  },
+  {
+    "product_id": 4,
+    "path": "/data/output-img/product-images/psus/surge-1000w-platinum-modular-psu/",
+    "images": [
+      {
+        "id": 21,
+        "name": "main.jpg",
+        "alt": "Surge 1000W Platinum Modular PSU — front view",
+        "product_id": 4,
+        "path": "/data/output-img/product-images/psus/surge-1000w-platinum-modular-psu/"
+      },
+      {
+        "id": 22,
+        "name": "angle.jpg",
+        "alt": "Surge 1000W Platinum Modular PSU — alternate angle",
+        "product_id": 4,
+        "path": "/data/output-img/product-images/psus/surge-1000w-platinum-modular-psu/"
+      },
+      {
+        "id": 23,
+        "name": "detail.jpg",
+        "alt": "Surge 1000W Platinum Modular PSU — close-up detail",
+        "product_id": 4,
+        "path": "/data/output-img/product-images/psus/surge-1000w-platinum-modular-psu/"
+      },
+      {
+        "id": 24,
+        "name": "context.jpg",
+        "alt": "Surge 1000W Platinum Modular PSU — in-use context",
+        "product_id": 4,
+        "path": "/data/output-img/product-images/psus/surge-1000w-platinum-modular-psu/"
+      },
+      {
+        "id": 25,
+        "name": "with-packaging.jpg",
+        "alt": "Surge 1000W Platinum Modular PSU — with retail packaging",
+        "product_id": 4,
+        "path": "/data/output-img/product-images/psus/surge-1000w-platinum-modular-psu/"
+      }
+    ]
+  },
+  {
+    "product_id": 5,
+    "path": "/data/output-img/product-images/motherboards/apex-x9-6900-xt-motherboard/",
+    "images": [
+      {
+        "id": 26,
+        "name": "main.jpg",
+        "alt": "Apex X9 6900 XT Motherboard — front view",
+        "product_id": 5,
+        "path": "/data/output-img/product-images/motherboards/apex-x9-6900-xt-motherboard/"
+      },
+      {
+        "id": 27,
+        "name": "angle.jpg",
+        "alt": "Apex X9 6900 XT Motherboard — alternate angle",
+        "product_id": 5,
+        "path": "/data/output-img/product-images/motherboards/apex-x9-6900-xt-motherboard/"
+      },
+      {
+        "id": 28,
+        "name": "detail.jpg",
+        "alt": "Apex X9 6900 XT Motherboard — close-up detail",
+        "product_id": 5,
+        "path": "/data/output-img/product-images/motherboards/apex-x9-6900-xt-motherboard/"
+      },
+      {
+        "id": 29,
+        "name": "context.jpg",
+        "alt": "Apex X9 6900 XT Motherboard — in-use context",
+        "product_id": 5,
+        "path": "/data/output-img/product-images/motherboards/apex-x9-6900-xt-motherboard/"
+      },
+      {
+        "id": 30,
+        "name": "with-packaging.jpg",
+        "alt": "Apex X9 6900 XT Motherboard — with retail packaging",
+        "product_id": 5,
+        "path": "/data/output-img/product-images/motherboards/apex-x9-6900-xt-motherboard/"
+      }
+    ]
+  },
+  {
+    "product_id": 6,
+    "path": "/data/output-img/product-images/cooling/frost-360-aio-liquid-cooler-rgb/",
+    "images": [
+      {
+        "id": 31,
+        "name": "main.jpg",
+        "alt": "Frost 360 AIO Liquid Cooler RGB — front view",
+        "product_id": 6,
+        "path": "/data/output-img/product-images/cooling/frost-360-aio-liquid-cooler-rgb/"
+      },
+      {
+        "id": 32,
+        "name": "angle.jpg",
+        "alt": "Frost 360 AIO Liquid Cooler RGB — alternate angle",
+        "product_id": 6,
+        "path": "/data/output-img/product-images/cooling/frost-360-aio-liquid-cooler-rgb/"
+      },
+      {
+        "id": 33,
+        "name": "detail.jpg",
+        "alt": "Frost 360 AIO Liquid Cooler RGB — close-up detail",
+        "product_id": 6,
+        "path": "/data/output-img/product-images/cooling/frost-360-aio-liquid-cooler-rgb/"
+      },
+      {
+        "id": 34,
+        "name": "context.jpg",
+        "alt": "Frost 360 AIO Liquid Cooler RGB — in-use context",
+        "product_id": 6,
+        "path": "/data/output-img/product-images/cooling/frost-360-aio-liquid-cooler-rgb/"
+      },
+      {
+        "id": 35,
+        "name": "with-packaging.jpg",
+        "alt": "Frost 360 AIO Liquid Cooler RGB — with retail packaging",
+        "product_id": 6,
+        "path": "/data/output-img/product-images/cooling/frost-360-aio-liquid-cooler-rgb/"
+      }
+    ]
+  },
+  {
+    "product_id": 7,
+    "path": "/data/output-img/product-images/storage/bolt-4tb-nvme-gen5-ssd/",
+    "images": [
+      {
+        "id": 36,
+        "name": "main.jpg",
+        "alt": "Bolt 4TB NVMe Gen5 SSD — front view",
+        "product_id": 7,
+        "path": "/data/output-img/product-images/storage/bolt-4tb-nvme-gen5-ssd/"
+      },
+      {
+        "id": 37,
+        "name": "angle.jpg",
+        "alt": "Bolt 4TB NVMe Gen5 SSD — alternate angle",
+        "product_id": 7,
+        "path": "/data/output-img/product-images/storage/bolt-4tb-nvme-gen5-ssd/"
+      },
+      {
+        "id": 38,
+        "name": "detail.jpg",
+        "alt": "Bolt 4TB NVMe Gen5 SSD — close-up detail",
+        "product_id": 7,
+        "path": "/data/output-img/product-images/storage/bolt-4tb-nvme-gen5-ssd/"
+      },
+      {
+        "id": 39,
+        "name": "context.jpg",
+        "alt": "Bolt 4TB NVMe Gen5 SSD — in-use context",
+        "product_id": 7,
+        "path": "/data/output-img/product-images/storage/bolt-4tb-nvme-gen5-ssd/"
+      },
+      {
+        "id": 40,
+        "name": "with-packaging.jpg",
+        "alt": "Bolt 4TB NVMe Gen5 SSD — with retail packaging",
+        "product_id": 7,
+        "path": "/data/output-img/product-images/storage/bolt-4tb-nvme-gen5-ssd/"
+      }
+    ]
+  },
+  {
+    "product_id": 8,
+    "path": "/data/output-img/product-images/cases/titan-rtx-mid-tower-case-glass/",
+    "images": [
+      {
+        "id": 41,
+        "name": "main.jpg",
+        "alt": "Titan RTX Mid-Tower Case — Glass — front view",
+        "product_id": 8,
+        "path": "/data/output-img/product-images/cases/titan-rtx-mid-tower-case-glass/"
+      },
+      {
+        "id": 42,
+        "name": "angle.jpg",
+        "alt": "Titan RTX Mid-Tower Case — Glass — alternate angle",
+        "product_id": 8,
+        "path": "/data/output-img/product-images/cases/titan-rtx-mid-tower-case-glass/"
+      },
+      {
+        "id": 43,
+        "name": "detail.jpg",
+        "alt": "Titan RTX Mid-Tower Case — Glass — close-up detail",
+        "product_id": 8,
+        "path": "/data/output-img/product-images/cases/titan-rtx-mid-tower-case-glass/"
+      },
+      {
+        "id": 44,
+        "name": "context.jpg",
+        "alt": "Titan RTX Mid-Tower Case — Glass — in-use context",
+        "product_id": 8,
+        "path": "/data/output-img/product-images/cases/titan-rtx-mid-tower-case-glass/"
+      },
+      {
+        "id": 45,
+        "name": "with-packaging.jpg",
+        "alt": "Titan RTX Mid-Tower Case — Glass — with retail packaging",
+        "product_id": 8,
+        "path": "/data/output-img/product-images/cases/titan-rtx-mid-tower-case-glass/"
+      }
+    ]
+  },
+  {
+    "product_id": 9,
+    "path": "/data/output-img/product-images/gpus/nova-rtx-9060-8gb-graphics-card/",
+    "images": [
+      {
+        "id": 46,
+        "name": "main.jpg",
+        "alt": "Nova RTX 9060 8GB Graphics Card — front view",
+        "product_id": 9,
+        "path": "/data/output-img/product-images/gpus/nova-rtx-9060-8gb-graphics-card/"
+      },
+      {
+        "id": 47,
+        "name": "angle.jpg",
+        "alt": "Nova RTX 9060 8GB Graphics Card — alternate angle",
+        "product_id": 9,
+        "path": "/data/output-img/product-images/gpus/nova-rtx-9060-8gb-graphics-card/"
+      },
+      {
+        "id": 48,
+        "name": "detail.jpg",
+        "alt": "Nova RTX 9060 8GB Graphics Card — close-up detail",
+        "product_id": 9,
+        "path": "/data/output-img/product-images/gpus/nova-rtx-9060-8gb-graphics-card/"
+      },
+      {
+        "id": 49,
+        "name": "context.jpg",
+        "alt": "Nova RTX 9060 8GB Graphics Card — in-use context",
+        "product_id": 9,
+        "path": "/data/output-img/product-images/gpus/nova-rtx-9060-8gb-graphics-card/"
+      },
+      {
+        "id": 50,
+        "name": "with-packaging.jpg",
+        "alt": "Nova RTX 9060 8GB Graphics Card — with retail packaging",
+        "product_id": 9,
+        "path": "/data/output-img/product-images/gpus/nova-rtx-9060-8gb-graphics-card/"
+      }
+    ]
+  },
+  {
+    "product_id": 10,
+    "path": "/data/output-img/product-images/ram/volt-32gb-ddr5-5600mhz-kit-2x16/",
+    "images": [
+      {
+        "id": 51,
+        "name": "main.jpg",
+        "alt": "Volt 32GB DDR5 5600MHz Kit (2×16) — front view",
+        "product_id": 10,
+        "path": "/data/output-img/product-images/ram/volt-32gb-ddr5-5600mhz-kit-2x16/"
+      },
+      {
+        "id": 52,
+        "name": "angle.jpg",
+        "alt": "Volt 32GB DDR5 5600MHz Kit (2×16) — alternate angle",
+        "product_id": 10,
+        "path": "/data/output-img/product-images/ram/volt-32gb-ddr5-5600mhz-kit-2x16/"
+      },
+      {
+        "id": 53,
+        "name": "detail.jpg",
+        "alt": "Volt 32GB DDR5 5600MHz Kit (2×16) — close-up detail",
+        "product_id": 10,
+        "path": "/data/output-img/product-images/ram/volt-32gb-ddr5-5600mhz-kit-2x16/"
+      },
+      {
+        "id": 54,
+        "name": "context.jpg",
+        "alt": "Volt 32GB DDR5 5600MHz Kit (2×16) — in-use context",
+        "product_id": 10,
+        "path": "/data/output-img/product-images/ram/volt-32gb-ddr5-5600mhz-kit-2x16/"
+      },
+      {
+        "id": 55,
+        "name": "with-packaging.jpg",
+        "alt": "Volt 32GB DDR5 5600MHz Kit (2×16) — with retail packaging",
+        "product_id": 10,
+        "path": "/data/output-img/product-images/ram/volt-32gb-ddr5-5600mhz-kit-2x16/"
+      }
+    ]
+  },
+  {
+    "product_id": 11,
+    "path": "/data/output-img/product-images/cpus/apex-r5-9600-6-core-processor/",
+    "images": [
+      {
+        "id": 56,
+        "name": "main.jpg",
+        "alt": "Apex R5 9600 6-Core Processor — front view",
+        "product_id": 11,
+        "path": "/data/output-img/product-images/cpus/apex-r5-9600-6-core-processor/"
+      },
+      {
+        "id": 57,
+        "name": "angle.jpg",
+        "alt": "Apex R5 9600 6-Core Processor — alternate angle",
+        "product_id": 11,
+        "path": "/data/output-img/product-images/cpus/apex-r5-9600-6-core-processor/"
+      },
+      {
+        "id": 58,
+        "name": "detail.jpg",
+        "alt": "Apex R5 9600 6-Core Processor — close-up detail",
+        "product_id": 11,
+        "path": "/data/output-img/product-images/cpus/apex-r5-9600-6-core-processor/"
+      },
+      {
+        "id": 59,
+        "name": "context.jpg",
+        "alt": "Apex R5 9600 6-Core Processor — in-use context",
+        "product_id": 11,
+        "path": "/data/output-img/product-images/cpus/apex-r5-9600-6-core-processor/"
+      },
+      {
+        "id": 60,
+        "name": "with-packaging.jpg",
+        "alt": "Apex R5 9600 6-Core Processor — with retail packaging",
+        "product_id": 11,
+        "path": "/data/output-img/product-images/cpus/apex-r5-9600-6-core-processor/"
+      }
+    ]
+  },
+  {
+    "product_id": 12,
+    "path": "/data/output-img/product-images/gpus/nova-rtx-9080-ti-20gb-graphics-card/",
+    "images": [
+      {
+        "id": 61,
+        "name": "main.jpg",
+        "alt": "Nova RTX 9080 Ti 20GB Graphics Card — front view",
+        "product_id": 12,
+        "path": "/data/output-img/product-images/gpus/nova-rtx-9080-ti-20gb-graphics-card/"
+      },
+      {
+        "id": 62,
+        "name": "angle.jpg",
+        "alt": "Nova RTX 9080 Ti 20GB Graphics Card — alternate angle",
+        "product_id": 12,
+        "path": "/data/output-img/product-images/gpus/nova-rtx-9080-ti-20gb-graphics-card/"
+      },
+      {
+        "id": 63,
+        "name": "detail.jpg",
+        "alt": "Nova RTX 9080 Ti 20GB Graphics Card — close-up detail",
+        "product_id": 12,
+        "path": "/data/output-img/product-images/gpus/nova-rtx-9080-ti-20gb-graphics-card/"
+      },
+      {
+        "id": 64,
+        "name": "context.jpg",
+        "alt": "Nova RTX 9080 Ti 20GB Graphics Card — in-use context",
+        "product_id": 12,
+        "path": "/data/output-img/product-images/gpus/nova-rtx-9080-ti-20gb-graphics-card/"
+      },
+      {
+        "id": 65,
+        "name": "with-packaging.jpg",
+        "alt": "Nova RTX 9080 Ti 20GB Graphics Card — with retail packaging",
+        "product_id": 12,
+        "path": "/data/output-img/product-images/gpus/nova-rtx-9080-ti-20gb-graphics-card/"
+      }
+    ]
+  },
+  {
+    "product_id": 13,
+    "path": "/data/output-img/product-images/cpus/apex-r7-9700x-8-core-processor/",
+    "images": [
+      {
+        "id": 66,
+        "name": "main.jpg",
+        "alt": "Apex R7 9700X 8-Core Processor — front view",
+        "product_id": 13,
+        "path": "/data/output-img/product-images/cpus/apex-r7-9700x-8-core-processor/"
+      },
+      {
+        "id": 67,
+        "name": "angle.jpg",
+        "alt": "Apex R7 9700X 8-Core Processor — alternate angle",
+        "product_id": 13,
+        "path": "/data/output-img/product-images/cpus/apex-r7-9700x-8-core-processor/"
+      },
+      {
+        "id": 68,
+        "name": "detail.jpg",
+        "alt": "Apex R7 9700X 8-Core Processor — close-up detail",
+        "product_id": 13,
+        "path": "/data/output-img/product-images/cpus/apex-r7-9700x-8-core-processor/"
+      },
+      {
+        "id": 69,
+        "name": "context.jpg",
+        "alt": "Apex R7 9700X 8-Core Processor — in-use context",
+        "product_id": 13,
+        "path": "/data/output-img/product-images/cpus/apex-r7-9700x-8-core-processor/"
+      },
+      {
+        "id": 70,
+        "name": "with-packaging.jpg",
+        "alt": "Apex R7 9700X 8-Core Processor — with retail packaging",
+        "product_id": 13,
+        "path": "/data/output-img/product-images/cpus/apex-r7-9700x-8-core-processor/"
+      }
+    ]
+  },
+  {
+    "product_id": 14,
+    "path": "/data/output-img/product-images/psus/surge-850w-gold-modular-psu/",
+    "images": [
+      {
+        "id": 71,
+        "name": "main.jpg",
+        "alt": "Surge 850W Gold Modular PSU — front view",
+        "product_id": 14,
+        "path": "/data/output-img/product-images/psus/surge-850w-gold-modular-psu/"
+      },
+      {
+        "id": 72,
+        "name": "angle.jpg",
+        "alt": "Surge 850W Gold Modular PSU — alternate angle",
+        "product_id": 14,
+        "path": "/data/output-img/product-images/psus/surge-850w-gold-modular-psu/"
+      },
+      {
+        "id": 73,
+        "name": "detail.jpg",
+        "alt": "Surge 850W Gold Modular PSU — close-up detail",
+        "product_id": 14,
+        "path": "/data/output-img/product-images/psus/surge-850w-gold-modular-psu/"
+      },
+      {
+        "id": 74,
+        "name": "context.jpg",
+        "alt": "Surge 850W Gold Modular PSU — in-use context",
+        "product_id": 14,
+        "path": "/data/output-img/product-images/psus/surge-850w-gold-modular-psu/"
+      },
+      {
+        "id": 75,
+        "name": "with-packaging.jpg",
+        "alt": "Surge 850W Gold Modular PSU — with retail packaging",
+        "product_id": 14,
+        "path": "/data/output-img/product-images/psus/surge-850w-gold-modular-psu/"
+      }
+    ]
+  },
+  {
+    "product_id": 15,
+    "path": "/data/output-img/product-images/ram/volt-16gb-ddr5-6400mhz-kit-2x8/",
+    "images": [
+      {
+        "id": 76,
+        "name": "main.jpg",
+        "alt": "Volt 16GB DDR5 6400MHz Kit (2×8) — front view",
+        "product_id": 15,
+        "path": "/data/output-img/product-images/ram/volt-16gb-ddr5-6400mhz-kit-2x8/"
+      },
+      {
+        "id": 77,
+        "name": "angle.jpg",
+        "alt": "Volt 16GB DDR5 6400MHz Kit (2×8) — alternate angle",
+        "product_id": 15,
+        "path": "/data/output-img/product-images/ram/volt-16gb-ddr5-6400mhz-kit-2x8/"
+      },
+      {
+        "id": 78,
+        "name": "detail.jpg",
+        "alt": "Volt 16GB DDR5 6400MHz Kit (2×8) — close-up detail",
+        "product_id": 15,
+        "path": "/data/output-img/product-images/ram/volt-16gb-ddr5-6400mhz-kit-2x8/"
+      },
+      {
+        "id": 79,
+        "name": "context.jpg",
+        "alt": "Volt 16GB DDR5 6400MHz Kit (2×8) — in-use context",
+        "product_id": 15,
+        "path": "/data/output-img/product-images/ram/volt-16gb-ddr5-6400mhz-kit-2x8/"
+      },
+      {
+        "id": 80,
+        "name": "with-packaging.jpg",
+        "alt": "Volt 16GB DDR5 6400MHz Kit (2×8) — with retail packaging",
+        "product_id": 15,
+        "path": "/data/output-img/product-images/ram/volt-16gb-ddr5-6400mhz-kit-2x8/"
+      }
+    ]
+  },
+  {
+    "product_id": 16,
+    "path": "/data/output-img/product-images/cooling/frost-240-aio-liquid-cooler/",
+    "images": [
+      {
+        "id": 81,
+        "name": "main.jpg",
+        "alt": "Frost 240 AIO Liquid Cooler — front view",
+        "product_id": 16,
+        "path": "/data/output-img/product-images/cooling/frost-240-aio-liquid-cooler/"
+      },
+      {
+        "id": 82,
+        "name": "angle.jpg",
+        "alt": "Frost 240 AIO Liquid Cooler — alternate angle",
+        "product_id": 16,
+        "path": "/data/output-img/product-images/cooling/frost-240-aio-liquid-cooler/"
+      },
+      {
+        "id": 83,
+        "name": "detail.jpg",
+        "alt": "Frost 240 AIO Liquid Cooler — close-up detail",
+        "product_id": 16,
+        "path": "/data/output-img/product-images/cooling/frost-240-aio-liquid-cooler/"
+      },
+      {
+        "id": 84,
+        "name": "context.jpg",
+        "alt": "Frost 240 AIO Liquid Cooler — in-use context",
+        "product_id": 16,
+        "path": "/data/output-img/product-images/cooling/frost-240-aio-liquid-cooler/"
+      },
+      {
+        "id": 85,
+        "name": "with-packaging.jpg",
+        "alt": "Frost 240 AIO Liquid Cooler — with retail packaging",
+        "product_id": 16,
+        "path": "/data/output-img/product-images/cooling/frost-240-aio-liquid-cooler/"
+      }
+    ]
+  },
+  {
+    "product_id": 17,
+    "path": "/data/output-img/product-images/storage/bolt-2tb-nvme-gen4-ssd/",
+    "images": [
+      {
+        "id": 86,
+        "name": "main.jpg",
+        "alt": "Bolt 2TB NVMe Gen4 SSD — front view",
+        "product_id": 17,
+        "path": "/data/output-img/product-images/storage/bolt-2tb-nvme-gen4-ssd/"
+      },
+      {
+        "id": 87,
+        "name": "angle.jpg",
+        "alt": "Bolt 2TB NVMe Gen4 SSD — alternate angle",
+        "product_id": 17,
+        "path": "/data/output-img/product-images/storage/bolt-2tb-nvme-gen4-ssd/"
+      },
+      {
+        "id": 88,
+        "name": "detail.jpg",
+        "alt": "Bolt 2TB NVMe Gen4 SSD — close-up detail",
+        "product_id": 17,
+        "path": "/data/output-img/product-images/storage/bolt-2tb-nvme-gen4-ssd/"
+      },
+      {
+        "id": 89,
+        "name": "context.jpg",
+        "alt": "Bolt 2TB NVMe Gen4 SSD — in-use context",
+        "product_id": 17,
+        "path": "/data/output-img/product-images/storage/bolt-2tb-nvme-gen4-ssd/"
+      },
+      {
+        "id": 90,
+        "name": "with-packaging.jpg",
+        "alt": "Bolt 2TB NVMe Gen4 SSD — with retail packaging",
+        "product_id": 17,
+        "path": "/data/output-img/product-images/storage/bolt-2tb-nvme-gen4-ssd/"
+      }
+    ]
+  },
+  {
+    "product_id": 18,
+    "path": "/data/output-img/product-images/motherboards/apex-z9-pro-atx-motherboard/",
+    "images": [
+      {
+        "id": 91,
+        "name": "main.jpg",
+        "alt": "Apex Z9 Pro ATX Motherboard — front view",
+        "product_id": 18,
+        "path": "/data/output-img/product-images/motherboards/apex-z9-pro-atx-motherboard/"
+      },
+      {
+        "id": 92,
+        "name": "angle.jpg",
+        "alt": "Apex Z9 Pro ATX Motherboard — alternate angle",
+        "product_id": 18,
+        "path": "/data/output-img/product-images/motherboards/apex-z9-pro-atx-motherboard/"
+      },
+      {
+        "id": 93,
+        "name": "detail.jpg",
+        "alt": "Apex Z9 Pro ATX Motherboard — close-up detail",
+        "product_id": 18,
+        "path": "/data/output-img/product-images/motherboards/apex-z9-pro-atx-motherboard/"
+      },
+      {
+        "id": 94,
+        "name": "context.jpg",
+        "alt": "Apex Z9 Pro ATX Motherboard — in-use context",
+        "product_id": 18,
+        "path": "/data/output-img/product-images/motherboards/apex-z9-pro-atx-motherboard/"
+      },
+      {
+        "id": 95,
+        "name": "with-packaging.jpg",
+        "alt": "Apex Z9 Pro ATX Motherboard — with retail packaging",
+        "product_id": 18,
+        "path": "/data/output-img/product-images/motherboards/apex-z9-pro-atx-motherboard/"
+      }
+    ]
+  },
+  {
+    "product_id": 19,
+    "path": "/data/output-img/product-images/cases/titan-phantom-full-tower-case/",
+    "images": [
+      {
+        "id": 96,
+        "name": "main.jpg",
+        "alt": "Titan Phantom Full-Tower Case — front view",
+        "product_id": 19,
+        "path": "/data/output-img/product-images/cases/titan-phantom-full-tower-case/"
+      },
+      {
+        "id": 97,
+        "name": "angle.jpg",
+        "alt": "Titan Phantom Full-Tower Case — alternate angle",
+        "product_id": 19,
+        "path": "/data/output-img/product-images/cases/titan-phantom-full-tower-case/"
+      },
+      {
+        "id": 98,
+        "name": "detail.jpg",
+        "alt": "Titan Phantom Full-Tower Case — close-up detail",
+        "product_id": 19,
+        "path": "/data/output-img/product-images/cases/titan-phantom-full-tower-case/"
+      },
+      {
+        "id": 99,
+        "name": "context.jpg",
+        "alt": "Titan Phantom Full-Tower Case — in-use context",
+        "product_id": 19,
+        "path": "/data/output-img/product-images/cases/titan-phantom-full-tower-case/"
+      },
+      {
+        "id": 100,
+        "name": "with-packaging.jpg",
+        "alt": "Titan Phantom Full-Tower Case — with retail packaging",
+        "product_id": 19,
+        "path": "/data/output-img/product-images/cases/titan-phantom-full-tower-case/"
+      }
+    ]
+  },
+  {
+    "product_id": 20,
+    "path": "/data/output-img/product-images/peripherals/storm-mechanical-gaming-keyboard/",
+    "images": [
+      {
+        "id": 101,
+        "name": "main.jpg",
+        "alt": "Storm Mechanical Gaming Keyboard — front view",
+        "product_id": 20,
+        "path": "/data/output-img/product-images/peripherals/storm-mechanical-gaming-keyboard/"
+      },
+      {
+        "id": 102,
+        "name": "angle.jpg",
+        "alt": "Storm Mechanical Gaming Keyboard — alternate angle",
+        "product_id": 20,
+        "path": "/data/output-img/product-images/peripherals/storm-mechanical-gaming-keyboard/"
+      },
+      {
+        "id": 103,
+        "name": "detail.jpg",
+        "alt": "Storm Mechanical Gaming Keyboard — close-up detail",
+        "product_id": 20,
+        "path": "/data/output-img/product-images/peripherals/storm-mechanical-gaming-keyboard/"
+      },
+      {
+        "id": 104,
+        "name": "context.jpg",
+        "alt": "Storm Mechanical Gaming Keyboard — in-use context",
+        "product_id": 20,
+        "path": "/data/output-img/product-images/peripherals/storm-mechanical-gaming-keyboard/"
+      },
+      {
+        "id": 105,
+        "name": "with-packaging.jpg",
+        "alt": "Storm Mechanical Gaming Keyboard — with retail packaging",
+        "product_id": 20,
+        "path": "/data/output-img/product-images/peripherals/storm-mechanical-gaming-keyboard/"
+      }
+    ]
+  },
+  {
+    "product_id": 21,
+    "path": "/data/output-img/product-images/peripherals/storm-pro-gaming-mouse-16000-dpi/",
+    "images": [
+      {
+        "id": 106,
+        "name": "main.jpg",
+        "alt": "Storm Pro Gaming Mouse 16000 DPI — front view",
+        "product_id": 21,
+        "path": "/data/output-img/product-images/peripherals/storm-pro-gaming-mouse-16000-dpi/"
+      },
+      {
+        "id": 107,
+        "name": "angle.jpg",
+        "alt": "Storm Pro Gaming Mouse 16000 DPI — alternate angle",
+        "product_id": 21,
+        "path": "/data/output-img/product-images/peripherals/storm-pro-gaming-mouse-16000-dpi/"
+      },
+      {
+        "id": 108,
+        "name": "detail.jpg",
+        "alt": "Storm Pro Gaming Mouse 16000 DPI — close-up detail",
+        "product_id": 21,
+        "path": "/data/output-img/product-images/peripherals/storm-pro-gaming-mouse-16000-dpi/"
+      },
+      {
+        "id": 109,
+        "name": "context.jpg",
+        "alt": "Storm Pro Gaming Mouse 16000 DPI — in-use context",
+        "product_id": 21,
+        "path": "/data/output-img/product-images/peripherals/storm-pro-gaming-mouse-16000-dpi/"
+      },
+      {
+        "id": 110,
+        "name": "with-packaging.jpg",
+        "alt": "Storm Pro Gaming Mouse 16000 DPI — with retail packaging",
+        "product_id": 21,
+        "path": "/data/output-img/product-images/peripherals/storm-pro-gaming-mouse-16000-dpi/"
+      }
+    ]
+  },
+  {
+    "product_id": 22,
+    "path": "/data/output-img/product-images/peripherals/pulse-27in-165hz-qhd-gaming-monitor/",
+    "images": [
+      {
+        "id": 111,
+        "name": "main.jpg",
+        "alt": "Pulse 27\" 165Hz QHD Gaming Monitor — front view",
+        "product_id": 22,
+        "path": "/data/output-img/product-images/peripherals/pulse-27in-165hz-qhd-gaming-monitor/"
+      },
+      {
+        "id": 112,
+        "name": "angle.jpg",
+        "alt": "Pulse 27\" 165Hz QHD Gaming Monitor — alternate angle",
+        "product_id": 22,
+        "path": "/data/output-img/product-images/peripherals/pulse-27in-165hz-qhd-gaming-monitor/"
+      },
+      {
+        "id": 113,
+        "name": "detail.jpg",
+        "alt": "Pulse 27\" 165Hz QHD Gaming Monitor — close-up detail",
+        "product_id": 22,
+        "path": "/data/output-img/product-images/peripherals/pulse-27in-165hz-qhd-gaming-monitor/"
+      },
+      {
+        "id": 114,
+        "name": "context.jpg",
+        "alt": "Pulse 27\" 165Hz QHD Gaming Monitor — in-use context",
+        "product_id": 22,
+        "path": "/data/output-img/product-images/peripherals/pulse-27in-165hz-qhd-gaming-monitor/"
+      },
+      {
+        "id": 115,
+        "name": "with-packaging.jpg",
+        "alt": "Pulse 27\" 165Hz QHD Gaming Monitor — with retail packaging",
+        "product_id": 22,
+        "path": "/data/output-img/product-images/peripherals/pulse-27in-165hz-qhd-gaming-monitor/"
+      }
+    ]
+  },
+  {
+    "product_id": 23,
+    "path": "/data/output-img/product-images/peripherals/pulse-32in-4k-144hz-ips-monitor/",
+    "images": [
+      {
+        "id": 116,
+        "name": "main.jpg",
+        "alt": "Pulse 32\" 4K 144Hz IPS Monitor — front view",
+        "product_id": 23,
+        "path": "/data/output-img/product-images/peripherals/pulse-32in-4k-144hz-ips-monitor/"
+      },
+      {
+        "id": 117,
+        "name": "angle.jpg",
+        "alt": "Pulse 32\" 4K 144Hz IPS Monitor — alternate angle",
+        "product_id": 23,
+        "path": "/data/output-img/product-images/peripherals/pulse-32in-4k-144hz-ips-monitor/"
+      },
+      {
+        "id": 118,
+        "name": "detail.jpg",
+        "alt": "Pulse 32\" 4K 144Hz IPS Monitor — close-up detail",
+        "product_id": 23,
+        "path": "/data/output-img/product-images/peripherals/pulse-32in-4k-144hz-ips-monitor/"
+      },
+      {
+        "id": 119,
+        "name": "context.jpg",
+        "alt": "Pulse 32\" 4K 144Hz IPS Monitor — in-use context",
+        "product_id": 23,
+        "path": "/data/output-img/product-images/peripherals/pulse-32in-4k-144hz-ips-monitor/"
+      },
+      {
+        "id": 120,
+        "name": "with-packaging.jpg",
+        "alt": "Pulse 32\" 4K 144Hz IPS Monitor — with retail packaging",
+        "product_id": 23,
+        "path": "/data/output-img/product-images/peripherals/pulse-32in-4k-144hz-ips-monitor/"
+      }
+    ]
+  },
+  {
+    "product_id": 24,
+    "path": "/data/output-img/product-images/peripherals/wave-usb-condenser-microphone/",
+    "images": [
+      {
+        "id": 121,
+        "name": "main.jpg",
+        "alt": "Wave USB Condenser Microphone — front view",
+        "product_id": 24,
+        "path": "/data/output-img/product-images/peripherals/wave-usb-condenser-microphone/"
+      },
+      {
+        "id": 122,
+        "name": "angle.jpg",
+        "alt": "Wave USB Condenser Microphone — alternate angle",
+        "product_id": 24,
+        "path": "/data/output-img/product-images/peripherals/wave-usb-condenser-microphone/"
+      },
+      {
+        "id": 123,
+        "name": "detail.jpg",
+        "alt": "Wave USB Condenser Microphone — close-up detail",
+        "product_id": 24,
+        "path": "/data/output-img/product-images/peripherals/wave-usb-condenser-microphone/"
+      },
+      {
+        "id": 124,
+        "name": "context.jpg",
+        "alt": "Wave USB Condenser Microphone — in-use context",
+        "product_id": 24,
+        "path": "/data/output-img/product-images/peripherals/wave-usb-condenser-microphone/"
+      },
+      {
+        "id": 125,
+        "name": "with-packaging.jpg",
+        "alt": "Wave USB Condenser Microphone — with retail packaging",
+        "product_id": 24,
+        "path": "/data/output-img/product-images/peripherals/wave-usb-condenser-microphone/"
+      }
+    ]
+  },
+  {
+    "product_id": 25,
+    "path": "/data/output-img/product-images/peripherals/soundx-7-1-gaming-headset/",
+    "images": [
+      {
+        "id": 126,
+        "name": "main.jpg",
+        "alt": "SoundX 7.1 Gaming Headset — front view",
+        "product_id": 25,
+        "path": "/data/output-img/product-images/peripherals/soundx-7-1-gaming-headset/"
+      },
+      {
+        "id": 127,
+        "name": "angle.jpg",
+        "alt": "SoundX 7.1 Gaming Headset — alternate angle",
+        "product_id": 25,
+        "path": "/data/output-img/product-images/peripherals/soundx-7-1-gaming-headset/"
+      },
+      {
+        "id": 128,
+        "name": "detail.jpg",
+        "alt": "SoundX 7.1 Gaming Headset — close-up detail",
+        "product_id": 25,
+        "path": "/data/output-img/product-images/peripherals/soundx-7-1-gaming-headset/"
+      },
+      {
+        "id": 129,
+        "name": "context.jpg",
+        "alt": "SoundX 7.1 Gaming Headset — in-use context",
+        "product_id": 25,
+        "path": "/data/output-img/product-images/peripherals/soundx-7-1-gaming-headset/"
+      },
+      {
+        "id": 130,
+        "name": "with-packaging.jpg",
+        "alt": "SoundX 7.1 Gaming Headset — with retail packaging",
+        "product_id": 25,
+        "path": "/data/output-img/product-images/peripherals/soundx-7-1-gaming-headset/"
+      }
+    ]
+  },
+  {
+    "product_id": 26,
+    "path": "/data/output-img/product-images/peripherals/soundx-studio-headphones/",
+    "images": [
+      {
+        "id": 131,
+        "name": "main.jpg",
+        "alt": "SoundX Studio Headphones — front view",
+        "product_id": 26,
+        "path": "/data/output-img/product-images/peripherals/soundx-studio-headphones/"
+      },
+      {
+        "id": 132,
+        "name": "angle.jpg",
+        "alt": "SoundX Studio Headphones — alternate angle",
+        "product_id": 26,
+        "path": "/data/output-img/product-images/peripherals/soundx-studio-headphones/"
+      },
+      {
+        "id": 133,
+        "name": "detail.jpg",
+        "alt": "SoundX Studio Headphones — close-up detail",
+        "product_id": 26,
+        "path": "/data/output-img/product-images/peripherals/soundx-studio-headphones/"
+      },
+      {
+        "id": 134,
+        "name": "context.jpg",
+        "alt": "SoundX Studio Headphones — in-use context",
+        "product_id": 26,
+        "path": "/data/output-img/product-images/peripherals/soundx-studio-headphones/"
+      },
+      {
+        "id": 135,
+        "name": "with-packaging.jpg",
+        "alt": "SoundX Studio Headphones — with retail packaging",
+        "product_id": 26,
+        "path": "/data/output-img/product-images/peripherals/soundx-studio-headphones/"
+      }
+    ]
+  },
+  {
+    "product_id": 27,
+    "path": "/data/output-img/product-images/storage/bolt-1tb-nvme-gen4-ssd/",
+    "images": [
+      {
+        "id": 136,
+        "name": "main.jpg",
+        "alt": "Bolt 1TB NVMe Gen4 SSD — front view",
+        "product_id": 27,
+        "path": "/data/output-img/product-images/storage/bolt-1tb-nvme-gen4-ssd/"
+      },
+      {
+        "id": 137,
+        "name": "angle.jpg",
+        "alt": "Bolt 1TB NVMe Gen4 SSD — alternate angle",
+        "product_id": 27,
+        "path": "/data/output-img/product-images/storage/bolt-1tb-nvme-gen4-ssd/"
+      },
+      {
+        "id": 138,
+        "name": "detail.jpg",
+        "alt": "Bolt 1TB NVMe Gen4 SSD — close-up detail",
+        "product_id": 27,
+        "path": "/data/output-img/product-images/storage/bolt-1tb-nvme-gen4-ssd/"
+      },
+      {
+        "id": 139,
+        "name": "context.jpg",
+        "alt": "Bolt 1TB NVMe Gen4 SSD — in-use context",
+        "product_id": 27,
+        "path": "/data/output-img/product-images/storage/bolt-1tb-nvme-gen4-ssd/"
+      },
+      {
+        "id": 140,
+        "name": "with-packaging.jpg",
+        "alt": "Bolt 1TB NVMe Gen4 SSD — with retail packaging",
+        "product_id": 27,
+        "path": "/data/output-img/product-images/storage/bolt-1tb-nvme-gen4-ssd/"
+      }
+    ]
+  },
+  {
+    "product_id": 28,
+    "path": "/data/output-img/product-images/storage/bolt-8tb-7200rpm-hdd/",
+    "images": [
+      {
+        "id": 141,
+        "name": "main.jpg",
+        "alt": "Bolt 8TB 7200RPM HDD — front view",
+        "product_id": 28,
+        "path": "/data/output-img/product-images/storage/bolt-8tb-7200rpm-hdd/"
+      },
+      {
+        "id": 142,
+        "name": "angle.jpg",
+        "alt": "Bolt 8TB 7200RPM HDD — alternate angle",
+        "product_id": 28,
+        "path": "/data/output-img/product-images/storage/bolt-8tb-7200rpm-hdd/"
+      },
+      {
+        "id": 143,
+        "name": "detail.jpg",
+        "alt": "Bolt 8TB 7200RPM HDD — close-up detail",
+        "product_id": 28,
+        "path": "/data/output-img/product-images/storage/bolt-8tb-7200rpm-hdd/"
+      },
+      {
+        "id": 144,
+        "name": "context.jpg",
+        "alt": "Bolt 8TB 7200RPM HDD — in-use context",
+        "product_id": 28,
+        "path": "/data/output-img/product-images/storage/bolt-8tb-7200rpm-hdd/"
+      },
+      {
+        "id": 145,
+        "name": "with-packaging.jpg",
+        "alt": "Bolt 8TB 7200RPM HDD — with retail packaging",
+        "product_id": 28,
+        "path": "/data/output-img/product-images/storage/bolt-8tb-7200rpm-hdd/"
+      }
+    ]
+  },
+  {
+    "product_id": 29,
+    "path": "/data/output-img/product-images/gpus/nova-rx-8900-xt-16gb-graphics-card/",
+    "images": [
+      {
+        "id": 146,
+        "name": "main.jpg",
+        "alt": "Nova RX 8900 XT 16GB Graphics Card — front view",
+        "product_id": 29,
+        "path": "/data/output-img/product-images/gpus/nova-rx-8900-xt-16gb-graphics-card/"
+      },
+      {
+        "id": 147,
+        "name": "angle.jpg",
+        "alt": "Nova RX 8900 XT 16GB Graphics Card — alternate angle",
+        "product_id": 29,
+        "path": "/data/output-img/product-images/gpus/nova-rx-8900-xt-16gb-graphics-card/"
+      },
+      {
+        "id": 148,
+        "name": "detail.jpg",
+        "alt": "Nova RX 8900 XT 16GB Graphics Card — close-up detail",
+        "product_id": 29,
+        "path": "/data/output-img/product-images/gpus/nova-rx-8900-xt-16gb-graphics-card/"
+      },
+      {
+        "id": 149,
+        "name": "context.jpg",
+        "alt": "Nova RX 8900 XT 16GB Graphics Card — in-use context",
+        "product_id": 29,
+        "path": "/data/output-img/product-images/gpus/nova-rx-8900-xt-16gb-graphics-card/"
+      },
+      {
+        "id": 150,
+        "name": "with-packaging.jpg",
+        "alt": "Nova RX 8900 XT 16GB Graphics Card — with retail packaging",
+        "product_id": 29,
+        "path": "/data/output-img/product-images/gpus/nova-rx-8900-xt-16gb-graphics-card/"
+      }
+    ]
+  },
+  {
+    "product_id": 30,
+    "path": "/data/output-img/product-images/cpus/apex-r3-9300-4-core-processor/",
+    "images": [
+      {
+        "id": 151,
+        "name": "main.jpg",
+        "alt": "Apex R3 9300 4-Core Processor — front view",
+        "product_id": 30,
+        "path": "/data/output-img/product-images/cpus/apex-r3-9300-4-core-processor/"
+      },
+      {
+        "id": 152,
+        "name": "angle.jpg",
+        "alt": "Apex R3 9300 4-Core Processor — alternate angle",
+        "product_id": 30,
+        "path": "/data/output-img/product-images/cpus/apex-r3-9300-4-core-processor/"
+      },
+      {
+        "id": 153,
+        "name": "detail.jpg",
+        "alt": "Apex R3 9300 4-Core Processor — close-up detail",
+        "product_id": 30,
+        "path": "/data/output-img/product-images/cpus/apex-r3-9300-4-core-processor/"
+      },
+      {
+        "id": 154,
+        "name": "context.jpg",
+        "alt": "Apex R3 9300 4-Core Processor — in-use context",
+        "product_id": 30,
+        "path": "/data/output-img/product-images/cpus/apex-r3-9300-4-core-processor/"
+      },
+      {
+        "id": 155,
+        "name": "with-packaging.jpg",
+        "alt": "Apex R3 9300 4-Core Processor — with retail packaging",
+        "product_id": 30,
+        "path": "/data/output-img/product-images/cpus/apex-r3-9300-4-core-processor/"
+      }
+    ]
+  },
+  {
+    "product_id": 31,
+    "path": "/data/output-img/product-images/psus/surge-750w-gold-semi-modular-psu/",
+    "images": [
+      {
+        "id": 156,
+        "name": "main.jpg",
+        "alt": "Surge 750W Gold Semi-Modular PSU — front view",
+        "product_id": 31,
+        "path": "/data/output-img/product-images/psus/surge-750w-gold-semi-modular-psu/"
+      },
+      {
+        "id": 157,
+        "name": "angle.jpg",
+        "alt": "Surge 750W Gold Semi-Modular PSU — alternate angle",
+        "product_id": 31,
+        "path": "/data/output-img/product-images/psus/surge-750w-gold-semi-modular-psu/"
+      },
+      {
+        "id": 158,
+        "name": "detail.jpg",
+        "alt": "Surge 750W Gold Semi-Modular PSU — close-up detail",
+        "product_id": 31,
+        "path": "/data/output-img/product-images/psus/surge-750w-gold-semi-modular-psu/"
+      },
+      {
+        "id": 159,
+        "name": "context.jpg",
+        "alt": "Surge 750W Gold Semi-Modular PSU — in-use context",
+        "product_id": 31,
+        "path": "/data/output-img/product-images/psus/surge-750w-gold-semi-modular-psu/"
+      },
+      {
+        "id": 160,
+        "name": "with-packaging.jpg",
+        "alt": "Surge 750W Gold Semi-Modular PSU — with retail packaging",
+        "product_id": 31,
+        "path": "/data/output-img/product-images/psus/surge-750w-gold-semi-modular-psu/"
+      }
+    ]
+  },
+  {
+    "product_id": 32,
+    "path": "/data/output-img/product-images/ram/volt-96gb-ddr5-5600mhz-kit-4x24/",
+    "images": [
+      {
+        "id": 161,
+        "name": "main.jpg",
+        "alt": "Volt 96GB DDR5 5600MHz Kit (4×24) — front view",
+        "product_id": 32,
+        "path": "/data/output-img/product-images/ram/volt-96gb-ddr5-5600mhz-kit-4x24/"
+      },
+      {
+        "id": 162,
+        "name": "angle.jpg",
+        "alt": "Volt 96GB DDR5 5600MHz Kit (4×24) — alternate angle",
+        "product_id": 32,
+        "path": "/data/output-img/product-images/ram/volt-96gb-ddr5-5600mhz-kit-4x24/"
+      },
+      {
+        "id": 163,
+        "name": "detail.jpg",
+        "alt": "Volt 96GB DDR5 5600MHz Kit (4×24) — close-up detail",
+        "product_id": 32,
+        "path": "/data/output-img/product-images/ram/volt-96gb-ddr5-5600mhz-kit-4x24/"
+      },
+      {
+        "id": 164,
+        "name": "context.jpg",
+        "alt": "Volt 96GB DDR5 5600MHz Kit (4×24) — in-use context",
+        "product_id": 32,
+        "path": "/data/output-img/product-images/ram/volt-96gb-ddr5-5600mhz-kit-4x24/"
+      },
+      {
+        "id": 165,
+        "name": "with-packaging.jpg",
+        "alt": "Volt 96GB DDR5 5600MHz Kit (4×24) — with retail packaging",
+        "product_id": 32,
+        "path": "/data/output-img/product-images/ram/volt-96gb-ddr5-5600mhz-kit-4x24/"
+      }
+    ]
+  },
+  {
+    "product_id": 33,
+    "path": "/data/output-img/product-images/motherboards/apex-b760-mitx-motherboard/",
+    "images": [
+      {
+        "id": 166,
+        "name": "main.jpg",
+        "alt": "Apex B760 mITX Motherboard — front view",
+        "product_id": 33,
+        "path": "/data/output-img/product-images/motherboards/apex-b760-mitx-motherboard/"
+      },
+      {
+        "id": 167,
+        "name": "angle.jpg",
+        "alt": "Apex B760 mITX Motherboard — alternate angle",
+        "product_id": 33,
+        "path": "/data/output-img/product-images/motherboards/apex-b760-mitx-motherboard/"
+      },
+      {
+        "id": 168,
+        "name": "detail.jpg",
+        "alt": "Apex B760 mITX Motherboard — close-up detail",
+        "product_id": 33,
+        "path": "/data/output-img/product-images/motherboards/apex-b760-mitx-motherboard/"
+      },
+      {
+        "id": 169,
+        "name": "context.jpg",
+        "alt": "Apex B760 mITX Motherboard — in-use context",
+        "product_id": 33,
+        "path": "/data/output-img/product-images/motherboards/apex-b760-mitx-motherboard/"
+      },
+      {
+        "id": 170,
+        "name": "with-packaging.jpg",
+        "alt": "Apex B760 mITX Motherboard — with retail packaging",
+        "product_id": 33,
+        "path": "/data/output-img/product-images/motherboards/apex-b760-mitx-motherboard/"
+      }
+    ]
+  },
+  {
+    "product_id": 34,
+    "path": "/data/output-img/product-images/cases/titan-micro-itx-compact-case/",
+    "images": [
+      {
+        "id": 171,
+        "name": "main.jpg",
+        "alt": "Titan Micro-ITX Compact Case — front view",
+        "product_id": 34,
+        "path": "/data/output-img/product-images/cases/titan-micro-itx-compact-case/"
+      },
+      {
+        "id": 172,
+        "name": "angle.jpg",
+        "alt": "Titan Micro-ITX Compact Case — alternate angle",
+        "product_id": 34,
+        "path": "/data/output-img/product-images/cases/titan-micro-itx-compact-case/"
+      },
+      {
+        "id": 173,
+        "name": "detail.jpg",
+        "alt": "Titan Micro-ITX Compact Case — close-up detail",
+        "product_id": 34,
+        "path": "/data/output-img/product-images/cases/titan-micro-itx-compact-case/"
+      },
+      {
+        "id": 174,
+        "name": "context.jpg",
+        "alt": "Titan Micro-ITX Compact Case — in-use context",
+        "product_id": 34,
+        "path": "/data/output-img/product-images/cases/titan-micro-itx-compact-case/"
+      },
+      {
+        "id": 175,
+        "name": "with-packaging.jpg",
+        "alt": "Titan Micro-ITX Compact Case — with retail packaging",
+        "product_id": 34,
+        "path": "/data/output-img/product-images/cases/titan-micro-itx-compact-case/"
+      }
+    ]
+  },
+  {
+    "product_id": 35,
+    "path": "/data/output-img/product-images/cooling/frost-prism-120mm-argb-fan-pack-3x/",
+    "images": [
+      {
+        "id": 176,
+        "name": "main.jpg",
+        "alt": "Frost Prism 120mm ARGB Fan Pack (3×) — front view",
+        "product_id": 35,
+        "path": "/data/output-img/product-images/cooling/frost-prism-120mm-argb-fan-pack-3x/"
+      },
+      {
+        "id": 177,
+        "name": "angle.jpg",
+        "alt": "Frost Prism 120mm ARGB Fan Pack (3×) — alternate angle",
+        "product_id": 35,
+        "path": "/data/output-img/product-images/cooling/frost-prism-120mm-argb-fan-pack-3x/"
+      },
+      {
+        "id": 178,
+        "name": "detail.jpg",
+        "alt": "Frost Prism 120mm ARGB Fan Pack (3×) — close-up detail",
+        "product_id": 35,
+        "path": "/data/output-img/product-images/cooling/frost-prism-120mm-argb-fan-pack-3x/"
+      },
+      {
+        "id": 179,
+        "name": "context.jpg",
+        "alt": "Frost Prism 120mm ARGB Fan Pack (3×) — in-use context",
+        "product_id": 35,
+        "path": "/data/output-img/product-images/cooling/frost-prism-120mm-argb-fan-pack-3x/"
+      },
+      {
+        "id": 180,
+        "name": "with-packaging.jpg",
+        "alt": "Frost Prism 120mm ARGB Fan Pack (3×) — with retail packaging",
+        "product_id": 35,
+        "path": "/data/output-img/product-images/cooling/frost-prism-120mm-argb-fan-pack-3x/"
+      }
+    ]
+  },
+  {
+    "product_id": 36,
+    "path": "/data/output-img/product-images/peripherals/storm-100-full-size-keyboard-blue-switch/",
+    "images": [
+      {
+        "id": 181,
+        "name": "main.jpg",
+        "alt": "Storm 100% Full-Size Keyboard Blue Switch — front view",
+        "product_id": 36,
+        "path": "/data/output-img/product-images/peripherals/storm-100-full-size-keyboard-blue-switch/"
+      },
+      {
+        "id": 182,
+        "name": "angle.jpg",
+        "alt": "Storm 100% Full-Size Keyboard Blue Switch — alternate angle",
+        "product_id": 36,
+        "path": "/data/output-img/product-images/peripherals/storm-100-full-size-keyboard-blue-switch/"
+      },
+      {
+        "id": 183,
+        "name": "detail.jpg",
+        "alt": "Storm 100% Full-Size Keyboard Blue Switch — close-up detail",
+        "product_id": 36,
+        "path": "/data/output-img/product-images/peripherals/storm-100-full-size-keyboard-blue-switch/"
+      },
+      {
+        "id": 184,
+        "name": "context.jpg",
+        "alt": "Storm 100% Full-Size Keyboard Blue Switch — in-use context",
+        "product_id": 36,
+        "path": "/data/output-img/product-images/peripherals/storm-100-full-size-keyboard-blue-switch/"
+      },
+      {
+        "id": 185,
+        "name": "with-packaging.jpg",
+        "alt": "Storm 100% Full-Size Keyboard Blue Switch — with retail packaging",
+        "product_id": 36,
+        "path": "/data/output-img/product-images/peripherals/storm-100-full-size-keyboard-blue-switch/"
+      }
+    ]
+  },
+  {
+    "product_id": 37,
+    "path": "/data/output-img/product-images/peripherals/storm-wireless-ergonomic-mouse/",
+    "images": [
+      {
+        "id": 186,
+        "name": "main.jpg",
+        "alt": "Storm Wireless Ergonomic Mouse — front view",
+        "product_id": 37,
+        "path": "/data/output-img/product-images/peripherals/storm-wireless-ergonomic-mouse/"
+      },
+      {
+        "id": 187,
+        "name": "angle.jpg",
+        "alt": "Storm Wireless Ergonomic Mouse — alternate angle",
+        "product_id": 37,
+        "path": "/data/output-img/product-images/peripherals/storm-wireless-ergonomic-mouse/"
+      },
+      {
+        "id": 188,
+        "name": "detail.jpg",
+        "alt": "Storm Wireless Ergonomic Mouse — close-up detail",
+        "product_id": 37,
+        "path": "/data/output-img/product-images/peripherals/storm-wireless-ergonomic-mouse/"
+      },
+      {
+        "id": 189,
+        "name": "context.jpg",
+        "alt": "Storm Wireless Ergonomic Mouse — in-use context",
+        "product_id": 37,
+        "path": "/data/output-img/product-images/peripherals/storm-wireless-ergonomic-mouse/"
+      },
+      {
+        "id": 190,
+        "name": "with-packaging.jpg",
+        "alt": "Storm Wireless Ergonomic Mouse — with retail packaging",
+        "product_id": 37,
+        "path": "/data/output-img/product-images/peripherals/storm-wireless-ergonomic-mouse/"
+      }
+    ]
+  },
+  {
+    "product_id": 38,
+    "path": "/data/output-img/product-images/peripherals/wave-xlr-broadcast-microphone/",
+    "images": [
+      {
+        "id": 191,
+        "name": "main.jpg",
+        "alt": "Wave XLR Broadcast Microphone — front view",
+        "product_id": 38,
+        "path": "/data/output-img/product-images/peripherals/wave-xlr-broadcast-microphone/"
+      },
+      {
+        "id": 192,
+        "name": "angle.jpg",
+        "alt": "Wave XLR Broadcast Microphone — alternate angle",
+        "product_id": 38,
+        "path": "/data/output-img/product-images/peripherals/wave-xlr-broadcast-microphone/"
+      },
+      {
+        "id": 193,
+        "name": "detail.jpg",
+        "alt": "Wave XLR Broadcast Microphone — close-up detail",
+        "product_id": 38,
+        "path": "/data/output-img/product-images/peripherals/wave-xlr-broadcast-microphone/"
+      },
+      {
+        "id": 194,
+        "name": "context.jpg",
+        "alt": "Wave XLR Broadcast Microphone — in-use context",
+        "product_id": 38,
+        "path": "/data/output-img/product-images/peripherals/wave-xlr-broadcast-microphone/"
+      },
+      {
+        "id": 195,
+        "name": "with-packaging.jpg",
+        "alt": "Wave XLR Broadcast Microphone — with retail packaging",
+        "product_id": 38,
+        "path": "/data/output-img/product-images/peripherals/wave-xlr-broadcast-microphone/"
+      }
+    ]
+  },
+  {
+    "product_id": 39,
+    "path": "/data/output-img/product-images/peripherals/boombox-desk-speakers-2-0-studio/",
+    "images": [
+      {
+        "id": 196,
+        "name": "main.jpg",
+        "alt": "BoomBox Desk Speakers 2.0 Studio — front view",
+        "product_id": 39,
+        "path": "/data/output-img/product-images/peripherals/boombox-desk-speakers-2-0-studio/"
+      },
+      {
+        "id": 197,
+        "name": "angle.jpg",
+        "alt": "BoomBox Desk Speakers 2.0 Studio — alternate angle",
+        "product_id": 39,
+        "path": "/data/output-img/product-images/peripherals/boombox-desk-speakers-2-0-studio/"
+      },
+      {
+        "id": 198,
+        "name": "detail.jpg",
+        "alt": "BoomBox Desk Speakers 2.0 Studio — close-up detail",
+        "product_id": 39,
+        "path": "/data/output-img/product-images/peripherals/boombox-desk-speakers-2-0-studio/"
+      },
+      {
+        "id": 199,
+        "name": "context.jpg",
+        "alt": "BoomBox Desk Speakers 2.0 Studio — in-use context",
+        "product_id": 39,
+        "path": "/data/output-img/product-images/peripherals/boombox-desk-speakers-2-0-studio/"
+      },
+      {
+        "id": 200,
+        "name": "with-packaging.jpg",
+        "alt": "BoomBox Desk Speakers 2.0 Studio — with retail packaging",
+        "product_id": 39,
+        "path": "/data/output-img/product-images/peripherals/boombox-desk-speakers-2-0-studio/"
+      }
+    ]
+  },
+  {
+    "product_id": 40,
+    "path": "/data/output-img/product-images/peripherals/boombox-2-1-gaming-speakers/",
+    "images": [
+      {
+        "id": 201,
+        "name": "main.jpg",
+        "alt": "BoomBox 2.1 Gaming Speakers — front view",
+        "product_id": 40,
+        "path": "/data/output-img/product-images/peripherals/boombox-2-1-gaming-speakers/"
+      },
+      {
+        "id": 202,
+        "name": "angle.jpg",
+        "alt": "BoomBox 2.1 Gaming Speakers — alternate angle",
+        "product_id": 40,
+        "path": "/data/output-img/product-images/peripherals/boombox-2-1-gaming-speakers/"
+      },
+      {
+        "id": 203,
+        "name": "detail.jpg",
+        "alt": "BoomBox 2.1 Gaming Speakers — close-up detail",
+        "product_id": 40,
+        "path": "/data/output-img/product-images/peripherals/boombox-2-1-gaming-speakers/"
+      },
+      {
+        "id": 204,
+        "name": "context.jpg",
+        "alt": "BoomBox 2.1 Gaming Speakers — in-use context",
+        "product_id": 40,
+        "path": "/data/output-img/product-images/peripherals/boombox-2-1-gaming-speakers/"
+      },
+      {
+        "id": 205,
+        "name": "with-packaging.jpg",
+        "alt": "BoomBox 2.1 Gaming Speakers — with retail packaging",
+        "product_id": 40,
+        "path": "/data/output-img/product-images/peripherals/boombox-2-1-gaming-speakers/"
+      }
+    ]
+  },
+  {
+    "product_id": 41,
+    "path": "/data/output-img/product-images/peripherals/lens-4k-webcam-with-ring-light/",
+    "images": [
+      {
+        "id": 206,
+        "name": "main.jpg",
+        "alt": "Lens 4K Webcam with Ring Light — front view",
+        "product_id": 41,
+        "path": "/data/output-img/product-images/peripherals/lens-4k-webcam-with-ring-light/"
+      },
+      {
+        "id": 207,
+        "name": "angle.jpg",
+        "alt": "Lens 4K Webcam with Ring Light — alternate angle",
+        "product_id": 41,
+        "path": "/data/output-img/product-images/peripherals/lens-4k-webcam-with-ring-light/"
+      },
+      {
+        "id": 208,
+        "name": "detail.jpg",
+        "alt": "Lens 4K Webcam with Ring Light — close-up detail",
+        "product_id": 41,
+        "path": "/data/output-img/product-images/peripherals/lens-4k-webcam-with-ring-light/"
+      },
+      {
+        "id": 209,
+        "name": "context.jpg",
+        "alt": "Lens 4K Webcam with Ring Light — in-use context",
+        "product_id": 41,
+        "path": "/data/output-img/product-images/peripherals/lens-4k-webcam-with-ring-light/"
+      },
+      {
+        "id": 210,
+        "name": "with-packaging.jpg",
+        "alt": "Lens 4K Webcam with Ring Light — with retail packaging",
+        "product_id": 41,
+        "path": "/data/output-img/product-images/peripherals/lens-4k-webcam-with-ring-light/"
+      }
+    ]
+  },
+  {
+    "product_id": 42,
+    "path": "/data/output-img/product-images/peripherals/lens-1080p-60fps-streaming-webcam/",
+    "images": [
+      {
+        "id": 211,
+        "name": "main.jpg",
+        "alt": "Lens 1080p 60fps Streaming Webcam — front view",
+        "product_id": 42,
+        "path": "/data/output-img/product-images/peripherals/lens-1080p-60fps-streaming-webcam/"
+      },
+      {
+        "id": 212,
+        "name": "angle.jpg",
+        "alt": "Lens 1080p 60fps Streaming Webcam — alternate angle",
+        "product_id": 42,
+        "path": "/data/output-img/product-images/peripherals/lens-1080p-60fps-streaming-webcam/"
+      },
+      {
+        "id": 213,
+        "name": "detail.jpg",
+        "alt": "Lens 1080p 60fps Streaming Webcam — close-up detail",
+        "product_id": 42,
+        "path": "/data/output-img/product-images/peripherals/lens-1080p-60fps-streaming-webcam/"
+      },
+      {
+        "id": 214,
+        "name": "context.jpg",
+        "alt": "Lens 1080p 60fps Streaming Webcam — in-use context",
+        "product_id": 42,
+        "path": "/data/output-img/product-images/peripherals/lens-1080p-60fps-streaming-webcam/"
+      },
+      {
+        "id": 215,
+        "name": "with-packaging.jpg",
+        "alt": "Lens 1080p 60fps Streaming Webcam — with retail packaging",
+        "product_id": 42,
+        "path": "/data/output-img/product-images/peripherals/lens-1080p-60fps-streaming-webcam/"
+      }
+    ]
+  },
+  {
+    "product_id": 43,
+    "path": "/data/output-img/product-images/gpus/nova-rtx-9050-6gb-graphics-card/",
+    "images": [
+      {
+        "id": 216,
+        "name": "main.jpg",
+        "alt": "Nova RTX 9050 6GB Graphics Card — front view",
+        "product_id": 43,
+        "path": "/data/output-img/product-images/gpus/nova-rtx-9050-6gb-graphics-card/"
+      },
+      {
+        "id": 217,
+        "name": "angle.jpg",
+        "alt": "Nova RTX 9050 6GB Graphics Card — alternate angle",
+        "product_id": 43,
+        "path": "/data/output-img/product-images/gpus/nova-rtx-9050-6gb-graphics-card/"
+      },
+      {
+        "id": 218,
+        "name": "detail.jpg",
+        "alt": "Nova RTX 9050 6GB Graphics Card — close-up detail",
+        "product_id": 43,
+        "path": "/data/output-img/product-images/gpus/nova-rtx-9050-6gb-graphics-card/"
+      },
+      {
+        "id": 219,
+        "name": "context.jpg",
+        "alt": "Nova RTX 9050 6GB Graphics Card — in-use context",
+        "product_id": 43,
+        "path": "/data/output-img/product-images/gpus/nova-rtx-9050-6gb-graphics-card/"
+      },
+      {
+        "id": 220,
+        "name": "with-packaging.jpg",
+        "alt": "Nova RTX 9050 6GB Graphics Card — with retail packaging",
+        "product_id": 43,
+        "path": "/data/output-img/product-images/gpus/nova-rtx-9050-6gb-graphics-card/"
+      }
+    ]
+  },
+  {
+    "product_id": 44,
+    "path": "/data/output-img/product-images/cpus/apex-threadripper-9980x-24-core/",
+    "images": [
+      {
+        "id": 221,
+        "name": "main.jpg",
+        "alt": "Apex Threadripper 9980X 24-Core — front view",
+        "product_id": 44,
+        "path": "/data/output-img/product-images/cpus/apex-threadripper-9980x-24-core/"
+      },
+      {
+        "id": 222,
+        "name": "angle.jpg",
+        "alt": "Apex Threadripper 9980X 24-Core — alternate angle",
+        "product_id": 44,
+        "path": "/data/output-img/product-images/cpus/apex-threadripper-9980x-24-core/"
+      },
+      {
+        "id": 223,
+        "name": "detail.jpg",
+        "alt": "Apex Threadripper 9980X 24-Core — close-up detail",
+        "product_id": 44,
+        "path": "/data/output-img/product-images/cpus/apex-threadripper-9980x-24-core/"
+      },
+      {
+        "id": 224,
+        "name": "context.jpg",
+        "alt": "Apex Threadripper 9980X 24-Core — in-use context",
+        "product_id": 44,
+        "path": "/data/output-img/product-images/cpus/apex-threadripper-9980x-24-core/"
+      },
+      {
+        "id": 225,
+        "name": "with-packaging.jpg",
+        "alt": "Apex Threadripper 9980X 24-Core — with retail packaging",
+        "product_id": 44,
+        "path": "/data/output-img/product-images/cpus/apex-threadripper-9980x-24-core/"
+      }
+    ]
+  },
+  {
+    "product_id": 45,
+    "path": "/data/output-img/product-images/psus/surge-1600w-titanium-modular-psu/",
+    "images": [
+      {
+        "id": 226,
+        "name": "main.jpg",
+        "alt": "Surge 1600W Titanium Modular PSU — front view",
+        "product_id": 45,
+        "path": "/data/output-img/product-images/psus/surge-1600w-titanium-modular-psu/"
+      },
+      {
+        "id": 227,
+        "name": "angle.jpg",
+        "alt": "Surge 1600W Titanium Modular PSU — alternate angle",
+        "product_id": 45,
+        "path": "/data/output-img/product-images/psus/surge-1600w-titanium-modular-psu/"
+      },
+      {
+        "id": 228,
+        "name": "detail.jpg",
+        "alt": "Surge 1600W Titanium Modular PSU — close-up detail",
+        "product_id": 45,
+        "path": "/data/output-img/product-images/psus/surge-1600w-titanium-modular-psu/"
+      },
+      {
+        "id": 229,
+        "name": "context.jpg",
+        "alt": "Surge 1600W Titanium Modular PSU — in-use context",
+        "product_id": 45,
+        "path": "/data/output-img/product-images/psus/surge-1600w-titanium-modular-psu/"
+      },
+      {
+        "id": 230,
+        "name": "with-packaging.jpg",
+        "alt": "Surge 1600W Titanium Modular PSU — with retail packaging",
+        "product_id": 45,
+        "path": "/data/output-img/product-images/psus/surge-1600w-titanium-modular-psu/"
+      }
+    ]
+  },
+  {
+    "product_id": 46,
+    "path": "/data/output-img/product-images/ram/volt-128gb-ddr5-ecc-rdimm-kit/",
+    "images": [
+      {
+        "id": 231,
+        "name": "main.jpg",
+        "alt": "Volt 128GB DDR5 ECC RDIMM Kit — front view",
+        "product_id": 46,
+        "path": "/data/output-img/product-images/ram/volt-128gb-ddr5-ecc-rdimm-kit/"
+      },
+      {
+        "id": 232,
+        "name": "angle.jpg",
+        "alt": "Volt 128GB DDR5 ECC RDIMM Kit — alternate angle",
+        "product_id": 46,
+        "path": "/data/output-img/product-images/ram/volt-128gb-ddr5-ecc-rdimm-kit/"
+      },
+      {
+        "id": 233,
+        "name": "detail.jpg",
+        "alt": "Volt 128GB DDR5 ECC RDIMM Kit — close-up detail",
+        "product_id": 46,
+        "path": "/data/output-img/product-images/ram/volt-128gb-ddr5-ecc-rdimm-kit/"
+      },
+      {
+        "id": 234,
+        "name": "context.jpg",
+        "alt": "Volt 128GB DDR5 ECC RDIMM Kit — in-use context",
+        "product_id": 46,
+        "path": "/data/output-img/product-images/ram/volt-128gb-ddr5-ecc-rdimm-kit/"
+      },
+      {
+        "id": 235,
+        "name": "with-packaging.jpg",
+        "alt": "Volt 128GB DDR5 ECC RDIMM Kit — with retail packaging",
+        "product_id": 46,
+        "path": "/data/output-img/product-images/ram/volt-128gb-ddr5-ecc-rdimm-kit/"
+      }
+    ]
+  },
+  {
+    "product_id": 47,
+    "path": "/data/output-img/product-images/motherboards/apex-x670e-extreme-motherboard/",
+    "images": [
+      {
+        "id": 236,
+        "name": "main.jpg",
+        "alt": "Apex X670E Extreme Motherboard — front view",
+        "product_id": 47,
+        "path": "/data/output-img/product-images/motherboards/apex-x670e-extreme-motherboard/"
+      },
+      {
+        "id": 237,
+        "name": "angle.jpg",
+        "alt": "Apex X670E Extreme Motherboard — alternate angle",
+        "product_id": 47,
+        "path": "/data/output-img/product-images/motherboards/apex-x670e-extreme-motherboard/"
+      },
+      {
+        "id": 238,
+        "name": "detail.jpg",
+        "alt": "Apex X670E Extreme Motherboard — close-up detail",
+        "product_id": 47,
+        "path": "/data/output-img/product-images/motherboards/apex-x670e-extreme-motherboard/"
+      },
+      {
+        "id": 239,
+        "name": "context.jpg",
+        "alt": "Apex X670E Extreme Motherboard — in-use context",
+        "product_id": 47,
+        "path": "/data/output-img/product-images/motherboards/apex-x670e-extreme-motherboard/"
+      },
+      {
+        "id": 240,
+        "name": "with-packaging.jpg",
+        "alt": "Apex X670E Extreme Motherboard — with retail packaging",
+        "product_id": 47,
+        "path": "/data/output-img/product-images/motherboards/apex-x670e-extreme-motherboard/"
+      }
+    ]
+  },
+  {
+    "product_id": 48,
+    "path": "/data/output-img/product-images/cases/titan-stealth-atx-case-dual-chamber/",
+    "images": [
+      {
+        "id": 241,
+        "name": "main.jpg",
+        "alt": "Titan Stealth ATX Case — Dual Chamber — front view",
+        "product_id": 48,
+        "path": "/data/output-img/product-images/cases/titan-stealth-atx-case-dual-chamber/"
+      },
+      {
+        "id": 242,
+        "name": "angle.jpg",
+        "alt": "Titan Stealth ATX Case — Dual Chamber — alternate angle",
+        "product_id": 48,
+        "path": "/data/output-img/product-images/cases/titan-stealth-atx-case-dual-chamber/"
+      },
+      {
+        "id": 243,
+        "name": "detail.jpg",
+        "alt": "Titan Stealth ATX Case — Dual Chamber — close-up detail",
+        "product_id": 48,
+        "path": "/data/output-img/product-images/cases/titan-stealth-atx-case-dual-chamber/"
+      },
+      {
+        "id": 244,
+        "name": "context.jpg",
+        "alt": "Titan Stealth ATX Case — Dual Chamber — in-use context",
+        "product_id": 48,
+        "path": "/data/output-img/product-images/cases/titan-stealth-atx-case-dual-chamber/"
+      },
+      {
+        "id": 245,
+        "name": "with-packaging.jpg",
+        "alt": "Titan Stealth ATX Case — Dual Chamber — with retail packaging",
+        "product_id": 48,
+        "path": "/data/output-img/product-images/cases/titan-stealth-atx-case-dual-chamber/"
+      }
+    ]
+  },
+  {
+    "product_id": 49,
+    "path": "/data/output-img/product-images/cooling/frost-420-aio-liquid-cooler-argb/",
+    "images": [
+      {
+        "id": 246,
+        "name": "main.jpg",
+        "alt": "Frost 420 AIO Liquid Cooler ARGB — front view",
+        "product_id": 49,
+        "path": "/data/output-img/product-images/cooling/frost-420-aio-liquid-cooler-argb/"
+      },
+      {
+        "id": 247,
+        "name": "angle.jpg",
+        "alt": "Frost 420 AIO Liquid Cooler ARGB — alternate angle",
+        "product_id": 49,
+        "path": "/data/output-img/product-images/cooling/frost-420-aio-liquid-cooler-argb/"
+      },
+      {
+        "id": 248,
+        "name": "detail.jpg",
+        "alt": "Frost 420 AIO Liquid Cooler ARGB — close-up detail",
+        "product_id": 49,
+        "path": "/data/output-img/product-images/cooling/frost-420-aio-liquid-cooler-argb/"
+      },
+      {
+        "id": 249,
+        "name": "context.jpg",
+        "alt": "Frost 420 AIO Liquid Cooler ARGB — in-use context",
+        "product_id": 49,
+        "path": "/data/output-img/product-images/cooling/frost-420-aio-liquid-cooler-argb/"
+      },
+      {
+        "id": 250,
+        "name": "with-packaging.jpg",
+        "alt": "Frost 420 AIO Liquid Cooler ARGB — with retail packaging",
+        "product_id": 49,
+        "path": "/data/output-img/product-images/cooling/frost-420-aio-liquid-cooler-argb/"
+      }
+    ]
+  },
+  {
+    "product_id": 50,
+    "path": "/data/output-img/product-images/storage/bolt-4tb-2-5in-sata-ssd/",
+    "images": [
+      {
+        "id": 251,
+        "name": "main.jpg",
+        "alt": "Bolt 4TB 2.5\" SATA SSD — front view",
+        "product_id": 50,
+        "path": "/data/output-img/product-images/storage/bolt-4tb-2-5in-sata-ssd/"
+      },
+      {
+        "id": 252,
+        "name": "angle.jpg",
+        "alt": "Bolt 4TB 2.5\" SATA SSD — alternate angle",
+        "product_id": 50,
+        "path": "/data/output-img/product-images/storage/bolt-4tb-2-5in-sata-ssd/"
+      },
+      {
+        "id": 253,
+        "name": "detail.jpg",
+        "alt": "Bolt 4TB 2.5\" SATA SSD — close-up detail",
+        "product_id": 50,
+        "path": "/data/output-img/product-images/storage/bolt-4tb-2-5in-sata-ssd/"
+      },
+      {
+        "id": 254,
+        "name": "context.jpg",
+        "alt": "Bolt 4TB 2.5\" SATA SSD — in-use context",
+        "product_id": 50,
+        "path": "/data/output-img/product-images/storage/bolt-4tb-2-5in-sata-ssd/"
+      },
+      {
+        "id": 255,
+        "name": "with-packaging.jpg",
+        "alt": "Bolt 4TB 2.5\" SATA SSD — with retail packaging",
+        "product_id": 50,
+        "path": "/data/output-img/product-images/storage/bolt-4tb-2-5in-sata-ssd/"
+      }
+    ]
+  },
+  {
+    "product_id": 51,
+    "path": "/data/output-img/product-images/peripherals/storm-60-compact-keyboard-hot-swap/",
+    "images": [
+      {
+        "id": 256,
+        "name": "main.jpg",
+        "alt": "Storm 60% Compact Keyboard Hot-Swap — front view",
+        "product_id": 51,
+        "path": "/data/output-img/product-images/peripherals/storm-60-compact-keyboard-hot-swap/"
+      },
+      {
+        "id": 257,
+        "name": "angle.jpg",
+        "alt": "Storm 60% Compact Keyboard Hot-Swap — alternate angle",
+        "product_id": 51,
+        "path": "/data/output-img/product-images/peripherals/storm-60-compact-keyboard-hot-swap/"
+      },
+      {
+        "id": 258,
+        "name": "detail.jpg",
+        "alt": "Storm 60% Compact Keyboard Hot-Swap — close-up detail",
+        "product_id": 51,
+        "path": "/data/output-img/product-images/peripherals/storm-60-compact-keyboard-hot-swap/"
+      },
+      {
+        "id": 259,
+        "name": "context.jpg",
+        "alt": "Storm 60% Compact Keyboard Hot-Swap — in-use context",
+        "product_id": 51,
+        "path": "/data/output-img/product-images/peripherals/storm-60-compact-keyboard-hot-swap/"
+      },
+      {
+        "id": 260,
+        "name": "with-packaging.jpg",
+        "alt": "Storm 60% Compact Keyboard Hot-Swap — with retail packaging",
+        "product_id": 51,
+        "path": "/data/output-img/product-images/peripherals/storm-60-compact-keyboard-hot-swap/"
+      }
+    ]
+  },
+  {
+    "product_id": 52,
+    "path": "/data/output-img/product-images/peripherals/storm-vertical-ergonomic-mouse/",
+    "images": [
+      {
+        "id": 261,
+        "name": "main.jpg",
+        "alt": "Storm Vertical Ergonomic Mouse — front view",
+        "product_id": 52,
+        "path": "/data/output-img/product-images/peripherals/storm-vertical-ergonomic-mouse/"
+      },
+      {
+        "id": 262,
+        "name": "angle.jpg",
+        "alt": "Storm Vertical Ergonomic Mouse — alternate angle",
+        "product_id": 52,
+        "path": "/data/output-img/product-images/peripherals/storm-vertical-ergonomic-mouse/"
+      },
+      {
+        "id": 263,
+        "name": "detail.jpg",
+        "alt": "Storm Vertical Ergonomic Mouse — close-up detail",
+        "product_id": 52,
+        "path": "/data/output-img/product-images/peripherals/storm-vertical-ergonomic-mouse/"
+      },
+      {
+        "id": 264,
+        "name": "context.jpg",
+        "alt": "Storm Vertical Ergonomic Mouse — in-use context",
+        "product_id": 52,
+        "path": "/data/output-img/product-images/peripherals/storm-vertical-ergonomic-mouse/"
+      },
+      {
+        "id": 265,
+        "name": "with-packaging.jpg",
+        "alt": "Storm Vertical Ergonomic Mouse — with retail packaging",
+        "product_id": 52,
+        "path": "/data/output-img/product-images/peripherals/storm-vertical-ergonomic-mouse/"
+      }
+    ]
+  },
+  {
+    "product_id": 53,
+    "path": "/data/output-img/product-images/peripherals/pulse-24in-240hz-fhd-gaming-monitor/",
+    "images": [
+      {
+        "id": 266,
+        "name": "main.jpg",
+        "alt": "Pulse 24\" 240Hz FHD Gaming Monitor — front view",
+        "product_id": 53,
+        "path": "/data/output-img/product-images/peripherals/pulse-24in-240hz-fhd-gaming-monitor/"
+      },
+      {
+        "id": 267,
+        "name": "angle.jpg",
+        "alt": "Pulse 24\" 240Hz FHD Gaming Monitor — alternate angle",
+        "product_id": 53,
+        "path": "/data/output-img/product-images/peripherals/pulse-24in-240hz-fhd-gaming-monitor/"
+      },
+      {
+        "id": 268,
+        "name": "detail.jpg",
+        "alt": "Pulse 24\" 240Hz FHD Gaming Monitor — close-up detail",
+        "product_id": 53,
+        "path": "/data/output-img/product-images/peripherals/pulse-24in-240hz-fhd-gaming-monitor/"
+      },
+      {
+        "id": 269,
+        "name": "context.jpg",
+        "alt": "Pulse 24\" 240Hz FHD Gaming Monitor — in-use context",
+        "product_id": 53,
+        "path": "/data/output-img/product-images/peripherals/pulse-24in-240hz-fhd-gaming-monitor/"
+      },
+      {
+        "id": 270,
+        "name": "with-packaging.jpg",
+        "alt": "Pulse 24\" 240Hz FHD Gaming Monitor — with retail packaging",
+        "product_id": 53,
+        "path": "/data/output-img/product-images/peripherals/pulse-24in-240hz-fhd-gaming-monitor/"
+      }
+    ]
+  },
+  {
+    "product_id": 54,
+    "path": "/data/output-img/product-images/peripherals/pulse-49in-super-ultrawide-curved/",
+    "images": [
+      {
+        "id": 271,
+        "name": "main.jpg",
+        "alt": "Pulse 49\" Super Ultrawide Curved — front view",
+        "product_id": 54,
+        "path": "/data/output-img/product-images/peripherals/pulse-49in-super-ultrawide-curved/"
+      },
+      {
+        "id": 272,
+        "name": "angle.jpg",
+        "alt": "Pulse 49\" Super Ultrawide Curved — alternate angle",
+        "product_id": 54,
+        "path": "/data/output-img/product-images/peripherals/pulse-49in-super-ultrawide-curved/"
+      },
+      {
+        "id": 273,
+        "name": "detail.jpg",
+        "alt": "Pulse 49\" Super Ultrawide Curved — close-up detail",
+        "product_id": 54,
+        "path": "/data/output-img/product-images/peripherals/pulse-49in-super-ultrawide-curved/"
+      },
+      {
+        "id": 274,
+        "name": "context.jpg",
+        "alt": "Pulse 49\" Super Ultrawide Curved — in-use context",
+        "product_id": 54,
+        "path": "/data/output-img/product-images/peripherals/pulse-49in-super-ultrawide-curved/"
+      },
+      {
+        "id": 275,
+        "name": "with-packaging.jpg",
+        "alt": "Pulse 49\" Super Ultrawide Curved — with retail packaging",
+        "product_id": 54,
+        "path": "/data/output-img/product-images/peripherals/pulse-49in-super-ultrawide-curved/"
+      }
+    ]
+  },
+  {
+    "product_id": 55,
+    "path": "/data/output-img/product-images/peripherals/wave-wireless-desk-microphone/",
+    "images": [
+      {
+        "id": 276,
+        "name": "main.jpg",
+        "alt": "Wave Wireless Desk Microphone — front view",
+        "product_id": 55,
+        "path": "/data/output-img/product-images/peripherals/wave-wireless-desk-microphone/"
+      },
+      {
+        "id": 277,
+        "name": "angle.jpg",
+        "alt": "Wave Wireless Desk Microphone — alternate angle",
+        "product_id": 55,
+        "path": "/data/output-img/product-images/peripherals/wave-wireless-desk-microphone/"
+      },
+      {
+        "id": 278,
+        "name": "detail.jpg",
+        "alt": "Wave Wireless Desk Microphone — close-up detail",
+        "product_id": 55,
+        "path": "/data/output-img/product-images/peripherals/wave-wireless-desk-microphone/"
+      },
+      {
+        "id": 279,
+        "name": "context.jpg",
+        "alt": "Wave Wireless Desk Microphone — in-use context",
+        "product_id": 55,
+        "path": "/data/output-img/product-images/peripherals/wave-wireless-desk-microphone/"
+      },
+      {
+        "id": 280,
+        "name": "with-packaging.jpg",
+        "alt": "Wave Wireless Desk Microphone — with retail packaging",
+        "product_id": 55,
+        "path": "/data/output-img/product-images/peripherals/wave-wireless-desk-microphone/"
+      }
+    ]
+  },
+  {
+    "product_id": 56,
+    "path": "/data/output-img/product-images/peripherals/soundx-wireless-gaming-headset-2-4g/",
+    "images": [
+      {
+        "id": 281,
+        "name": "main.jpg",
+        "alt": "SoundX Wireless Gaming Headset 2.4G — front view",
+        "product_id": 56,
+        "path": "/data/output-img/product-images/peripherals/soundx-wireless-gaming-headset-2-4g/"
+      },
+      {
+        "id": 282,
+        "name": "angle.jpg",
+        "alt": "SoundX Wireless Gaming Headset 2.4G — alternate angle",
+        "product_id": 56,
+        "path": "/data/output-img/product-images/peripherals/soundx-wireless-gaming-headset-2-4g/"
+      },
+      {
+        "id": 283,
+        "name": "detail.jpg",
+        "alt": "SoundX Wireless Gaming Headset 2.4G — close-up detail",
+        "product_id": 56,
+        "path": "/data/output-img/product-images/peripherals/soundx-wireless-gaming-headset-2-4g/"
+      },
+      {
+        "id": 284,
+        "name": "context.jpg",
+        "alt": "SoundX Wireless Gaming Headset 2.4G — in-use context",
+        "product_id": 56,
+        "path": "/data/output-img/product-images/peripherals/soundx-wireless-gaming-headset-2-4g/"
+      },
+      {
+        "id": 285,
+        "name": "with-packaging.jpg",
+        "alt": "SoundX Wireless Gaming Headset 2.4G — with retail packaging",
+        "product_id": 56,
+        "path": "/data/output-img/product-images/peripherals/soundx-wireless-gaming-headset-2-4g/"
+      }
+    ]
+  },
+  {
+    "product_id": 57,
+    "path": "/data/output-img/product-images/gpus/nova-rx-8800-xt-12gb-graphics-card/",
+    "images": [
+      {
+        "id": 286,
+        "name": "main.jpg",
+        "alt": "Nova RX 8800 XT 12GB Graphics Card — front view",
+        "product_id": 57,
+        "path": "/data/output-img/product-images/gpus/nova-rx-8800-xt-12gb-graphics-card/"
+      },
+      {
+        "id": 287,
+        "name": "angle.jpg",
+        "alt": "Nova RX 8800 XT 12GB Graphics Card — alternate angle",
+        "product_id": 57,
+        "path": "/data/output-img/product-images/gpus/nova-rx-8800-xt-12gb-graphics-card/"
+      },
+      {
+        "id": 288,
+        "name": "detail.jpg",
+        "alt": "Nova RX 8800 XT 12GB Graphics Card — close-up detail",
+        "product_id": 57,
+        "path": "/data/output-img/product-images/gpus/nova-rx-8800-xt-12gb-graphics-card/"
+      },
+      {
+        "id": 289,
+        "name": "context.jpg",
+        "alt": "Nova RX 8800 XT 12GB Graphics Card — in-use context",
+        "product_id": 57,
+        "path": "/data/output-img/product-images/gpus/nova-rx-8800-xt-12gb-graphics-card/"
+      },
+      {
+        "id": 290,
+        "name": "with-packaging.jpg",
+        "alt": "Nova RX 8800 XT 12GB Graphics Card — with retail packaging",
+        "product_id": 57,
+        "path": "/data/output-img/product-images/gpus/nova-rx-8800-xt-12gb-graphics-card/"
+      }
+    ]
+  },
+  {
+    "product_id": 58,
+    "path": "/data/output-img/product-images/cpus/apex-r9-9900x-16-core-processor/",
+    "images": [
+      {
+        "id": 291,
+        "name": "main.jpg",
+        "alt": "Apex R9 9900X 16-Core Processor — front view",
+        "product_id": 58,
+        "path": "/data/output-img/product-images/cpus/apex-r9-9900x-16-core-processor/"
+      },
+      {
+        "id": 292,
+        "name": "angle.jpg",
+        "alt": "Apex R9 9900X 16-Core Processor — alternate angle",
+        "product_id": 58,
+        "path": "/data/output-img/product-images/cpus/apex-r9-9900x-16-core-processor/"
+      },
+      {
+        "id": 293,
+        "name": "detail.jpg",
+        "alt": "Apex R9 9900X 16-Core Processor — close-up detail",
+        "product_id": 58,
+        "path": "/data/output-img/product-images/cpus/apex-r9-9900x-16-core-processor/"
+      },
+      {
+        "id": 294,
+        "name": "context.jpg",
+        "alt": "Apex R9 9900X 16-Core Processor — in-use context",
+        "product_id": 58,
+        "path": "/data/output-img/product-images/cpus/apex-r9-9900x-16-core-processor/"
+      },
+      {
+        "id": 295,
+        "name": "with-packaging.jpg",
+        "alt": "Apex R9 9900X 16-Core Processor — with retail packaging",
+        "product_id": 58,
+        "path": "/data/output-img/product-images/cpus/apex-r9-9900x-16-core-processor/"
+      }
+    ]
+  },
+  {
+    "product_id": 59,
+    "path": "/data/output-img/product-images/psus/surge-650w-bronze-non-modular-psu/",
+    "images": [
+      {
+        "id": 296,
+        "name": "main.jpg",
+        "alt": "Surge 650W Bronze Non-Modular PSU — front view",
+        "product_id": 59,
+        "path": "/data/output-img/product-images/psus/surge-650w-bronze-non-modular-psu/"
+      },
+      {
+        "id": 297,
+        "name": "angle.jpg",
+        "alt": "Surge 650W Bronze Non-Modular PSU — alternate angle",
+        "product_id": 59,
+        "path": "/data/output-img/product-images/psus/surge-650w-bronze-non-modular-psu/"
+      },
+      {
+        "id": 298,
+        "name": "detail.jpg",
+        "alt": "Surge 650W Bronze Non-Modular PSU — close-up detail",
+        "product_id": 59,
+        "path": "/data/output-img/product-images/psus/surge-650w-bronze-non-modular-psu/"
+      },
+      {
+        "id": 299,
+        "name": "context.jpg",
+        "alt": "Surge 650W Bronze Non-Modular PSU — in-use context",
+        "product_id": 59,
+        "path": "/data/output-img/product-images/psus/surge-650w-bronze-non-modular-psu/"
+      },
+      {
+        "id": 300,
+        "name": "with-packaging.jpg",
+        "alt": "Surge 650W Bronze Non-Modular PSU — with retail packaging",
+        "product_id": 59,
+        "path": "/data/output-img/product-images/psus/surge-650w-bronze-non-modular-psu/"
+      }
+    ]
+  },
+  {
+    "product_id": 60,
+    "path": "/data/output-img/product-images/ram/volt-32gb-ddr4-3600mhz-kit-2x16/",
+    "images": [
+      {
+        "id": 301,
+        "name": "main.jpg",
+        "alt": "Volt 32GB DDR4 3600MHz Kit (2×16) — front view",
+        "product_id": 60,
+        "path": "/data/output-img/product-images/ram/volt-32gb-ddr4-3600mhz-kit-2x16/"
+      },
+      {
+        "id": 302,
+        "name": "angle.jpg",
+        "alt": "Volt 32GB DDR4 3600MHz Kit (2×16) — alternate angle",
+        "product_id": 60,
+        "path": "/data/output-img/product-images/ram/volt-32gb-ddr4-3600mhz-kit-2x16/"
+      },
+      {
+        "id": 303,
+        "name": "detail.jpg",
+        "alt": "Volt 32GB DDR4 3600MHz Kit (2×16) — close-up detail",
+        "product_id": 60,
+        "path": "/data/output-img/product-images/ram/volt-32gb-ddr4-3600mhz-kit-2x16/"
+      },
+      {
+        "id": 304,
+        "name": "context.jpg",
+        "alt": "Volt 32GB DDR4 3600MHz Kit (2×16) — in-use context",
+        "product_id": 60,
+        "path": "/data/output-img/product-images/ram/volt-32gb-ddr4-3600mhz-kit-2x16/"
+      },
+      {
+        "id": 305,
+        "name": "with-packaging.jpg",
+        "alt": "Volt 32GB DDR4 3600MHz Kit (2×16) — with retail packaging",
+        "product_id": 60,
+        "path": "/data/output-img/product-images/ram/volt-32gb-ddr4-3600mhz-kit-2x16/"
+      }
+    ]
+  },
+  {
+    "product_id": 61,
+    "path": "/data/output-img/product-images/motherboards/apex-h610m-matx-motherboard/",
+    "images": [
+      {
+        "id": 306,
+        "name": "main.jpg",
+        "alt": "Apex H610M mATX Motherboard — front view",
+        "product_id": 61,
+        "path": "/data/output-img/product-images/motherboards/apex-h610m-matx-motherboard/"
+      },
+      {
+        "id": 307,
+        "name": "angle.jpg",
+        "alt": "Apex H610M mATX Motherboard — alternate angle",
+        "product_id": 61,
+        "path": "/data/output-img/product-images/motherboards/apex-h610m-matx-motherboard/"
+      },
+      {
+        "id": 308,
+        "name": "detail.jpg",
+        "alt": "Apex H610M mATX Motherboard — close-up detail",
+        "product_id": 61,
+        "path": "/data/output-img/product-images/motherboards/apex-h610m-matx-motherboard/"
+      },
+      {
+        "id": 309,
+        "name": "context.jpg",
+        "alt": "Apex H610M mATX Motherboard — in-use context",
+        "product_id": 61,
+        "path": "/data/output-img/product-images/motherboards/apex-h610m-matx-motherboard/"
+      },
+      {
+        "id": 310,
+        "name": "with-packaging.jpg",
+        "alt": "Apex H610M mATX Motherboard — with retail packaging",
+        "product_id": 61,
+        "path": "/data/output-img/product-images/motherboards/apex-h610m-matx-motherboard/"
+      }
+    ]
+  },
+  {
+    "product_id": 62,
+    "path": "/data/output-img/product-images/cases/titan-shadow-matx-case-mesh/",
+    "images": [
+      {
+        "id": 311,
+        "name": "main.jpg",
+        "alt": "Titan Shadow mATX Case — Mesh — front view",
+        "product_id": 62,
+        "path": "/data/output-img/product-images/cases/titan-shadow-matx-case-mesh/"
+      },
+      {
+        "id": 312,
+        "name": "angle.jpg",
+        "alt": "Titan Shadow mATX Case — Mesh — alternate angle",
+        "product_id": 62,
+        "path": "/data/output-img/product-images/cases/titan-shadow-matx-case-mesh/"
+      },
+      {
+        "id": 313,
+        "name": "detail.jpg",
+        "alt": "Titan Shadow mATX Case — Mesh — close-up detail",
+        "product_id": 62,
+        "path": "/data/output-img/product-images/cases/titan-shadow-matx-case-mesh/"
+      },
+      {
+        "id": 314,
+        "name": "context.jpg",
+        "alt": "Titan Shadow mATX Case — Mesh — in-use context",
+        "product_id": 62,
+        "path": "/data/output-img/product-images/cases/titan-shadow-matx-case-mesh/"
+      },
+      {
+        "id": 315,
+        "name": "with-packaging.jpg",
+        "alt": "Titan Shadow mATX Case — Mesh — with retail packaging",
+        "product_id": 62,
+        "path": "/data/output-img/product-images/cases/titan-shadow-matx-case-mesh/"
+      }
+    ]
+  },
+  {
+    "product_id": 63,
+    "path": "/data/output-img/product-images/cooling/frost-arctic-140mm-pwm-fan/",
+    "images": [
+      {
+        "id": 316,
+        "name": "main.jpg",
+        "alt": "Frost Arctic 140mm PWM Fan — front view",
+        "product_id": 63,
+        "path": "/data/output-img/product-images/cooling/frost-arctic-140mm-pwm-fan/"
+      },
+      {
+        "id": 317,
+        "name": "angle.jpg",
+        "alt": "Frost Arctic 140mm PWM Fan — alternate angle",
+        "product_id": 63,
+        "path": "/data/output-img/product-images/cooling/frost-arctic-140mm-pwm-fan/"
+      },
+      {
+        "id": 318,
+        "name": "detail.jpg",
+        "alt": "Frost Arctic 140mm PWM Fan — close-up detail",
+        "product_id": 63,
+        "path": "/data/output-img/product-images/cooling/frost-arctic-140mm-pwm-fan/"
+      },
+      {
+        "id": 319,
+        "name": "context.jpg",
+        "alt": "Frost Arctic 140mm PWM Fan — in-use context",
+        "product_id": 63,
+        "path": "/data/output-img/product-images/cooling/frost-arctic-140mm-pwm-fan/"
+      },
+      {
+        "id": 320,
+        "name": "with-packaging.jpg",
+        "alt": "Frost Arctic 140mm PWM Fan — with retail packaging",
+        "product_id": 63,
+        "path": "/data/output-img/product-images/cooling/frost-arctic-140mm-pwm-fan/"
+      }
+    ]
+  },
+  {
+    "product_id": 64,
+    "path": "/data/output-img/product-images/storage/bolt-2tb-sata-ssd-2-5in/",
+    "images": [
+      {
+        "id": 321,
+        "name": "main.jpg",
+        "alt": "Bolt 2TB SATA SSD 2.5\" — front view",
+        "product_id": 64,
+        "path": "/data/output-img/product-images/storage/bolt-2tb-sata-ssd-2-5in/"
+      },
+      {
+        "id": 322,
+        "name": "angle.jpg",
+        "alt": "Bolt 2TB SATA SSD 2.5\" — alternate angle",
+        "product_id": 64,
+        "path": "/data/output-img/product-images/storage/bolt-2tb-sata-ssd-2-5in/"
+      },
+      {
+        "id": 323,
+        "name": "detail.jpg",
+        "alt": "Bolt 2TB SATA SSD 2.5\" — close-up detail",
+        "product_id": 64,
+        "path": "/data/output-img/product-images/storage/bolt-2tb-sata-ssd-2-5in/"
+      },
+      {
+        "id": 324,
+        "name": "context.jpg",
+        "alt": "Bolt 2TB SATA SSD 2.5\" — in-use context",
+        "product_id": 64,
+        "path": "/data/output-img/product-images/storage/bolt-2tb-sata-ssd-2-5in/"
+      },
+      {
+        "id": 325,
+        "name": "with-packaging.jpg",
+        "alt": "Bolt 2TB SATA SSD 2.5\" — with retail packaging",
+        "product_id": 64,
+        "path": "/data/output-img/product-images/storage/bolt-2tb-sata-ssd-2-5in/"
+      }
+    ]
+  },
+  {
+    "product_id": 65,
+    "path": "/data/output-img/product-images/peripherals/boombox-5-1-surround-sound-system/",
+    "images": [
+      {
+        "id": 326,
+        "name": "main.jpg",
+        "alt": "BoomBox 5.1 Surround Sound System — front view",
+        "product_id": 65,
+        "path": "/data/output-img/product-images/peripherals/boombox-5-1-surround-sound-system/"
+      },
+      {
+        "id": 327,
+        "name": "angle.jpg",
+        "alt": "BoomBox 5.1 Surround Sound System — alternate angle",
+        "product_id": 65,
+        "path": "/data/output-img/product-images/peripherals/boombox-5-1-surround-sound-system/"
+      },
+      {
+        "id": 328,
+        "name": "detail.jpg",
+        "alt": "BoomBox 5.1 Surround Sound System — close-up detail",
+        "product_id": 65,
+        "path": "/data/output-img/product-images/peripherals/boombox-5-1-surround-sound-system/"
+      },
+      {
+        "id": 329,
+        "name": "context.jpg",
+        "alt": "BoomBox 5.1 Surround Sound System — in-use context",
+        "product_id": 65,
+        "path": "/data/output-img/product-images/peripherals/boombox-5-1-surround-sound-system/"
+      },
+      {
+        "id": 330,
+        "name": "with-packaging.jpg",
+        "alt": "BoomBox 5.1 Surround Sound System — with retail packaging",
+        "product_id": 65,
+        "path": "/data/output-img/product-images/peripherals/boombox-5-1-surround-sound-system/"
+      }
+    ]
+  },
+  {
+    "product_id": 66,
+    "path": "/data/output-img/product-images/peripherals/lens-4k-ptz-conference-camera/",
+    "images": [
+      {
+        "id": 331,
+        "name": "main.jpg",
+        "alt": "Lens 4K PTZ Conference Camera — front view",
+        "product_id": 66,
+        "path": "/data/output-img/product-images/peripherals/lens-4k-ptz-conference-camera/"
+      },
+      {
+        "id": 332,
+        "name": "angle.jpg",
+        "alt": "Lens 4K PTZ Conference Camera — alternate angle",
+        "product_id": 66,
+        "path": "/data/output-img/product-images/peripherals/lens-4k-ptz-conference-camera/"
+      },
+      {
+        "id": 333,
+        "name": "detail.jpg",
+        "alt": "Lens 4K PTZ Conference Camera — close-up detail",
+        "product_id": 66,
+        "path": "/data/output-img/product-images/peripherals/lens-4k-ptz-conference-camera/"
+      },
+      {
+        "id": 334,
+        "name": "context.jpg",
+        "alt": "Lens 4K PTZ Conference Camera — in-use context",
+        "product_id": 66,
+        "path": "/data/output-img/product-images/peripherals/lens-4k-ptz-conference-camera/"
+      },
+      {
+        "id": 335,
+        "name": "with-packaging.jpg",
+        "alt": "Lens 4K PTZ Conference Camera — with retail packaging",
+        "product_id": 66,
+        "path": "/data/output-img/product-images/peripherals/lens-4k-ptz-conference-camera/"
+      }
+    ]
+  },
+  {
+    "product_id": 67,
+    "path": "/data/output-img/product-images/peripherals/storm-numpad-with-macro-keys/",
+    "images": [
+      {
+        "id": 336,
+        "name": "main.jpg",
+        "alt": "Storm Numpad with Macro Keys — front view",
+        "product_id": 67,
+        "path": "/data/output-img/product-images/peripherals/storm-numpad-with-macro-keys/"
+      },
+      {
+        "id": 337,
+        "name": "angle.jpg",
+        "alt": "Storm Numpad with Macro Keys — alternate angle",
+        "product_id": 67,
+        "path": "/data/output-img/product-images/peripherals/storm-numpad-with-macro-keys/"
+      },
+      {
+        "id": 338,
+        "name": "detail.jpg",
+        "alt": "Storm Numpad with Macro Keys — close-up detail",
+        "product_id": 67,
+        "path": "/data/output-img/product-images/peripherals/storm-numpad-with-macro-keys/"
+      },
+      {
+        "id": 339,
+        "name": "context.jpg",
+        "alt": "Storm Numpad with Macro Keys — in-use context",
+        "product_id": 67,
+        "path": "/data/output-img/product-images/peripherals/storm-numpad-with-macro-keys/"
+      },
+      {
+        "id": 340,
+        "name": "with-packaging.jpg",
+        "alt": "Storm Numpad with Macro Keys — with retail packaging",
+        "product_id": 67,
+        "path": "/data/output-img/product-images/peripherals/storm-numpad-with-macro-keys/"
+      }
+    ]
+  },
+  {
+    "product_id": 68,
+    "path": "/data/output-img/product-images/peripherals/storm-mousepad-xxl-desk-mat/",
+    "images": [
+      {
+        "id": 341,
+        "name": "main.jpg",
+        "alt": "Storm Mousepad XXL Desk Mat — front view",
+        "product_id": 68,
+        "path": "/data/output-img/product-images/peripherals/storm-mousepad-xxl-desk-mat/"
+      },
+      {
+        "id": 342,
+        "name": "angle.jpg",
+        "alt": "Storm Mousepad XXL Desk Mat — alternate angle",
+        "product_id": 68,
+        "path": "/data/output-img/product-images/peripherals/storm-mousepad-xxl-desk-mat/"
+      },
+      {
+        "id": 343,
+        "name": "detail.jpg",
+        "alt": "Storm Mousepad XXL Desk Mat — close-up detail",
+        "product_id": 68,
+        "path": "/data/output-img/product-images/peripherals/storm-mousepad-xxl-desk-mat/"
+      },
+      {
+        "id": 344,
+        "name": "context.jpg",
+        "alt": "Storm Mousepad XXL Desk Mat — in-use context",
+        "product_id": 68,
+        "path": "/data/output-img/product-images/peripherals/storm-mousepad-xxl-desk-mat/"
+      },
+      {
+        "id": 345,
+        "name": "with-packaging.jpg",
+        "alt": "Storm Mousepad XXL Desk Mat — with retail packaging",
+        "product_id": 68,
+        "path": "/data/output-img/product-images/peripherals/storm-mousepad-xxl-desk-mat/"
+      }
+    ]
+  },
+  {
+    "product_id": 69,
+    "path": "/data/output-img/product-images/gpus/nova-rtx-9090-ti-24gb-founders-edition/",
+    "images": [
+      {
+        "id": 346,
+        "name": "main.jpg",
+        "alt": "Nova RTX 9090 Ti 24GB Founders Edition — front view",
+        "product_id": 69,
+        "path": "/data/output-img/product-images/gpus/nova-rtx-9090-ti-24gb-founders-edition/"
+      },
+      {
+        "id": 347,
+        "name": "angle.jpg",
+        "alt": "Nova RTX 9090 Ti 24GB Founders Edition — alternate angle",
+        "product_id": 69,
+        "path": "/data/output-img/product-images/gpus/nova-rtx-9090-ti-24gb-founders-edition/"
+      },
+      {
+        "id": 348,
+        "name": "detail.jpg",
+        "alt": "Nova RTX 9090 Ti 24GB Founders Edition — close-up detail",
+        "product_id": 69,
+        "path": "/data/output-img/product-images/gpus/nova-rtx-9090-ti-24gb-founders-edition/"
+      },
+      {
+        "id": 349,
+        "name": "context.jpg",
+        "alt": "Nova RTX 9090 Ti 24GB Founders Edition — in-use context",
+        "product_id": 69,
+        "path": "/data/output-img/product-images/gpus/nova-rtx-9090-ti-24gb-founders-edition/"
+      },
+      {
+        "id": 350,
+        "name": "with-packaging.jpg",
+        "alt": "Nova RTX 9090 Ti 24GB Founders Edition — with retail packaging",
+        "product_id": 69,
+        "path": "/data/output-img/product-images/gpus/nova-rtx-9090-ti-24gb-founders-edition/"
+      }
+    ]
+  },
+  {
+    "product_id": 70,
+    "path": "/data/output-img/product-images/cpus/apex-r5-9500-6-core-budget-cpu/",
+    "images": [
+      {
+        "id": 351,
+        "name": "main.jpg",
+        "alt": "Apex R5 9500 6-Core Budget CPU — front view",
+        "product_id": 70,
+        "path": "/data/output-img/product-images/cpus/apex-r5-9500-6-core-budget-cpu/"
+      },
+      {
+        "id": 352,
+        "name": "angle.jpg",
+        "alt": "Apex R5 9500 6-Core Budget CPU — alternate angle",
+        "product_id": 70,
+        "path": "/data/output-img/product-images/cpus/apex-r5-9500-6-core-budget-cpu/"
+      },
+      {
+        "id": 353,
+        "name": "detail.jpg",
+        "alt": "Apex R5 9500 6-Core Budget CPU — close-up detail",
+        "product_id": 70,
+        "path": "/data/output-img/product-images/cpus/apex-r5-9500-6-core-budget-cpu/"
+      },
+      {
+        "id": 354,
+        "name": "context.jpg",
+        "alt": "Apex R5 9500 6-Core Budget CPU — in-use context",
+        "product_id": 70,
+        "path": "/data/output-img/product-images/cpus/apex-r5-9500-6-core-budget-cpu/"
+      },
+      {
+        "id": 355,
+        "name": "with-packaging.jpg",
+        "alt": "Apex R5 9500 6-Core Budget CPU — with retail packaging",
+        "product_id": 70,
+        "path": "/data/output-img/product-images/cpus/apex-r5-9500-6-core-budget-cpu/"
+      }
+    ]
+  },
+  {
+    "product_id": 71,
+    "path": "/data/output-img/product-images/psus/surge-550w-white-modular-psu/",
+    "images": [
+      {
+        "id": 356,
+        "name": "main.jpg",
+        "alt": "Surge 550W White Modular PSU — front view",
+        "product_id": 71,
+        "path": "/data/output-img/product-images/psus/surge-550w-white-modular-psu/"
+      },
+      {
+        "id": 357,
+        "name": "angle.jpg",
+        "alt": "Surge 550W White Modular PSU — alternate angle",
+        "product_id": 71,
+        "path": "/data/output-img/product-images/psus/surge-550w-white-modular-psu/"
+      },
+      {
+        "id": 358,
+        "name": "detail.jpg",
+        "alt": "Surge 550W White Modular PSU — close-up detail",
+        "product_id": 71,
+        "path": "/data/output-img/product-images/psus/surge-550w-white-modular-psu/"
+      },
+      {
+        "id": 359,
+        "name": "context.jpg",
+        "alt": "Surge 550W White Modular PSU — in-use context",
+        "product_id": 71,
+        "path": "/data/output-img/product-images/psus/surge-550w-white-modular-psu/"
+      },
+      {
+        "id": 360,
+        "name": "with-packaging.jpg",
+        "alt": "Surge 550W White Modular PSU — with retail packaging",
+        "product_id": 71,
+        "path": "/data/output-img/product-images/psus/surge-550w-white-modular-psu/"
+      }
+    ]
+  },
+  {
+    "product_id": 72,
+    "path": "/data/output-img/product-images/ram/volt-48gb-ddr5-7200mhz-oc-kit-2x24/",
+    "images": [
+      {
+        "id": 361,
+        "name": "main.jpg",
+        "alt": "Volt 48GB DDR5 7200MHz OC Kit (2×24) — front view",
+        "product_id": 72,
+        "path": "/data/output-img/product-images/ram/volt-48gb-ddr5-7200mhz-oc-kit-2x24/"
+      },
+      {
+        "id": 362,
+        "name": "angle.jpg",
+        "alt": "Volt 48GB DDR5 7200MHz OC Kit (2×24) — alternate angle",
+        "product_id": 72,
+        "path": "/data/output-img/product-images/ram/volt-48gb-ddr5-7200mhz-oc-kit-2x24/"
+      },
+      {
+        "id": 363,
+        "name": "detail.jpg",
+        "alt": "Volt 48GB DDR5 7200MHz OC Kit (2×24) — close-up detail",
+        "product_id": 72,
+        "path": "/data/output-img/product-images/ram/volt-48gb-ddr5-7200mhz-oc-kit-2x24/"
+      },
+      {
+        "id": 364,
+        "name": "context.jpg",
+        "alt": "Volt 48GB DDR5 7200MHz OC Kit (2×24) — in-use context",
+        "product_id": 72,
+        "path": "/data/output-img/product-images/ram/volt-48gb-ddr5-7200mhz-oc-kit-2x24/"
+      },
+      {
+        "id": 365,
+        "name": "with-packaging.jpg",
+        "alt": "Volt 48GB DDR5 7200MHz OC Kit (2×24) — with retail packaging",
+        "product_id": 72,
+        "path": "/data/output-img/product-images/ram/volt-48gb-ddr5-7200mhz-oc-kit-2x24/"
+      }
+    ]
+  },
+  {
+    "product_id": 73,
+    "path": "/data/output-img/product-images/motherboards/apex-a520m-micro-atx-motherboard/",
+    "images": [
+      {
+        "id": 366,
+        "name": "main.jpg",
+        "alt": "Apex A520M Micro-ATX Motherboard — front view",
+        "product_id": 73,
+        "path": "/data/output-img/product-images/motherboards/apex-a520m-micro-atx-motherboard/"
+      },
+      {
+        "id": 367,
+        "name": "angle.jpg",
+        "alt": "Apex A520M Micro-ATX Motherboard — alternate angle",
+        "product_id": 73,
+        "path": "/data/output-img/product-images/motherboards/apex-a520m-micro-atx-motherboard/"
+      },
+      {
+        "id": 368,
+        "name": "detail.jpg",
+        "alt": "Apex A520M Micro-ATX Motherboard — close-up detail",
+        "product_id": 73,
+        "path": "/data/output-img/product-images/motherboards/apex-a520m-micro-atx-motherboard/"
+      },
+      {
+        "id": 369,
+        "name": "context.jpg",
+        "alt": "Apex A520M Micro-ATX Motherboard — in-use context",
+        "product_id": 73,
+        "path": "/data/output-img/product-images/motherboards/apex-a520m-micro-atx-motherboard/"
+      },
+      {
+        "id": 370,
+        "name": "with-packaging.jpg",
+        "alt": "Apex A520M Micro-ATX Motherboard — with retail packaging",
+        "product_id": 73,
+        "path": "/data/output-img/product-images/motherboards/apex-a520m-micro-atx-motherboard/"
+      }
+    ]
+  },
+  {
+    "product_id": 74,
+    "path": "/data/output-img/product-images/cases/titan-ark-server-tower-case/",
+    "images": [
+      {
+        "id": 371,
+        "name": "main.jpg",
+        "alt": "Titan Ark Server Tower Case — front view",
+        "product_id": 74,
+        "path": "/data/output-img/product-images/cases/titan-ark-server-tower-case/"
+      },
+      {
+        "id": 372,
+        "name": "angle.jpg",
+        "alt": "Titan Ark Server Tower Case — alternate angle",
+        "product_id": 74,
+        "path": "/data/output-img/product-images/cases/titan-ark-server-tower-case/"
+      },
+      {
+        "id": 373,
+        "name": "detail.jpg",
+        "alt": "Titan Ark Server Tower Case — close-up detail",
+        "product_id": 74,
+        "path": "/data/output-img/product-images/cases/titan-ark-server-tower-case/"
+      },
+      {
+        "id": 374,
+        "name": "context.jpg",
+        "alt": "Titan Ark Server Tower Case — in-use context",
+        "product_id": 74,
+        "path": "/data/output-img/product-images/cases/titan-ark-server-tower-case/"
+      },
+      {
+        "id": 375,
+        "name": "with-packaging.jpg",
+        "alt": "Titan Ark Server Tower Case — with retail packaging",
+        "product_id": 74,
+        "path": "/data/output-img/product-images/cases/titan-ark-server-tower-case/"
+      }
+    ]
+  },
+  {
+    "product_id": 75,
+    "path": "/data/output-img/product-images/cooling/frost-kryo-120-air-cooler/",
+    "images": [
+      {
+        "id": 376,
+        "name": "main.jpg",
+        "alt": "Frost Kryo 120 Air Cooler — front view",
+        "product_id": 75,
+        "path": "/data/output-img/product-images/cooling/frost-kryo-120-air-cooler/"
+      },
+      {
+        "id": 377,
+        "name": "angle.jpg",
+        "alt": "Frost Kryo 120 Air Cooler — alternate angle",
+        "product_id": 75,
+        "path": "/data/output-img/product-images/cooling/frost-kryo-120-air-cooler/"
+      },
+      {
+        "id": 378,
+        "name": "detail.jpg",
+        "alt": "Frost Kryo 120 Air Cooler — close-up detail",
+        "product_id": 75,
+        "path": "/data/output-img/product-images/cooling/frost-kryo-120-air-cooler/"
+      },
+      {
+        "id": 379,
+        "name": "context.jpg",
+        "alt": "Frost Kryo 120 Air Cooler — in-use context",
+        "product_id": 75,
+        "path": "/data/output-img/product-images/cooling/frost-kryo-120-air-cooler/"
+      },
+      {
+        "id": 380,
+        "name": "with-packaging.jpg",
+        "alt": "Frost Kryo 120 Air Cooler — with retail packaging",
+        "product_id": 75,
+        "path": "/data/output-img/product-images/cooling/frost-kryo-120-air-cooler/"
+      }
+    ]
+  },
+  {
+    "product_id": 76,
+    "path": "/data/output-img/product-images/storage/bolt-16tb-nas-hdd-7200rpm/",
+    "images": [
+      {
+        "id": 381,
+        "name": "main.jpg",
+        "alt": "Bolt 16TB NAS HDD 7200RPM — front view",
+        "product_id": 76,
+        "path": "/data/output-img/product-images/storage/bolt-16tb-nas-hdd-7200rpm/"
+      },
+      {
+        "id": 382,
+        "name": "angle.jpg",
+        "alt": "Bolt 16TB NAS HDD 7200RPM — alternate angle",
+        "product_id": 76,
+        "path": "/data/output-img/product-images/storage/bolt-16tb-nas-hdd-7200rpm/"
+      },
+      {
+        "id": 383,
+        "name": "detail.jpg",
+        "alt": "Bolt 16TB NAS HDD 7200RPM — close-up detail",
+        "product_id": 76,
+        "path": "/data/output-img/product-images/storage/bolt-16tb-nas-hdd-7200rpm/"
+      },
+      {
+        "id": 384,
+        "name": "context.jpg",
+        "alt": "Bolt 16TB NAS HDD 7200RPM — in-use context",
+        "product_id": 76,
+        "path": "/data/output-img/product-images/storage/bolt-16tb-nas-hdd-7200rpm/"
+      },
+      {
+        "id": 385,
+        "name": "with-packaging.jpg",
+        "alt": "Bolt 16TB NAS HDD 7200RPM — with retail packaging",
+        "product_id": 76,
+        "path": "/data/output-img/product-images/storage/bolt-16tb-nas-hdd-7200rpm/"
+      }
+    ]
+  },
+  {
+    "product_id": 77,
+    "path": "/data/output-img/product-images/peripherals/wave-boom-arm-pro-mic-stand/",
+    "images": [
+      {
+        "id": 386,
+        "name": "main.jpg",
+        "alt": "Wave Boom Arm Pro Mic Stand — front view",
+        "product_id": 77,
+        "path": "/data/output-img/product-images/peripherals/wave-boom-arm-pro-mic-stand/"
+      },
+      {
+        "id": 387,
+        "name": "angle.jpg",
+        "alt": "Wave Boom Arm Pro Mic Stand — alternate angle",
+        "product_id": 77,
+        "path": "/data/output-img/product-images/peripherals/wave-boom-arm-pro-mic-stand/"
+      },
+      {
+        "id": 388,
+        "name": "detail.jpg",
+        "alt": "Wave Boom Arm Pro Mic Stand — close-up detail",
+        "product_id": 77,
+        "path": "/data/output-img/product-images/peripherals/wave-boom-arm-pro-mic-stand/"
+      },
+      {
+        "id": 389,
+        "name": "context.jpg",
+        "alt": "Wave Boom Arm Pro Mic Stand — in-use context",
+        "product_id": 77,
+        "path": "/data/output-img/product-images/peripherals/wave-boom-arm-pro-mic-stand/"
+      },
+      {
+        "id": 390,
+        "name": "with-packaging.jpg",
+        "alt": "Wave Boom Arm Pro Mic Stand — with retail packaging",
+        "product_id": 77,
+        "path": "/data/output-img/product-images/peripherals/wave-boom-arm-pro-mic-stand/"
+      }
+    ]
+  },
+  {
+    "product_id": 78,
+    "path": "/data/output-img/product-images/peripherals/soundx-noise-cancelling-bt-headset/",
+    "images": [
+      {
+        "id": 391,
+        "name": "main.jpg",
+        "alt": "SoundX Noise Cancelling BT Headset — front view",
+        "product_id": 78,
+        "path": "/data/output-img/product-images/peripherals/soundx-noise-cancelling-bt-headset/"
+      },
+      {
+        "id": 392,
+        "name": "angle.jpg",
+        "alt": "SoundX Noise Cancelling BT Headset — alternate angle",
+        "product_id": 78,
+        "path": "/data/output-img/product-images/peripherals/soundx-noise-cancelling-bt-headset/"
+      },
+      {
+        "id": 393,
+        "name": "detail.jpg",
+        "alt": "SoundX Noise Cancelling BT Headset — close-up detail",
+        "product_id": 78,
+        "path": "/data/output-img/product-images/peripherals/soundx-noise-cancelling-bt-headset/"
+      },
+      {
+        "id": 394,
+        "name": "context.jpg",
+        "alt": "SoundX Noise Cancelling BT Headset — in-use context",
+        "product_id": 78,
+        "path": "/data/output-img/product-images/peripherals/soundx-noise-cancelling-bt-headset/"
+      },
+      {
+        "id": 395,
+        "name": "with-packaging.jpg",
+        "alt": "SoundX Noise Cancelling BT Headset — with retail packaging",
+        "product_id": 78,
+        "path": "/data/output-img/product-images/peripherals/soundx-noise-cancelling-bt-headset/"
+      }
+    ]
+  },
+  {
+    "product_id": 79,
+    "path": "/data/output-img/product-images/peripherals/boombox-portable-bluetooth-speaker/",
+    "images": [
+      {
+        "id": 396,
+        "name": "main.jpg",
+        "alt": "BoomBox Portable Bluetooth Speaker — front view",
+        "product_id": 79,
+        "path": "/data/output-img/product-images/peripherals/boombox-portable-bluetooth-speaker/"
+      },
+      {
+        "id": 397,
+        "name": "angle.jpg",
+        "alt": "BoomBox Portable Bluetooth Speaker — alternate angle",
+        "product_id": 79,
+        "path": "/data/output-img/product-images/peripherals/boombox-portable-bluetooth-speaker/"
+      },
+      {
+        "id": 398,
+        "name": "detail.jpg",
+        "alt": "BoomBox Portable Bluetooth Speaker — close-up detail",
+        "product_id": 79,
+        "path": "/data/output-img/product-images/peripherals/boombox-portable-bluetooth-speaker/"
+      },
+      {
+        "id": 399,
+        "name": "context.jpg",
+        "alt": "BoomBox Portable Bluetooth Speaker — in-use context",
+        "product_id": 79,
+        "path": "/data/output-img/product-images/peripherals/boombox-portable-bluetooth-speaker/"
+      },
+      {
+        "id": 400,
+        "name": "with-packaging.jpg",
+        "alt": "BoomBox Portable Bluetooth Speaker — with retail packaging",
+        "product_id": 79,
+        "path": "/data/output-img/product-images/peripherals/boombox-portable-bluetooth-speaker/"
+      }
+    ]
+  },
+  {
+    "product_id": 80,
+    "path": "/data/output-img/product-images/gpus/nova-rtx-9070-super-16gb-gpu/",
+    "images": [
+      {
+        "id": 401,
+        "name": "main.jpg",
+        "alt": "Nova RTX 9070 Super 16GB GPU — front view",
+        "product_id": 80,
+        "path": "/data/output-img/product-images/gpus/nova-rtx-9070-super-16gb-gpu/"
+      },
+      {
+        "id": 402,
+        "name": "angle.jpg",
+        "alt": "Nova RTX 9070 Super 16GB GPU — alternate angle",
+        "product_id": 80,
+        "path": "/data/output-img/product-images/gpus/nova-rtx-9070-super-16gb-gpu/"
+      },
+      {
+        "id": 403,
+        "name": "detail.jpg",
+        "alt": "Nova RTX 9070 Super 16GB GPU — close-up detail",
+        "product_id": 80,
+        "path": "/data/output-img/product-images/gpus/nova-rtx-9070-super-16gb-gpu/"
+      },
+      {
+        "id": 404,
+        "name": "context.jpg",
+        "alt": "Nova RTX 9070 Super 16GB GPU — in-use context",
+        "product_id": 80,
+        "path": "/data/output-img/product-images/gpus/nova-rtx-9070-super-16gb-gpu/"
+      },
+      {
+        "id": 405,
+        "name": "with-packaging.jpg",
+        "alt": "Nova RTX 9070 Super 16GB GPU — with retail packaging",
+        "product_id": 80,
+        "path": "/data/output-img/product-images/gpus/nova-rtx-9070-super-16gb-gpu/"
+      }
+    ]
+  },
+  {
+    "product_id": 81,
+    "path": "/data/output-img/product-images/cpus/apex-r7-9800x3d-3d-v-cache-cpu/",
+    "images": [
+      {
+        "id": 406,
+        "name": "main.jpg",
+        "alt": "Apex R7 9800X3D 3D V-Cache CPU — front view",
+        "product_id": 81,
+        "path": "/data/output-img/product-images/cpus/apex-r7-9800x3d-3d-v-cache-cpu/"
+      },
+      {
+        "id": 407,
+        "name": "angle.jpg",
+        "alt": "Apex R7 9800X3D 3D V-Cache CPU — alternate angle",
+        "product_id": 81,
+        "path": "/data/output-img/product-images/cpus/apex-r7-9800x3d-3d-v-cache-cpu/"
+      },
+      {
+        "id": 408,
+        "name": "detail.jpg",
+        "alt": "Apex R7 9800X3D 3D V-Cache CPU — close-up detail",
+        "product_id": 81,
+        "path": "/data/output-img/product-images/cpus/apex-r7-9800x3d-3d-v-cache-cpu/"
+      },
+      {
+        "id": 409,
+        "name": "context.jpg",
+        "alt": "Apex R7 9800X3D 3D V-Cache CPU — in-use context",
+        "product_id": 81,
+        "path": "/data/output-img/product-images/cpus/apex-r7-9800x3d-3d-v-cache-cpu/"
+      },
+      {
+        "id": 410,
+        "name": "with-packaging.jpg",
+        "alt": "Apex R7 9800X3D 3D V-Cache CPU — with retail packaging",
+        "product_id": 81,
+        "path": "/data/output-img/product-images/cpus/apex-r7-9800x3d-3d-v-cache-cpu/"
+      }
+    ]
+  },
+  {
+    "product_id": 82,
+    "path": "/data/output-img/product-images/peripherals/storm-75-wireless-keyboard/",
+    "images": [
+      {
+        "id": 411,
+        "name": "main.jpg",
+        "alt": "Storm 75% Wireless Keyboard — front view",
+        "product_id": 82,
+        "path": "/data/output-img/product-images/peripherals/storm-75-wireless-keyboard/"
+      },
+      {
+        "id": 412,
+        "name": "angle.jpg",
+        "alt": "Storm 75% Wireless Keyboard — alternate angle",
+        "product_id": 82,
+        "path": "/data/output-img/product-images/peripherals/storm-75-wireless-keyboard/"
+      },
+      {
+        "id": 413,
+        "name": "detail.jpg",
+        "alt": "Storm 75% Wireless Keyboard — close-up detail",
+        "product_id": 82,
+        "path": "/data/output-img/product-images/peripherals/storm-75-wireless-keyboard/"
+      },
+      {
+        "id": 414,
+        "name": "context.jpg",
+        "alt": "Storm 75% Wireless Keyboard — in-use context",
+        "product_id": 82,
+        "path": "/data/output-img/product-images/peripherals/storm-75-wireless-keyboard/"
+      },
+      {
+        "id": 415,
+        "name": "with-packaging.jpg",
+        "alt": "Storm 75% Wireless Keyboard — with retail packaging",
+        "product_id": 82,
+        "path": "/data/output-img/product-images/peripherals/storm-75-wireless-keyboard/"
+      }
+    ]
+  },
+  {
+    "product_id": 83,
+    "path": "/data/output-img/product-images/peripherals/pulse-27in-4k-160hz-mini-led-monitor/",
+    "images": [
+      {
+        "id": 416,
+        "name": "main.jpg",
+        "alt": "Pulse 27\" 4K 160Hz Mini LED Monitor — front view",
+        "product_id": 83,
+        "path": "/data/output-img/product-images/peripherals/pulse-27in-4k-160hz-mini-led-monitor/"
+      },
+      {
+        "id": 417,
+        "name": "angle.jpg",
+        "alt": "Pulse 27\" 4K 160Hz Mini LED Monitor — alternate angle",
+        "product_id": 83,
+        "path": "/data/output-img/product-images/peripherals/pulse-27in-4k-160hz-mini-led-monitor/"
+      },
+      {
+        "id": 418,
+        "name": "detail.jpg",
+        "alt": "Pulse 27\" 4K 160Hz Mini LED Monitor — close-up detail",
+        "product_id": 83,
+        "path": "/data/output-img/product-images/peripherals/pulse-27in-4k-160hz-mini-led-monitor/"
+      },
+      {
+        "id": 419,
+        "name": "context.jpg",
+        "alt": "Pulse 27\" 4K 160Hz Mini LED Monitor — in-use context",
+        "product_id": 83,
+        "path": "/data/output-img/product-images/peripherals/pulse-27in-4k-160hz-mini-led-monitor/"
+      },
+      {
+        "id": 420,
+        "name": "with-packaging.jpg",
+        "alt": "Pulse 27\" 4K 160Hz Mini LED Monitor — with retail packaging",
+        "product_id": 83,
+        "path": "/data/output-img/product-images/peripherals/pulse-27in-4k-160hz-mini-led-monitor/"
+      }
+    ]
+  },
+  {
+    "product_id": 84,
+    "path": "/data/output-img/product-images/psus/surge-1200w-platinum-modular-psu/",
+    "images": [
+      {
+        "id": 421,
+        "name": "main.jpg",
+        "alt": "Surge 1200W Platinum Modular PSU — front view",
+        "product_id": 84,
+        "path": "/data/output-img/product-images/psus/surge-1200w-platinum-modular-psu/"
+      },
+      {
+        "id": 422,
+        "name": "angle.jpg",
+        "alt": "Surge 1200W Platinum Modular PSU — alternate angle",
+        "product_id": 84,
+        "path": "/data/output-img/product-images/psus/surge-1200w-platinum-modular-psu/"
+      },
+      {
+        "id": 423,
+        "name": "detail.jpg",
+        "alt": "Surge 1200W Platinum Modular PSU — close-up detail",
+        "product_id": 84,
+        "path": "/data/output-img/product-images/psus/surge-1200w-platinum-modular-psu/"
+      },
+      {
+        "id": 424,
+        "name": "context.jpg",
+        "alt": "Surge 1200W Platinum Modular PSU — in-use context",
+        "product_id": 84,
+        "path": "/data/output-img/product-images/psus/surge-1200w-platinum-modular-psu/"
+      },
+      {
+        "id": 425,
+        "name": "with-packaging.jpg",
+        "alt": "Surge 1200W Platinum Modular PSU — with retail packaging",
+        "product_id": 84,
+        "path": "/data/output-img/product-images/psus/surge-1200w-platinum-modular-psu/"
+      }
+    ]
+  },
+  {
+    "product_id": 85,
+    "path": "/data/output-img/product-images/storage/bolt-8tb-nvme-gen4-enterprise-ssd/",
+    "images": [
+      {
+        "id": 426,
+        "name": "main.jpg",
+        "alt": "Bolt 8TB NVMe Gen4 Enterprise SSD — front view",
+        "product_id": 85,
+        "path": "/data/output-img/product-images/storage/bolt-8tb-nvme-gen4-enterprise-ssd/"
+      },
+      {
+        "id": 427,
+        "name": "angle.jpg",
+        "alt": "Bolt 8TB NVMe Gen4 Enterprise SSD — alternate angle",
+        "product_id": 85,
+        "path": "/data/output-img/product-images/storage/bolt-8tb-nvme-gen4-enterprise-ssd/"
+      },
+      {
+        "id": 428,
+        "name": "detail.jpg",
+        "alt": "Bolt 8TB NVMe Gen4 Enterprise SSD — close-up detail",
+        "product_id": 85,
+        "path": "/data/output-img/product-images/storage/bolt-8tb-nvme-gen4-enterprise-ssd/"
+      },
+      {
+        "id": 429,
+        "name": "context.jpg",
+        "alt": "Bolt 8TB NVMe Gen4 Enterprise SSD — in-use context",
+        "product_id": 85,
+        "path": "/data/output-img/product-images/storage/bolt-8tb-nvme-gen4-enterprise-ssd/"
+      },
+      {
+        "id": 430,
+        "name": "with-packaging.jpg",
+        "alt": "Bolt 8TB NVMe Gen4 Enterprise SSD — with retail packaging",
+        "product_id": 85,
+        "path": "/data/output-img/product-images/storage/bolt-8tb-nvme-gen4-enterprise-ssd/"
+      }
+    ]
+  },
+  {
+    "product_id": 86,
+    "path": "/data/output-img/product-images/ram/volt-16gb-ddr4-3200mhz-sodimm-kit/",
+    "images": [
+      {
+        "id": 431,
+        "name": "main.jpg",
+        "alt": "Volt 16GB DDR4 3200MHz Sodimm Kit — front view",
+        "product_id": 86,
+        "path": "/data/output-img/product-images/ram/volt-16gb-ddr4-3200mhz-sodimm-kit/"
+      },
+      {
+        "id": 432,
+        "name": "angle.jpg",
+        "alt": "Volt 16GB DDR4 3200MHz Sodimm Kit — alternate angle",
+        "product_id": 86,
+        "path": "/data/output-img/product-images/ram/volt-16gb-ddr4-3200mhz-sodimm-kit/"
+      },
+      {
+        "id": 433,
+        "name": "detail.jpg",
+        "alt": "Volt 16GB DDR4 3200MHz Sodimm Kit — close-up detail",
+        "product_id": 86,
+        "path": "/data/output-img/product-images/ram/volt-16gb-ddr4-3200mhz-sodimm-kit/"
+      },
+      {
+        "id": 434,
+        "name": "context.jpg",
+        "alt": "Volt 16GB DDR4 3200MHz Sodimm Kit — in-use context",
+        "product_id": 86,
+        "path": "/data/output-img/product-images/ram/volt-16gb-ddr4-3200mhz-sodimm-kit/"
+      },
+      {
+        "id": 435,
+        "name": "with-packaging.jpg",
+        "alt": "Volt 16GB DDR4 3200MHz Sodimm Kit — with retail packaging",
+        "product_id": 86,
+        "path": "/data/output-img/product-images/ram/volt-16gb-ddr4-3200mhz-sodimm-kit/"
+      }
+    ]
+  },
+  {
+    "product_id": 87,
+    "path": "/data/output-img/product-images/motherboards/apex-z790-atx-motherboard-wifi-7/",
+    "images": [
+      {
+        "id": 436,
+        "name": "main.jpg",
+        "alt": "Apex Z790 ATX Motherboard WiFi 7 — front view",
+        "product_id": 87,
+        "path": "/data/output-img/product-images/motherboards/apex-z790-atx-motherboard-wifi-7/"
+      },
+      {
+        "id": 437,
+        "name": "angle.jpg",
+        "alt": "Apex Z790 ATX Motherboard WiFi 7 — alternate angle",
+        "product_id": 87,
+        "path": "/data/output-img/product-images/motherboards/apex-z790-atx-motherboard-wifi-7/"
+      },
+      {
+        "id": 438,
+        "name": "detail.jpg",
+        "alt": "Apex Z790 ATX Motherboard WiFi 7 — close-up detail",
+        "product_id": 87,
+        "path": "/data/output-img/product-images/motherboards/apex-z790-atx-motherboard-wifi-7/"
+      },
+      {
+        "id": 439,
+        "name": "context.jpg",
+        "alt": "Apex Z790 ATX Motherboard WiFi 7 — in-use context",
+        "product_id": 87,
+        "path": "/data/output-img/product-images/motherboards/apex-z790-atx-motherboard-wifi-7/"
+      },
+      {
+        "id": 440,
+        "name": "with-packaging.jpg",
+        "alt": "Apex Z790 ATX Motherboard WiFi 7 — with retail packaging",
+        "product_id": 87,
+        "path": "/data/output-img/product-images/motherboards/apex-z790-atx-motherboard-wifi-7/"
+      }
+    ]
+  },
+  {
+    "product_id": 88,
+    "path": "/data/output-img/product-images/cases/titan-snow-white-atx-case-argb/",
+    "images": [
+      {
+        "id": 441,
+        "name": "main.jpg",
+        "alt": "Titan Snow White ATX Case ARGB — front view",
+        "product_id": 88,
+        "path": "/data/output-img/product-images/cases/titan-snow-white-atx-case-argb/"
+      },
+      {
+        "id": 442,
+        "name": "angle.jpg",
+        "alt": "Titan Snow White ATX Case ARGB — alternate angle",
+        "product_id": 88,
+        "path": "/data/output-img/product-images/cases/titan-snow-white-atx-case-argb/"
+      },
+      {
+        "id": 443,
+        "name": "detail.jpg",
+        "alt": "Titan Snow White ATX Case ARGB — close-up detail",
+        "product_id": 88,
+        "path": "/data/output-img/product-images/cases/titan-snow-white-atx-case-argb/"
+      },
+      {
+        "id": 444,
+        "name": "context.jpg",
+        "alt": "Titan Snow White ATX Case ARGB — in-use context",
+        "product_id": 88,
+        "path": "/data/output-img/product-images/cases/titan-snow-white-atx-case-argb/"
+      },
+      {
+        "id": 445,
+        "name": "with-packaging.jpg",
+        "alt": "Titan Snow White ATX Case ARGB — with retail packaging",
+        "product_id": 88,
+        "path": "/data/output-img/product-images/cases/titan-snow-white-atx-case-argb/"
+      }
+    ]
+  },
+  {
+    "product_id": 89,
+    "path": "/data/output-img/product-images/cooling/frost-iceflow-280-aio-cooler/",
+    "images": [
+      {
+        "id": 446,
+        "name": "main.jpg",
+        "alt": "Frost IceFlow 280 AIO Cooler — front view",
+        "product_id": 89,
+        "path": "/data/output-img/product-images/cooling/frost-iceflow-280-aio-cooler/"
+      },
+      {
+        "id": 447,
+        "name": "angle.jpg",
+        "alt": "Frost IceFlow 280 AIO Cooler — alternate angle",
+        "product_id": 89,
+        "path": "/data/output-img/product-images/cooling/frost-iceflow-280-aio-cooler/"
+      },
+      {
+        "id": 448,
+        "name": "detail.jpg",
+        "alt": "Frost IceFlow 280 AIO Cooler — close-up detail",
+        "product_id": 89,
+        "path": "/data/output-img/product-images/cooling/frost-iceflow-280-aio-cooler/"
+      },
+      {
+        "id": 449,
+        "name": "context.jpg",
+        "alt": "Frost IceFlow 280 AIO Cooler — in-use context",
+        "product_id": 89,
+        "path": "/data/output-img/product-images/cooling/frost-iceflow-280-aio-cooler/"
+      },
+      {
+        "id": 450,
+        "name": "with-packaging.jpg",
+        "alt": "Frost IceFlow 280 AIO Cooler — with retail packaging",
+        "product_id": 89,
+        "path": "/data/output-img/product-images/cooling/frost-iceflow-280-aio-cooler/"
+      }
+    ]
+  },
+  {
+    "product_id": 90,
+    "path": "/data/output-img/product-images/peripherals/storm-pro-wired-gaming-headset/",
+    "images": [
+      {
+        "id": 451,
+        "name": "main.jpg",
+        "alt": "Storm Pro Wired Gaming Headset — front view",
+        "product_id": 90,
+        "path": "/data/output-img/product-images/peripherals/storm-pro-wired-gaming-headset/"
+      },
+      {
+        "id": 452,
+        "name": "angle.jpg",
+        "alt": "Storm Pro Wired Gaming Headset — alternate angle",
+        "product_id": 90,
+        "path": "/data/output-img/product-images/peripherals/storm-pro-wired-gaming-headset/"
+      },
+      {
+        "id": 453,
+        "name": "detail.jpg",
+        "alt": "Storm Pro Wired Gaming Headset — close-up detail",
+        "product_id": 90,
+        "path": "/data/output-img/product-images/peripherals/storm-pro-wired-gaming-headset/"
+      },
+      {
+        "id": 454,
+        "name": "context.jpg",
+        "alt": "Storm Pro Wired Gaming Headset — in-use context",
+        "product_id": 90,
+        "path": "/data/output-img/product-images/peripherals/storm-pro-wired-gaming-headset/"
+      },
+      {
+        "id": 455,
+        "name": "with-packaging.jpg",
+        "alt": "Storm Pro Wired Gaming Headset — with retail packaging",
+        "product_id": 90,
+        "path": "/data/output-img/product-images/peripherals/storm-pro-wired-gaming-headset/"
+      }
+    ]
+  },
+  {
+    "product_id": 91,
+    "path": "/data/output-img/product-images/peripherals/wave-mini-usb-microphone/",
+    "images": [
+      {
+        "id": 456,
+        "name": "main.jpg",
+        "alt": "Wave Mini USB Microphone — front view",
+        "product_id": 91,
+        "path": "/data/output-img/product-images/peripherals/wave-mini-usb-microphone/"
+      },
+      {
+        "id": 457,
+        "name": "angle.jpg",
+        "alt": "Wave Mini USB Microphone — alternate angle",
+        "product_id": 91,
+        "path": "/data/output-img/product-images/peripherals/wave-mini-usb-microphone/"
+      },
+      {
+        "id": 458,
+        "name": "detail.jpg",
+        "alt": "Wave Mini USB Microphone — close-up detail",
+        "product_id": 91,
+        "path": "/data/output-img/product-images/peripherals/wave-mini-usb-microphone/"
+      },
+      {
+        "id": 459,
+        "name": "context.jpg",
+        "alt": "Wave Mini USB Microphone — in-use context",
+        "product_id": 91,
+        "path": "/data/output-img/product-images/peripherals/wave-mini-usb-microphone/"
+      },
+      {
+        "id": 460,
+        "name": "with-packaging.jpg",
+        "alt": "Wave Mini USB Microphone — with retail packaging",
+        "product_id": 91,
+        "path": "/data/output-img/product-images/peripherals/wave-mini-usb-microphone/"
+      }
+    ]
+  },
+  {
+    "product_id": 92,
+    "path": "/data/output-img/product-images/peripherals/lens-1080p-webcam-auto-tracking/",
+    "images": [
+      {
+        "id": 461,
+        "name": "main.jpg",
+        "alt": "Lens 1080p Webcam Auto Tracking — front view",
+        "product_id": 92,
+        "path": "/data/output-img/product-images/peripherals/lens-1080p-webcam-auto-tracking/"
+      },
+      {
+        "id": 462,
+        "name": "angle.jpg",
+        "alt": "Lens 1080p Webcam Auto Tracking — alternate angle",
+        "product_id": 92,
+        "path": "/data/output-img/product-images/peripherals/lens-1080p-webcam-auto-tracking/"
+      },
+      {
+        "id": 463,
+        "name": "detail.jpg",
+        "alt": "Lens 1080p Webcam Auto Tracking — close-up detail",
+        "product_id": 92,
+        "path": "/data/output-img/product-images/peripherals/lens-1080p-webcam-auto-tracking/"
+      },
+      {
+        "id": 464,
+        "name": "context.jpg",
+        "alt": "Lens 1080p Webcam Auto Tracking — in-use context",
+        "product_id": 92,
+        "path": "/data/output-img/product-images/peripherals/lens-1080p-webcam-auto-tracking/"
+      },
+      {
+        "id": 465,
+        "name": "with-packaging.jpg",
+        "alt": "Lens 1080p Webcam Auto Tracking — with retail packaging",
+        "product_id": 92,
+        "path": "/data/output-img/product-images/peripherals/lens-1080p-webcam-auto-tracking/"
+      }
+    ]
+  },
+  {
+    "product_id": 93,
+    "path": "/data/output-img/product-images/peripherals/boombox-monitor-speakers-pair/",
+    "images": [
+      {
+        "id": 466,
+        "name": "main.jpg",
+        "alt": "BoomBox Monitor Speakers Pair — front view",
+        "product_id": 93,
+        "path": "/data/output-img/product-images/peripherals/boombox-monitor-speakers-pair/"
+      },
+      {
+        "id": 467,
+        "name": "angle.jpg",
+        "alt": "BoomBox Monitor Speakers Pair — alternate angle",
+        "product_id": 93,
+        "path": "/data/output-img/product-images/peripherals/boombox-monitor-speakers-pair/"
+      },
+      {
+        "id": 468,
+        "name": "detail.jpg",
+        "alt": "BoomBox Monitor Speakers Pair — close-up detail",
+        "product_id": 93,
+        "path": "/data/output-img/product-images/peripherals/boombox-monitor-speakers-pair/"
+      },
+      {
+        "id": 469,
+        "name": "context.jpg",
+        "alt": "BoomBox Monitor Speakers Pair — in-use context",
+        "product_id": 93,
+        "path": "/data/output-img/product-images/peripherals/boombox-monitor-speakers-pair/"
+      },
+      {
+        "id": 470,
+        "name": "with-packaging.jpg",
+        "alt": "BoomBox Monitor Speakers Pair — with retail packaging",
+        "product_id": 93,
+        "path": "/data/output-img/product-images/peripherals/boombox-monitor-speakers-pair/"
+      }
+    ]
+  },
+  {
+    "product_id": 94,
+    "path": "/data/output-img/product-images/peripherals/storm-gaming-mouse-pad-rgb-large/",
+    "images": [
+      {
+        "id": 471,
+        "name": "main.jpg",
+        "alt": "Storm Gaming Mouse Pad RGB Large — front view",
+        "product_id": 94,
+        "path": "/data/output-img/product-images/peripherals/storm-gaming-mouse-pad-rgb-large/"
+      },
+      {
+        "id": 472,
+        "name": "angle.jpg",
+        "alt": "Storm Gaming Mouse Pad RGB Large — alternate angle",
+        "product_id": 94,
+        "path": "/data/output-img/product-images/peripherals/storm-gaming-mouse-pad-rgb-large/"
+      },
+      {
+        "id": 473,
+        "name": "detail.jpg",
+        "alt": "Storm Gaming Mouse Pad RGB Large — close-up detail",
+        "product_id": 94,
+        "path": "/data/output-img/product-images/peripherals/storm-gaming-mouse-pad-rgb-large/"
+      },
+      {
+        "id": 474,
+        "name": "context.jpg",
+        "alt": "Storm Gaming Mouse Pad RGB Large — in-use context",
+        "product_id": 94,
+        "path": "/data/output-img/product-images/peripherals/storm-gaming-mouse-pad-rgb-large/"
+      },
+      {
+        "id": 475,
+        "name": "with-packaging.jpg",
+        "alt": "Storm Gaming Mouse Pad RGB Large — with retail packaging",
+        "product_id": 94,
+        "path": "/data/output-img/product-images/peripherals/storm-gaming-mouse-pad-rgb-large/"
+      }
+    ]
+  },
+  {
+    "product_id": 95,
+    "path": "/data/output-img/product-images/gpus/nova-arc-a78-budget-gpu-8gb/",
+    "images": [
+      {
+        "id": 476,
+        "name": "main.jpg",
+        "alt": "Nova Arc A78 Budget GPU 8GB — front view",
+        "product_id": 95,
+        "path": "/data/output-img/product-images/gpus/nova-arc-a78-budget-gpu-8gb/"
+      },
+      {
+        "id": 477,
+        "name": "angle.jpg",
+        "alt": "Nova Arc A78 Budget GPU 8GB — alternate angle",
+        "product_id": 95,
+        "path": "/data/output-img/product-images/gpus/nova-arc-a78-budget-gpu-8gb/"
+      },
+      {
+        "id": 478,
+        "name": "detail.jpg",
+        "alt": "Nova Arc A78 Budget GPU 8GB — close-up detail",
+        "product_id": 95,
+        "path": "/data/output-img/product-images/gpus/nova-arc-a78-budget-gpu-8gb/"
+      },
+      {
+        "id": 479,
+        "name": "context.jpg",
+        "alt": "Nova Arc A78 Budget GPU 8GB — in-use context",
+        "product_id": 95,
+        "path": "/data/output-img/product-images/gpus/nova-arc-a78-budget-gpu-8gb/"
+      },
+      {
+        "id": 480,
+        "name": "with-packaging.jpg",
+        "alt": "Nova Arc A78 Budget GPU 8GB — with retail packaging",
+        "product_id": 95,
+        "path": "/data/output-img/product-images/gpus/nova-arc-a78-budget-gpu-8gb/"
+      }
+    ]
+  },
+  {
+    "product_id": 96,
+    "path": "/data/output-img/product-images/cpus/apex-i9-15900k-24-core-processor/",
+    "images": [
+      {
+        "id": 481,
+        "name": "main.jpg",
+        "alt": "Apex i9-15900K 24-Core Processor — front view",
+        "product_id": 96,
+        "path": "/data/output-img/product-images/cpus/apex-i9-15900k-24-core-processor/"
+      },
+      {
+        "id": 482,
+        "name": "angle.jpg",
+        "alt": "Apex i9-15900K 24-Core Processor — alternate angle",
+        "product_id": 96,
+        "path": "/data/output-img/product-images/cpus/apex-i9-15900k-24-core-processor/"
+      },
+      {
+        "id": 483,
+        "name": "detail.jpg",
+        "alt": "Apex i9-15900K 24-Core Processor — close-up detail",
+        "product_id": 96,
+        "path": "/data/output-img/product-images/cpus/apex-i9-15900k-24-core-processor/"
+      },
+      {
+        "id": 484,
+        "name": "context.jpg",
+        "alt": "Apex i9-15900K 24-Core Processor — in-use context",
+        "product_id": 96,
+        "path": "/data/output-img/product-images/cpus/apex-i9-15900k-24-core-processor/"
+      },
+      {
+        "id": 485,
+        "name": "with-packaging.jpg",
+        "alt": "Apex i9-15900K 24-Core Processor — with retail packaging",
+        "product_id": 96,
+        "path": "/data/output-img/product-images/cpus/apex-i9-15900k-24-core-processor/"
+      }
+    ]
+  },
+  {
+    "product_id": 97,
+    "path": "/data/output-img/product-images/motherboards/apex-b650e-atx-motherboard-am5/",
+    "images": [
+      {
+        "id": 486,
+        "name": "main.jpg",
+        "alt": "Apex B650E ATX Motherboard AM5 — front view",
+        "product_id": 97,
+        "path": "/data/output-img/product-images/motherboards/apex-b650e-atx-motherboard-am5/"
+      },
+      {
+        "id": 487,
+        "name": "angle.jpg",
+        "alt": "Apex B650E ATX Motherboard AM5 — alternate angle",
+        "product_id": 97,
+        "path": "/data/output-img/product-images/motherboards/apex-b650e-atx-motherboard-am5/"
+      },
+      {
+        "id": 488,
+        "name": "detail.jpg",
+        "alt": "Apex B650E ATX Motherboard AM5 — close-up detail",
+        "product_id": 97,
+        "path": "/data/output-img/product-images/motherboards/apex-b650e-atx-motherboard-am5/"
+      },
+      {
+        "id": 489,
+        "name": "context.jpg",
+        "alt": "Apex B650E ATX Motherboard AM5 — in-use context",
+        "product_id": 97,
+        "path": "/data/output-img/product-images/motherboards/apex-b650e-atx-motherboard-am5/"
+      },
+      {
+        "id": 490,
+        "name": "with-packaging.jpg",
+        "alt": "Apex B650E ATX Motherboard AM5 — with retail packaging",
+        "product_id": 97,
+        "path": "/data/output-img/product-images/motherboards/apex-b650e-atx-motherboard-am5/"
+      }
+    ]
+  },
+  {
+    "product_id": 98,
+    "path": "/data/output-img/product-images/storage/bolt-1tb-nvme-gen5-ssd/",
+    "images": [
+      {
+        "id": 491,
+        "name": "main.jpg",
+        "alt": "Bolt 1TB NVMe Gen5 SSD — front view",
+        "product_id": 98,
+        "path": "/data/output-img/product-images/storage/bolt-1tb-nvme-gen5-ssd/"
+      },
+      {
+        "id": 492,
+        "name": "angle.jpg",
+        "alt": "Bolt 1TB NVMe Gen5 SSD — alternate angle",
+        "product_id": 98,
+        "path": "/data/output-img/product-images/storage/bolt-1tb-nvme-gen5-ssd/"
+      },
+      {
+        "id": 493,
+        "name": "detail.jpg",
+        "alt": "Bolt 1TB NVMe Gen5 SSD — close-up detail",
+        "product_id": 98,
+        "path": "/data/output-img/product-images/storage/bolt-1tb-nvme-gen5-ssd/"
+      },
+      {
+        "id": 494,
+        "name": "context.jpg",
+        "alt": "Bolt 1TB NVMe Gen5 SSD — in-use context",
+        "product_id": 98,
+        "path": "/data/output-img/product-images/storage/bolt-1tb-nvme-gen5-ssd/"
+      },
+      {
+        "id": 495,
+        "name": "with-packaging.jpg",
+        "alt": "Bolt 1TB NVMe Gen5 SSD — with retail packaging",
+        "product_id": 98,
+        "path": "/data/output-img/product-images/storage/bolt-1tb-nvme-gen5-ssd/"
+      }
+    ]
+  },
+  {
+    "product_id": 99,
+    "path": "/data/output-img/product-images/cases/titan-core-open-frame-bench-case/",
+    "images": [
+      {
+        "id": 496,
+        "name": "main.jpg",
+        "alt": "Titan Core Open-Frame Bench Case — front view",
+        "product_id": 99,
+        "path": "/data/output-img/product-images/cases/titan-core-open-frame-bench-case/"
+      },
+      {
+        "id": 497,
+        "name": "angle.jpg",
+        "alt": "Titan Core Open-Frame Bench Case — alternate angle",
+        "product_id": 99,
+        "path": "/data/output-img/product-images/cases/titan-core-open-frame-bench-case/"
+      },
+      {
+        "id": 498,
+        "name": "detail.jpg",
+        "alt": "Titan Core Open-Frame Bench Case — close-up detail",
+        "product_id": 99,
+        "path": "/data/output-img/product-images/cases/titan-core-open-frame-bench-case/"
+      },
+      {
+        "id": 499,
+        "name": "context.jpg",
+        "alt": "Titan Core Open-Frame Bench Case — in-use context",
+        "product_id": 99,
+        "path": "/data/output-img/product-images/cases/titan-core-open-frame-bench-case/"
+      },
+      {
+        "id": 500,
+        "name": "with-packaging.jpg",
+        "alt": "Titan Core Open-Frame Bench Case — with retail packaging",
+        "product_id": 99,
+        "path": "/data/output-img/product-images/cases/titan-core-open-frame-bench-case/"
+      }
+    ]
+  }
+]

@@ -1,0 +1,47 @@
+{
+  "name": "Example Macro",
+  "version": 1,
+  "recordedAt": "2026-01-01T00:00:00.000Z",
+  "actions": [
+    {
+      "type": "mouse",
+      "action": "click",
+      "button": "left",
+      "x": 742,
+      "y": 381,
+      "delay": 0
+    },
+    {
+      "type": "keyboard",
+      "action": "text",
+      "text": "Hello World",
+      "delay": 500
+    },
+    {
+      "type": "keyboard",
+      "action": "hotkey",
+      "keys": ["ctrl", "a"],
+      "label": "Ctrl+A",
+      "delay": 300
+    },
+    {
+      "type": "mouse",
+      "action": "click",
+      "button": "right",
+      "x": 800,
+      "y": 420,
+      "delay": 300
+    },
+    {
+      "type": "mouse",
+      "action": "scroll",
+      "amount": -5,
+      "delay": 500
+    },
+    {
+      "type": "wait",
+      "duration": 1000,
+      "delay": 0
+    }
+  ]
+}

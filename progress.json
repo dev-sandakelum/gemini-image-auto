@@ -1,0 +1,8 @@
+{
+  "completed": {},
+  "failed": {
+    "0:front": "Failed after 5 retries",
+    "0:alternate": "Failed after 4 retries",
+    "0:detail": "Failed after 4 retries"
+  }
+}

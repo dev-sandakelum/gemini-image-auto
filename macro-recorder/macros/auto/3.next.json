@@ -1,0 +1,26 @@
+{
+  "name": "3.next",
+  "version": 1,
+  "recordedAt": "2026-09-17T16:03:19.400Z",
+  "actions": [
+    {
+      "type": "wait",
+      "duration": 1600,
+      "delay": 0
+    },
+    {
+      "type": "mouse",
+      "action": "click",
+      "button": "left",
+      "x": 796,
+      "y": 965,
+      "holdMs": 160,
+      "delay": 0
+    },
+    {
+      "type": "wait",
+      "duration": 100,
+      "delay": 0
+    }
+  ]
+}

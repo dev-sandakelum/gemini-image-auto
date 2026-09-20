@@ -1,0 +1,22 @@
+{
+  "name": "macro-recorder",
+  "version": "1.0.0",
+  "description": "Windows macro recorder and automation engine with state machine support",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/index.js",
+    "record": "node src/index.js --mode record",
+    "play": "node src/index.js --mode play",
+    "run-automation": "node src/index.js --mode automation",
+    "watch": "node src/watcher.js --macro",
+    "sort": "node src/sorter.js",
+    "count-server": "node count-server.js"
+  },
+  "dependencies": {
+    "@nut-tree-fork/nut-js": "4.2.1",
+    "uiohook-napi": "^1.5.5"
+  },
+  "keywords": ["macro", "recorder", "automation", "windows"],
+  "license": "MIT"
+}

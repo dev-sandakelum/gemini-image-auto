@@ -1,0 +1,79 @@
+{
+  "name": "2.download_image",
+  "version": 1,
+  "recordedAt": "2026-09-17T16:03:19.400Z",
+  "actions": [
+    {
+      "type": "mouse",
+      "action": "click",
+      "button": "left",
+      "x": 141,
+      "y": 450,
+      "holdMs": 160,
+      "delay": 0
+    },
+    {
+      "type": "keyboard",
+      "action": "hotkey",
+      "keys": ["end"],
+      "label": "End",
+      "delay": 0
+    },
+    {
+      "type": "wait",
+      "duration": 400,
+      "delay": 0
+    },
+    {
+      "type": "keyboard",
+      "action": "hotkey",
+      "keys": ["end"],
+      "label": "End",
+      "delay": 0
+    },
+    {
+      "type": "keyboard",
+      "action": "hotkey",
+      "keys": ["end"],
+      "label": "End",
+      "delay": 0
+    },
+    {
+      "type": "mouse",
+      "action": "click",
+      "button": "right",
+      "x": 320,
+      "y": 556,
+      "holdMs": 160,
+      "delay": 0
+    },
+    {
+      "type": "wait",
+      "duration": 200,
+      "delay": 0
+    },
+    {
+      "type": "mouse",
+      "action": "click",
+      "button": "left",
+      "x": 379,
+      "y": 633,
+      "holdMs": 160,
+      "delay": 0
+    },
+    {
+      "type": "wait",
+      "duration": 1600,
+      "delay": 0
+    },
+    {
+      "type": "mouse",
+      "action": "click",
+      "button": "left",
+      "x": 600,
+      "y": 585,
+      "holdMs": 160,
+      "delay": 0
+    }
+  ]
+}

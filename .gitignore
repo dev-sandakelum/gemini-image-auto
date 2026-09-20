@@ -1,0 +1,10 @@
+# Generated product images — do not commit
+macro-recorder/data/output-img/product-images/
+
+# Node
+node_modules/
+macro-recorder/node_modules/
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,10 @@
+{
+  "name": "product-image-generator-puter",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "description": "Generates 5 product images per item using Puter.js (Gemini via Puter), writes them into products.json in place.",
+  "dependencies": {
+    "@heyputer/puter.js": "^2.6.3"
+  }
+}

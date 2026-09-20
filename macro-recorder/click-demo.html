@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Macro Click Demo</title>
+<style>
+  :root {
+    --bg:      #0d1117;
+    --surface: #161b22;
+    --border:  #30363d;
+    --text:    #e6edf3;
+    --muted:   #8b949e;
+    --green:   #3fb950;
+    --blue:    #58a6ff;
+    --yellow:  #d29922;
+    --red:     #f85149;
+    --purple:  #bc8cff;
+    --orange:  #ffa657;
+    --cyan:    #39d353;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 16px;
+    gap: 20px;
+  }
+
+  h1 { font-size: 1.4rem; color: var(--blue); letter-spacing: .04em; }
+  .subtitle { color: var(--muted); font-size: .85rem; }
+
+  /* ── macro tabs ── */
+  .tabs {
+    display: flex; flex-wrap: wrap; gap: 8px;
+    justify-content: center;
+  }
+  .tab {
+    padding: 6px 14px; border-radius: 6px; cursor: pointer;
+    font-size: .82rem; font-weight: 600; border: 1.5px solid transparent;
+    transition: all .15s;
+    user-select: none;
+  }
+  .tab:hover { opacity: .85; }
+  .tab.active { border-color: currentColor; }
+
+  /* ── controls ── */
+  .controls {
+    display: flex; gap: 10px; align-items: center; flex-wrap: wrap;
+    justify-content: center;
+  }
+  button {
+    padding: 7px 18px; border-radius: 6px; border: 1.5px solid var(--border);
+    background: var(--surface); color: var(--text); cursor: pointer;
+    font-size: .85rem; font-weight: 600; transition: background .15s;
+  }
+  button:hover { background: #21262d; }
+  button:disabled { opacity: .4; cursor: default; }
+  .speed-label { color: var(--muted); font-size: .83rem; }
+  input[type=range] { accent-color: var(--blue); cursor: pointer; }
+
+  /* ── screen canvas area ── */
+  .screen-wrap {
+    position: relative;
+    width: 100%;
+    max-width: 960px;
+    background: var(--surface);
+    border: 1.5px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .screen-ratio { padding-top: 56.25%; /* 16:9 */ }
+  canvas#screen {
+    position: absolute; top: 0; left: 0;
+    width: 100%; height: 100%;
+  }
+
+  /* ── step info bar ── */
+  .step-bar {
+    width: 100%; max-width: 960px;
+    background: var(--surface);
+    border: 1.5px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 16px;
+    display: flex; gap: 20px; align-items: center; flex-wrap: wrap;
+  }
+  .step-label { font-size: .82rem; color: var(--muted); }
+  .step-value { font-size: .9rem; font-weight: 600; }
+  .progress-bar {
+    flex: 1; min-width: 120px; height: 6px;
+    background: var(--border); border-radius: 3px; overflow: hidden;
+  }
+  .progress-fill {
+    height: 100%; background: var(--blue);
+    border-radius: 3px; transition: width .1s;
+  }
+
+  /* ── timeline ── */
+  .timeline {
+    width: 100%; max-width: 960px;
+    background: var(--surface);
+    border: 1.5px solid var(--border);
+    border-radius: 8px;
+    padding: 12px 16px;
+    overflow-x: auto;
+  }
+  .timeline h3 { font-size: .8rem; color: var(--muted); margin-bottom: 10px; letter-spacing: .06em; text-transform: uppercase; }
+  .tl-track {
+    display: flex; gap: 4px; align-items: center;
+    min-width: max-content;
+  }
+  .tl-item {
+    display: flex; flex-direction: column; align-items: center; gap: 2px;
+    cursor: pointer; transition: opacity .15s;
+  }
+  .tl-item:hover .tl-dot { transform: scale(1.3); }
+  .tl-dot {
+    width: 12px; height: 12px; border-radius: 50%;
+    border: 2px solid transparent;
+    transition: transform .15s;
+  }
+  .tl-dot.active { border-color: #fff; transform: scale(1.4); }
+  .tl-line { width: 18px; height: 2px; background: var(--border); margin-bottom: 7px; }
+  .tl-lbl { font-size: .65rem; color: var(--muted); white-space: nowrap; }
+
+  /* ── all-macros map ── */
+  .all-wrap {
+    width: 100%; max-width: 960px;
+    background: var(--surface);
+    border: 1.5px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+  .all-wrap .screen-ratio { padding-top: 56.25%; }
+  canvas#all { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+  .all-title { font-size: .78rem; color: var(--muted); padding: 8px 14px; }
+</style>
+</head>
+<body>
+
+<h1>🖱 Macro Click Visual Demo</h1>
+<p class="subtitle">Recorded at 1920 × 1080 · click positions scaled to preview</p>
+
+<!-- tabs -->
+<div class="tabs" id="tabs"></div>
+
+<!-- controls -->
+<div class="controls">
+  <button id="btnPrev">◀ Prev</button>
+  <button id="btnPlay">▶ Play</button>
+  <button id="btnNext">Next ▶</button>
+  <span class="speed-label">Speed</span>
+  <input type="range" id="speedRange" min="0.25" max="4" step="0.25" value="1" style="width:100px"/>
+  <span id="speedVal" class="speed-label">1×</span>
+  <button id="btnReset">↺ Reset</button>
+</div>
+
+<!-- screen preview -->
+<div class="screen-wrap">
+  <div class="screen-ratio"></div>
+  <canvas id="screen"></canvas>
+</div>
+
+<!-- step info -->
+<div class="step-bar">
+  <div>
+    <div class="step-label">MACRO</div>
+    <div class="step-value" id="infoMacro">—</div>
+  </div>
+  <div>
+    <div class="step-label">STEP</div>
+    <div class="step-value" id="infoStep">—</div>
+  </div>
+  <div>
+    <div class="step-label">TYPE</div>
+    <div class="step-value" id="infoType">—</div>
+  </div>
+  <div>
+    <div class="step-label">POSITION</div>
+    <div class="step-value" id="infoPos">—</div>
+  </div>
+  <div>
+    <div class="step-label">HOLD</div>
+    <div class="step-value" id="infoHold">—</div>
+  </div>
+  <div class="progress-bar">
+    <div class="progress-fill" id="progressFill" style="width:0%"></div>
+  </div>
+</div>
+
+<!-- timeline -->
+<div class="timeline">
+  <h3>Timeline</h3>
+  <div class="tl-track" id="tlTrack"></div>
+</div>
+
+<!-- all-macros overview map -->
+<div class="all-title">All macros click map (overview)</div>
+<div class="all-wrap">
+  <div class="screen-ratio"></div>
+  <canvas id="all"></canvas>
+</div>
+
+<script>
+// ─── macro data ───────────────────────────────────────────────────────────────
+const MACROS = [
+  {
+    name: "1 · add_prompt", color: "#58a6ff",
+    actions: [
+      { type:"mouse", action:"click", button:"left",  x:641,  y:967,  holdMs:160 },
+      { type:"wait",  duration:200 },
+      { type:"mouse", action:"click", button:"left",  x:357,  y:921,  holdMs:160 },
+      { type:"wait",  duration:200 },
+      { type:"mouse", action:"click", button:"left",  x:357,  y:921,  holdMs:160 },
+      { type:"wait",  duration:200 },
+      { type:"mouse", action:"click", button:"left",  x:357,  y:921,  holdMs:160 },
+      { type:"wait",  duration:200 },
+      { type:"keyboard", action:"hotkey", label:"Ctrl+V" },
+      { type:"wait",  duration:900 },
+      { type:"mouse", action:"click", button:"left",  x:996,  y:911,  holdMs:120 },
+      { type:"wait",  duration:20000 },
+      { type:"wait",  duration:1600 },
+      { type:"mouse", action:"click", button:"left",  x:796,  y:965,  holdMs:160 },
+      { type:"wait",  duration:100 },
+    ]
+  },
+  {
+    name: "2 · download_image", color: "#3fb950",
+    actions: [
+      { type:"mouse", action:"click", button:"left",  x:141,  y:450,  holdMs:160 },
+      { type:"keyboard", action:"hotkey", label:"End" },
+      { type:"wait",  duration:400 },
+      { type:"keyboard", action:"hotkey", label:"End" },
+      { type:"keyboard", action:"hotkey", label:"End" },
+      { type:"mouse", action:"click", button:"right", x:320,  y:556,  holdMs:160 },
+      { type:"wait",  duration:200 },
+      { type:"mouse", action:"click", button:"left",  x:379,  y:633,  holdMs:160 },
+      { type:"wait",  duration:1600 },
+      { type:"mouse", action:"click", button:"left",  x:600,  y:585,  holdMs:160 },
+    ]
+  },
+  {
+    name: "3 · next", color: "#d29922",
+    actions: [
+      { type:"wait",  duration:1600 },
+      { type:"mouse", action:"click", button:"left",  x:796,  y:965,  holdMs:160 },
+      { type:"wait",  duration:100 },
+    ]
+  },
+  {
+    name: "4 · exit", color: "#f85149",
+    actions: [
+      { type:"mouse", action:"click", button:"left",  x:1077, y:881,  holdMs:160 },
+      { type:"wait",  duration:400 },
+      { type:"keyboard", action:"hotkey", label:"End" },
+      { type:"wait",  duration:400 },
+    ]
+  },
+  {
+    name: "5 · wait", color: "#bc8cff",
+    actions: [
+      { type:"wait",  duration:10000 },
+      { type:"wait",  duration:1600 },
+      { type:"mouse", action:"click", button:"left",  x:796,  y:965,  holdMs:160 },
+      { type:"wait",  duration:100 },
+    ]
+  },
+];
+
+// ─── recorded resolution ──────────────────────────────────────────────────────
+const RW = 1920, RH = 1080;
+
+// ─── state ────────────────────────────────────────────────────────────────────
+let activeMacro = 0;
+let activeStep  = 0;
+let playing     = false;
+let playTimer   = null;
+let speed       = 1;
+
+// ─── canvas refs ─────────────────────────────────────────────────────────────
+const screenCanvas = document.getElementById("screen");
+const ctx          = screenCanvas.getContext("2d");
+const allCanvas    = document.getElementById("all");
+const actx         = allCanvas.getContext("2d");
+
+// ─── ripple animations ────────────────────────────────────────────────────────
+let ripples = [];
+
+function addRipple(x, y, color, button) {
+  ripples.push({ x, y, color, button, r: 0, maxR: 38, alpha: 1, t: Date.now() });
+}
+
+// ─── scale helpers ───────────────────────────────────────────────────────────
+function sx(x) { return (x / RW) * screenCanvas.width; }
+function sy(y) { return (y / RH) * screenCanvas.height; }
+
+// ─── draw screen ─────────────────────────────────────────────────────────────
+function drawScreen() {
+  const W = screenCanvas.width, H = screenCanvas.height;
+  ctx.clearRect(0, 0, W, H);
+
+  // background grid
+  ctx.fillStyle = "#0d1117";
+  ctx.fillRect(0, 0, W, H);
+
+  // subtle grid lines
+  ctx.strokeStyle = "rgba(48,54,61,0.5)";
+  ctx.lineWidth = 0.5;
+  const gx = W / 16, gy = H / 9;
+  for (let i = 0; i <= 16; i++) { ctx.beginPath(); ctx.moveTo(i*gx, 0); ctx.lineTo(i*gx, H); ctx.stroke(); }
+  for (let j = 0; j <= 9;  j++) { ctx.beginPath(); ctx.moveTo(0, j*gy); ctx.lineTo(W, j*gy); ctx.stroke(); }
+
+  // resolution label
+  ctx.fillStyle = "rgba(139,148,158,0.4)";
+  ctx.font = `${Math.max(9, W*0.011)}px monospace`;
+  ctx.fillText(`1920 × 1080`, 6, H - 6);
+
+  const macro   = MACROS[activeMacro];
+  const actions = macro.actions;
+
+  // draw all click dots for this macro (dim)
+  actions.forEach((act, i) => {
+    if (act.type !== "mouse") return;
+    const cx = sx(act.x), cy = sy(act.y);
+    const isActive = (i === activeStep);
+    const isPast   = (i < activeStep);
+
+    ctx.beginPath();
+    ctx.arc(cx, cy, isActive ? 12 : 7, 0, Math.PI * 2);
+    if (isActive) {
+      ctx.fillStyle = macro.color;
+      ctx.globalAlpha = 1;
+    } else if (isPast) {
+      ctx.fillStyle = macro.color;
+      ctx.globalAlpha = 0.25;
+    } else {
+      ctx.fillStyle = macro.color;
+      ctx.globalAlpha = 0.15;
+    }
+    ctx.fill();
+    ctx.globalAlpha = 1;
+
+    // dot label
+    if (isActive || isPast) {
+      ctx.fillStyle = isActive ? "#fff" : "rgba(255,255,255,0.4)";
+      ctx.font = `bold ${Math.max(8, W * 0.009)}px monospace`;
+      ctx.textAlign = "center";
+      ctx.textBaseline = "middle";
+      ctx.fillText(String(i + 1), cx, cy);
+    }
+
+    // crosshair on active
+    if (isActive) {
+      ctx.strokeStyle = macro.color;
+      ctx.lineWidth = 1.5;
+      ctx.globalAlpha = 0.6;
+      ctx.beginPath(); ctx.moveTo(cx - 20, cy); ctx.lineTo(cx + 20, cy); ctx.stroke();
+      ctx.beginPath(); ctx.moveTo(cx, cy - 20); ctx.lineTo(cx, cy + 20); ctx.stroke();
+      ctx.globalAlpha = 1;
+
+      // coordinate label
+      ctx.fillStyle = macro.color;
+      ctx.font = `${Math.max(9, W*0.011)}px monospace`;
+      ctx.textAlign = "left";
+      ctx.textBaseline = "top";
+      const lx = cx + 16, ly = cy - 8;
+      ctx.fillText(`(${act.x}, ${act.y})`, lx, ly);
+      ctx.fillText(`hold ${act.holdMs ?? 60}ms`, lx, ly + 14);
+      ctx.fillText(act.button === "right" ? "RIGHT CLICK" : "LEFT CLICK", lx, ly + 28);
+    }
+  });
+
+  // path lines between clicks
+  const clicks = actions.filter(a => a.type === "mouse");
+  if (clicks.length > 1) {
+    ctx.strokeStyle = macro.color;
+    ctx.lineWidth   = 1;
+    ctx.globalAlpha = 0.2;
+    ctx.setLineDash([4, 6]);
+    ctx.beginPath();
+    clicks.forEach((c, i) => {
+      const px = sx(c.x), py = sy(c.y);
+      i === 0 ? ctx.moveTo(px, py) : ctx.lineTo(px, py);
+    });
+    ctx.stroke();
+    ctx.setLineDash([]);
+    ctx.globalAlpha = 1;
+  }
+
+  // ripple animations
+  const now = Date.now();
+  ripples = ripples.filter(r => r.alpha > 0);
+  ripples.forEach(r => {
+    const age  = (now - r.t) / 600;
+    r.r     = r.maxR * age;
+    r.alpha = Math.max(0, 1 - age);
+    ctx.beginPath();
+    ctx.arc(sx(r.x), sy(r.y), r.r, 0, Math.PI * 2);
+    ctx.strokeStyle = r.color;
+    ctx.lineWidth   = 2;
+    ctx.globalAlpha = r.alpha;
+    ctx.stroke();
+    ctx.globalAlpha = 1;
+  });
+
+  if (ripples.length > 0) requestAnimationFrame(drawScreen);
+}
+
+// ─── draw all-macros overview ─────────────────────────────────────────────────
+function drawAllMap() {
+  const W = allCanvas.width, H = allCanvas.height;
+  actx.clearRect(0, 0, W, H);
+  actx.fillStyle = "#0d1117";
+  actx.fillRect(0, 0, W, H);
+
+  actx.strokeStyle = "rgba(48,54,61,0.4)";
+  actx.lineWidth = 0.5;
+  const gx = W / 16, gy = H / 9;
+  for (let i = 0; i <= 16; i++) { actx.beginPath(); actx.moveTo(i*gx,0); actx.lineTo(i*gx,H); actx.stroke(); }
+  for (let j = 0; j <= 9;  j++) { actx.beginPath(); actx.moveTo(0,j*gy); actx.lineTo(W,j*gy); actx.stroke(); }
+
+  MACROS.forEach((macro, mi) => {
+    const clicks = macro.actions.filter(a => a.type === "mouse");
+    // path
+    if (clicks.length > 1) {
+      actx.strokeStyle = macro.color;
+      actx.lineWidth   = 1;
+      actx.globalAlpha = 0.15;
+      actx.setLineDash([3,5]);
+      actx.beginPath();
+      clicks.forEach((c, i) => {
+        const px = (c.x / RW) * W, py = (c.y / RH) * H;
+        i === 0 ? actx.moveTo(px, py) : actx.lineTo(px, py);
+      });
+      actx.stroke();
+      actx.setLineDash([]);
+    }
+    // dots
+    clicks.forEach(c => {
+      const px = (c.x / RW) * W, py = (c.y / RH) * H;
+      actx.beginPath();
+      actx.arc(px, py, 5, 0, Math.PI * 2);
+      actx.fillStyle  = macro.color;
+      actx.globalAlpha = (mi === activeMacro) ? 0.9 : 0.3;
+      actx.fill();
+      actx.globalAlpha = 1;
+    });
+    // legend label
+    actx.fillStyle  = macro.color;
+    actx.globalAlpha = 0.8;
+    actx.font = `${Math.max(8, W*0.01)}px sans-serif`;
+    actx.textAlign  = "left";
+    actx.textBaseline = "top";
+    if (clicks.length) {
+      const first = clicks[0];
+      actx.fillText(macro.name, (first.x / RW) * W + 7, (first.y / RH) * H - 12);
+    }
+    actx.globalAlpha = 1;
+  });
+}
+
+// ─── resize canvases ─────────────────────────────────────────────────────────
+function resizeCanvases() {
+  const wrap   = screenCanvas.parentElement;
+  const allWrap = allCanvas.parentElement;
+  screenCanvas.width  = wrap.clientWidth;
+  screenCanvas.height = wrap.clientHeight;
+  allCanvas.width     = allWrap.clientWidth;
+  allCanvas.height    = allWrap.clientHeight;
+  drawScreen();
+  drawAllMap();
+}
+
+// ─── build tabs ───────────────────────────────────────────────────────────────
+function buildTabs() {
+  const container = document.getElementById("tabs");
+  container.innerHTML = "";
+  MACROS.forEach((m, i) => {
+    const t = document.createElement("div");
+    t.className = "tab" + (i === activeMacro ? " active" : "");
+    t.textContent = m.name;
+    t.style.color = m.color;
+    t.style.borderColor = i === activeMacro ? m.color : "transparent";
+    t.style.background  = i === activeMacro ? m.color + "18" : "var(--surface)";
+    t.addEventListener("click", () => {
+      stopPlay();
+      activeMacro = i;
+      activeStep  = 0;
+      buildTabs();
+      buildTimeline();
+      updateStepInfo();
+      drawScreen();
+      drawAllMap();
+    });
+    container.appendChild(t);
+  });
+}
+
+// ─── build timeline ───────────────────────────────────────────────────────────
+function buildTimeline() {
+  const track = document.getElementById("tlTrack");
+  track.innerHTML = "";
+  const macro = MACROS[activeMacro];
+  macro.actions.forEach((act, i) => {
+    if (i > 0) {
+      const line = document.createElement("div");
+      line.className = "tl-line";
+      track.appendChild(line);
+    }
+    const wrap = document.createElement("div");
+    wrap.className = "tl-item";
+
+    const dot = document.createElement("div");
+    dot.className = "tl-dot" + (i === activeStep ? " active" : "");
+    dot.id = `tl-${i}`;
+    if (act.type === "mouse") {
+      dot.style.background = act.button === "right" ? "#f85149" : macro.color;
+    } else if (act.type === "wait") {
+      dot.style.background = "#8b949e";
+    } else {
+      dot.style.background = "#d29922";
+    }
+
+    const lbl = document.createElement("div");
+    lbl.className = "tl-lbl";
+    if (act.type === "mouse") lbl.textContent = act.button === "right" ? "R" : "L";
+    else if (act.type === "wait") lbl.textContent = (act.duration >= 1000 ? (act.duration/1000).toFixed(1)+"s" : act.duration+"ms");
+    else lbl.textContent = act.label || "key";
+
+    wrap.appendChild(dot);
+    wrap.appendChild(lbl);
+    wrap.addEventListener("click", () => { stopPlay(); jumpTo(i); });
+    track.appendChild(wrap);
+  });
+}
+
+function highlightTimeline(i) {
+  document.querySelectorAll(".tl-dot").forEach(d => d.classList.remove("active"));
+  const d = document.getElementById(`tl-${i}`);
+  if (d) {
+    d.classList.add("active");
+    d.scrollIntoView({ inline: "center", behavior: "smooth" });
+  }
+}
+
+// ─── step info ────────────────────────────────────────────────────────────────
+function updateStepInfo() {
+  const macro = MACROS[activeMacro];
+  const act   = macro.actions[activeStep];
+  const total = macro.actions.length;
+
+  document.getElementById("infoMacro").textContent = macro.name;
+  document.getElementById("infoStep").textContent  = `${activeStep + 1} / ${total}`;
+  document.getElementById("progressFill").style.width = `${((activeStep + 1) / total) * 100}%`;
+
+  if (!act) return;
+  if (act.type === "mouse") {
+    document.getElementById("infoType").textContent = `🖱 ${act.action} (${act.button})`;
+    document.getElementById("infoPos").textContent  = `(${act.x}, ${act.y})`;
+    document.getElementById("infoHold").textContent = `${act.holdMs ?? 60} ms`;
+  } else if (act.type === "wait") {
+    document.getElementById("infoType").textContent = `⏳ wait`;
+    document.getElementById("infoPos").textContent  = `—`;
+    document.getElementById("infoHold").textContent = `${act.duration} ms`;
+  } else {
+    document.getElementById("infoType").textContent = `⌨ ${act.label || act.action}`;
+    document.getElementById("infoPos").textContent  = `—`;
+    document.getElementById("infoHold").textContent = `—`;
+  }
+
+  highlightTimeline(activeStep);
+
+  // ripple on click steps
+  if (act.type === "mouse") {
+    const macro = MACROS[activeMacro];
+    addRipple(act.x, act.y, act.button === "right" ? "#f85149" : macro.color, act.button);
+    requestAnimationFrame(drawScreen);
+  }
+}
+
+// ─── navigation ──────────────────────────────────────────────────────────────
+function jumpTo(i) {
+  const macro = MACROS[activeMacro];
+  activeStep = Math.max(0, Math.min(i, macro.actions.length - 1));
+  updateStepInfo();
+  drawScreen();
+}
+
+function stepNext() { jumpTo(activeStep + 1); }
+function stepPrev() { jumpTo(activeStep - 1); }
+
+function reset() {
+  stopPlay();
+  activeStep = 0;
+  ripples = [];
+  updateStepInfo();
+  drawScreen();
+}
+
+// ─── auto play ────────────────────────────────────────────────────────────────
+function stopPlay() {
+  playing = false;
+  clearTimeout(playTimer);
+  document.getElementById("btnPlay").textContent = "▶ Play";
+}
+
+function startPlay() {
+  if (playing) { stopPlay(); return; }
+  playing = true;
+  document.getElementById("btnPlay").textContent = "⏸ Pause";
+  scheduleNext();
+}
+
+function scheduleNext() {
+  if (!playing) return;
+  const macro = MACROS[activeMacro];
+  const act   = macro.actions[activeStep];
+  if (!act) { stopPlay(); return; }
+
+  // delay before showing this step
+  let waitMs = 0;
+  if (act.type === "wait") {
+    waitMs = Math.min(act.duration / speed, 3000); // cap long waits at 3s in preview
+  } else {
+    waitMs = 400 / speed;
+  }
+
+  playTimer = setTimeout(() => {
+    if (!playing) return;
+    if (activeStep >= macro.actions.length - 1) {
+      stopPlay();
+      return;
+    }
+    stepNext();
+    scheduleNext();
+  }, waitMs);
+}
+
+// ─── init ─────────────────────────────────────────────────────────────────────
+document.getElementById("btnPlay").addEventListener("click", startPlay);
+document.getElementById("btnNext").addEventListener("click", () => { stopPlay(); stepNext(); });
+document.getElementById("btnPrev").addEventListener("click", () => { stopPlay(); stepPrev(); });
+document.getElementById("btnReset").addEventListener("click", reset);
+document.getElementById("speedRange").addEventListener("input", e => {
+  speed = parseFloat(e.target.value);
+  document.getElementById("speedVal").textContent = speed + "×";
+});
+
+window.addEventListener("resize", resizeCanvases);
+
+// keyboard nav
+document.addEventListener("keydown", e => {
+  if (e.key === "ArrowRight") { stopPlay(); stepNext(); }
+  if (e.key === "ArrowLeft")  { stopPlay(); stepPrev(); }
+  if (e.key === " ")          { e.preventDefault(); startPlay(); }
+  if (e.key === "r" || e.key === "R") reset();
+  if (e.key >= "1" && e.key <= "5") {
+    stopPlay();
+    activeMacro = parseInt(e.key) - 1;
+    activeStep  = 0;
+    buildTabs(); buildTimeline(); updateStepInfo(); drawScreen(); drawAllMap();
+  }
+});
+
+// init sequence
+buildTabs();
+buildTimeline();
+
+// wait for layout then resize
+requestAnimationFrame(() => {
+  resizeCanvases();
+  updateStepInfo();
+});
+</script>
+</body>
+</html>

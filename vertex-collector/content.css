@@ -1,0 +1,122 @@
+/* ================================================================
+   MAIN PANEL (draggable widget)
+   ================================================================ */
+#vertex-widget {
+  position: fixed; right: 16px; bottom: 16px; z-index: 2147483647; width: 290px;
+  background: #16181d; color: #e8eaed; border: 1px solid #3c4043; border-radius: 10px;
+  font: 12px/1.45 system-ui, sans-serif; box-shadow: 0 6px 24px rgba(0,0,0,.4);
+}
+.vx-head {
+  padding: 8px 10px; font-weight: 600; cursor: move; background: #202124;
+  border-radius: 10px 10px 0 0; display: flex; justify-content: space-between; align-items: center;
+}
+.vx-count { font-weight: 400; color: #9aa0a6; font-size: 11px; }
+.vx-body { padding: 10px; display: flex; flex-direction: column; gap: 8px; }
+.vx-body p { margin: 0; color: #bdc1c6; }
+#vx-select, textarea#vx-prompt {
+  width: 100%; background: #202124; color: #e8eaed; border: 1px solid #3c4043;
+  border-radius: 6px; padding: 5px; font: inherit; box-sizing: border-box;
+}
+textarea#vx-prompt { resize: vertical; }
+.vx-product { font-weight: 600; }
+.vx-chips { display: flex; gap: 4px; flex-wrap: wrap; }
+.vx-chip {
+  padding: 2px 6px; border-radius: 10px; background: #303134; color: #9aa0a6;
+  cursor: pointer; font-size: 11px; border: 1px solid transparent;
+}
+.vx-chip.vx-done { background: #1e3a26; color: #81c995; }
+.vx-chip.vx-cur  { border-color: #8ab4f8; color: #8ab4f8; }
+.vx-file { color: #9aa0a6; word-break: break-all; }
+.vx-row { display: flex; gap: 6px; }
+.vx-row button {
+  flex: 1; background: #303134; color: #e8eaed; border: 1px solid #3c4043;
+  border-radius: 6px; padding: 5px; cursor: pointer; font: inherit;
+}
+.vx-row button:hover { background: #3c4043; }
+#vx-copy { background: #8ab4f8; color: #202124; border-color: #8ab4f8; font-weight: 600; }
+#vx-status { min-height: 14px; color: #81c995; font-size: 11px; }
+.vx-foot { display: flex; justify-content: space-between; align-items: center; }
+.vx-foot button { background: none; border: none; color: #9aa0a6; cursor: pointer; text-decoration: underline; }
+.vx-filebtn { cursor: pointer; color: #8ab4f8; text-decoration: underline; }
+.vx-filebtn.big {
+  display: inline-block; align-self: flex-start; background: #8ab4f8; color: #202124;
+  padding: 8px 12px; border-radius: 6px; font-weight: 600; text-decoration: none;
+}
+.vx-filebtn input { display: none; }
+
+/* ================================================================
+   SAVE OVERLAY (hover button on generated images)
+   ================================================================ */
+#vertex-save-overlay {
+  position: absolute; z-index: 2147483647; transform: translateX(-100%);
+  background: #8ab4f8; color: #202124; border: none; border-radius: 6px 6px 0 0;
+  padding: 5px 10px; font: 600 12px system-ui, sans-serif; cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,.35);
+}
+#vertex-save-overlay:disabled { opacity: .7; cursor: wait; }
+
+/* ================================================================
+   FIXED HUD — three pill buttons at bottom-centre
+   ================================================================ */
+#vx-hud {
+  position: fixed;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2147483647;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(22, 24, 29, 0.92);
+  border: 1px solid #3c4043;
+  border-radius: 40px;
+  padding: 6px 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,.5);
+  font: 12px/1 system-ui, sans-serif;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  /* keep it above Gemini UI but below the draggable panel */
+  pointer-events: auto;
+  white-space: nowrap;
+}
+
+/* individual pills */
+.vx-pill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 130px;
+  padding: 6px 0;
+  border-radius: 20px;
+  border: 1px solid #3c4043;
+  background: #303134;
+  color: #e8eaed;
+  cursor: pointer;
+  font: inherit;
+  transition: background 0.15s, transform 0.1s;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.vx-pill:hover  { background: #3c4043; }
+.vx-pill:active { transform: scale(0.96); }
+
+.vx-pill-icon  { font-size: 14px; line-height: 1; }
+.vx-pill-label { font-size: 11px; font-weight: 600; }
+
+/* colour accents per button */
+.vx-pill-name   { border-color: #81c995; color: #81c995; }
+.vx-pill-name:hover { background: #1e3a26; }
+
+.vx-pill-prompt { border-color: #8ab4f8; color: #8ab4f8; }
+.vx-pill-prompt:hover { background: #1a2e4a; }
+
+.vx-pill-next   { border-color: #f28b82; color: #f28b82; }
+.vx-pill-next:hover { background: #3a1e1e; }
+
+/* refresh pill — replaces next */
+.vx-pill-refresh { border-color: #f28b82; color: #f28b82; min-width: 160px; }
+.vx-pill-refresh:hover   { background: #3a1e1e; }
+.vx-pill-refresh:disabled { opacity: 0.6; cursor: wait; }
+
+
