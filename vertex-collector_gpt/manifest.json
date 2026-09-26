@@ -21,6 +21,12 @@
     "default_title": "Vertex Image Collector"
   },
   "background": { "service_worker": "background.js" },
+  "web_accessible_resources": [
+    {
+      "resources": ["brand/*"],
+      "matches": ["https://chatgpt.com/*"]
+    }
+  ],
   "content_scripts": [
     {
       "matches": ["https://chatgpt.com/*"],

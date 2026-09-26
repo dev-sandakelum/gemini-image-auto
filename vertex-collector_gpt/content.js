@@ -104,15 +104,21 @@
       "Do not alter the product in any way.",
 
     "with-packaging":
-      "PRODUCT + PACKAGING CATALOG PHOTOGRAPH. " +
-      "Show the exact same product standing naturally beside its retail packaging. " +
-      "The product itself must remain fully visible and identical to the other four images. " +
-      "Packaging should be realistic, clean, premium, minimal and physically believable. " +
+      "MANDATORY REQUIREMENT — RETAIL BOX MUST BE VISIBLE IN THIS IMAGE, NO EXCEPTIONS. " +
+      "This image is REJECTED if no packaging/box appears. " +
+      "PRODUCT + PACKAGING CATALOG PHOTOGRAPH: the frame must contain TWO objects side by side — " +
+      "(1) the product itself, and (2) its closed retail packaging box standing upright next to it. " +
+      "Both the product AND the box must be clearly visible at the same time. " +
+      "The product must remain fully visible and identical to the other four images. " +
+      "The packaging box should be realistic, clean, premium, minimal and physically believable — " +
+      "sized appropriately to actually hold the product. " +
       "The box must be closed and structurally appropriate for the product. " +
       "Do not invent readable product specifications, fake certifications, fake brand names, " +
-      "or random typography. If branding is not explicitly provided, keep packaging graphics minimal and non-readable. " +
+      "or random typography. If branding is not explicitly provided, keep packaging graphics minimal and non-readable, " +
+      "but the box itself must still be present and visible. " +
       "Clean neutral studio surface, soft professional lighting, subtle realistic shadows, " +
-      "premium e-commerce photography.",
+      "premium e-commerce photography. " +
+      "REMINDER: an image showing only the bare product with no box is INCORRECT for this slot.",
   };
 
   // ── state ────────────────────────────────────────────────────────
@@ -133,6 +139,9 @@
   const doneKey    = (p, s) => `${p.id}|${s.file}`;
   const isDone     = (p, s) => Boolean(state.done[doneKey(p, s)]);
   const folderOf   = (p) => `${p.id}-${p.slug}`;
+  const brandLogoFile = (p) => (p.brand ? `${p.brand}.jpg` : null);
+  const brandLogoUrl  = (p) =>
+    p.brand ? chrome.runtime.getURL(`brand/${p.brand}.jpg`) : null;
   const totalDone  = () => Object.keys(state.done).length;
   const totalSlots = () => state.products.length * SLOTS.length;
 
@@ -149,9 +158,39 @@
     return DEFAULT_STYLE;
   }
 
-  const buildPrompt = (p, view) =>
-    `Professional product photo of ${(p.name || "generic product").trim()} ` +
-    `(${resolveStyle(p.category)}), ${VIEW_MODIFIERS[view]}, ${QUALITY_TAIL}`;
+  const NEW_GENERATION_NOTICE =
+    "This is a fresh, independent image generation. Do not reuse, copy, or re-crop " +
+    "any previously generated image in this conversation as a shortcut — generate this " +
+    "view from scratch following the camera angle and composition instructions below exactly. " +
+    "If an earlier image in this chat used a different camera angle or composition than what " +
+    "is requested here, this new image must still change to match THIS slot's instructions.";
+
+  const buildPrompt = (p, view) => {
+    const brand = (p.brand || "").trim();
+    const productLine = brand
+      ? `PRODUCT: ${(p.name || "generic product").trim()} — ${resolveStyle(p.category)}. ` +
+        `BRAND: >>> ${brand.toUpperCase()} <<<.`
+      : `PRODUCT: ${(p.name || "generic product").trim()} — ${resolveStyle(p.category)}.`;
+
+    const brandLine = brand
+      ? `BRANDING REQUIREMENT: This product is made by ${brand.toUpperCase()}. ` +
+        `A reference brand logo image for ${brand.toUpperCase()} is attached/available — ` +
+        `use it as the authoritative source for the brand's logo shape, wordmark, and colors. ` +
+        `Reproduce the ${brand.toUpperCase()} logo accurately and only where it would realistically ` +
+        `appear on this product or its packaging (e.g. printed on the device, its box, or a discreet label). ` +
+        `Do not invent a different logo, do not distort the ${brand.toUpperCase()} wordmark, ` +
+        `and do not add any other brand's branding.`
+      : "";
+
+    return (
+      `${NEW_GENERATION_NOTICE}\n\n` +
+      `${VIEW_MODIFIERS[view]}\n\n` +
+      `${productLine}\n\n` +
+      (brandLine ? `${brandLine}\n\n` : "") +
+      `${PRODUCT_IDENTITY}\n\n` +
+      `${QUALITY_TAIL}`
+    );
+  };
 
   // ── helpers ──────────────────────────────────────────────────────
   const escapeHtml = (s) =>
@@ -225,6 +264,13 @@
       ? "no data"
       : `${state.lastImageCount} · ${state.index + 1}/${state.products.length} · ${s.file}`;
 
+    const logoPillHTML = p && p.brand
+      ? `<button id="vx-hud-copy-logo" class="vx-pill vx-pill-logo" title="Copy ${escapeHtml(p.brand)} logo to clipboard">
+           <span class="vx-pill-icon">🏷️</span>
+           <span class="vx-pill-label">Copy Logo</span>
+         </button>`
+      : "";
+
     hud.innerHTML = `
       <button id="vx-hud-copy-name" class="vx-pill vx-pill-name" title="Copy image filename">
         <span class="vx-pill-icon">📋</span>
@@ -234,6 +280,7 @@
         <span class="vx-pill-icon">✏️</span>
         <span class="vx-pill-label">Copy Prompt</span>
       </button>
+      ${logoPillHTML}
       <button id="vx-hud-refresh" class="vx-pill vx-pill-refresh" title="Refresh image count from downloads">
         <span class="vx-pill-icon">🔄</span>
         <span class="vx-pill-label">${escapeHtml(posLabel)}</span>
@@ -250,6 +297,16 @@
       if (!p) return;
       navigator.clipboard.writeText(buildPrompt(p, curSlot().view)).catch(() => {});
     });
+
+    const hudLogoBtn = document.getElementById("vx-hud-copy-logo");
+    if (hudLogoBtn) {
+      hudLogoBtn.addEventListener("click", () => {
+        if (!p || !p.brand) return;
+        const lbl = hudLogoBtn.querySelector(".vx-pill-label");
+        copyLogoToClipboard(p.brand, lbl);
+        if (lbl) setTimeout(() => { lbl.textContent = "Copy Logo"; }, 3400);
+      });
+    }
 
     const refreshBtn = document.getElementById("vx-hud-refresh");
     refreshBtn.addEventListener("click", () => {
@@ -330,6 +387,57 @@
     return Math.round((totalDone() / totalSlots()) * 100);
   }
 
+  function copyLogoToClipboard(brand, statusEl) {
+    const url = brandLogoUrl({ brand });
+    flashStatus("Copying logo…", statusEl);
+
+    const img = new Image();
+    img.crossOrigin = "anonymous";
+    img.onload = () => {
+      try {
+        const canvas = document.createElement("canvas");
+        canvas.width = img.naturalWidth;
+        canvas.height = img.naturalHeight;
+        const ctx = canvas.getContext("2d");
+        ctx.drawImage(img, 0, 0);
+        canvas.toBlob((blob) => {
+          if (!blob) {
+            flashStatus(`⚠ Could not read brand/${brand}.jpg`, statusEl);
+            return;
+          }
+          navigator.clipboard
+            .write([new ClipboardItem({ "image/png": blob })])
+            .then(() => flashStatus(`✓ ${brand} logo copied to clipboard`, statusEl))
+            .catch(() => flashStatus("⚠ Clipboard write failed", statusEl));
+        }, "image/png");
+      } catch (err) {
+        flashStatus("⚠ Could not copy logo", statusEl);
+      }
+    };
+    img.onerror = () => {
+      flashStatus(`⚠ Logo file missing: brand/${brand}.jpg`, statusEl);
+    };
+    img.src = url;
+  }
+
+  function brandSectionHTML(p) {
+    if (!p.brand) return "";
+    const url = brandLogoUrl(p);
+    return `
+      <div class="vx-brand-row" data-brand="${escapeHtml(p.brand)}">
+        <img id="vx-brand-logo" class="vx-brand-thumb" src="${url}"
+             alt="${escapeHtml(p.brand)} logo"
+             onerror="this.classList.add('vx-brand-thumb-missing'); this.alt='⚠ logo not found';" />
+        <div class="vx-brand-meta">
+          <span class="vx-brand-name">${escapeHtml(p.brand)}</span>
+          <span class="vx-brand-file">brand/${escapeHtml(p.brand)}.jpg</span>
+        </div>
+        <button id="vx-copy-logo" class="vx-btn vx-btn-ghost" title="Copy logo image to clipboard">
+          <span>📋</span> Copy Logo
+        </button>
+      </div>`;
+  }
+
   function panelHTML() {
     const p = curProduct(), s = curSlot();
     const pct = progressPct();
@@ -360,6 +468,8 @@
         </div>
         <div class="vx-product-idx">${state.index + 1} / ${state.products.length}</div>
 
+        ${brandSectionHTML(p)}
+
         <div class="vx-slots-row">
           ${slotBar(p)}
         </div>
@@ -368,6 +478,8 @@
           <span class="vx-slot-badge">${s.file}</span>
           <span class="vx-slot-desc">${s.label}</span>
         </div>
+
+        <div class="vx-tip">💡 Paste into a <b>new chat</b> for every slot — replying in the same thread as a previous image often makes ChatGPT re-edit that image instead of generating a new one.</div>
 
         <textarea id="vx-prompt" readonly rows="4">${escapeHtml(buildPrompt(p, s.view))}</textarea>
 
@@ -439,7 +551,7 @@
         state.products = data.map((p, i) => {
           const id   = String(p.id ?? i + 1);
           const name = p.name || `product-${id}`;
-          return { id, name, category: p.category || "", slug: p.slug || slugify(name) };
+          return { id, name, category: p.category || "", brand: (p.brand || "").trim(), slug: p.slug || slugify(name) };
         });
         state.index = 0; state.slot = 0;
         return saveState().then(() => { render(); renderHud(); });
@@ -465,6 +577,11 @@
           ta.select(); document.execCommand("copy");
           flashStatus("✓ Prompt copied", panelStatus());
         });
+    });
+
+    on("vx-copy-logo", () => {
+      const p = curProduct(); if (!p || !p.brand) return;
+      copyLogoToClipboard(p.brand, panelStatus());
     });
 
     on("vx-prev-s", () => {
