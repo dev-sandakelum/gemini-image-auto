@@ -23,19 +23,86 @@
     "router": "wifi router", "networking": "networking device",
     "accessories": "computer accessory", "peripherals": "computer peripheral",
   };
-  const DEFAULT_STYLE = "computer product";
-  const QUALITY_TAIL =
-    "high detail, sharp focus, professional commercial product photography, " +
-    "you need to think about how it good as product image and view now we genarating , give most good product image based on that product and is view"+
-    "single product only, no text, no watermark, no extra props, 1:1 aspect ratio, 720p image size";
+const DEFAULT_STYLE =
+  "premium commercial e-commerce product photography";
 
-  const VIEW_MODIFIERS = {
-    "main": "[this is a new product ] front-facing product shot, centered on a seamless pure white studio background, e-commerce catalog style, even soft diffused lighting, subtle soft shadow directly beneath the product",
-    "angle": "three-quarter angle view turned 35-45 degrees from front, same seamless white studio background and lighting as the main shot, e-commerce catalog style, soft shadow beneath product",
-    "detail": "extreme close-up macro shot isolating the product's single most distinctive feature, shallow depth of field with soft blurred background, no full product visible, studio lighting that reveals texture and material",
-    "context": "shown in active real-world use in a realistic, tidy everyday setting, natural ambient lighting, lifestyle photo style, product remains the clear focal point and fully in focus",
-    "with-packaging": "displayed standing beside its closed retail packaging box, both clearly visible, on a clean neutral studio surface, soft studio lighting, simple minimal box design with no readable fake text",
-  };
+const QUALITY_TAIL =
+  "Photorealistic, ultra-detailed, premium studio photography, " +
+  "accurate real-world materials, physically realistic proportions, " +
+  "precise edges, realistic reflections, realistic shadows, " +
+  "sharp product details, controlled highlights, professional color accuracy, " +
+  "clean composition, premium catalog quality, " +
+  "single exact product, no duplicate product, no extra objects, " +
+  "no text overlays, no watermark, no logos added by the generator, " +
+  "no invented accessories, no invented features, no design changes, " +
+  "square 1:1 composition, 720p.";
+
+const PRODUCT_IDENTITY =
+  "PRODUCT IDENTITY MUST REMAIN EXACTLY CONSISTENT ACROSS ALL FIVE IMAGES. " +
+  "Treat the provided product description as the authoritative source of truth. " +
+  "Preserve the exact product model, shape, dimensions, proportions, " +
+  "color, finish, materials, buttons, ports, vents, seams, controls, " +
+  "screen shape, camera placement, branding placement, and every visible physical feature. " +
+  "Do not redesign, simplify, beautify, recolor, reinterpret, or invent any part of the product. " +
+  "Every image must depict the SAME physical product photographed from a different camera/viewpoint.";
+
+const VIEW_MODIFIERS = {
+
+  main:
+    "PRIMARY CATALOG IMAGE. " +
+    "Straight-on front-facing view of the product, perfectly centered and fully visible. " +
+    "Product occupies approximately 70-80% of the frame. " +
+    "Camera positioned at product eye level with minimal perspective distortion. " +
+    "Pure seamless white background (#FFFFFF), professional high-key studio lighting, " +
+    "large softbox lighting from both sides, subtle controlled fill light, " +
+    "natural soft contact shadow directly underneath, " +
+    "clean premium Amazon/Apple-style product catalog presentation. " +
+    "No dramatic perspective, no environmental elements.",
+
+  angle:
+    "PREMIUM THREE-QUARTER CATALOG VIEW. " +
+    "Show the exact same product from approximately 40 degrees horizontally rotated from the front. " +
+    "Keep the product's proportions, geometry, color, materials, and every physical feature identical to the main image. " +
+    "Reveal useful side depth and construction details without hiding the primary face. " +
+    "Product centered and fully visible, occupying approximately 70-80% of the frame. " +
+    "Seamless pure white studio background, identical lighting character to the main image, " +
+    "soft realistic contact shadow, controlled reflections, premium commercial photography.",
+
+  detail:
+    "PRECISION DETAIL PHOTOGRAPH. " +
+    "Create a highly realistic macro close-up of the single most distinctive physical feature of this exact product. " +
+    "Choose a feature that genuinely exists on the product rather than inventing one. " +
+    "Show authentic material texture, machining, surface finish, buttons, ports, stitching, " +
+    "display details, or other distinctive construction detail as appropriate. " +
+    "Use shallow depth of field while keeping the selected feature extremely sharp. " +
+    "Soft neutral studio background with subtle blur. " +
+    "Premium macro product photography, realistic optical characteristics, " +
+    "controlled highlights and reflections. " +
+    "Do not show another product or unrelated accessory.",
+
+  context:
+    "REALISTIC LIFESTYLE PRODUCT PHOTOGRAPH. " +
+    "Show the exact same product naturally being used for its intended purpose " +
+    "in a realistic, modern, tidy environment appropriate to the product category. " +
+    "The environment must support the product rather than compete with it. " +
+    "Product remains the dominant visual subject, fully recognizable and sharply focused. " +
+    "Use realistic natural lighting combined with subtle professional fill lighting. " +
+    "Authentic materials, realistic scale, believable perspective, " +
+    "premium editorial commercial photography. " +
+    "Do not add accessories unless they are logically required for the described use. " +
+    "Do not alter the product in any way.",
+
+  "with-packaging":
+    "PRODUCT + PACKAGING CATALOG PHOTOGRAPH. " +
+    "Show the exact same product standing naturally beside its retail packaging. " +
+    "The product itself must remain fully visible and identical to the other four images. " +
+    "Packaging should be realistic, clean, premium, minimal and physically believable. " +
+    "The box must be closed and structurally appropriate for the product. " +
+    "Do not invent readable product specifications, fake certifications, fake brand names, " +
+    "or random typography. If branding is not explicitly provided, keep packaging graphics minimal and non-readable. " +
+    "Clean neutral studio surface, soft professional lighting, subtle realistic shadows, " +
+    "premium e-commerce photography."
+};
   // ---------------- state ----------------
   let state = { products: [], index: 0, slot: 0, done: {}, pos: null, lastImageCount: 0 };
 

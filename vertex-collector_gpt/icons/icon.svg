@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Background circle -->
+  <circle cx="64" cy="64" r="64" fill="#10a37f"/>
+
+  <!-- Lightning bolt (⚡ shape) -->
+  <polygon
+    points="74,12 42,68 62,68 54,116 86,56 66,56"
+    fill="#ffffff"
+    stroke="#ffffff"
+    stroke-width="2"
+    stroke-linejoin="round"
+  />
+</svg>

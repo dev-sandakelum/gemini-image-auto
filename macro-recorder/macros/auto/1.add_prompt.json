@@ -4,6 +4,11 @@
   "recordedAt": "2026-09-17T16:03:19.400Z",
   "actions": [
     {
+      "type": "wait",
+      "duration": 1000,
+      "delay": 0
+    },
+    {
       "type": "mouse",
       "action": "click",
       "button": "left",
@@ -47,8 +52,8 @@
       "type": "mouse",
       "action": "click",
       "button": "left",
-      "x": 357,
-      "y": 921,
+      "x": 550,
+      "y": 800,
       "holdMs": 160,
       "delay": 0
     },
@@ -61,8 +66,8 @@
       "type": "mouse",
       "action": "click",
       "button": "left",
-      "x": 357,
-      "y": 921,
+      "x": 550,
+      "y": 800,
       "holdMs": 160,
       "delay": 0
     },
@@ -75,8 +80,8 @@
       "type": "mouse",
       "action": "click",
       "button": "left",
-      "x": 357,
-      "y": 921,
+      "x": 550,
+      "y": 800,
       "holdMs": 160,
       "delay": 0
     },
@@ -101,9 +106,28 @@
       "type": "mouse",
       "action": "click",
       "button": "left",
-      "x": 996,
-      "y": 911,
-      "holdMs": 120,
+      "x": 1017,
+      "y": 857,
+      "holdMs": 200,
+      "delay": 100
+    },
+    {
+      "type": "keyboard",
+      "action": "hotkey",
+      "keys": ["enter"],
+      "label": "Enter",
+      "delay": 0
+    },
+    {
+      "type": "wait",
+      "duration": 200,
+      "delay": 0
+    },
+    {
+      "type": "keyboard",
+      "action": "hotkey",
+      "keys": ["enter"],
+      "label": "Enter",
       "delay": 0
     },
     {

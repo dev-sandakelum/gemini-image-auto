@@ -1,0 +1,405 @@
+/* ================================================================
+   VERTEX COLLECTOR — GPT EDITION
+   Theme: clean light surface + green accent (ChatGPT-native feel)
+   ================================================================ */
+
+/* ── Design tokens ────────────────────────────────────────────── */
+:root {
+  --vx-bg:          #ffffff;
+  --vx-bg-2:        #f7f7f8;
+  --vx-bg-3:        #ececf1;
+  --vx-border:      #d9d9e3;
+  --vx-text:        #202123;
+  --vx-text-2:      #6e6e80;
+  --vx-text-3:      #acacbe;
+  --vx-green:       #10a37f;
+  --vx-green-dim:   #d1fae5;
+  --vx-blue:        #346df1;
+  --vx-blue-dim:    #dbeafe;
+  --vx-red:         #ef4444;
+  --vx-red-dim:     #fee2e2;
+  --vx-shadow:      0 4px 24px rgba(0,0,0,.10), 0 1px 4px rgba(0,0,0,.06);
+  --vx-radius:      12px;
+  --vx-font:        system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+/* ================================================================
+   MAIN PANEL (draggable widget)
+   ================================================================ */
+#vertex-widget {
+  position: fixed;
+  right: 18px;
+  bottom: 72px;           /* sit above the HUD bar */
+  z-index: 2147483647;
+  width: 300px;
+  background: var(--vx-bg);
+  color: var(--vx-text);
+  border: 1px solid var(--vx-border);
+  border-radius: var(--vx-radius);
+  font: 12.5px/1.5 var(--vx-font);
+  box-shadow: var(--vx-shadow);
+  overflow: hidden;
+}
+
+/* ── head ──────────────────────────────────────────────────────── */
+.vx-head {
+  padding: 10px 12px;
+  background: var(--vx-bg-2);
+  border-bottom: 1px solid var(--vx-border);
+  cursor: move;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  user-select: none;
+}
+.vx-head-title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--vx-text);
+}
+.vx-logo { font-size: 15px; line-height: 1; }
+.vx-count {
+  font-size: 11px;
+  color: var(--vx-text-2);
+  background: var(--vx-bg-3);
+  border-radius: 20px;
+  padding: 2px 8px;
+}
+
+/* ── progress bar ──────────────────────────────────────────────── */
+.vx-progress-track {
+  height: 3px;
+  background: var(--vx-bg-3);
+}
+.vx-progress-bar {
+  height: 100%;
+  background: var(--vx-green);
+  transition: width 0.35s ease;
+}
+
+/* ── body ──────────────────────────────────────────────────────── */
+.vx-body {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* ── product selector dropdown ─────────────────────────────────── */
+#vx-select {
+  width: 100%;
+  background: var(--vx-bg-2);
+  color: var(--vx-text);
+  border: 1px solid var(--vx-border);
+  border-radius: 8px;
+  padding: 6px 8px;
+  font: inherit;
+  cursor: pointer;
+  box-sizing: border-box;
+  appearance: auto;
+}
+#vx-select:focus { outline: 2px solid var(--vx-green); outline-offset: -1px; }
+
+/* ── product navigation row ────────────────────────────────────── */
+.vx-product-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.vx-product-name {
+  flex: 1;
+  font-weight: 600;
+  font-size: 12.5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.vx-product-idx {
+  font-size: 11px;
+  color: var(--vx-text-2);
+  margin-top: -6px;
+}
+.vx-nav-btn {
+  background: var(--vx-bg-2);
+  border: 1px solid var(--vx-border);
+  border-radius: 6px;
+  padding: 3px 9px;
+  font-size: 14px;
+  cursor: pointer;
+  color: var(--vx-text-2);
+  line-height: 1;
+  transition: background 0.12s;
+}
+.vx-nav-btn:hover { background: var(--vx-bg-3); color: var(--vx-text); }
+
+/* ── slot progress row ──────────────────────────────────────────── */
+.vx-slots-row {
+  display: flex;
+  gap: 4px;
+  flex-wrap: nowrap;
+}
+.vx-slot {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  cursor: pointer;
+  padding: 4px 2px;
+  border-radius: 6px;
+  transition: background 0.12s;
+}
+.vx-slot:hover { background: var(--vx-bg-3); }
+.vx-slot-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--vx-bg-3);
+  border: 1.5px solid var(--vx-border);
+  transition: background 0.15s, border-color 0.15s;
+}
+.vx-slot-label {
+  font-size: 9px;
+  color: var(--vx-text-3);
+  text-align: center;
+  line-height: 1.2;
+}
+.vx-slot-done .vx-slot-dot { background: var(--vx-green); border-color: var(--vx-green); }
+.vx-slot-done .vx-slot-label { color: var(--vx-green); }
+.vx-slot-cur  .vx-slot-dot { border-color: var(--vx-blue); box-shadow: 0 0 0 2px var(--vx-blue-dim); }
+.vx-slot-cur  .vx-slot-label { color: var(--vx-blue); font-weight: 700; }
+
+/* ── slot info ──────────────────────────────────────────────────── */
+.vx-slot-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: -2px;
+}
+.vx-slot-badge {
+  background: var(--vx-blue-dim);
+  color: var(--vx-blue);
+  border-radius: 20px;
+  padding: 2px 8px;
+  font-size: 11px;
+  font-weight: 600;
+}
+.vx-slot-desc {
+  font-size: 11px;
+  color: var(--vx-text-2);
+}
+
+/* ── prompt textarea ────────────────────────────────────────────── */
+textarea#vx-prompt {
+  width: 100%;
+  background: var(--vx-bg-2);
+  color: var(--vx-text);
+  border: 1px solid var(--vx-border);
+  border-radius: 8px;
+  padding: 7px 9px;
+  font: 11.5px/1.45 var(--vx-font);
+  resize: vertical;
+  box-sizing: border-box;
+}
+textarea#vx-prompt:focus { outline: 2px solid var(--vx-green); outline-offset: -1px; }
+
+/* ── filename line ──────────────────────────────────────────────── */
+.vx-filename {
+  font-size: 11px;
+  color: var(--vx-text-2);
+  word-break: break-all;
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+}
+.vx-filename-prefix { flex-shrink: 0; }
+.vx-filename code {
+  font-family: "Cascadia Code", "Fira Code", monospace;
+  font-size: 10.5px;
+  background: var(--vx-bg-3);
+  border-radius: 4px;
+  padding: 1px 5px;
+}
+
+/* ── action row ─────────────────────────────────────────────────── */
+.vx-actions {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.vx-slot-nav { display: flex; gap: 4px; }
+.vx-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font: 600 12px var(--vx-font);
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: background 0.12s, transform 0.08s;
+}
+.vx-btn:active { transform: scale(0.97); }
+
+.vx-btn-primary {
+  flex: 1;
+  justify-content: center;
+  background: var(--vx-green);
+  color: #fff;
+  border-color: var(--vx-green);
+}
+.vx-btn-primary:hover { background: #0d8e6e; }
+
+.vx-btn-ghost {
+  background: var(--vx-bg-2);
+  color: var(--vx-text-2);
+  border-color: var(--vx-border);
+  padding: 6px 10px;
+}
+.vx-btn-ghost:hover { background: var(--vx-bg-3); color: var(--vx-text); }
+
+/* ── status flash ────────────────────────────────────────────────── */
+#vx-status {
+  min-height: 16px;
+  font-size: 11px;
+  color: var(--vx-green);
+  font-weight: 500;
+}
+
+/* ── footer ──────────────────────────────────────────────────────── */
+.vx-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--vx-border);
+  padding-top: 8px;
+  margin-top: 2px;
+}
+.vx-filebtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11.5px;
+  color: var(--vx-blue);
+  cursor: pointer;
+  text-decoration: none;
+}
+.vx-filebtn:hover { text-decoration: underline; }
+.vx-filebtn input { display: none; }
+
+.vx-filebtn-big {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  align-self: center;
+  background: var(--vx-green);
+  color: #fff;
+  padding: 9px 16px;
+  border-radius: 8px;
+  font: 600 12.5px var(--vx-font);
+  text-decoration: none !important;
+  cursor: pointer;
+  transition: background 0.12s;
+}
+.vx-filebtn-big:hover { background: #0d8e6e; }
+
+.vx-reset-btn {
+  background: none;
+  border: none;
+  color: var(--vx-text-3);
+  font: inherit;
+  cursor: pointer;
+  font-size: 11.5px;
+}
+.vx-reset-btn:hover { color: var(--vx-red); }
+
+/* ── import / empty state ────────────────────────────────────────── */
+.vx-body-import { align-items: center; text-align: center; padding: 20px 16px; gap: 12px; }
+.vx-import-icon { font-size: 32px; line-height: 1; }
+.vx-import-title { font-weight: 700; font-size: 14px; margin: 0; }
+.vx-import-desc { font-size: 12px; color: var(--vx-text-2); margin: 0; line-height: 1.6; }
+.vx-import-desc strong { color: var(--vx-text); }
+
+/* ================================================================
+   SAVE OVERLAY (hover button on generated images)
+   ================================================================ */
+#vertex-save-overlay {
+  position: absolute;
+  z-index: 2147483647;
+  transform: translateX(-100%);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--vx-green);
+  color: #fff;
+  border: none;
+  border-radius: 8px 8px 0 0;
+  padding: 6px 12px;
+  font: 600 12px var(--vx-font);
+  cursor: pointer;
+  box-shadow: 0 -2px 10px rgba(0,0,0,.12);
+  transition: background 0.12s;
+}
+#vertex-save-overlay:hover { background: #0d8e6e; }
+#vertex-save-overlay:disabled { opacity: .65; cursor: wait; }
+.vx-save-icon { font-size: 14px; }
+
+/* ================================================================
+   HUD — bottom-centre pill bar
+   ================================================================ */
+#vx-hud {
+  position: fixed;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2147483647;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid var(--vx-border);
+  border-radius: 40px;
+  padding: 5px 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,.12), 0 1px 4px rgba(0,0,0,.06);
+  font: 12px/1 var(--vx-font);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  pointer-events: auto;
+  white-space: nowrap;
+}
+
+.vx-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 6px 13px;
+  border-radius: 20px;
+  border: 1px solid var(--vx-border);
+  background: var(--vx-bg-2);
+  color: var(--vx-text);
+  cursor: pointer;
+  font: inherit;
+  font-weight: 600;
+  transition: background 0.13s, transform 0.1s;
+}
+.vx-pill:hover  { background: var(--vx-bg-3); }
+.vx-pill:active { transform: scale(0.95); }
+.vx-pill-icon   { font-size: 13px; line-height: 1; }
+.vx-pill-label  { font-size: 11px; }
+
+/* green — copy name */
+.vx-pill-name { border-color: #86efac; color: #15803d; }
+.vx-pill-name:hover { background: #f0fdf4; }
+
+/* blue — copy prompt */
+.vx-pill-prompt { border-color: #93c5fd; color: #1d4ed8; }
+.vx-pill-prompt:hover { background: #eff6ff; }
+
+/* orange — refresh / counter */
+.vx-pill-refresh { border-color: #fca5a5; color: #b91c1c; min-width: 155px; }
+.vx-pill-refresh:hover    { background: #fef2f2; }
+.vx-pill-refresh:disabled { opacity: 0.6; cursor: wait; }
