@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Duck.ai Product Image Collector",
+  "version": "1.8",
+  "description": "Automates product image generation on duck.ai — attaches brand logos, enters prompts, waits for the Download button, renames the file, then repeats.",
+  "permissions": ["storage", "downloads", "downloads.shelf"],
+  "host_permissions": ["https://duck.ai/*", "https://duckduckgo.com/*"],
+  "background": { "service_worker": "background.js" },
+  "content_scripts": [
+    {
+      "matches": ["https://duck.ai/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["brand-logos/*.png", "brand-logos/*.jpg", "queue/images_part1.json"],
+      "matches":   ["https://duck.ai/*"]
+    }
+  ]
+}

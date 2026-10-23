@@ -1,0 +1,275 @@
+/* Duck.ai Product Image Collector — widget styles */
+
+#dai-widget {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 2147483647;
+  width: 320px;
+  background: #1a1a1a;
+  color: #e8e8e8;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 10px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.6);
+  font: 13px/1.4 -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  user-select: none;
+}
+
+/* ── Head ────────────────────────────────── */
+.dai-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  background: #222;
+  border-radius: 10px 10px 0 0;
+  cursor: move;
+  font-weight: 600;
+  font-size: 13px;
+}
+.dai-count {
+  font-size: 11px;
+  color: #888;
+  font-weight: 400;
+}
+
+/* ── Body ────────────────────────────────── */
+.dai-body {
+  padding: 10px 12px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.dai-body p {
+  margin: 0 0 6px;
+  color: #aaa;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* ── Current image info ──────────────────── */
+.dai-img-name {
+  font-size: 12px;
+  color: #ccc;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.dai-img-path {
+  font-size: 11px;
+  color: #666;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ── Mini list ───────────────────────────── */
+.dai-list {
+  max-height: 100px;
+  overflow-y: auto;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 6px;
+  font-size: 11px;
+}
+.dai-item {
+  padding: 4px 8px;
+  cursor: pointer;
+  color: #888;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.dai-item:hover   { background: rgba(255,255,255,0.06); color: #ccc; }
+.dai-item.dai-active { background: rgba(57,105,239,0.2); color: #adc2fc; }
+.dai-item.dai-done   { color: #4CBA3C; }
+
+/* ── Rows / buttons ──────────────────────── */
+.dai-row {
+  display: flex;
+  gap: 6px;
+}
+.dai-row button,
+.dai-filebtn {
+  flex: 1;
+  padding: 5px 8px;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 6px;
+  background: rgba(255,255,255,0.07);
+  color: #e8e8e8;
+  font-size: 12px;
+  cursor: pointer;
+  text-align: center;
+  transition: background 0.15s;
+}
+.dai-row button:hover:not(:disabled),
+.dai-filebtn:hover {
+  background: rgba(255,255,255,0.14);
+}
+.dai-row button:disabled { opacity: 0.35; cursor: default; }
+
+#dai-run {
+  background: rgba(57,105,239,0.35);
+  border-color: rgba(57,105,239,0.6);
+}
+#dai-run:hover { background: rgba(57,105,239,0.5); }
+
+#dai-save-now {
+  background: rgba(76,186,60,0.25);
+  border-color: rgba(76,186,60,0.5);
+}
+#dai-save-now:hover { background: rgba(76,186,60,0.4); }
+
+/* ── Status ──────────────────────────────── */
+.dai-status {
+  font-size: 11px;
+  color: #888;
+  min-height: 16px;
+  word-break: break-all;
+}
+
+/* ── Footer / file import ────────────────── */
+.dai-foot {
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding-top: 8px;
+  margin-top: 2px;
+}
+.dai-filebtn {
+  display: block;
+  font-size: 11px;
+  text-align: center;
+}
+.dai-filebtn-big {
+  padding: 10px;
+  font-size: 13px;
+}
+.dai-filebtn input[type="file"] { display: none; }
+
+/* ── HUD (bottom pills) ──────────────────── */
+#dai-hud {
+  position: fixed;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2147483646;
+  display: flex;
+  gap: 8px;
+  pointer-events: none;
+}
+#dai-hud > * { pointer-events: all; }
+
+.dai-pill {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.18);
+  background: rgba(26,26,26,0.92);
+  color: #e8e8e8;
+  font: 12px/1 -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  transition: background 0.15s, border-color 0.15s;
+}
+.dai-pill:hover {
+  background: rgba(57,105,239,0.4);
+  border-color: rgba(114,149,246,0.6);
+}
+
+/* ── Tabs ────────────────────────────────── */
+.dai-tabs {
+  display: flex;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  background: #1e1e1e;
+}
+.dai-tab {
+  flex: 1;
+  padding: 6px 0;
+  background: none;
+  border: none;
+  color: #888;
+  font-size: 12px;
+  cursor: pointer;
+  transition: color 0.15s, border-bottom 0.15s;
+  border-bottom: 2px solid transparent;
+}
+.dai-tab:hover         { color: #ccc; }
+.dai-tab.dai-tab-active { color: #adc2fc; border-bottom-color: #adc2fc; }
+
+/* ── Logo info line ──────────────────────── */
+.dai-logo-info {
+  font-size: 11px;
+  color: #5c9c5c;
+  margin-bottom: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ── Brand map tab ───────────────────────── */
+.dai-brand-scroll {
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 6px;
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.dai-brow {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+}
+.dai-btag {
+  min-width: 60px;
+  color: #adc2fc;
+  font-weight: 600;
+}
+.dai-bval {
+  flex: 1;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 4px;
+  color: #e8e8e8;
+  font-size: 11px;
+  padding: 2px 5px;
+}
+.dai-bval:focus {
+  outline: none;
+  border-color: rgba(114,149,246,0.5);
+}
+.dai-bdel {
+  background: none;
+  border: none;
+  color: #666;
+  cursor: pointer;
+  font-size: 11px;
+  padding: 0 3px;
+  line-height: 1;
+}
+.dai-bdel:hover { color: #ff6b6b; }
+.dai-badd { margin-top: 4px; border-top: 1px solid rgba(255,255,255,0.07); padding-top: 4px; }
+#dai-badd-btn {
+  background: rgba(57,105,239,0.3);
+  border: 1px solid rgba(57,105,239,0.5);
+  border-radius: 4px;
+  color: #adc2fc;
+  cursor: pointer;
+  font-size: 13px;
+  padding: 0 6px;
+  line-height: 1.4;
+}
+.dai-bhint {
+  font-size: 10px;
+  color: #555;
+  margin: 4px 0 0;
+  line-height: 1.4;
+}
+#dai-bsave {
+  background: rgba(76,186,60,0.25);
+  border-color: rgba(76,186,60,0.5);
+}
+#dai-bsave:hover { background: rgba(76,186,60,0.4); }
