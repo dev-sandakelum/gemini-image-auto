@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "main.jpg",
+    "path": "gpus/nova-rtx-9090-16gb-graphics-card",
+    "prompt": "Professional product photo of Nova RTX 9090 16GB graphics card, studio lighting, white background, high resolution, front view, photorealistic"
+  },
+  {
+    "id": 2,
+    "name": "angle.jpg",
+    "path": "gpus/nova-rtx-9090-16gb-graphics-card",
+    "prompt": "Professional product photo of Nova RTX 9090 16GB graphics card, studio lighting, white background, high resolution, 45-degree angle view, photorealistic"
+  },
+  {
+    "id": 3,
+    "name": "detail.jpg",
+    "path": "gpus/nova-rtx-9090-16gb-graphics-card",
+    "prompt": "Close-up detail shot of Nova RTX 9090 16GB graphics card cooling fins and GPU chip, macro photography, studio lighting, photorealistic"
+  }
+]

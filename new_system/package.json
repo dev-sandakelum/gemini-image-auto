@@ -1,0 +1,40 @@
+{
+  "name": "gemini-image-auto",
+  "version": "1.0.0",
+  "description": "Electron GUI for bulk AI image generation via macro automation",
+  "main": "gui/main.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node_modules\\electron\\dist\\electron.exe .",
+    "dev": "node_modules\\electron\\dist\\electron.exe . --dev",
+    "build": "node_modules\\.bin\\electron-builder.cmd"
+  },
+  "dependencies": {
+    "@nut-tree-fork/nut-js": "4.2.1",
+    "chokidar": "3.6.0",
+    "electron-store": "8.2.0",
+    "fs-extra": "11.2.0",
+    "uiohook-napi": "1.5.5"
+  },
+  "devDependencies": {
+    "electron": "^30.0.2",
+    "electron-builder": "24.13.3"
+  },
+  "build": {
+    "appId": "com.gemini-image-auto",
+    "productName": "Gemini Image Auto",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis"
+    }
+  },
+  "keywords": [
+    "electron",
+    "macro",
+    "automation",
+    "image-generation"
+  ],
+  "license": "MIT"
+}

@@ -11,6 +11,8 @@
     "run-automation": "node src/index.js --mode automation",
     "watch": "node src/watcher.js --macro",
     "sort": "node src/sorter.js",
+    "mouse-pos": "node src/mouse-pos.js",
+    "sort-logos": "node src/logo-sorter.js",
     "count-server": "node count-server.js"
   },
   "dependencies": {

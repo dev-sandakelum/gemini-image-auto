@@ -1,0 +1,22 @@
+{
+  "name": "click_prompt_box",
+  "version": 1,
+  "recordedAt": null,
+  "description": "Click the prompt input field — re-record this macro for your screen layout",
+  "actions": [
+    {
+      "type": "mouse",
+      "action": "click",
+      "button": "left",
+      "x": 641,
+      "y": 967,
+      "holdMs": 160,
+      "delay": 0
+    },
+    {
+      "type": "wait",
+      "duration": 200,
+      "delay": 0
+    }
+  ]
+}

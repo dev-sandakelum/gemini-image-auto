@@ -1,0 +1,585 @@
+{
+  "meta": {
+    "site_purpose": "Computer parts & accessories e-commerce catalog seed data",
+    "brand_count": 54,
+    "total_products": 197,
+    "note": "All brand names are fictional/mythical-inspired, not real companies. Product ranges are modeled after real-world computer hardware categories, weighted toward core PC components (CPU, GPU, motherboard, RAM, storage, PSU, cooling, cases, monitors, peripherals, networking) with a small minority of mobile/audio accessories."
+  },
+  "brands": [
+    {
+      "name": "Vulcanis",
+      "origin": "Roman myth (god of the forge)",
+      "category": "CPU",
+      "products": [
+        "Vulcanis Ryzeon 5 Desktop CPU",
+        "Vulcanis Ryzeon 7 Desktop CPU",
+        "Vulcanis Ryzeon 9 Desktop CPU",
+        "Vulcanis Mobile CPU Series",
+        "Vulcanis Server Processor"
+      ]
+    },
+    {
+      "name": "Promethion",
+      "origin": "Greek myth (Prometheus)",
+      "category": "CPU",
+      "products": [
+        "Promethion Core i5-Class CPU",
+        "Promethion Core i7-Class CPU",
+        "Promethion Core i9-Class CPU",
+        "Promethion Laptop CPU",
+        "Promethion Chipset Board"
+      ]
+    },
+    {
+      "name": "Ragnarok Silicon",
+      "origin": "Norse myth (Ragnarök)",
+      "category": "CPU / APU",
+      "products": [
+        "Ragnarok X CPU",
+        "Ragnarok APU (CPU+GPU)",
+        "Ragnarok Threadwyrm HEDT CPU",
+        "Ragnarok Mobile APU"
+      ]
+    },
+    {
+      "name": "Titanforge",
+      "origin": "Greek myth (Titans)",
+      "category": "CPU",
+      "products": [
+        "Titanforge Workstation CPU",
+        "Titanforge Server Xeon-Class CPU",
+        "Titanforge Embedded CPU"
+      ]
+    },
+    {
+      "name": "Colossuscore",
+      "origin": "Greek myth (Colossus of Rhodes)",
+      "category": "CPU",
+      "products": [
+        "Colossuscore Entry CPU",
+        "Colossuscore Mainstream CPU",
+        "Colossuscore Enthusiast CPU"
+      ]
+    },
+    {
+      "name": "Ymir Core",
+      "origin": "Norse myth (primordial giant)",
+      "category": "GPU",
+      "products": [
+        "Ymir GForce RTX-Class GPU",
+        "Ymir Studio GPU",
+        "Ymir Mobile GPU",
+        "Ymir Gaming Mousepad",
+        "Ymir Gaming Mouse"
+      ]
+    },
+    {
+      "name": "Odinforge",
+      "origin": "Norse myth (Odin)",
+      "category": "GPU / AI Hardware",
+      "products": [
+        "Odinforge Radeon-Class GPU",
+        "Odinforge AI Accelerator Card",
+        "Odinforge Workstation GPU",
+        "Odinforge Capture Card"
+      ]
+    },
+    {
+      "name": "Wyrmscale Graphics",
+      "origin": "Fantasy dragon lore",
+      "category": "GPU (AIB Partner)",
+      "products": [
+        "Wyrmscale RTX Gaming GPU OC Edition",
+        "Wyrmscale RTX Gaming GPU Mini",
+        "Wyrmscale Triple-Fan GPU"
+      ]
+    },
+    {
+      "name": "Ashenfire Graphics",
+      "origin": "Fantasy naming",
+      "category": "GPU (AIB Partner)",
+      "products": [
+        "Ashenfire Radeon Gaming GPU",
+        "Ashenfire Nitro GPU",
+        "Ashenfire Low-Profile GPU"
+      ]
+    },
+    {
+      "name": "Phoenix Circuit",
+      "origin": "Mythical firebird",
+      "category": "Motherboard",
+      "products": [
+        "Phoenix Circuit Z-Series Motherboard",
+        "Phoenix Circuit B-Series Motherboard",
+        "Phoenix Circuit Mini-ITX Board",
+        "Phoenix Circuit Server Board"
+      ]
+    },
+    {
+      "name": "Sphinxware",
+      "origin": "Egyptian/Greek myth (sphinx)",
+      "category": "Motherboard",
+      "products": [
+        "Sphinxware AM5 Motherboard",
+        "Sphinxware LGA Motherboard",
+        "Sphinxware Industrial Mini PC Board"
+      ]
+    },
+    {
+      "name": "Cerberus Tech",
+      "origin": "Greek myth (3-headed dog)",
+      "category": "Motherboard / Gaming Hardware",
+      "products": [
+        "Cerberus ROG-Class Motherboard",
+        "Cerberus Gaming Laptop",
+        "Cerberus Gaming Monitor",
+        "Cerberus Gaming Router"
+      ]
+    },
+    {
+      "name": "Hydra Systems",
+      "origin": "Greek myth (hydra)",
+      "category": "Motherboard / Gaming Hardware",
+      "products": [
+        "Hydra MPG Motherboard",
+        "Hydra MEG Motherboard",
+        "Hydra Gaming Laptop",
+        "Hydra PC Case"
+      ]
+    },
+    {
+      "name": "Direwood Boards",
+      "origin": "Fantasy naming",
+      "category": "Motherboard",
+      "products": [
+        "Direwood Micro-ATX Motherboard",
+        "Direwood ATX Motherboard",
+        "Direwood Workstation Board"
+      ]
+    },
+    {
+      "name": "Bramblecore Memory",
+      "origin": "Fantasy naming",
+      "category": "RAM",
+      "products": [
+        "Bramblecore DDR5 Desktop RAM",
+        "Bramblecore DDR4 Laptop RAM",
+        "Bramblecore RGB RAM Kit",
+        "Bramblecore ECC Server RAM"
+      ]
+    },
+    {
+      "name": "Ironvale Modules",
+      "origin": "Fantasy naming",
+      "category": "RAM / SSD",
+      "products": [
+        "Ironvale DDR5 RAM Kit",
+        "Ironvale NVMe SSD",
+        "Ironvale SATA SSD",
+        "Ironvale Memory Upgrade Kit"
+      ]
+    },
+    {
+      "name": "Stonehelm Chips",
+      "origin": "Fantasy naming",
+      "category": "Memory Chips (OEM)",
+      "products": [
+        "Stonehelm DRAM Chip",
+        "Stonehelm NAND Flash Chip",
+        "Stonehelm Memory Module (OEM)"
+      ]
+    },
+    {
+      "name": "Hollowmere Drives",
+      "origin": "Fantasy naming",
+      "category": "Storage",
+      "products": [
+        "Hollowmere 2TB External HDD",
+        "Hollowmere Internal SATA HDD",
+        "Hollowmere NAS Drive",
+        "Hollowmere Portable SSD"
+      ]
+    },
+    {
+      "name": "Quicksilver Vault",
+      "origin": "Alchemy naming (mercury)",
+      "category": "Storage",
+      "products": [
+        "Quicksilver Internal SSD",
+        "Quicksilver NVMe M.2 SSD",
+        "Quicksilver External Rugged Drive",
+        "Quicksilver NAS System"
+      ]
+    },
+    {
+      "name": "Larkspur Storage",
+      "origin": "Fantasy flower naming",
+      "category": "Storage / Flash",
+      "products": [
+        "Larkspur USB Flash Drive",
+        "Larkspur SD Card",
+        "Larkspur MicroSD Card",
+        "Larkspur Portable External SSD"
+      ]
+    },
+    {
+      "name": "Minotaur Labs",
+      "origin": "Greek myth (minotaur)",
+      "category": "PSU / GPU",
+      "products": [
+        "Minotaur 750W Power Supply",
+        "Minotaur 1000W Modular PSU",
+        "Minotaur Gaming GPU",
+        "Minotaur PC Case"
+      ]
+    },
+    {
+      "name": "Griffinhold",
+      "origin": "Mythical creature (griffin)",
+      "category": "PC Components",
+      "products": [
+        "Griffinhold 850W PSU",
+        "Griffinhold Mid-Tower Case",
+        "Griffinhold Mechanical Keyboard",
+        "Griffinhold Gaming Mouse",
+        "Griffinhold AIO Cooler"
+      ]
+    },
+    {
+      "name": "Wyrmforge",
+      "origin": "Fantasy dragon naming",
+      "category": "Cases / Cooling",
+      "products": [
+        "Wyrmforge ATX Mid Tower Case",
+        "Wyrmforge Mini-ITX Case",
+        "Wyrmforge 240mm AIO Cooler",
+        "Wyrmforge Case Fan 3-Pack"
+      ]
+    },
+    {
+      "name": "Kraken Cooling",
+      "origin": "Norse/maritime legend",
+      "category": "Cooling",
+      "products": [
+        "Kraken 240mm Liquid Cooler",
+        "Kraken 360mm Liquid Cooler",
+        "Kraken Air Cooler Tower",
+        "Kraken Thermal Paste"
+      ]
+    },
+    {
+      "name": "Emberforge Power",
+      "origin": "Fantasy naming",
+      "category": "PSU",
+      "products": [
+        "Emberforge 600W PSU",
+        "Emberforge 850W Gold PSU",
+        "Emberforge 1200W Platinum PSU"
+      ]
+    },
+    {
+      "name": "Cindergate Chassis",
+      "origin": "Fantasy naming",
+      "category": "PC Cases",
+      "products": [
+        "Cindergate Full Tower Case",
+        "Cindergate Mid Tower Case",
+        "Cindergate ITX Case"
+      ]
+    },
+    {
+      "name": "Palewind Displays",
+      "origin": "Fantasy naming",
+      "category": "Monitors",
+      "products": [
+        "Palewind 27in Gaming Monitor",
+        "Palewind 24in Office Monitor",
+        "Palewind Ultrawide Curved Monitor",
+        "Palewind 4K Studio Monitor"
+      ]
+    },
+    {
+      "name": "Duneshadow Optics",
+      "origin": "Fantasy naming",
+      "category": "Monitors / Projectors",
+      "products": [
+        "Duneshadow 32in Monitor",
+        "Duneshadow Portable Monitor",
+        "Duneshadow Home Projector"
+      ]
+    },
+    {
+      "name": "Aetherlume Panels",
+      "origin": "Fantasy naming (aether)",
+      "category": "Display Panels (OEM)",
+      "products": [
+        "Aetherlume OLED Monitor Panel",
+        "Aetherlume IPS Panel",
+        "Aetherlume TV Panel (OEM)"
+      ]
+    },
+    {
+      "name": "Excalibur Peripherals",
+      "origin": "Arthurian legend",
+      "category": "Peripherals",
+      "products": [
+        "Excalibur Wireless Mouse",
+        "Excalibur Mechanical Keyboard",
+        "Excalibur Webcam",
+        "Excalibur Wired Keyboard",
+        "Excalibur Mouse Pad"
+      ]
+    },
+    {
+      "name": "Valkyrie Gear",
+      "origin": "Norse myth (valkyries)",
+      "category": "Gaming Peripherals",
+      "products": [
+        "Valkyrie Gaming Mouse",
+        "Valkyrie Mechanical Keyboard",
+        "Valkyrie Gaming Headset",
+        "Valkyrie Mousepad XL",
+        "Valkyrie Gaming Laptop"
+      ]
+    },
+    {
+      "name": "Fenriswolf",
+      "origin": "Norse myth (wolf Fenrir)",
+      "category": "Gaming Peripherals",
+      "products": [
+        "Fenriswolf Gaming Headset",
+        "Fenriswolf Wireless Mouse",
+        "Fenriswolf Mechanical Keyboard",
+        "Fenriswolf Controller"
+      ]
+    },
+    {
+      "name": "Ninthgate Keys",
+      "origin": "Fantasy naming",
+      "category": "Keyboards",
+      "products": [
+        "Ninthgate 75% Mechanical Keyboard",
+        "Ninthgate Full-Size Keyboard",
+        "Ninthgate Keycap Set",
+        "Ninthgate Wrist Rest"
+      ]
+    },
+    {
+      "name": "Boneyard Switches",
+      "origin": "Fantasy naming",
+      "category": "Keyboard Components",
+      "products": [
+        "Boneyard Linear Switch Set",
+        "Boneyard Tactile Switch Set",
+        "Boneyard Custom Keycap Set"
+      ]
+    },
+    {
+      "name": "Wolfsbane Gaming",
+      "origin": "Folklore (wolfsbane)",
+      "category": "Gaming Peripherals",
+      "products": [
+        "Wolfsbane Gaming Mouse",
+        "Wolfsbane Mechanical Keyboard",
+        "Wolfsbane Gaming Headset",
+        "Wolfsbane Racing Wheel",
+        "Wolfsbane Webcam"
+      ]
+    },
+    {
+      "name": "Copperthorn Controllers",
+      "origin": "Fantasy naming",
+      "category": "Gaming Controllers",
+      "products": [
+        "Copperthorn Wireless Controller",
+        "Copperthorn Retro Controller",
+        "Copperthorn Arcade Stick"
+      ]
+    },
+    {
+      "name": "Copperfen Tech",
+      "origin": "Folklore naming",
+      "category": "Networking",
+      "products": [
+        "Copperfen Wi-Fi 6 Router",
+        "Copperfen Mesh Wi-Fi System",
+        "Copperfen Wi-Fi Extender",
+        "Copperfen Network Switch"
+      ]
+    },
+    {
+      "name": "Wraithlink Networks",
+      "origin": "Fantasy ghost naming",
+      "category": "Networking",
+      "products": [
+        "Wraithlink Gaming Router",
+        "Wraithlink Cable Modem",
+        "Wraithlink PCIe Wi-Fi Card",
+        "Wraithlink Mesh Node"
+      ]
+    },
+    {
+      "name": "Stormvane Connect",
+      "origin": "Fantasy weather naming",
+      "category": "Networking",
+      "products": [
+        "Stormvane Gaming Router",
+        "Stormvane Network Switch",
+        "Stormvane USB Wi-Fi Adapter"
+      ]
+    },
+    {
+      "name": "Hearthspire PCs",
+      "origin": "Fantasy naming",
+      "category": "Laptops / Desktops",
+      "products": [
+        "Hearthspire Ultrabook Laptop",
+        "Hearthspire Business Desktop",
+        "Hearthspire Gaming Tower PC",
+        "Hearthspire Mini PC"
+      ]
+    },
+    {
+      "name": "Frostpine Systems",
+      "origin": "Fantasy naming",
+      "category": "Laptops / Desktops",
+      "products": [
+        "Frostpine 14in Laptop",
+        "Frostpine Chromebook",
+        "Frostpine All-in-One Desktop"
+      ]
+    },
+    {
+      "name": "Shadowmere PC",
+      "origin": "Fantasy naming (dark horse)",
+      "category": "Laptops / Motherboards",
+      "products": [
+        "Shadowmere ROG-Class Gaming Laptop",
+        "Shadowmere Zenbook-Class Ultrabook",
+        "Shadowmere Motherboard"
+      ]
+    },
+    {
+      "name": "Duskrend Mobile",
+      "origin": "Fantasy naming",
+      "category": "Gaming Laptops / Desktops",
+      "products": [
+        "Duskrend Gaming Laptop 15in",
+        "Duskrend Gaming Desktop Tower",
+        "Duskrend Gaming Monitor"
+      ]
+    },
+    {
+      "name": "Sablewick Cables",
+      "origin": "Fantasy naming",
+      "category": "Cables & Adapters",
+      "products": [
+        "Sablewick HDMI Cable",
+        "Sablewick USB-C Cable",
+        "Sablewick DisplayPort Cable",
+        "Sablewick USB Hub",
+        "Sablewick SATA Cable"
+      ]
+    },
+    {
+      "name": "Lorewood Docks",
+      "origin": "Fantasy naming",
+      "category": "Docking Stations",
+      "products": [
+        "Lorewood Thunderbolt Dock",
+        "Lorewood USB-C Dock",
+        "Lorewood Laptop Docking Station"
+      ]
+    },
+    {
+      "name": "Thornhollow Hubs",
+      "origin": "Fantasy naming",
+      "category": "Hubs & Card Readers",
+      "products": [
+        "Thornhollow USB-C Hub",
+        "Thornhollow SD Card Reader",
+        "Thornhollow 4-Port USB Hub"
+      ]
+    },
+    {
+      "name": "Mistvale Webcams",
+      "origin": "Fantasy naming",
+      "category": "Webcams",
+      "products": [
+        "Mistvale 1080p Webcam",
+        "Mistvale 4K Webcam",
+        "Mistvale Ring Light"
+      ]
+    },
+    {
+      "name": "Dragonroot Capture",
+      "origin": "Fantasy naming",
+      "category": "Streaming Hardware",
+      "products": [
+        "Dragonroot Capture Card",
+        "Dragonroot Stream Deck",
+        "Dragonroot Green Screen"
+      ]
+    },
+    {
+      "name": "Nettlecross Boards",
+      "origin": "Fantasy naming",
+      "category": "Graphics Tablets",
+      "products": [
+        "Nettlecross Drawing Tablet",
+        "Nettlecross Pen Display",
+        "Nettlecross Stylus Pen"
+      ]
+    },
+    {
+      "name": "Frostvane Thermal",
+      "origin": "Fantasy naming",
+      "category": "Cooling / Thermal",
+      "products": [
+        "Frostvane Case Fan 120mm 3-Pack",
+        "Frostvane Thermal Paste",
+        "Frostvane CPU Air Cooler"
+      ]
+    },
+    {
+      "name": "Ivory Spire",
+      "origin": "Fantasy tower naming",
+      "category": "Mobile Accessories",
+      "products": [
+        "Ivory Spire Wireless Earbuds",
+        "Ivory Spire Bluetooth Mouse",
+        "Ivory Spire Smartwatch"
+      ]
+    },
+    {
+      "name": "Starling Wing",
+      "origin": "Folklore bird naming",
+      "category": "Charging Accessories",
+      "products": [
+        "Starling Wing Power Bank",
+        "Starling Wing Wireless Charger",
+        "Starling Wing USB-C Charger"
+      ]
+    },
+    {
+      "name": "Thornwood Audio",
+      "origin": "Fairy tale naming",
+      "category": "Audio",
+      "products": [
+        "Thornwood Wireless Earbuds",
+        "Thornwood Bluetooth Speaker",
+        "Thornwood Over-Ear Headphones"
+      ]
+    },
+    {
+      "name": "Glimmerdust Cases",
+      "origin": "Fantasy naming",
+      "category": "Phone Protection",
+      "products": [
+        "Glimmerdust Phone Case",
+        "Glimmerdust Screen Protector",
+        "Glimmerdust Tablet Case"
+      ]
+    }
+  ]
+}

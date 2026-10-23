@@ -1,0 +1,2378 @@
+[
+  {
+    "product_id": 6,
+    "path": "/data/output-img/product-images/cpus/vulcanis-core-7-7700-desktop-processor/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Vulcanis Core 7-7700 Desktop Processor \u2014 front view",
+        "product_id": 6,
+        "path": "/data/output-img/product-images/cpus/vulcanis-core-7-7700-desktop-processor/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Vulcanis Core 7-7700 Desktop Processor \u2014 alternate angle",
+        "product_id": 6,
+        "path": "/data/output-img/product-images/cpus/vulcanis-core-7-7700-desktop-processor/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Vulcanis Core 7-7700 Desktop Processor \u2014 retail packaging",
+        "product_id": 6,
+        "path": "/data/output-img/product-images/cpus/vulcanis-core-7-7700-desktop-processor/"
+      }
+    ]
+  },
+  {
+    "product_id": 13,
+    "path": "/data/output-img/product-images/cpus/vulcanis-mobile-cpu-u-700h/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Vulcanis Mobile CPU U-700H \u2014 front view",
+        "product_id": 13,
+        "path": "/data/output-img/product-images/cpus/vulcanis-mobile-cpu-u-700h/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Vulcanis Mobile CPU U-700H \u2014 alternate angle",
+        "product_id": 13,
+        "path": "/data/output-img/product-images/cpus/vulcanis-mobile-cpu-u-700h/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Vulcanis Mobile CPU U-700H \u2014 retail packaging",
+        "product_id": 13,
+        "path": "/data/output-img/product-images/cpus/vulcanis-mobile-cpu-u-700h/"
+      }
+    ]
+  },
+  {
+    "product_id": 20,
+    "path": "/data/output-img/product-images/cpus/promethion-core-5-5600-desktop-processor/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Promethion Core 5-5600 Desktop Processor \u2014 front view",
+        "product_id": 20,
+        "path": "/data/output-img/product-images/cpus/promethion-core-5-5600-desktop-processor/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Promethion Core 5-5600 Desktop Processor \u2014 alternate angle",
+        "product_id": 20,
+        "path": "/data/output-img/product-images/cpus/promethion-core-5-5600-desktop-processor/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Promethion Core 5-5600 Desktop Processor \u2014 retail packaging",
+        "product_id": 20,
+        "path": "/data/output-img/product-images/cpus/promethion-core-5-5600-desktop-processor/"
+      }
+    ]
+  },
+  {
+    "product_id": 27,
+    "path": "/data/output-img/product-images/cpus/promethion-core-9-9900-desktop-processor/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Promethion Core 9-9900 Desktop Processor \u2014 front view",
+        "product_id": 27,
+        "path": "/data/output-img/product-images/cpus/promethion-core-9-9900-desktop-processor/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Promethion Core 9-9900 Desktop Processor \u2014 alternate angle",
+        "product_id": 27,
+        "path": "/data/output-img/product-images/cpus/promethion-core-9-9900-desktop-processor/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Promethion Core 9-9900 Desktop Processor \u2014 retail packaging",
+        "product_id": 27,
+        "path": "/data/output-img/product-images/cpus/promethion-core-9-9900-desktop-processor/"
+      }
+    ]
+  },
+  {
+    "product_id": 34,
+    "path": "/data/output-img/product-images/cpus/titanforge-core-3-3100-desktop-processor/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Titanforge Core 3-3100 Desktop Processor \u2014 front view",
+        "product_id": 34,
+        "path": "/data/output-img/product-images/cpus/titanforge-core-3-3100-desktop-processor/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Titanforge Core 3-3100 Desktop Processor \u2014 alternate angle",
+        "product_id": 34,
+        "path": "/data/output-img/product-images/cpus/titanforge-core-3-3100-desktop-processor/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Titanforge Core 3-3100 Desktop Processor \u2014 retail packaging",
+        "product_id": 34,
+        "path": "/data/output-img/product-images/cpus/titanforge-core-3-3100-desktop-processor/"
+      }
+    ]
+  },
+  {
+    "product_id": 41,
+    "path": "/data/output-img/product-images/cpus/titanforge-core-7-7800-desktop-processor/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Titanforge Core 7-7800 Desktop Processor \u2014 front view",
+        "product_id": 41,
+        "path": "/data/output-img/product-images/cpus/titanforge-core-7-7800-desktop-processor/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Titanforge Core 7-7800 Desktop Processor \u2014 alternate angle",
+        "product_id": 41,
+        "path": "/data/output-img/product-images/cpus/titanforge-core-7-7800-desktop-processor/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Titanforge Core 7-7800 Desktop Processor \u2014 retail packaging",
+        "product_id": 41,
+        "path": "/data/output-img/product-images/cpus/titanforge-core-7-7800-desktop-processor/"
+      }
+    ]
+  },
+  {
+    "product_id": 48,
+    "path": "/data/output-img/product-images/cpus/titanforge-mobile-cpu-u-800h/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Titanforge Mobile CPU U-800H \u2014 front view",
+        "product_id": 48,
+        "path": "/data/output-img/product-images/cpus/titanforge-mobile-cpu-u-800h/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Titanforge Mobile CPU U-800H \u2014 alternate angle",
+        "product_id": 48,
+        "path": "/data/output-img/product-images/cpus/titanforge-mobile-cpu-u-800h/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Titanforge Mobile CPU U-800H \u2014 retail packaging",
+        "product_id": 48,
+        "path": "/data/output-img/product-images/cpus/titanforge-mobile-cpu-u-800h/"
+      }
+    ]
+  },
+  {
+    "product_id": 55,
+    "path": "/data/output-img/product-images/cpus/colossuscore-core-5-5700-desktop-processor/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Colossuscore Core 5-5700 Desktop Processor \u2014 front view",
+        "product_id": 55,
+        "path": "/data/output-img/product-images/cpus/colossuscore-core-5-5700-desktop-processor/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Colossuscore Core 5-5700 Desktop Processor \u2014 alternate angle",
+        "product_id": 55,
+        "path": "/data/output-img/product-images/cpus/colossuscore-core-5-5700-desktop-processor/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Colossuscore Core 5-5700 Desktop Processor \u2014 retail packaging",
+        "product_id": 55,
+        "path": "/data/output-img/product-images/cpus/colossuscore-core-5-5700-desktop-processor/"
+      }
+    ]
+  },
+  {
+    "product_id": 62,
+    "path": "/data/output-img/product-images/cpus/colossuscore-core-9-9950-desktop-processor/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Colossuscore Core 9-9950 Desktop Processor \u2014 front view",
+        "product_id": 62,
+        "path": "/data/output-img/product-images/cpus/colossuscore-core-9-9950-desktop-processor/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Colossuscore Core 9-9950 Desktop Processor \u2014 alternate angle",
+        "product_id": 62,
+        "path": "/data/output-img/product-images/cpus/colossuscore-core-9-9950-desktop-processor/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Colossuscore Core 9-9950 Desktop Processor \u2014 retail packaging",
+        "product_id": 62,
+        "path": "/data/output-img/product-images/cpus/colossuscore-core-9-9950-desktop-processor/"
+      }
+    ]
+  },
+  {
+    "product_id": 69,
+    "path": "/data/output-img/product-images/cpus/ragnarok-silicon-core-3-3300-desktop-processor/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Ragnarok Silicon Core 3-3300 Desktop Processor \u2014 front view",
+        "product_id": 69,
+        "path": "/data/output-img/product-images/cpus/ragnarok-silicon-core-3-3300-desktop-processor/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Ragnarok Silicon Core 3-3300 Desktop Processor \u2014 alternate angle",
+        "product_id": 69,
+        "path": "/data/output-img/product-images/cpus/ragnarok-silicon-core-3-3300-desktop-processor/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Ragnarok Silicon Core 3-3300 Desktop Processor \u2014 retail packaging",
+        "product_id": 69,
+        "path": "/data/output-img/product-images/cpus/ragnarok-silicon-core-3-3300-desktop-processor/"
+      }
+    ]
+  },
+  {
+    "product_id": 76,
+    "path": "/data/output-img/product-images/cpus/ragnarok-silicon-core-7-7900-desktop-processor/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Ragnarok Silicon Core 7-7900 Desktop Processor \u2014 front view",
+        "product_id": 76,
+        "path": "/data/output-img/product-images/cpus/ragnarok-silicon-core-7-7900-desktop-processor/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Ragnarok Silicon Core 7-7900 Desktop Processor \u2014 alternate angle",
+        "product_id": 76,
+        "path": "/data/output-img/product-images/cpus/ragnarok-silicon-core-7-7900-desktop-processor/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Ragnarok Silicon Core 7-7900 Desktop Processor \u2014 retail packaging",
+        "product_id": 76,
+        "path": "/data/output-img/product-images/cpus/ragnarok-silicon-core-7-7900-desktop-processor/"
+      }
+    ]
+  },
+  {
+    "product_id": 83,
+    "path": "/data/output-img/product-images/cpus/ragnarok-silicon-servercore-sc-2100/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Ragnarok Silicon ServerCore SC-2100 \u2014 front view",
+        "product_id": 83,
+        "path": "/data/output-img/product-images/cpus/ragnarok-silicon-servercore-sc-2100/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Ragnarok Silicon ServerCore SC-2100 \u2014 alternate angle",
+        "product_id": 83,
+        "path": "/data/output-img/product-images/cpus/ragnarok-silicon-servercore-sc-2100/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Ragnarok Silicon ServerCore SC-2100 \u2014 retail packaging",
+        "product_id": 83,
+        "path": "/data/output-img/product-images/cpus/ragnarok-silicon-servercore-sc-2100/"
+      }
+    ]
+  },
+  {
+    "product_id": 91,
+    "path": "/data/output-img/product-images/gpus/ymir-core-rtx-4080-graphics-card/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Ymir Core RTX-4080 Graphics Card \u2014 front view",
+        "product_id": 91,
+        "path": "/data/output-img/product-images/gpus/ymir-core-rtx-4080-graphics-card/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Ymir Core RTX-4080 Graphics Card \u2014 alternate angle",
+        "product_id": 91,
+        "path": "/data/output-img/product-images/gpus/ymir-core-rtx-4080-graphics-card/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Ymir Core RTX-4080 Graphics Card \u2014 retail packaging",
+        "product_id": 91,
+        "path": "/data/output-img/product-images/gpus/ymir-core-rtx-4080-graphics-card/"
+      }
+    ]
+  },
+  {
+    "product_id": 98,
+    "path": "/data/output-img/product-images/gpus/odinforge-rtx-4060-graphics-card/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Odinforge RTX-4060 Graphics Card \u2014 front view",
+        "product_id": 98,
+        "path": "/data/output-img/product-images/gpus/odinforge-rtx-4060-graphics-card/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Odinforge RTX-4060 Graphics Card \u2014 alternate angle",
+        "product_id": 98,
+        "path": "/data/output-img/product-images/gpus/odinforge-rtx-4060-graphics-card/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Odinforge RTX-4060 Graphics Card \u2014 retail packaging",
+        "product_id": 98,
+        "path": "/data/output-img/product-images/gpus/odinforge-rtx-4060-graphics-card/"
+      }
+    ]
+  },
+  {
+    "product_id": 105,
+    "path": "/data/output-img/product-images/gpus/odinforge-quadro-class-wx5000/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Odinforge Quadro-Class WX5000 \u2014 front view",
+        "product_id": 105,
+        "path": "/data/output-img/product-images/gpus/odinforge-quadro-class-wx5000/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Odinforge Quadro-Class WX5000 \u2014 alternate angle",
+        "product_id": 105,
+        "path": "/data/output-img/product-images/gpus/odinforge-quadro-class-wx5000/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Odinforge Quadro-Class WX5000 \u2014 retail packaging",
+        "product_id": 105,
+        "path": "/data/output-img/product-images/gpus/odinforge-quadro-class-wx5000/"
+      }
+    ]
+  },
+  {
+    "product_id": 112,
+    "path": "/data/output-img/product-images/gpus/wyrmscale-graphics-rtx-4070ti-graphics-card/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Wyrmscale Graphics RTX-4070Ti Graphics Card \u2014 front view",
+        "product_id": 112,
+        "path": "/data/output-img/product-images/gpus/wyrmscale-graphics-rtx-4070ti-graphics-card/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Wyrmscale Graphics RTX-4070Ti Graphics Card \u2014 alternate angle",
+        "product_id": 112,
+        "path": "/data/output-img/product-images/gpus/wyrmscale-graphics-rtx-4070ti-graphics-card/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Wyrmscale Graphics RTX-4070Ti Graphics Card \u2014 retail packaging",
+        "product_id": 112,
+        "path": "/data/output-img/product-images/gpus/wyrmscale-graphics-rtx-4070ti-graphics-card/"
+      }
+    ]
+  },
+  {
+    "product_id": 119,
+    "path": "/data/output-img/product-images/gpus/ashenfire-graphics-gt-1660-graphics-card/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Ashenfire Graphics GT-1660 Graphics Card \u2014 front view",
+        "product_id": 119,
+        "path": "/data/output-img/product-images/gpus/ashenfire-graphics-gt-1660-graphics-card/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Ashenfire Graphics GT-1660 Graphics Card \u2014 alternate angle",
+        "product_id": 119,
+        "path": "/data/output-img/product-images/gpus/ashenfire-graphics-gt-1660-graphics-card/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Ashenfire Graphics GT-1660 Graphics Card \u2014 retail packaging",
+        "product_id": 119,
+        "path": "/data/output-img/product-images/gpus/ashenfire-graphics-gt-1660-graphics-card/"
+      }
+    ]
+  },
+  {
+    "product_id": 126,
+    "path": "/data/output-img/product-images/gpus/ashenfire-graphics-rtx-4090ti-graphics-card/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Ashenfire Graphics RTX-4090Ti Graphics Card \u2014 front view",
+        "product_id": 126,
+        "path": "/data/output-img/product-images/gpus/ashenfire-graphics-rtx-4090ti-graphics-card/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Ashenfire Graphics RTX-4090Ti Graphics Card \u2014 alternate angle",
+        "product_id": 126,
+        "path": "/data/output-img/product-images/gpus/ashenfire-graphics-rtx-4090ti-graphics-card/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Ashenfire Graphics RTX-4090Ti Graphics Card \u2014 retail packaging",
+        "product_id": 126,
+        "path": "/data/output-img/product-images/gpus/ashenfire-graphics-rtx-4090ti-graphics-card/"
+      }
+    ]
+  },
+  {
+    "product_id": 133,
+    "path": "/data/output-img/product-images/gpus/minotaur-labs-rtx-4070-graphics-card/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Minotaur Labs RTX-4070 Graphics Card \u2014 front view",
+        "product_id": 133,
+        "path": "/data/output-img/product-images/gpus/minotaur-labs-rtx-4070-graphics-card/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Minotaur Labs RTX-4070 Graphics Card \u2014 alternate angle",
+        "product_id": 133,
+        "path": "/data/output-img/product-images/gpus/minotaur-labs-rtx-4070-graphics-card/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Minotaur Labs RTX-4070 Graphics Card \u2014 retail packaging",
+        "product_id": 133,
+        "path": "/data/output-img/product-images/gpus/minotaur-labs-rtx-4070-graphics-card/"
+      }
+    ]
+  },
+  {
+    "product_id": 146,
+    "path": "/data/output-img/product-images/motherboards/phoenix-circuit-b760-atx-motherboard/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Phoenix Circuit B760 ATX Motherboard \u2014 front view",
+        "product_id": 146,
+        "path": "/data/output-img/product-images/motherboards/phoenix-circuit-b760-atx-motherboard/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Phoenix Circuit B760 ATX Motherboard \u2014 alternate angle",
+        "product_id": 146,
+        "path": "/data/output-img/product-images/motherboards/phoenix-circuit-b760-atx-motherboard/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Phoenix Circuit B760 ATX Motherboard \u2014 retail packaging",
+        "product_id": 146,
+        "path": "/data/output-img/product-images/motherboards/phoenix-circuit-b760-atx-motherboard/"
+      }
+    ]
+  },
+  {
+    "product_id": 153,
+    "path": "/data/output-img/product-images/motherboards/sphinxware-b650-atx-motherboard/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Sphinxware B650 ATX Motherboard \u2014 front view",
+        "product_id": 153,
+        "path": "/data/output-img/product-images/motherboards/sphinxware-b650-atx-motherboard/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Sphinxware B650 ATX Motherboard \u2014 alternate angle",
+        "product_id": 153,
+        "path": "/data/output-img/product-images/motherboards/sphinxware-b650-atx-motherboard/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Sphinxware B650 ATX Motherboard \u2014 retail packaging",
+        "product_id": 153,
+        "path": "/data/output-img/product-images/motherboards/sphinxware-b650-atx-motherboard/"
+      }
+    ]
+  },
+  {
+    "product_id": 160,
+    "path": "/data/output-img/product-images/motherboards/sphinxware-h610-mini-itx-motherboard/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Sphinxware H610 Mini-ITX Motherboard \u2014 front view",
+        "product_id": 160,
+        "path": "/data/output-img/product-images/motherboards/sphinxware-h610-mini-itx-motherboard/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Sphinxware H610 Mini-ITX Motherboard \u2014 alternate angle",
+        "product_id": 160,
+        "path": "/data/output-img/product-images/motherboards/sphinxware-h610-mini-itx-motherboard/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Sphinxware H610 Mini-ITX Motherboard \u2014 retail packaging",
+        "product_id": 160,
+        "path": "/data/output-img/product-images/motherboards/sphinxware-h610-mini-itx-motherboard/"
+      }
+    ]
+  },
+  {
+    "product_id": 167,
+    "path": "/data/output-img/product-images/motherboards/cerberus-tech-x670-atx-motherboard/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Cerberus Tech X670 ATX Motherboard \u2014 front view",
+        "product_id": 167,
+        "path": "/data/output-img/product-images/motherboards/cerberus-tech-x670-atx-motherboard/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Cerberus Tech X670 ATX Motherboard \u2014 alternate angle",
+        "product_id": 167,
+        "path": "/data/output-img/product-images/motherboards/cerberus-tech-x670-atx-motherboard/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Cerberus Tech X670 ATX Motherboard \u2014 retail packaging",
+        "product_id": 167,
+        "path": "/data/output-img/product-images/motherboards/cerberus-tech-x670-atx-motherboard/"
+      }
+    ]
+  },
+  {
+    "product_id": 174,
+    "path": "/data/output-img/product-images/motherboards/cerberus-tech-a620-mini-itx-motherboard/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Cerberus Tech A620 Mini-ITX Motherboard \u2014 front view",
+        "product_id": 174,
+        "path": "/data/output-img/product-images/motherboards/cerberus-tech-a620-mini-itx-motherboard/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Cerberus Tech A620 Mini-ITX Motherboard \u2014 alternate angle",
+        "product_id": 174,
+        "path": "/data/output-img/product-images/motherboards/cerberus-tech-a620-mini-itx-motherboard/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Cerberus Tech A620 Mini-ITX Motherboard \u2014 retail packaging",
+        "product_id": 174,
+        "path": "/data/output-img/product-images/motherboards/cerberus-tech-a620-mini-itx-motherboard/"
+      }
+    ]
+  },
+  {
+    "product_id": 181,
+    "path": "/data/output-img/product-images/motherboards/hydra-systems-z790-atx-motherboard/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Hydra Systems Z790 ATX Motherboard \u2014 front view",
+        "product_id": 181,
+        "path": "/data/output-img/product-images/motherboards/hydra-systems-z790-atx-motherboard/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Hydra Systems Z790 ATX Motherboard \u2014 alternate angle",
+        "product_id": 181,
+        "path": "/data/output-img/product-images/motherboards/hydra-systems-z790-atx-motherboard/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Hydra Systems Z790 ATX Motherboard \u2014 retail packaging",
+        "product_id": 181,
+        "path": "/data/output-img/product-images/motherboards/hydra-systems-z790-atx-motherboard/"
+      }
+    ]
+  },
+  {
+    "product_id": 188,
+    "path": "/data/output-img/product-images/motherboards/direwood-boards-b650-micro-atx-motherboard/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Direwood Boards B650 Micro-ATX Motherboard \u2014 front view",
+        "product_id": 188,
+        "path": "/data/output-img/product-images/motherboards/direwood-boards-b650-micro-atx-motherboard/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Direwood Boards B650 Micro-ATX Motherboard \u2014 alternate angle",
+        "product_id": 188,
+        "path": "/data/output-img/product-images/motherboards/direwood-boards-b650-micro-atx-motherboard/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Direwood Boards B650 Micro-ATX Motherboard \u2014 retail packaging",
+        "product_id": 188,
+        "path": "/data/output-img/product-images/motherboards/direwood-boards-b650-micro-atx-motherboard/"
+      }
+    ]
+  },
+  {
+    "product_id": 195,
+    "path": "/data/output-img/product-images/motherboards/direwood-boards-b760-micro-atx-motherboard/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Direwood Boards B760 Micro-ATX Motherboard \u2014 front view",
+        "product_id": 195,
+        "path": "/data/output-img/product-images/motherboards/direwood-boards-b760-micro-atx-motherboard/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Direwood Boards B760 Micro-ATX Motherboard \u2014 alternate angle",
+        "product_id": 195,
+        "path": "/data/output-img/product-images/motherboards/direwood-boards-b760-micro-atx-motherboard/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Direwood Boards B760 Micro-ATX Motherboard \u2014 retail packaging",
+        "product_id": 195,
+        "path": "/data/output-img/product-images/motherboards/direwood-boards-b760-micro-atx-motherboard/"
+      }
+    ]
+  },
+  {
+    "product_id": 206,
+    "path": "/data/output-img/product-images/ram/bramblecore-memory-ddr4-64gb-desktop-ram-kit/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Bramblecore Memory DDR4 64GB Desktop RAM Kit \u2014 front view",
+        "product_id": 206,
+        "path": "/data/output-img/product-images/ram/bramblecore-memory-ddr4-64gb-desktop-ram-kit/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Bramblecore Memory DDR4 64GB Desktop RAM Kit \u2014 alternate angle",
+        "product_id": 206,
+        "path": "/data/output-img/product-images/ram/bramblecore-memory-ddr4-64gb-desktop-ram-kit/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Bramblecore Memory DDR4 64GB Desktop RAM Kit \u2014 retail packaging",
+        "product_id": 206,
+        "path": "/data/output-img/product-images/ram/bramblecore-memory-ddr4-64gb-desktop-ram-kit/"
+      }
+    ]
+  },
+  {
+    "product_id": 213,
+    "path": "/data/output-img/product-images/ram/ironvale-modules-ddr4-16gb-desktop-ram-kit/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Ironvale Modules DDR4 16GB Desktop RAM Kit \u2014 front view",
+        "product_id": 213,
+        "path": "/data/output-img/product-images/ram/ironvale-modules-ddr4-16gb-desktop-ram-kit/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Ironvale Modules DDR4 16GB Desktop RAM Kit \u2014 alternate angle",
+        "product_id": 213,
+        "path": "/data/output-img/product-images/ram/ironvale-modules-ddr4-16gb-desktop-ram-kit/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Ironvale Modules DDR4 16GB Desktop RAM Kit \u2014 retail packaging",
+        "product_id": 213,
+        "path": "/data/output-img/product-images/ram/ironvale-modules-ddr4-16gb-desktop-ram-kit/"
+      }
+    ]
+  },
+  {
+    "product_id": 220,
+    "path": "/data/output-img/product-images/ram/ironvale-modules-sodimm-16gb-laptop-ram/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Ironvale Modules SODIMM 16GB Laptop RAM \u2014 front view",
+        "product_id": 220,
+        "path": "/data/output-img/product-images/ram/ironvale-modules-sodimm-16gb-laptop-ram/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Ironvale Modules SODIMM 16GB Laptop RAM \u2014 alternate angle",
+        "product_id": 220,
+        "path": "/data/output-img/product-images/ram/ironvale-modules-sodimm-16gb-laptop-ram/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Ironvale Modules SODIMM 16GB Laptop RAM \u2014 retail packaging",
+        "product_id": 220,
+        "path": "/data/output-img/product-images/ram/ironvale-modules-sodimm-16gb-laptop-ram/"
+      }
+    ]
+  },
+  {
+    "product_id": 227,
+    "path": "/data/output-img/product-images/ram/stonehelm-chips-ddr5-32gb-desktop-ram-kit/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Stonehelm Chips DDR5 32GB Desktop RAM Kit \u2014 front view",
+        "product_id": 227,
+        "path": "/data/output-img/product-images/ram/stonehelm-chips-ddr5-32gb-desktop-ram-kit/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Stonehelm Chips DDR5 32GB Desktop RAM Kit \u2014 alternate angle",
+        "product_id": 227,
+        "path": "/data/output-img/product-images/ram/stonehelm-chips-ddr5-32gb-desktop-ram-kit/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Stonehelm Chips DDR5 32GB Desktop RAM Kit \u2014 retail packaging",
+        "product_id": 227,
+        "path": "/data/output-img/product-images/ram/stonehelm-chips-ddr5-32gb-desktop-ram-kit/"
+      }
+    ]
+  },
+  {
+    "product_id": 234,
+    "path": "/data/output-img/product-images/ram/griffinhold-ddr5-8gb-desktop-ram-kit/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Griffinhold DDR5 8GB Desktop RAM Kit \u2014 front view",
+        "product_id": 234,
+        "path": "/data/output-img/product-images/ram/griffinhold-ddr5-8gb-desktop-ram-kit/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Griffinhold DDR5 8GB Desktop RAM Kit \u2014 alternate angle",
+        "product_id": 234,
+        "path": "/data/output-img/product-images/ram/griffinhold-ddr5-8gb-desktop-ram-kit/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Griffinhold DDR5 8GB Desktop RAM Kit \u2014 retail packaging",
+        "product_id": 234,
+        "path": "/data/output-img/product-images/ram/griffinhold-ddr5-8gb-desktop-ram-kit/"
+      }
+    ]
+  },
+  {
+    "product_id": 241,
+    "path": "/data/output-img/product-images/ram/griffinhold-sodimm-8gb-laptop-ram/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Griffinhold SODIMM 8GB Laptop RAM \u2014 front view",
+        "product_id": 241,
+        "path": "/data/output-img/product-images/ram/griffinhold-sodimm-8gb-laptop-ram/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Griffinhold SODIMM 8GB Laptop RAM \u2014 alternate angle",
+        "product_id": 241,
+        "path": "/data/output-img/product-images/ram/griffinhold-sodimm-8gb-laptop-ram/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Griffinhold SODIMM 8GB Laptop RAM \u2014 retail packaging",
+        "product_id": 241,
+        "path": "/data/output-img/product-images/ram/griffinhold-sodimm-8gb-laptop-ram/"
+      }
+    ]
+  },
+  {
+    "product_id": 250,
+    "path": "/data/output-img/product-images/storage/hollowmere-drives-nvme-m-2-ssd-2tb/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Hollowmere Drives NVMe M.2 SSD 2TB \u2014 front view",
+        "product_id": 250,
+        "path": "/data/output-img/product-images/storage/hollowmere-drives-nvme-m-2-ssd-2tb/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Hollowmere Drives NVMe M.2 SSD 2TB \u2014 alternate angle",
+        "product_id": 250,
+        "path": "/data/output-img/product-images/storage/hollowmere-drives-nvme-m-2-ssd-2tb/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Hollowmere Drives NVMe M.2 SSD 2TB \u2014 retail packaging",
+        "product_id": 250,
+        "path": "/data/output-img/product-images/storage/hollowmere-drives-nvme-m-2-ssd-2tb/"
+      }
+    ]
+  },
+  {
+    "product_id": 257,
+    "path": "/data/output-img/product-images/storage/hollowmere-drives-portable-external-hdd-2tb/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Hollowmere Drives Portable External HDD 2TB \u2014 front view",
+        "product_id": 257,
+        "path": "/data/output-img/product-images/storage/hollowmere-drives-portable-external-hdd-2tb/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Hollowmere Drives Portable External HDD 2TB \u2014 alternate angle",
+        "product_id": 257,
+        "path": "/data/output-img/product-images/storage/hollowmere-drives-portable-external-hdd-2tb/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Hollowmere Drives Portable External HDD 2TB \u2014 retail packaging",
+        "product_id": 257,
+        "path": "/data/output-img/product-images/storage/hollowmere-drives-portable-external-hdd-2tb/"
+      }
+    ]
+  },
+  {
+    "product_id": 264,
+    "path": "/data/output-img/product-images/storage/quicksilver-vault-nvme-m-2-ssd-250gb/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Quicksilver Vault NVMe M.2 SSD 250GB \u2014 front view",
+        "product_id": 264,
+        "path": "/data/output-img/product-images/storage/quicksilver-vault-nvme-m-2-ssd-250gb/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Quicksilver Vault NVMe M.2 SSD 250GB \u2014 alternate angle",
+        "product_id": 264,
+        "path": "/data/output-img/product-images/storage/quicksilver-vault-nvme-m-2-ssd-250gb/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Quicksilver Vault NVMe M.2 SSD 250GB \u2014 retail packaging",
+        "product_id": 264,
+        "path": "/data/output-img/product-images/storage/quicksilver-vault-nvme-m-2-ssd-250gb/"
+      }
+    ]
+  },
+  {
+    "product_id": 271,
+    "path": "/data/output-img/product-images/storage/quicksilver-vault-sata-iii-ssd-2tb/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Quicksilver Vault SATA III SSD 2TB \u2014 front view",
+        "product_id": 271,
+        "path": "/data/output-img/product-images/storage/quicksilver-vault-sata-iii-ssd-2tb/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Quicksilver Vault SATA III SSD 2TB \u2014 alternate angle",
+        "product_id": 271,
+        "path": "/data/output-img/product-images/storage/quicksilver-vault-sata-iii-ssd-2tb/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Quicksilver Vault SATA III SSD 2TB \u2014 retail packaging",
+        "product_id": 271,
+        "path": "/data/output-img/product-images/storage/quicksilver-vault-sata-iii-ssd-2tb/"
+      }
+    ]
+  },
+  {
+    "product_id": 278,
+    "path": "/data/output-img/product-images/storage/quicksilver-vault-internal-hdd-4tb/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Quicksilver Vault Internal HDD 4TB \u2014 front view",
+        "product_id": 278,
+        "path": "/data/output-img/product-images/storage/quicksilver-vault-internal-hdd-4tb/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Quicksilver Vault Internal HDD 4TB \u2014 alternate angle",
+        "product_id": 278,
+        "path": "/data/output-img/product-images/storage/quicksilver-vault-internal-hdd-4tb/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Quicksilver Vault Internal HDD 4TB \u2014 retail packaging",
+        "product_id": 278,
+        "path": "/data/output-img/product-images/storage/quicksilver-vault-internal-hdd-4tb/"
+      }
+    ]
+  },
+  {
+    "product_id": 285,
+    "path": "/data/output-img/product-images/storage/larkspur-storage-sata-iii-ssd-250gb/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Larkspur Storage SATA III SSD 250GB \u2014 front view",
+        "product_id": 285,
+        "path": "/data/output-img/product-images/storage/larkspur-storage-sata-iii-ssd-250gb/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Larkspur Storage SATA III SSD 250GB \u2014 alternate angle",
+        "product_id": 285,
+        "path": "/data/output-img/product-images/storage/larkspur-storage-sata-iii-ssd-250gb/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Larkspur Storage SATA III SSD 250GB \u2014 retail packaging",
+        "product_id": 285,
+        "path": "/data/output-img/product-images/storage/larkspur-storage-sata-iii-ssd-250gb/"
+      }
+    ]
+  },
+  {
+    "product_id": 292,
+    "path": "/data/output-img/product-images/storage/larkspur-storage-nvme-m-2-ssd-4tb/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Larkspur Storage NVMe M.2 SSD 4TB \u2014 front view",
+        "product_id": 292,
+        "path": "/data/output-img/product-images/storage/larkspur-storage-nvme-m-2-ssd-4tb/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Larkspur Storage NVMe M.2 SSD 4TB \u2014 alternate angle",
+        "product_id": 292,
+        "path": "/data/output-img/product-images/storage/larkspur-storage-nvme-m-2-ssd-4tb/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Larkspur Storage NVMe M.2 SSD 4TB \u2014 retail packaging",
+        "product_id": 292,
+        "path": "/data/output-img/product-images/storage/larkspur-storage-nvme-m-2-ssd-4tb/"
+      }
+    ]
+  },
+  {
+    "product_id": 299,
+    "path": "/data/output-img/product-images/storage/larkspur-storage-portable-external-hdd-4tb/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Larkspur Storage Portable External HDD 4TB \u2014 front view",
+        "product_id": 299,
+        "path": "/data/output-img/product-images/storage/larkspur-storage-portable-external-hdd-4tb/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Larkspur Storage Portable External HDD 4TB \u2014 alternate angle",
+        "product_id": 299,
+        "path": "/data/output-img/product-images/storage/larkspur-storage-portable-external-hdd-4tb/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Larkspur Storage Portable External HDD 4TB \u2014 retail packaging",
+        "product_id": 299,
+        "path": "/data/output-img/product-images/storage/larkspur-storage-portable-external-hdd-4tb/"
+      }
+    ]
+  },
+  {
+    "product_id": 306,
+    "path": "/data/output-img/product-images/storage/larkspur-storage-usb-3-1-pen-drive-64gb/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Larkspur Storage USB 3.1 Pen Drive 64GB \u2014 front view",
+        "product_id": 306,
+        "path": "/data/output-img/product-images/storage/larkspur-storage-usb-3-1-pen-drive-64gb/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Larkspur Storage USB 3.1 Pen Drive 64GB \u2014 alternate angle",
+        "product_id": 306,
+        "path": "/data/output-img/product-images/storage/larkspur-storage-usb-3-1-pen-drive-64gb/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Larkspur Storage USB 3.1 Pen Drive 64GB \u2014 retail packaging",
+        "product_id": 306,
+        "path": "/data/output-img/product-images/storage/larkspur-storage-usb-3-1-pen-drive-64gb/"
+      }
+    ]
+  },
+  {
+    "product_id": 313,
+    "path": "/data/output-img/product-images/storage/silverfang-chargers-usb-3-1-pen-drive-16gb/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Silverfang Chargers USB 3.1 Pen Drive 16GB \u2014 front view",
+        "product_id": 313,
+        "path": "/data/output-img/product-images/storage/silverfang-chargers-usb-3-1-pen-drive-16gb/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Silverfang Chargers USB 3.1 Pen Drive 16GB \u2014 alternate angle",
+        "product_id": 313,
+        "path": "/data/output-img/product-images/storage/silverfang-chargers-usb-3-1-pen-drive-16gb/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Silverfang Chargers USB 3.1 Pen Drive 16GB \u2014 retail packaging",
+        "product_id": 313,
+        "path": "/data/output-img/product-images/storage/silverfang-chargers-usb-3-1-pen-drive-16gb/"
+      }
+    ]
+  },
+  {
+    "product_id": 320,
+    "path": "/data/output-img/product-images/storage/silverfang-chargers-dual-usb-c-usb-a-flash-drive-64gb/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Silverfang Chargers Dual USB-C/USB-A Flash Drive 64GB \u2014 front view",
+        "product_id": 320,
+        "path": "/data/output-img/product-images/storage/silverfang-chargers-dual-usb-c-usb-a-flash-drive-64gb/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Silverfang Chargers Dual USB-C/USB-A Flash Drive 64GB \u2014 alternate angle",
+        "product_id": 320,
+        "path": "/data/output-img/product-images/storage/silverfang-chargers-dual-usb-c-usb-a-flash-drive-64gb/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Silverfang Chargers Dual USB-C/USB-A Flash Drive 64GB \u2014 retail packaging",
+        "product_id": 320,
+        "path": "/data/output-img/product-images/storage/silverfang-chargers-dual-usb-c-usb-a-flash-drive-64gb/"
+      }
+    ]
+  },
+  {
+    "product_id": 327,
+    "path": "/data/output-img/product-images/storage/emberlight-power-usb-3-1-pen-drive-512gb/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Emberlight Power USB 3.1 Pen Drive 512GB \u2014 front view",
+        "product_id": 327,
+        "path": "/data/output-img/product-images/storage/emberlight-power-usb-3-1-pen-drive-512gb/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Emberlight Power USB 3.1 Pen Drive 512GB \u2014 alternate angle",
+        "product_id": 327,
+        "path": "/data/output-img/product-images/storage/emberlight-power-usb-3-1-pen-drive-512gb/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Emberlight Power USB 3.1 Pen Drive 512GB \u2014 retail packaging",
+        "product_id": 327,
+        "path": "/data/output-img/product-images/storage/emberlight-power-usb-3-1-pen-drive-512gb/"
+      }
+    ]
+  },
+  {
+    "product_id": 334,
+    "path": "/data/output-img/product-images/storage/nightjar-optics-microsdxc-card-64gb/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Nightjar Optics MicroSDXC Card 64GB \u2014 front view",
+        "product_id": 334,
+        "path": "/data/output-img/product-images/storage/nightjar-optics-microsdxc-card-64gb/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Nightjar Optics MicroSDXC Card 64GB \u2014 alternate angle",
+        "product_id": 334,
+        "path": "/data/output-img/product-images/storage/nightjar-optics-microsdxc-card-64gb/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Nightjar Optics MicroSDXC Card 64GB \u2014 retail packaging",
+        "product_id": 334,
+        "path": "/data/output-img/product-images/storage/nightjar-optics-microsdxc-card-64gb/"
+      }
+    ]
+  },
+  {
+    "product_id": 341,
+    "path": "/data/output-img/product-images/storage/nightjar-optics-sdxc-uhs-i-card-1tb/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Nightjar Optics SDXC UHS-I Card 1TB \u2014 front view",
+        "product_id": 341,
+        "path": "/data/output-img/product-images/storage/nightjar-optics-sdxc-uhs-i-card-1tb/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Nightjar Optics SDXC UHS-I Card 1TB \u2014 alternate angle",
+        "product_id": 341,
+        "path": "/data/output-img/product-images/storage/nightjar-optics-sdxc-uhs-i-card-1tb/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Nightjar Optics SDXC UHS-I Card 1TB \u2014 retail packaging",
+        "product_id": 341,
+        "path": "/data/output-img/product-images/storage/nightjar-optics-sdxc-uhs-i-card-1tb/"
+      }
+    ]
+  },
+  {
+    "product_id": 348,
+    "path": "/data/output-img/product-images/storage/silverbrook-lens-microsdxc-card-128gb/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Silverbrook Lens MicroSDXC Card 128GB \u2014 front view",
+        "product_id": 348,
+        "path": "/data/output-img/product-images/storage/silverbrook-lens-microsdxc-card-128gb/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Silverbrook Lens MicroSDXC Card 128GB \u2014 alternate angle",
+        "product_id": 348,
+        "path": "/data/output-img/product-images/storage/silverbrook-lens-microsdxc-card-128gb/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Silverbrook Lens MicroSDXC Card 128GB \u2014 retail packaging",
+        "product_id": 348,
+        "path": "/data/output-img/product-images/storage/silverbrook-lens-microsdxc-card-128gb/"
+      }
+    ]
+  },
+  {
+    "product_id": 355,
+    "path": "/data/output-img/product-images/storage/larkspur-storage-sdxc-uhs-i-card-32gb/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Larkspur Storage SDXC UHS-I Card 32GB \u2014 front view",
+        "product_id": 355,
+        "path": "/data/output-img/product-images/storage/larkspur-storage-sdxc-uhs-i-card-32gb/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Larkspur Storage SDXC UHS-I Card 32GB \u2014 alternate angle",
+        "product_id": 355,
+        "path": "/data/output-img/product-images/storage/larkspur-storage-sdxc-uhs-i-card-32gb/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Larkspur Storage SDXC UHS-I Card 32GB \u2014 retail packaging",
+        "product_id": 355,
+        "path": "/data/output-img/product-images/storage/larkspur-storage-sdxc-uhs-i-card-32gb/"
+      }
+    ]
+  },
+  {
+    "product_id": 362,
+    "path": "/data/output-img/product-images/storage/larkspur-storage-microsdxc-card-256gb/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Larkspur Storage MicroSDXC Card 256GB \u2014 front view",
+        "product_id": 362,
+        "path": "/data/output-img/product-images/storage/larkspur-storage-microsdxc-card-256gb/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Larkspur Storage MicroSDXC Card 256GB \u2014 alternate angle",
+        "product_id": 362,
+        "path": "/data/output-img/product-images/storage/larkspur-storage-microsdxc-card-256gb/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Larkspur Storage MicroSDXC Card 256GB \u2014 retail packaging",
+        "product_id": 362,
+        "path": "/data/output-img/product-images/storage/larkspur-storage-microsdxc-card-256gb/"
+      }
+    ]
+  },
+  {
+    "product_id": 373,
+    "path": "/data/output-img/product-images/keyboards/valkyrie-gear-full-size-mechanical-keyboard/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Valkyrie Gear Full-Size Mechanical Keyboard \u2014 front view",
+        "product_id": 373,
+        "path": "/data/output-img/product-images/keyboards/valkyrie-gear-full-size-mechanical-keyboard/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Valkyrie Gear Full-Size Mechanical Keyboard \u2014 alternate angle",
+        "product_id": 373,
+        "path": "/data/output-img/product-images/keyboards/valkyrie-gear-full-size-mechanical-keyboard/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Valkyrie Gear Full-Size Mechanical Keyboard \u2014 retail packaging",
+        "product_id": 373,
+        "path": "/data/output-img/product-images/keyboards/valkyrie-gear-full-size-mechanical-keyboard/"
+      }
+    ]
+  },
+  {
+    "product_id": 380,
+    "path": "/data/output-img/product-images/keyboards/fenriswolf-tkl-tenkeyless-mechanical-keyboard/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Fenriswolf TKL (Tenkeyless) Mechanical Keyboard \u2014 front view",
+        "product_id": 380,
+        "path": "/data/output-img/product-images/keyboards/fenriswolf-tkl-tenkeyless-mechanical-keyboard/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Fenriswolf TKL (Tenkeyless) Mechanical Keyboard \u2014 alternate angle",
+        "product_id": 380,
+        "path": "/data/output-img/product-images/keyboards/fenriswolf-tkl-tenkeyless-mechanical-keyboard/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Fenriswolf TKL (Tenkeyless) Mechanical Keyboard \u2014 retail packaging",
+        "product_id": 380,
+        "path": "/data/output-img/product-images/keyboards/fenriswolf-tkl-tenkeyless-mechanical-keyboard/"
+      }
+    ]
+  },
+  {
+    "product_id": 387,
+    "path": "/data/output-img/product-images/keyboards/ninthgate-keys-60-compact-mechanical-keyboard/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Ninthgate Keys 60% Compact Mechanical Keyboard \u2014 front view",
+        "product_id": 387,
+        "path": "/data/output-img/product-images/keyboards/ninthgate-keys-60-compact-mechanical-keyboard/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Ninthgate Keys 60% Compact Mechanical Keyboard \u2014 alternate angle",
+        "product_id": 387,
+        "path": "/data/output-img/product-images/keyboards/ninthgate-keys-60-compact-mechanical-keyboard/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Ninthgate Keys 60% Compact Mechanical Keyboard \u2014 retail packaging",
+        "product_id": 387,
+        "path": "/data/output-img/product-images/keyboards/ninthgate-keys-60-compact-mechanical-keyboard/"
+      }
+    ]
+  },
+  {
+    "product_id": 394,
+    "path": "/data/output-img/product-images/keyboards/wolfsbane-gaming-75-compact-mechanical-keyboard/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Wolfsbane Gaming 75% Compact Mechanical Keyboard \u2014 front view",
+        "product_id": 394,
+        "path": "/data/output-img/product-images/keyboards/wolfsbane-gaming-75-compact-mechanical-keyboard/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Wolfsbane Gaming 75% Compact Mechanical Keyboard \u2014 alternate angle",
+        "product_id": 394,
+        "path": "/data/output-img/product-images/keyboards/wolfsbane-gaming-75-compact-mechanical-keyboard/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Wolfsbane Gaming 75% Compact Mechanical Keyboard \u2014 retail packaging",
+        "product_id": 394,
+        "path": "/data/output-img/product-images/keyboards/wolfsbane-gaming-75-compact-mechanical-keyboard/"
+      }
+    ]
+  },
+  {
+    "product_id": 403,
+    "path": "/data/output-img/product-images/mice/excalibur-peripherals-ergonomic-vertical-mouse/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Excalibur Peripherals Ergonomic Vertical Mouse \u2014 front view",
+        "product_id": 403,
+        "path": "/data/output-img/product-images/mice/excalibur-peripherals-ergonomic-vertical-mouse/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Excalibur Peripherals Ergonomic Vertical Mouse \u2014 alternate angle",
+        "product_id": 403,
+        "path": "/data/output-img/product-images/mice/excalibur-peripherals-ergonomic-vertical-mouse/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Excalibur Peripherals Ergonomic Vertical Mouse \u2014 retail packaging",
+        "product_id": 403,
+        "path": "/data/output-img/product-images/mice/excalibur-peripherals-ergonomic-vertical-mouse/"
+      }
+    ]
+  },
+  {
+    "product_id": 410,
+    "path": "/data/output-img/product-images/mice/valkyrie-gear-ergonomic-vertical-mouse/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Valkyrie Gear Ergonomic Vertical Mouse \u2014 front view",
+        "product_id": 410,
+        "path": "/data/output-img/product-images/mice/valkyrie-gear-ergonomic-vertical-mouse/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Valkyrie Gear Ergonomic Vertical Mouse \u2014 alternate angle",
+        "product_id": 410,
+        "path": "/data/output-img/product-images/mice/valkyrie-gear-ergonomic-vertical-mouse/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Valkyrie Gear Ergonomic Vertical Mouse \u2014 retail packaging",
+        "product_id": 410,
+        "path": "/data/output-img/product-images/mice/valkyrie-gear-ergonomic-vertical-mouse/"
+      }
+    ]
+  },
+  {
+    "product_id": 417,
+    "path": "/data/output-img/product-images/mice/fenriswolf-ergonomic-vertical-mouse/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Fenriswolf Ergonomic Vertical Mouse \u2014 front view",
+        "product_id": 417,
+        "path": "/data/output-img/product-images/mice/fenriswolf-ergonomic-vertical-mouse/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Fenriswolf Ergonomic Vertical Mouse \u2014 alternate angle",
+        "product_id": 417,
+        "path": "/data/output-img/product-images/mice/fenriswolf-ergonomic-vertical-mouse/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Fenriswolf Ergonomic Vertical Mouse \u2014 retail packaging",
+        "product_id": 417,
+        "path": "/data/output-img/product-images/mice/fenriswolf-ergonomic-vertical-mouse/"
+      }
+    ]
+  },
+  {
+    "product_id": 424,
+    "path": "/data/output-img/product-images/mice/ymir-core-ergonomic-vertical-mouse/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Ymir Core Ergonomic Vertical Mouse \u2014 front view",
+        "product_id": 424,
+        "path": "/data/output-img/product-images/mice/ymir-core-ergonomic-vertical-mouse/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Ymir Core Ergonomic Vertical Mouse \u2014 alternate angle",
+        "product_id": 424,
+        "path": "/data/output-img/product-images/mice/ymir-core-ergonomic-vertical-mouse/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Ymir Core Ergonomic Vertical Mouse \u2014 retail packaging",
+        "product_id": 424,
+        "path": "/data/output-img/product-images/mice/ymir-core-ergonomic-vertical-mouse/"
+      }
+    ]
+  },
+  {
+    "product_id": 431,
+    "path": "/data/output-img/product-images/mice/wolfsbane-gaming-ergonomic-vertical-mouse/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Wolfsbane Gaming Ergonomic Vertical Mouse \u2014 front view",
+        "product_id": 431,
+        "path": "/data/output-img/product-images/mice/wolfsbane-gaming-ergonomic-vertical-mouse/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Wolfsbane Gaming Ergonomic Vertical Mouse \u2014 alternate angle",
+        "product_id": 431,
+        "path": "/data/output-img/product-images/mice/wolfsbane-gaming-ergonomic-vertical-mouse/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Wolfsbane Gaming Ergonomic Vertical Mouse \u2014 retail packaging",
+        "product_id": 431,
+        "path": "/data/output-img/product-images/mice/wolfsbane-gaming-ergonomic-vertical-mouse/"
+      }
+    ]
+  },
+  {
+    "product_id": 438,
+    "path": "/data/output-img/product-images/mice/ivory-spire-ergonomic-vertical-mouse/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Ivory Spire Ergonomic Vertical Mouse \u2014 front view",
+        "product_id": 438,
+        "path": "/data/output-img/product-images/mice/ivory-spire-ergonomic-vertical-mouse/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Ivory Spire Ergonomic Vertical Mouse \u2014 alternate angle",
+        "product_id": 438,
+        "path": "/data/output-img/product-images/mice/ivory-spire-ergonomic-vertical-mouse/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Ivory Spire Ergonomic Vertical Mouse \u2014 retail packaging",
+        "product_id": 438,
+        "path": "/data/output-img/product-images/mice/ivory-spire-ergonomic-vertical-mouse/"
+      }
+    ]
+  },
+  {
+    "product_id": 445,
+    "path": "/data/output-img/product-images/mousepads/excalibur-peripherals-small-250x210mm-cloth-mousepad/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Excalibur Peripherals Small (250x210mm) Cloth Mousepad \u2014 front view",
+        "product_id": 445,
+        "path": "/data/output-img/product-images/mousepads/excalibur-peripherals-small-250x210mm-cloth-mousepad/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Excalibur Peripherals Small (250x210mm) Cloth Mousepad \u2014 alternate angle",
+        "product_id": 445,
+        "path": "/data/output-img/product-images/mousepads/excalibur-peripherals-small-250x210mm-cloth-mousepad/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Excalibur Peripherals Small (250x210mm) Cloth Mousepad \u2014 retail packaging",
+        "product_id": 445,
+        "path": "/data/output-img/product-images/mousepads/excalibur-peripherals-small-250x210mm-cloth-mousepad/"
+      }
+    ]
+  },
+  {
+    "product_id": 452,
+    "path": "/data/output-img/product-images/mousepads/valkyrie-gear-medium-350x280mm-cloth-mousepad/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Valkyrie Gear Medium (350x280mm) Cloth Mousepad \u2014 front view",
+        "product_id": 452,
+        "path": "/data/output-img/product-images/mousepads/valkyrie-gear-medium-350x280mm-cloth-mousepad/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Valkyrie Gear Medium (350x280mm) Cloth Mousepad \u2014 alternate angle",
+        "product_id": 452,
+        "path": "/data/output-img/product-images/mousepads/valkyrie-gear-medium-350x280mm-cloth-mousepad/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Valkyrie Gear Medium (350x280mm) Cloth Mousepad \u2014 retail packaging",
+        "product_id": 452,
+        "path": "/data/output-img/product-images/mousepads/valkyrie-gear-medium-350x280mm-cloth-mousepad/"
+      }
+    ]
+  },
+  {
+    "product_id": 459,
+    "path": "/data/output-img/product-images/mousepads/wolfsbane-gaming-large-450x400mm-cloth-mousepad/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Wolfsbane Gaming Large (450x400mm) Cloth Mousepad \u2014 front view",
+        "product_id": 459,
+        "path": "/data/output-img/product-images/mousepads/wolfsbane-gaming-large-450x400mm-cloth-mousepad/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Wolfsbane Gaming Large (450x400mm) Cloth Mousepad \u2014 alternate angle",
+        "product_id": 459,
+        "path": "/data/output-img/product-images/mousepads/wolfsbane-gaming-large-450x400mm-cloth-mousepad/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Wolfsbane Gaming Large (450x400mm) Cloth Mousepad \u2014 retail packaging",
+        "product_id": 459,
+        "path": "/data/output-img/product-images/mousepads/wolfsbane-gaming-large-450x400mm-cloth-mousepad/"
+      }
+    ]
+  },
+  {
+    "product_id": 469,
+    "path": "/data/output-img/product-images/ups/emberlight-power-1000va-online-double-conversion-ups/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Emberlight Power 1000VA Online Double-Conversion UPS \u2014 front view",
+        "product_id": 469,
+        "path": "/data/output-img/product-images/ups/emberlight-power-1000va-online-double-conversion-ups/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Emberlight Power 1000VA Online Double-Conversion UPS \u2014 alternate angle",
+        "product_id": 469,
+        "path": "/data/output-img/product-images/ups/emberlight-power-1000va-online-double-conversion-ups/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Emberlight Power 1000VA Online Double-Conversion UPS \u2014 retail packaging",
+        "product_id": 469,
+        "path": "/data/output-img/product-images/ups/emberlight-power-1000va-online-double-conversion-ups/"
+      }
+    ]
+  },
+  {
+    "product_id": 476,
+    "path": "/data/output-img/product-images/ups/windmere-solar-3000va-line-interactive-ups/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Windmere Solar 3000VA Line-Interactive UPS \u2014 front view",
+        "product_id": 476,
+        "path": "/data/output-img/product-images/ups/windmere-solar-3000va-line-interactive-ups/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Windmere Solar 3000VA Line-Interactive UPS \u2014 alternate angle",
+        "product_id": 476,
+        "path": "/data/output-img/product-images/ups/windmere-solar-3000va-line-interactive-ups/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Windmere Solar 3000VA Line-Interactive UPS \u2014 retail packaging",
+        "product_id": 476,
+        "path": "/data/output-img/product-images/ups/windmere-solar-3000va-line-interactive-ups/"
+      }
+    ]
+  },
+  {
+    "product_id": 483,
+    "path": "/data/output-img/product-images/ups/frostvane-energy-2000va-line-interactive-ups/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Frostvane Energy 2000VA Line-Interactive UPS \u2014 front view",
+        "product_id": 483,
+        "path": "/data/output-img/product-images/ups/frostvane-energy-2000va-line-interactive-ups/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Frostvane Energy 2000VA Line-Interactive UPS \u2014 alternate angle",
+        "product_id": 483,
+        "path": "/data/output-img/product-images/ups/frostvane-energy-2000va-line-interactive-ups/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Frostvane Energy 2000VA Line-Interactive UPS \u2014 retail packaging",
+        "product_id": 483,
+        "path": "/data/output-img/product-images/ups/frostvane-energy-2000va-line-interactive-ups/"
+      }
+    ]
+  },
+  {
+    "product_id": 493,
+    "path": "/data/output-img/product-images/headsets/banshee-audio-wireless-gaming-headset/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Banshee Audio Wireless Gaming Headset \u2014 front view",
+        "product_id": 493,
+        "path": "/data/output-img/product-images/headsets/banshee-audio-wireless-gaming-headset/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Banshee Audio Wireless Gaming Headset \u2014 alternate angle",
+        "product_id": 493,
+        "path": "/data/output-img/product-images/headsets/banshee-audio-wireless-gaming-headset/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Banshee Audio Wireless Gaming Headset \u2014 retail packaging",
+        "product_id": 493,
+        "path": "/data/output-img/product-images/headsets/banshee-audio-wireless-gaming-headset/"
+      }
+    ]
+  },
+  {
+    "product_id": 500,
+    "path": "/data/output-img/product-images/headsets/ironclad-play-console-gaming-headset-ps-xbox-compatible/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Ironclad Play Console Gaming Headset (PS/Xbox compatible) \u2014 front view",
+        "product_id": 500,
+        "path": "/data/output-img/product-images/headsets/ironclad-play-console-gaming-headset-ps-xbox-compatible/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Ironclad Play Console Gaming Headset (PS/Xbox compatible) \u2014 alternate angle",
+        "product_id": 500,
+        "path": "/data/output-img/product-images/headsets/ironclad-play-console-gaming-headset-ps-xbox-compatible/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Ironclad Play Console Gaming Headset (PS/Xbox compatible) \u2014 retail packaging",
+        "product_id": 500,
+        "path": "/data/output-img/product-images/headsets/ironclad-play-console-gaming-headset-ps-xbox-compatible/"
+      }
+    ]
+  },
+  {
+    "product_id": 507,
+    "path": "/data/output-img/product-images/headsets/ravenscar-mics-wired-7-1-surround-gaming-headset/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Ravenscar Mics Wired 7.1 Surround Gaming Headset \u2014 front view",
+        "product_id": 507,
+        "path": "/data/output-img/product-images/headsets/ravenscar-mics-wired-7-1-surround-gaming-headset/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Ravenscar Mics Wired 7.1 Surround Gaming Headset \u2014 alternate angle",
+        "product_id": 507,
+        "path": "/data/output-img/product-images/headsets/ravenscar-mics-wired-7-1-surround-gaming-headset/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Ravenscar Mics Wired 7.1 Surround Gaming Headset \u2014 retail packaging",
+        "product_id": 507,
+        "path": "/data/output-img/product-images/headsets/ravenscar-mics-wired-7-1-surround-gaming-headset/"
+      }
+    ]
+  },
+  {
+    "product_id": 522,
+    "path": "/data/output-img/product-images/earbuds/mermaid-s-echo-true-wireless-anc-earbuds/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Mermaid's Echo True Wireless ANC Earbuds \u2014 front view",
+        "product_id": 522,
+        "path": "/data/output-img/product-images/earbuds/mermaid-s-echo-true-wireless-anc-earbuds/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Mermaid's Echo True Wireless ANC Earbuds \u2014 alternate angle",
+        "product_id": 522,
+        "path": "/data/output-img/product-images/earbuds/mermaid-s-echo-true-wireless-anc-earbuds/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Mermaid's Echo True Wireless ANC Earbuds \u2014 retail packaging",
+        "product_id": 522,
+        "path": "/data/output-img/product-images/earbuds/mermaid-s-echo-true-wireless-anc-earbuds/"
+      }
+    ]
+  },
+  {
+    "product_id": 530,
+    "path": "/data/output-img/product-images/earphones/siren-acoustics-wired-in-ear-earphones/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Siren Acoustics Wired In-Ear Earphones \u2014 front view",
+        "product_id": 530,
+        "path": "/data/output-img/product-images/earphones/siren-acoustics-wired-in-ear-earphones/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Siren Acoustics Wired In-Ear Earphones \u2014 alternate angle",
+        "product_id": 530,
+        "path": "/data/output-img/product-images/earphones/siren-acoustics-wired-in-ear-earphones/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Siren Acoustics Wired In-Ear Earphones \u2014 retail packaging",
+        "product_id": 530,
+        "path": "/data/output-img/product-images/earphones/siren-acoustics-wired-in-ear-earphones/"
+      }
+    ]
+  },
+  {
+    "product_id": 533,
+    "path": "/data/output-img/product-images/earbuds/alderfrost-wireless-earbuds-lite/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Alderfrost Wireless Earbuds Lite \u2014 front view",
+        "product_id": 533,
+        "path": "/data/output-img/product-images/earbuds/alderfrost-wireless-earbuds-lite/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Alderfrost Wireless Earbuds Lite \u2014 alternate angle",
+        "product_id": 533,
+        "path": "/data/output-img/product-images/earbuds/alderfrost-wireless-earbuds-lite/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Alderfrost Wireless Earbuds Lite \u2014 retail packaging",
+        "product_id": 533,
+        "path": "/data/output-img/product-images/earbuds/alderfrost-wireless-earbuds-lite/"
+      }
+    ]
+  },
+  {
+    "product_id": 543,
+    "path": "/data/output-img/product-images/microphones/thistledown-sound-xlr-studio-condenser-mic/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Thistledown Sound XLR Studio Condenser Mic \u2014 front view",
+        "product_id": 543,
+        "path": "/data/output-img/product-images/microphones/thistledown-sound-xlr-studio-condenser-mic/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Thistledown Sound XLR Studio Condenser Mic \u2014 alternate angle",
+        "product_id": 543,
+        "path": "/data/output-img/product-images/microphones/thistledown-sound-xlr-studio-condenser-mic/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Thistledown Sound XLR Studio Condenser Mic \u2014 retail packaging",
+        "product_id": 543,
+        "path": "/data/output-img/product-images/microphones/thistledown-sound-xlr-studio-condenser-mic/"
+      }
+    ]
+  },
+  {
+    "product_id": 550,
+    "path": "/data/output-img/product-images/microphones/emberfall-audio-pro-webcam-with-built-in-mic/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Emberfall Audio Pro Webcam with Built-in Mic \u2014 front view",
+        "product_id": 550,
+        "path": "/data/output-img/product-images/microphones/emberfall-audio-pro-webcam-with-built-in-mic/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Emberfall Audio Pro Webcam with Built-in Mic \u2014 alternate angle",
+        "product_id": 550,
+        "path": "/data/output-img/product-images/microphones/emberfall-audio-pro-webcam-with-built-in-mic/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Emberfall Audio Pro Webcam with Built-in Mic \u2014 retail packaging",
+        "product_id": 550,
+        "path": "/data/output-img/product-images/microphones/emberfall-audio-pro-webcam-with-built-in-mic/"
+      }
+    ]
+  },
+  {
+    "product_id": 580,
+    "path": "/data/output-img/product-images/cameras/ferngully-ink-mirrorless-camera-body/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Ferngully Ink Mirrorless Camera Body \u2014 front view",
+        "product_id": 580,
+        "path": "/data/output-img/product-images/cameras/ferngully-ink-mirrorless-camera-body/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Ferngully Ink Mirrorless Camera Body \u2014 alternate angle",
+        "product_id": 580,
+        "path": "/data/output-img/product-images/cameras/ferngully-ink-mirrorless-camera-body/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Ferngully Ink Mirrorless Camera Body \u2014 retail packaging",
+        "product_id": 580,
+        "path": "/data/output-img/product-images/cameras/ferngully-ink-mirrorless-camera-body/"
+      }
+    ]
+  },
+  {
+    "product_id": 597,
+    "path": "/data/output-img/product-images/console-accessories/ironclad-play-wireless-console-controller/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Ironclad Play Wireless Console Controller \u2014 front view",
+        "product_id": 597,
+        "path": "/data/output-img/product-images/console-accessories/ironclad-play-wireless-console-controller/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Ironclad Play Wireless Console Controller \u2014 alternate angle",
+        "product_id": 597,
+        "path": "/data/output-img/product-images/console-accessories/ironclad-play-wireless-console-controller/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Ironclad Play Wireless Console Controller \u2014 retail packaging",
+        "product_id": 597,
+        "path": "/data/output-img/product-images/console-accessories/ironclad-play-wireless-console-controller/"
+      }
+    ]
+  },
+  {
+    "product_id": 606,
+    "path": "/data/output-img/product-images/cooling/kraken-cooling-high-performance-thermal-paste/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Kraken Cooling High-Performance Thermal Paste \u2014 front view",
+        "product_id": 606,
+        "path": "/data/output-img/product-images/cooling/kraken-cooling-high-performance-thermal-paste/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Kraken Cooling High-Performance Thermal Paste \u2014 alternate angle",
+        "product_id": 606,
+        "path": "/data/output-img/product-images/cooling/kraken-cooling-high-performance-thermal-paste/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Kraken Cooling High-Performance Thermal Paste \u2014 retail packaging",
+        "product_id": 606,
+        "path": "/data/output-img/product-images/cooling/kraken-cooling-high-performance-thermal-paste/"
+      }
+    ]
+  },
+  {
+    "product_id": 613,
+    "path": "/data/output-img/product-images/cooling/wyrmforge-high-performance-thermal-paste/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Wyrmforge High-Performance Thermal Paste \u2014 front view",
+        "product_id": 613,
+        "path": "/data/output-img/product-images/cooling/wyrmforge-high-performance-thermal-paste/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Wyrmforge High-Performance Thermal Paste \u2014 alternate angle",
+        "product_id": 613,
+        "path": "/data/output-img/product-images/cooling/wyrmforge-high-performance-thermal-paste/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Wyrmforge High-Performance Thermal Paste \u2014 retail packaging",
+        "product_id": 613,
+        "path": "/data/output-img/product-images/cooling/wyrmforge-high-performance-thermal-paste/"
+      }
+    ]
+  },
+  {
+    "product_id": 620,
+    "path": "/data/output-img/product-images/cooling/frostvane-thermal-high-performance-thermal-paste/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Frostvane Thermal High-Performance Thermal Paste \u2014 front view",
+        "product_id": 620,
+        "path": "/data/output-img/product-images/cooling/frostvane-thermal-high-performance-thermal-paste/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Frostvane Thermal High-Performance Thermal Paste \u2014 alternate angle",
+        "product_id": 620,
+        "path": "/data/output-img/product-images/cooling/frostvane-thermal-high-performance-thermal-paste/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Frostvane Thermal High-Performance Thermal Paste \u2014 retail packaging",
+        "product_id": 620,
+        "path": "/data/output-img/product-images/cooling/frostvane-thermal-high-performance-thermal-paste/"
+      }
+    ]
+  },
+  {
+    "product_id": 627,
+    "path": "/data/output-img/product-images/cases/wyrmforge-full-tower-tempered-glass-case/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Wyrmforge Full Tower Tempered Glass Case \u2014 front view",
+        "product_id": 627,
+        "path": "/data/output-img/product-images/cases/wyrmforge-full-tower-tempered-glass-case/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Wyrmforge Full Tower Tempered Glass Case \u2014 alternate angle",
+        "product_id": 627,
+        "path": "/data/output-img/product-images/cases/wyrmforge-full-tower-tempered-glass-case/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Wyrmforge Full Tower Tempered Glass Case \u2014 retail packaging",
+        "product_id": 627,
+        "path": "/data/output-img/product-images/cases/wyrmforge-full-tower-tempered-glass-case/"
+      }
+    ]
+  },
+  {
+    "product_id": 636,
+    "path": "/data/output-img/product-images/psus/minotaur-labs-550w-bronze-modular-psu/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Minotaur Labs 550W Bronze Modular PSU \u2014 front view",
+        "product_id": 636,
+        "path": "/data/output-img/product-images/psus/minotaur-labs-550w-bronze-modular-psu/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Minotaur Labs 550W Bronze Modular PSU \u2014 alternate angle",
+        "product_id": 636,
+        "path": "/data/output-img/product-images/psus/minotaur-labs-550w-bronze-modular-psu/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Minotaur Labs 550W Bronze Modular PSU \u2014 retail packaging",
+        "product_id": 636,
+        "path": "/data/output-img/product-images/psus/minotaur-labs-550w-bronze-modular-psu/"
+      }
+    ]
+  },
+  {
+    "product_id": 643,
+    "path": "/data/output-img/product-images/psus/griffinhold-650w-bronze-modular-psu/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Griffinhold 650W Bronze Modular PSU \u2014 front view",
+        "product_id": 643,
+        "path": "/data/output-img/product-images/psus/griffinhold-650w-bronze-modular-psu/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Griffinhold 650W Bronze Modular PSU \u2014 alternate angle",
+        "product_id": 643,
+        "path": "/data/output-img/product-images/psus/griffinhold-650w-bronze-modular-psu/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Griffinhold 650W Bronze Modular PSU \u2014 retail packaging",
+        "product_id": 643,
+        "path": "/data/output-img/product-images/psus/griffinhold-650w-bronze-modular-psu/"
+      }
+    ]
+  },
+  {
+    "product_id": 654,
+    "path": "/data/output-img/product-images/monitors/duneshadow-optics-32in-4k-monitor/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Duneshadow Optics 32in 4K Monitor \u2014 front view",
+        "product_id": 654,
+        "path": "/data/output-img/product-images/monitors/duneshadow-optics-32in-4k-monitor/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Duneshadow Optics 32in 4K Monitor \u2014 alternate angle",
+        "product_id": 654,
+        "path": "/data/output-img/product-images/monitors/duneshadow-optics-32in-4k-monitor/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Duneshadow Optics 32in 4K Monitor \u2014 retail packaging",
+        "product_id": 654,
+        "path": "/data/output-img/product-images/monitors/duneshadow-optics-32in-4k-monitor/"
+      }
+    ]
+  },
+  {
+    "product_id": 666,
+    "path": "/data/output-img/product-images/networking/wraithlink-networks-mesh-wi-fi-system-3-pack/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Wraithlink Networks Mesh Wi-Fi System (3-Pack) \u2014 front view",
+        "product_id": 666,
+        "path": "/data/output-img/product-images/networking/wraithlink-networks-mesh-wi-fi-system-3-pack/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Wraithlink Networks Mesh Wi-Fi System (3-Pack) \u2014 alternate angle",
+        "product_id": 666,
+        "path": "/data/output-img/product-images/networking/wraithlink-networks-mesh-wi-fi-system-3-pack/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Wraithlink Networks Mesh Wi-Fi System (3-Pack) \u2014 retail packaging",
+        "product_id": 666,
+        "path": "/data/output-img/product-images/networking/wraithlink-networks-mesh-wi-fi-system-3-pack/"
+      }
+    ]
+  },
+  {
+    "product_id": 673,
+    "path": "/data/output-img/product-images/networking/stormvane-connect-8-port-gigabit-switch/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Stormvane Connect 8-Port Gigabit Switch \u2014 front view",
+        "product_id": 673,
+        "path": "/data/output-img/product-images/networking/stormvane-connect-8-port-gigabit-switch/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Stormvane Connect 8-Port Gigabit Switch \u2014 alternate angle",
+        "product_id": 673,
+        "path": "/data/output-img/product-images/networking/stormvane-connect-8-port-gigabit-switch/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Stormvane Connect 8-Port Gigabit Switch \u2014 retail packaging",
+        "product_id": 673,
+        "path": "/data/output-img/product-images/networking/stormvane-connect-8-port-gigabit-switch/"
+      }
+    ]
+  },
+  {
+    "product_id": 689,
+    "path": "/data/output-img/product-images/cables/thornhollow-hubs-4k-hdmi-2-1-cable-2m/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Thornhollow Hubs 4K HDMI 2.1 Cable (2m) \u2014 front view",
+        "product_id": 689,
+        "path": "/data/output-img/product-images/cables/thornhollow-hubs-4k-hdmi-2-1-cable-2m/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Thornhollow Hubs 4K HDMI 2.1 Cable (2m) \u2014 alternate angle",
+        "product_id": 689,
+        "path": "/data/output-img/product-images/cables/thornhollow-hubs-4k-hdmi-2-1-cable-2m/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Thornhollow Hubs 4K HDMI 2.1 Cable (2m) \u2014 retail packaging",
+        "product_id": 689,
+        "path": "/data/output-img/product-images/cables/thornhollow-hubs-4k-hdmi-2-1-cable-2m/"
+      }
+    ]
+  },
+  {
+    "product_id": 706,
+    "path": "/data/output-img/product-images/laptops/shadowmere-pc-essential-15-6in-laptop/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Shadowmere PC Essential 15.6in Laptop \u2014 front view",
+        "product_id": 706,
+        "path": "/data/output-img/product-images/laptops/shadowmere-pc-essential-15-6in-laptop/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Shadowmere PC Essential 15.6in Laptop \u2014 alternate angle",
+        "product_id": 706,
+        "path": "/data/output-img/product-images/laptops/shadowmere-pc-essential-15-6in-laptop/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Shadowmere PC Essential 15.6in Laptop \u2014 retail packaging",
+        "product_id": 706,
+        "path": "/data/output-img/product-images/laptops/shadowmere-pc-essential-15-6in-laptop/"
+      }
+    ]
+  },
+  {
+    "product_id": 714,
+    "path": "/data/output-img/product-images/desktops/duskrend-mobile-gaming-desktop-tower-pc/",
+    "images": [
+      {
+        "id": 1,
+        "name": "main.jpg",
+        "alt": "Duskrend Mobile Gaming Desktop Tower PC \u2014 front view",
+        "product_id": 714,
+        "path": "/data/output-img/product-images/desktops/duskrend-mobile-gaming-desktop-tower-pc/"
+      },
+      {
+        "id": 2,
+        "name": "angle.jpg",
+        "alt": "Duskrend Mobile Gaming Desktop Tower PC \u2014 alternate angle",
+        "product_id": 714,
+        "path": "/data/output-img/product-images/desktops/duskrend-mobile-gaming-desktop-tower-pc/"
+      },
+      {
+        "id": 3,
+        "name": "with-packaging.jpg",
+        "alt": "Duskrend Mobile Gaming Desktop Tower PC \u2014 retail packaging",
+        "product_id": 714,
+        "path": "/data/output-img/product-images/desktops/duskrend-mobile-gaming-desktop-tower-pc/"
+      }
+    ]
+  }
+]

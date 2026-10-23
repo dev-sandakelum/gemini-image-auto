@@ -37,15 +37,10 @@ const fs   = require("fs");
 
 const Player = require("./player/player");
 const log    = require("./logger");
+const macros = require("../macros/auto/macros");
 
 // ── paths ────────────────────────────────────────────────────────────────────
 const ROOT       = path.join(__dirname, "..");
-const MACROS     = path.join(ROOT, "macros", "auto");
-const M1         = path.join(MACROS, "1.add_prompt.json");
-const M2         = path.join(MACROS, "2.download_image.json");
-const M3         = path.join(MACROS, "3.next.json");
-const M4         = path.join(MACROS, "4.exit.json");
-const M5         = path.join(MACROS, "5.wait.json");
 const QUEUE_DIR  = path.join(ROOT, "data", "queue");
 const TEMP_DIR   = path.join(ROOT, "data", "temp");
 const COUNT_FILE = path.join(ROOT, "data", "count.txt");
@@ -148,27 +143,13 @@ async function main() {
     log.info("Created count.txt  →  0");
   }
 
-  // Validate all macro files present
-  for (const [name, p] of [
-    ["1.add_prompt",    M1],
-    ["2.download_image", M2],
-    ["3.next",          M3],
-    ["4.exit",          M4],
-    ["5.wait",          M5],
-  ]) {
-    if (!fs.existsSync(p)) {
-      log.error(`Missing macro: ${name}  →  ${p}`);
-      process.exit(1);
-    }
-  }
-
   const playerOpts = { speedMultiplier: speed, scaleX, scaleY, scale };
 
-  /** Run a single macro file and log step label. */
-  async function runMacro(macroPath, label) {
+  /** Run a macro object and log step label. */
+  async function runMacro(macro, label) {
     log.divider(label);
     const player = new Player(playerOpts);
-    await player.play(macroPath);
+    await player.play(macro);
   }
 
   log.banner("AUTO WATCHER", "output-img → prompt → download → next");
@@ -267,10 +248,10 @@ async function main() {
       clearQueue();
 
       // ── Step 1: add prompt ─────────────────────────────────────────────
-      await runMacro(M1, "STEP 1 · add_prompt");
+      await runMacro(macros.add_prompt,      "STEP 1 · add_prompt");
 
       // ── Step 2: download image ─────────────────────────────────────────
-      await runMacro(M2, "STEP 2 · download_image");
+      await runMacro(macros.download_image,  "STEP 2 · download_image");
 
       // ── Step 3: check queue, retry loop if empty ───────────────────────
       const QUEUE_POLL_INTERVAL = 1000;  // check every 1s
@@ -329,7 +310,7 @@ async function main() {
           moveFile(src, dest);
           log.ok(`Moved → ${log.paint(log.C.bblue, "data/temp/" + queueFile)}`);
 
-          await runMacro(M3, "STEP 3 · next");
+          await runMacro(macros.next,           "STEP 3 · next");
           break; // done — wait for next poll trigger
 
         } else {
@@ -340,9 +321,9 @@ async function main() {
             `  (attempt ${attempt}) — retry`
           );
 
-          await runMacro(M4, `RETRY ${attempt} · exit`);
-          await runMacro(M5, `RETRY ${attempt} · wait`);
-          await runMacro(M2, `RETRY ${attempt} · download`);
+          await runMacro(macros.exit,           `RETRY ${attempt} · exit`);
+          await runMacro(macros.wait,           `RETRY ${attempt} · wait`);
+          await runMacro(macros.download_image, `RETRY ${attempt} · download`);
         }
       }
 

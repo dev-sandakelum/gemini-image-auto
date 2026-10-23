@@ -1,0 +1,20 @@
+{
+  "name": "press_enter",
+  "version": 1,
+  "recordedAt": null,
+  "description": "Press Enter to submit the prompt",
+  "actions": [
+    {
+      "type": "keyboard",
+      "action": "hotkey",
+      "keys": ["enter"],
+      "label": "Enter",
+      "delay": 0
+    },
+    {
+      "type": "wait",
+      "duration": 200,
+      "delay": 0
+    }
+  ]
+}

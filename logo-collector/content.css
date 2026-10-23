@@ -1,0 +1,237 @@
+/* ================================================================
+   LOGO COLLECTOR — Main draggable panel
+   ================================================================ */
+#logo-widget {
+  position: fixed;
+  right: 16px; bottom: 16px;
+  z-index: 2147483647;
+  width: 300px;
+  background: #16181d;
+  color: #e8eaed;
+  border: 1px solid #3c4043;
+  border-radius: 10px;
+  font: 12px/1.45 system-ui, sans-serif;
+  box-shadow: 0 6px 24px rgba(0,0,0,.5);
+}
+
+.lg-head {
+  padding: 8px 10px;
+  font-weight: 600;
+  cursor: move;
+  background: #202124;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+}
+.lg-count { font-weight: 400; color: #9aa0a6; font-size: 11px; }
+
+.lg-body {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.lg-body p { margin: 0; color: #bdc1c6; line-height: 1.5; }
+
+/* Current brand name + meta */
+.lg-brand-name {
+  font-size: 15px;
+  font-weight: 700;
+  color: #8ab4f8;
+}
+.lg-meta {
+  font-size: 11px;
+  color: #9aa0a6;
+  margin-top: -4px;
+}
+
+/* Mini brand list */
+.lg-list {
+  max-height: 90px;
+  overflow-y: auto;
+  border: 1px solid #3c4043;
+  border-radius: 6px;
+  background: #202124;
+}
+.lg-list-item {
+  padding: 4px 8px;
+  cursor: pointer;
+  font-size: 11px;
+  color: #9aa0a6;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: background 0.1s;
+}
+.lg-list-item:hover  { background: #303134; }
+.lg-list-item.lg-active { background: #1a2e4a; color: #8ab4f8; font-weight: 600; }
+.lg-list-item.lg-done   { color: #81c995; }
+
+/* Prompt textarea */
+#lg-prompt {
+  width: 100%;
+  background: #202124;
+  color: #e8eaed;
+  border: 1px solid #3c4043;
+  border-radius: 6px;
+  padding: 6px;
+  font: 11px/1.5 system-ui, sans-serif;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.lg-file {
+  font-size: 11px;
+  color: #9aa0a6;
+  word-break: break-all;
+}
+
+/* Button rows */
+.lg-row {
+  display: flex;
+  gap: 6px;
+}
+.lg-row button {
+  flex: 1;
+  background: #303134;
+  color: #e8eaed;
+  border: 1px solid #3c4043;
+  border-radius: 6px;
+  padding: 6px;
+  cursor: pointer;
+  font: inherit;
+  transition: background 0.15s;
+}
+.lg-row button:hover { background: #3c4043; }
+
+.lg-primary {
+  background: #8ab4f8 !important;
+  color: #202124 !important;
+  border-color: #8ab4f8 !important;
+  font-weight: 600 !important;
+}
+.lg-primary:hover { filter: brightness(1.1); }
+
+#lg-status {
+  min-height: 14px;
+  color: #81c995;
+  font-size: 11px;
+}
+
+/* Footer */
+.lg-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2px;
+}
+.lg-foot button {
+  background: none;
+  border: none;
+  color: #9aa0a6;
+  cursor: pointer;
+  text-decoration: underline;
+  font: inherit;
+}
+
+.lg-filebtn {
+  cursor: pointer;
+  color: #8ab4f8;
+  text-decoration: underline;
+  font-size: 11px;
+}
+.lg-filebtn input { display: none; }
+.lg-filebtn-big {
+  display: inline-block;
+  align-self: flex-start;
+  background: #8ab4f8;
+  color: #202124;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Scrollbar for mini list */
+.lg-list::-webkit-scrollbar { width: 4px; }
+.lg-list::-webkit-scrollbar-track { background: transparent; }
+.lg-list::-webkit-scrollbar-thumb { background: #3c4043; border-radius: 2px; }
+
+/* ================================================================
+   SAVE OVERLAY — hover button on generated images
+   ================================================================ */
+#logo-save-overlay {
+  position: absolute;
+  z-index: 2147483647;
+  transform: translateX(-100%);
+  background: #81c995;
+  color: #202124;
+  border: none;
+  border-radius: 6px 6px 0 0;
+  padding: 5px 10px;
+  font: 600 12px system-ui, sans-serif;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,.35);
+  white-space: nowrap;
+}
+#logo-save-overlay:disabled { opacity: .7; cursor: wait; }
+
+/* ================================================================
+   HUD — three pill buttons at bottom-centre
+   ================================================================ */
+#lg-hud {
+  position: fixed;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2147483647;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(22, 24, 29, 0.92);
+  border: 1px solid #3c4043;
+  border-radius: 40px;
+  padding: 6px 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,.5);
+  font: 12px/1 system-ui, sans-serif;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  pointer-events: auto;
+  white-space: nowrap;
+}
+
+.lg-pill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid #3c4043;
+  background: #303134;
+  color: #e8eaed;
+  cursor: pointer;
+  font: inherit;
+  transition: background 0.15s, transform 0.1s;
+  white-space: nowrap;
+}
+.lg-pill:hover  { background: #3c4043; }
+.lg-pill:active { transform: scale(0.96); }
+
+.lg-pill-icon  { font-size: 14px; line-height: 1; }
+.lg-pill-label { font-size: 11px; font-weight: 600; }
+
+/* Copy — blue */
+.lg-pill-copy { border-color: #8ab4f8; color: #8ab4f8; }
+.lg-pill-copy:hover { background: #1a2e4a; }
+
+/* Position indicator — neutral, clickable to jump to first pending */
+.lg-pill-refresh { border-color: #f28b82; color: #f28b82; min-width: 170px; }
+.lg-pill-refresh:hover    { background: #3a1e1e; }
+.lg-pill-refresh:disabled { opacity: 0.6; cursor: wait; }
+
+/* Next — green */
+.lg-pill-next { border-color: #81c995; color: #81c995; }
+.lg-pill-next:hover { background: #1e3a26; }

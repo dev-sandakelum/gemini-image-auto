@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Logo Collector — Brand Logo Generator",
+  "version": "1.0",
+  "description": "Tracks brand logo generation slots, copies prompts to clipboard, and saves Gemini images with correct brand filenames.",
+  "permissions": ["storage", "downloads", "clipboardWrite"],
+  "host_permissions": ["https://*.googleusercontent.com/*"],
+  "background": { "service_worker": "background.js" },
+  "content_scripts": [
+    {
+      "matches": ["https://gemini.google.com/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}

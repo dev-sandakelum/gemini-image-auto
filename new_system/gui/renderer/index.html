@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gemini Image Auto</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── App shell ─────────────────────────────────────────────────── -->
+  <div id="app">
+
+    <!-- Sidebar nav -->
+    <nav id="sidebar">
+      <div class="logo">
+        <span class="logo-icon">⚡</span>
+        <span class="logo-text">ImgAuto</span>
+      </div>
+
+      <button class="tab-btn active" data-tab="queue"    aria-label="Queue tab">
+        <span class="tab-icon">☰</span><span class="tab-label">Queue</span>
+      </button>
+      <button class="tab-btn"        data-tab="recorder" aria-label="Recorder tab">
+        <span class="tab-icon">⏺</span><span class="tab-label">Recorder</span>
+      </button>
+      <button class="tab-btn"        data-tab="runner"   aria-label="Runner tab">
+        <span class="tab-icon">▶</span><span class="tab-label">Runner</span>
+      </button>
+      <button class="tab-btn"        data-tab="settings" aria-label="Settings tab">
+        <span class="tab-icon">⚙</span><span class="tab-label">Settings</span>
+      </button>
+
+      <div class="sidebar-bottom">
+        <div id="status-dot" class="dot dot-idle" title="Runner status"></div>
+      </div>
+    </nav>
+
+    <!-- Content area -->
+    <main id="content">
+
+      <!-- ── Tab 0 — Queue ──────────────────────────────────────── -->
+      <section id="tab-queue" class="tab-pane active">
+        <div class="pane-header">
+          <h2>Task Queue</h2>
+          <div class="header-actions">
+            <input type="file" id="queue-file-input" accept=".json" style="display:none" />
+            <button id="btn-import-queue" class="btn btn-secondary">Import queue.json</button>
+            <button id="btn-refresh-queue" class="btn btn-ghost">↻ Refresh</button>
+          </div>
+        </div>
+
+        <!-- Stats bar -->
+        <div id="queue-stats" class="stats-bar">
+          <span class="stat"><span class="stat-n" id="stat-total">0</span> total</span>
+          <span class="stat stat-pending"><span class="stat-n" id="stat-pending">0</span> pending</span>
+          <span class="stat stat-done"><span class="stat-n" id="stat-done">0</span> done</span>
+          <span class="stat stat-failed"><span class="stat-n" id="stat-failed">0</span> failed</span>
+        </div>
+
+        <!-- Filter bar -->
+        <div class="filter-bar">
+          <input id="queue-search" type="text" placeholder="Filter by path or id…" class="input-text" />
+          <select id="queue-filter-status" class="input-select">
+            <option value="">All statuses</option>
+            <option value="pending">Pending</option>
+            <option value="running">Running</option>
+            <option value="done">Done</option>
+            <option value="failed">Failed</option>
+          </select>
+          <button id="btn-reset-failed" class="btn btn-warning">Reset Failed</button>
+        </div>
+
+        <!-- Table -->
+        <div class="table-wrap">
+          <table id="queue-table" aria-label="Task queue">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Path</th>
+                <th>Status</th>
+                <th>Reason</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="queue-tbody"></tbody>
+          </table>
+        </div>
+
+        <!-- Bottom actions -->
+        <div class="bottom-actions">
+          <input id="start-from-input" type="number" min="1" placeholder="Start from ID" class="input-text input-narrow" />
+          <button id="btn-start-from" class="btn btn-secondary">Start from ID</button>
+        </div>
+      </section>
+
+      <!-- ── Tab 1 — Recorder ───────────────────────────────────── -->
+      <section id="tab-recorder" class="tab-pane">
+        <div class="pane-header">
+          <h2>Macro Recorder</h2>
+          <div class="header-actions">
+            <select id="recorder-macro-select" class="input-select"></select>
+            <button id="btn-new-macro" class="btn btn-secondary">+ New</button>
+          </div>
+        </div>
+
+        <p class="hint">
+          Build the 3 core macros by recording or editing actions below, then
+          save them to <code>macros/</code>. The runner will use them in the
+          pipeline.
+        </p>
+
+        <!-- Macro metadata -->
+        <div class="form-row">
+          <label>Macro name</label>
+          <input id="macro-name-input" type="text" class="input-text" placeholder="click_prompt_box" />
+          <button id="btn-load-macro" class="btn btn-ghost">Load</button>
+          <button id="btn-save-macro" class="btn btn-primary">Save</button>
+        </div>
+
+        <!-- Actions list -->
+        <div id="action-list" class="action-list" role="list" aria-label="Macro actions"></div>
+
+        <!-- Add action controls -->
+        <div class="add-action-bar">
+          <select id="new-action-type" class="input-select">
+            <option value="mouse-click">Mouse click</option>
+            <option value="mouse-right-click">Mouse right-click</option>
+            <option value="keyboard-hotkey">Keyboard hotkey</option>
+            <option value="keyboard-text">Type text</option>
+            <option value="wait">Wait</option>
+          </select>
+          <button id="btn-add-action" class="btn btn-secondary">+ Add action</button>
+          <button id="btn-record-live" class="btn btn-danger" title="Start global hook recording">
+            ⏺ Record
+          </button>
+        </div>
+
+        <!-- Raw JSON editor (always visible as fallback) -->
+        <details class="raw-editor">
+          <summary>Raw JSON editor</summary>
+          <textarea id="macro-raw-json" rows="12" spellcheck="false" class="code-area"></textarea>
+          <button id="btn-apply-raw" class="btn btn-ghost">Apply JSON</button>
+        </details>
+      </section>
+
+      <!-- ── Tab 2 — Runner ─────────────────────────────────────── -->
+      <section id="tab-runner" class="tab-pane">
+        <div class="pane-header">
+          <h2>Runner</h2>
+          <div class="header-actions">
+            <button id="btn-run-all" class="btn btn-primary">▶ Run All</button>
+            <button id="btn-run-failed" class="btn btn-warning">↺ Run Failed</button>
+            <button id="btn-pause" class="btn btn-secondary" disabled>⏸ Pause</button>
+            <button id="btn-stop" class="btn btn-danger" disabled>■ Stop</button>
+          </div>
+        </div>
+
+        <!-- Progress banner -->
+        <div id="runner-banner" class="runner-banner">
+          <div class="banner-stat">
+            <span class="banner-label">Progress</span>
+            <span id="runner-progress">—</span>
+          </div>
+          <div class="banner-stat">
+            <span class="banner-label">Current item</span>
+            <span id="runner-current-item">—</span>
+          </div>
+          <div class="banner-stat">
+            <span class="banner-label">Step</span>
+            <span id="runner-step">—</span>
+          </div>
+          <div class="banner-stat">
+            <span class="banner-label">Status</span>
+            <span id="runner-status-text">Idle</span>
+          </div>
+        </div>
+
+        <!-- Speed / interval controls -->
+        <div class="runner-controls">
+          <label>Speed
+            <input id="speed-input" type="number" value="1" min="0.1" max="5" step="0.1" class="input-text input-narrow" />
+            ×
+          </label>
+          <label>Item interval
+            <input id="interval-input" type="number" value="500" min="0" step="100" class="input-text input-narrow" />
+            ms
+          </label>
+        </div>
+
+        <!-- Live log -->
+        <div id="log-pane" class="log-pane" role="log" aria-live="polite" aria-label="Live log"></div>
+        <div class="log-controls">
+          <label class="checkbox-label">
+            <input id="log-autoscroll" type="checkbox" checked /> Auto-scroll
+          </label>
+          <button id="btn-clear-log" class="btn btn-ghost">Clear</button>
+        </div>
+      </section>
+
+      <!-- ── Tab 3 — Settings ───────────────────────────────────── -->
+      <section id="tab-settings" class="tab-pane">
+        <div class="pane-header">
+          <h2>Settings</h2>
+        </div>
+
+        <div class="settings-form">
+          <div class="form-row">
+            <label for="settings-downloads">Downloads folder</label>
+            <input id="settings-downloads" type="text" class="input-text input-wide" readonly />
+            <button id="btn-pick-downloads" class="btn btn-ghost">Browse…</button>
+          </div>
+
+          <div class="form-row">
+            <label for="settings-speed">Default speed multiplier</label>
+            <input id="settings-speed" type="number" value="1" min="0.1" max="5" step="0.1" class="input-text input-narrow" />
+          </div>
+
+          <div class="form-row">
+            <label for="settings-interval">Item interval (ms)</label>
+            <input id="settings-interval" type="number" value="500" min="0" step="100" class="input-text input-narrow" />
+          </div>
+
+          <button id="btn-save-settings" class="btn btn-primary">Save Settings</button>
+          <p id="settings-saved-msg" class="msg-ok hidden">Settings saved.</p>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- Tab scripts -->
+  <script src="tabs/queue.js"></script>
+  <script src="tabs/recorder.js"></script>
+  <script src="tabs/runner.js"></script>
+  <script src="tabs/settings.js"></script>
+
+  <!-- App bootstrap -->
+  <script>
+    "use strict";
+    // ── Tab switching ────────────────────────────────────────────────────────
+    const tabBtns  = document.querySelectorAll(".tab-btn");
+    const tabPanes = document.querySelectorAll(".tab-pane");
+
+    function switchTab(name) {
+      tabBtns.forEach((b) => b.classList.toggle("active", b.dataset.tab === name));
+      tabPanes.forEach((p) => p.classList.toggle("active", p.id === `tab-${name}`));
+    }
+
+    tabBtns.forEach((btn) => {
+      btn.addEventListener("click", () => switchTab(btn.dataset.tab));
+    });
+
+    // ── Status dot (connected to runner events) ───────────────────────────────
+    const dot = document.getElementById("status-dot");
+
+    window.api.on.runnerEvent(({ type }) => {
+      if (type === "started" || type === "item-start" || type === "step") {
+        dot.className = "dot dot-running";
+        dot.title     = "Running";
+      } else if (type === "paused") {
+        dot.className = "dot dot-paused";
+        dot.title     = "Paused";
+      } else if (type === "finished" || type === "stopped") {
+        dot.className = "dot dot-idle";
+        dot.title     = "Idle";
+      }
+    });
+  </script>
+
+</body>
+</html>

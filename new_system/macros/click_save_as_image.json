@@ -1,0 +1,45 @@
+{
+  "name": "click_save_as_image",
+  "version": 1,
+  "recordedAt": null,
+  "description": "Right-click the generated image and choose Save As — re-record for your layout",
+  "actions": [
+    {
+      "type": "mouse",
+      "action": "click",
+      "button": "right",
+      "x": 320,
+      "y": 556,
+      "holdMs": 160,
+      "delay": 0
+    },
+    {
+      "type": "wait",
+      "duration": 200,
+      "delay": 0
+    },
+    {
+      "type": "mouse",
+      "action": "click",
+      "button": "left",
+      "x": 379,
+      "y": 633,
+      "holdMs": 160,
+      "delay": 0
+    },
+    {
+      "type": "wait",
+      "duration": 1600,
+      "delay": 0
+    },
+    {
+      "type": "mouse",
+      "action": "click",
+      "button": "left",
+      "x": 600,
+      "y": 585,
+      "holdMs": 160,
+      "delay": 0
+    }
+  ]
+}

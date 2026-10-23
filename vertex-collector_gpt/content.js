@@ -121,6 +121,9 @@
       "REMINDER: an image showing only the bare product with no box is INCORRECT for this slot.",
   };
 
+  // Detect which AI platform we're on (evaluated once at startup)
+  const IS_GEMINI  = /gemini\.google\.com/.test(location.hostname);
+
   // ── state ────────────────────────────────────────────────────────
   let state = {
     products: [], index: 0, slot: 0,
@@ -139,9 +142,14 @@
   const doneKey    = (p, s) => `${p.id}|${s.file}`;
   const isDone     = (p, s) => Boolean(state.done[doneKey(p, s)]);
   const folderOf   = (p) => `${p.id}-${p.slug}`;
-  const brandLogoFile = (p) => (p.brand ? `${p.brand}.jpg` : null);
+
+  // Brand logo filenames are slugified: "Phoenix Circuit" → "phoenix-circuit"
+  const slugifyBrand = (brand) =>
+    (brand || "").trim().toLowerCase().replace(/\s+/g, "-").replace(/[^\w-]/g, "");
+
+  const brandLogoFile = (p) => (p.brand ? `${slugifyBrand(p.brand)}.png` : null);
   const brandLogoUrl  = (p) =>
-    p.brand ? chrome.runtime.getURL(`brand/${p.brand}.jpg`) : null;
+    p.brand ? chrome.runtime.getURL(`brand/${slugifyBrand(p.brand)}.png`) : null;
   const totalDone  = () => Object.keys(state.done).length;
   const totalSlots = () => state.products.length * SLOTS.length;
 
@@ -289,7 +297,7 @@
 
     document.getElementById("vx-hud-copy-name").addEventListener("click", () => {
       if (!p) return;
-      const name = `${curSlot().file}.jpg`;
+      const name = `${curSlot().file}.png`;
       navigator.clipboard.writeText(name).catch(() => {});
     });
 
@@ -402,7 +410,7 @@
         ctx.drawImage(img, 0, 0);
         canvas.toBlob((blob) => {
           if (!blob) {
-            flashStatus(`⚠ Could not read brand/${brand}.jpg`, statusEl);
+            flashStatus(`⚠ Could not read brand/${slugifyBrand(brand)}.png`, statusEl);
             return;
           }
           navigator.clipboard
@@ -415,7 +423,7 @@
       }
     };
     img.onerror = () => {
-      flashStatus(`⚠ Logo file missing: brand/${brand}.jpg`, statusEl);
+      flashStatus(`⚠ Logo file missing: brand/${slugifyBrand(brand)}.png`, statusEl);
     };
     img.src = url;
   }
@@ -430,7 +438,7 @@
              onerror="this.classList.add('vx-brand-thumb-missing'); this.alt='⚠ logo not found';" />
         <div class="vx-brand-meta">
           <span class="vx-brand-name">${escapeHtml(p.brand)}</span>
-          <span class="vx-brand-file">brand/${escapeHtml(p.brand)}.jpg</span>
+          <span class="vx-brand-file">brand/${escapeHtml(slugifyBrand(p.brand))}.png</span>
         </div>
         <button id="vx-copy-logo" class="vx-btn vx-btn-ghost" title="Copy logo image to clipboard">
           <span>📋</span> Copy Logo
@@ -449,7 +457,7 @@
       <div class="vx-head" id="vx-head">
         <div class="vx-head-title">
           <span class="vx-logo">⚡</span>
-          <span>Vertex Collector</span>
+          <span>Vertex Collector${IS_GEMINI ? " · Gemini" : ""}</span>
         </div>
         <span class="vx-count">${totalDone()}/${totalSlots()}</span>
       </div>
@@ -479,13 +487,16 @@
           <span class="vx-slot-desc">${s.label}</span>
         </div>
 
-        <div class="vx-tip">💡 Paste into a <b>new chat</b> for every slot — replying in the same thread as a previous image often makes ChatGPT re-edit that image instead of generating a new one.</div>
+        <div class="vx-tip">💡 Paste into a <b>new chat</b> for every slot${IS_GEMINI
+          ? " — replying in the same Gemini thread after a previous image often causes it to re-edit rather than regenerate."
+          : " — replying in the same thread as a previous image often makes ChatGPT re-edit that image instead of generating a new one."
+        }</div>
 
         <textarea id="vx-prompt" readonly rows="4">${escapeHtml(buildPrompt(p, s.view))}</textarea>
 
         <div class="vx-filename">
           <span class="vx-filename-prefix">save as</span>
-          <code>${escapeHtml(folderOf(p))}/<b>${s.file}.jpg</b></code>
+          <code>${escapeHtml(folderOf(p))}/<b>${s.file}.png</b></code>
         </div>
 
         <div class="vx-actions">
@@ -623,12 +634,18 @@
   const isChatGptImage = (src) =>
     /oaiusercontent\.com|oaistatic\.com|openai\.com/.test(src || "");
 
+  // Gemini image src patterns (generated images are served from googleusercontent)
+  // Gemini also uses blob URLs for freshly rendered images
+  const isGeminiImage = (src) =>
+    /googleusercontent\.com/.test(src || "") ||
+    /^blob:/.test(src || "");
+
   function isProductImage(el) {
     if (!el || el.tagName !== "IMG") return false;
     const big = Math.max(el.clientWidth, el.naturalWidth || 0) >= 380;
+    if (IS_GEMINI) return big && isGeminiImage(el.src);
     return big && isChatGptImage(el.src);
   }
-
   function hideSaveBtn() {
     if (saveBtn) { saveBtn.remove(); saveBtn = null; hoverImg = null; }
   }
@@ -641,7 +658,7 @@
     saveBtn = document.createElement("button");
     saveBtn.id = "vertex-save-overlay";
     saveBtn.innerHTML = p
-      ? `<span class="vx-save-icon">⬇</span><span>Save as <b>${s.file}.jpg</b></span>`
+      ? `<span class="vx-save-icon">⬇</span><span>Save as <b>${s.file}.png</b></span>`
       : `<span class="vx-save-icon">⬇</span><span>Import products.json first</span>`;
     saveBtn.style.top  = `${Math.max(r.top + window.scrollY, 0) + 6}px`;
     saveBtn.style.left = `${r.left + window.scrollX + r.width - 6}px`;
@@ -652,27 +669,55 @@
   function onSaveClick() {
     const p = curProduct(), s = curSlot();
     if (!p || !hoverImg) return;
-    const filename = `vertex-products/${folderOf(p)}/${s.file}.jpg`;
+    const filename = `vertex-products/${folderOf(p)}/${s.file}.png`;
     saveBtn.disabled = true;
     saveBtn.innerHTML = `<span class="vx-save-icon">⏳</span><span>Saving…</span>`;
-    chrome.runtime.sendMessage({ type: "save-image", url: hoverImg.src, filename }, (res) => {
-      const err = chrome.runtime.lastError;
-      if (err || !res || !res.ok) {
-        saveBtn.disabled = false;
-        saveBtn.innerHTML = `<span class="vx-save-icon">⚠</span><span>Failed — try again</span>`;
-        return;
-      }
-      state.done[doneKey(p, s)] = { ts: new Date().toISOString(), filename: res.finalName };
-      advance();
-      saveState();
-      render();
-      renderHud();
-      const st = document.getElementById("vx-status");
-      flashStatus(
-        `✓ Saved ${s.file}.jpg — next: ${curSlot().file} for ${curProduct()?.name}`,
-        st
+
+    const src = hoverImg.src;
+    const isBlob = /^blob:/.test(src);
+
+    // For blob: URLs (Gemini renders images as blobs) we must read the bytes
+    // in the content script — blob URLs are not accessible cross-context.
+    const readBlob = isBlob
+      ? fetch(src)
+          .then((r) => r.blob())
+          .then(
+            (blob) =>
+              new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.onload  = () => resolve(reader.result); // data: URL
+                reader.onerror = reject;
+                reader.readAsDataURL(blob);
+              })
+          )
+      : Promise.resolve(src);
+
+    readBlob.then((url) => {
+      chrome.runtime.sendMessage(
+        { type: "save-image", url, filename, isBlob: isBlob || url.startsWith("data:") },
+        (res) => {
+          const err = chrome.runtime.lastError;
+          if (err || !res || !res.ok) {
+            saveBtn.disabled = false;
+            saveBtn.innerHTML = `<span class="vx-save-icon">⚠</span><span>Failed — try again</span>`;
+            return;
+          }
+          state.done[doneKey(p, s)] = { ts: new Date().toISOString(), filename: res.finalName };
+          advance();
+          saveState();
+          render();
+          renderHud();
+          const st = document.getElementById("vx-status");
+          flashStatus(
+            `✓ Saved ${s.file}.png — next: ${curSlot().file} for ${curProduct()?.name}`,
+            st
+          );
+          hideSaveBtn();
+        }
       );
-      hideSaveBtn();
+    }).catch(() => {
+      saveBtn.disabled = false;
+      saveBtn.innerHTML = `<span class="vx-save-icon">⚠</span><span>Failed — try again</span>`;
     });
   }
 

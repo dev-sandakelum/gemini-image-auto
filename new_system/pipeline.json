@@ -1,0 +1,38 @@
+{
+  "name": "bulk-image-gen",
+  "version": 1,
+  "steps": [
+    {
+      "action": "click",
+      "macro": "click_prompt_box.json",
+      "label": "Click prompt field"
+    },
+    {
+      "action": "paste_prompt",
+      "source": "queue.prompt",
+      "label": "Paste prompt"
+    },
+    {
+      "action": "submit",
+      "macro": "press_enter.json",
+      "label": "Submit prompt"
+    },
+    {
+      "action": "wait_generation",
+      "timeoutMs": 15000,
+      "onTimeout": "skip_and_flag",
+      "label": "Wait for image generation"
+    },
+    {
+      "action": "save_image",
+      "macro": "click_save_as_image.json",
+      "label": "Save generated image"
+    },
+    {
+      "action": "sort_to",
+      "target": "queue.path",
+      "rename": "queue.name",
+      "label": "Move to output folder"
+    }
+  ]
+}

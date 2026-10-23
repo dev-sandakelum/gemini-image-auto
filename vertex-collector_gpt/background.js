@@ -1,4 +1,4 @@
-// Vertex Collector — GPT edition background service worker
+// Vertex Collector — GPT + Gemini edition background service worker
 // Relay only: fetch image bytes and save under a pipeline-correct filename.
 // No navigation, no clicking, no sending prompts — the human does all of that.
 
@@ -21,21 +21,30 @@ chrome.runtime.onMessage.addListener((msg, _sender, sendResponse) => {
 
   (async () => {
     try {
-      // ChatGPT images are served over HTTPS; fetch them directly.
-      const res = await fetch(msg.url);
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      const blob   = await res.blob();
-      const objUrl = URL.createObjectURL(blob);
+      let objUrl;
+
+      if (msg.isBlob) {
+        // Content script already converted blob → data URL; use it directly.
+        objUrl = msg.url;
+      } else {
+        // ChatGPT images are served over HTTPS; fetch them from the background
+        // worker which has the required host_permissions.
+        // Gemini's googleusercontent URLs are also fetchable here.
+        const res = await fetch(msg.url);
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const blob = await res.blob();
+        objUrl = URL.createObjectURL(blob);
+        setTimeout(() => URL.revokeObjectURL(objUrl), 60_000);
+      }
 
       const id = await chrome.downloads.download({
         url:            objUrl,
-        filename:       msg.filename, // "vertex-products/<id>-<slug>/<view>.jpg"
+        filename:       msg.filename, // "vertex-products/<id>-<slug>/<view>.png"
         saveAs:         false,
         conflictAction: "uniquify",
       });
-      setTimeout(() => URL.revokeObjectURL(objUrl), 60_000);
 
-      // Detect if uniquify renamed it (e.g. "main (1).jpg")
+      // Detect if uniquify renamed it (e.g. "main (1).png")
       let finalName = msg.filename;
       try {
         const [item] = await chrome.downloads.search({ id });
@@ -43,7 +52,7 @@ chrome.runtime.onMessage.addListener((msg, _sender, sendResponse) => {
         if (m) finalName = m[0];
       } catch (_) {}
 
-      sendResponse({ ok: true, bytes: blob.size, finalName });
+      sendResponse({ ok: true, finalName });
     } catch (err) {
       sendResponse({ ok: false, error: String(err) });
     }
