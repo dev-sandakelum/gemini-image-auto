@@ -89,7 +89,12 @@ if (arg("manifest", null)) {
   }
 }
 
-const queueDir = path.join(os.homedir(), "Downloads", "duck-ai-queue");
+// Queue dir: use --queue arg, else ./queue (local), else Downloads/duck-ai-queue
+const queueDir = arg("queue", null)
+  ? path.resolve(arg("queue"))
+  : fs.existsSync(path.join(__dirname, "queue"))
+    ? path.resolve(path.join(__dirname, "queue"))
+    : path.join(os.homedir(), "Downloads", "duck-ai-queue");
 const outRoot  = path.resolve(path.join(__dirname, "img"));
 const port     = arg("port", "7843");
 

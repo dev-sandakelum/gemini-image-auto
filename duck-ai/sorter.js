@@ -149,8 +149,10 @@ function processImage(srcFile, outRoot, manifest) {
 function main() {
   const args = parseArgs(process.argv);
 
-  // Default queue = Downloads\duck-ai-queue
-  const defaultQueue = path.join(os.homedir(), "Downloads", "duck-ai-queue");
+  // Default queue: ./queue if it exists, else Downloads\duck-ai-queue
+  const defaultQueue = fs.existsSync(path.join(HERE, "queue"))
+    ? path.join(HERE, "queue")
+    : path.join(os.homedir(), "Downloads", "duck-ai-queue");
   const queueDir     = path.resolve(args.queue    || defaultQueue);
   const manifestPath = path.resolve(args.manifest || path.join(HERE, "..", "new", "images", "images_part1.json"));
   const outRoot      = path.resolve(args.outroot  || path.join(HERE, "img"));
