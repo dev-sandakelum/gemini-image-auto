@@ -971,6 +971,26 @@
   //
   // Armed  : Start / Resume            (state.autoMode = true)
   // Disarmed: Stop / manual Pause       (state.autoMode = false) → never fights the user
+  // ── Keep-alive audio loop ─────────────────────────────────────────────────────
+  // Chrome does not throttle/freeze a tab that is playing audible sound, so while the
+  // run is armed we loop song.mp3 (in the extension root). Stops on Stop / Pause / done.
+  const AUDIO_FILE   = "song.mp3";
+  const AUDIO_VOLUME = 0.3;          // must be > 0 and the track must not be silent
+  let keepAudio = null;
+  function syncAudio(shouldPlay) {
+    try {
+      if (!keepAudio) {
+        keepAudio = new Audio(chrome.runtime.getURL(AUDIO_FILE));
+        keepAudio.loop   = true;
+        keepAudio.volume = AUDIO_VOLUME;
+        keepAudio.addEventListener("error", () =>
+          console.warn("[Duck.ai Collector] could not load", AUDIO_FILE, "- is it in the extension folder?"));
+      }
+      if (shouldPlay && keepAudio.paused)        keepAudio.play().catch(() => {});  // blocked until user gesture / autoplay flag
+      else if (!shouldPlay && !keepAudio.paused) keepAudio.pause();
+    } catch (e) { console.warn("[Duck.ai Collector] audio:", e); }
+  }
+
   const WD_SECONDS = WATCHDOG_MS / 1000;
   const WD_CIRC    = 2 * Math.PI * 15;            // ring circumference (r = 15)
   let wdNextAt      = Date.now() + WATCHDOG_MS;   // deadline-based, so tab throttling can't skew it
@@ -1057,6 +1077,7 @@
       wdNextAt = now + WATCHDOG_MS;
       if (!isRunning()) wdResume();         // ← acts ONLY when the process is not running
     }
+    syncAudio(armed);
     updateWatchdogUI();
   }
 
@@ -1064,12 +1085,14 @@
   function startRun() {
     if (loopActive) { setStatus("Previous run is still stopping… try again in a moment", true); return; }
     state.autoMode = true;
+    syncAudio(true);
     wdNextAt = Date.now() + WATCHDOG_MS;
     runLoop().catch((e) => setStatus(`Start failed: ${e.message}`, true));
   }
   function resumeRun() {
     state.paused   = false;
     state.autoMode = true;
+    syncAudio(true);
     wdNextAt = Date.now() + WATCHDOG_MS;
     saveState(); render(); renderHud();
   }
@@ -1077,6 +1100,7 @@
     state.paused   = true;
     state.autoMode = false;                 // user pause → watchdog stays out of the way
     wdOffReason    = "Paused by you";
+    syncAudio(false);
     saveState(); render(); renderHud();
   }
   function stopRun() {
@@ -1085,6 +1109,7 @@
     state.paused    = false;
     state.autoMode  = false;                // user stop → watchdog off
     wdOffReason     = "Stopped by you";
+    syncAudio(false);
     saveState(); render(); renderHud(); setStatus("Stopped.");
   }
   function toggleRun() {
@@ -1416,6 +1441,17 @@
       } catch (e) { setStatus(e.message, true); }
     });
   }
+
+  // ── Alarm ping from background.js (chrome.alarms, every 30 s) ─────────────────
+  // Page timers get throttled/frozen when hidden; the service-worker alarm does not.
+  // wdTick() is deadline-based, so calling it here makes the watchdog fire on time
+  // even if the setInterval(wdTick, 500) below is being throttled.
+  chrome.runtime.onMessage.addListener((msg, _sender, sendResponse) => {
+    if (msg?.type !== "alarm-ping") return false;
+    wdTick();
+    sendResponse({ ok: true, running: isRunning(), autoMode: state.autoMode });
+    return false;
+  });
 
   // ── Boot ──────────────────────────────────────────────────────────────────────
   loadState().then(async () => {

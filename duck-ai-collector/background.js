@@ -40,3 +40,44 @@ chrome.downloads.onDeterminingFilename.addListener((item, suggest) => {
   suggest({ filename: item.filename });
   return false;
 });
+
+
+// ── Keep-alive alarm ─────────────────────────────────────────────────────────
+// Page timers (setInterval/setTimeout) get throttled or frozen when the window is
+// hidden or the RDP session is disconnected. chrome.alarms is not affected, so every
+// 30 s we ping the duck.ai tab; content.js answers by running its watchdog check.
+// If the tab doesn't answer (content script dead / tab frozen) and the run is still
+// armed, we reload the tab so the watchdog can restart the loop.
+const ALARM_NAME         = "dai-keepalive";
+const RELOAD_COOLDOWN_MS = 5 * 60 * 1000;   // never reload more than once per 5 min
+
+function ensureAlarm() {
+  chrome.alarms.get(ALARM_NAME, (existing) => {
+    if (!existing) chrome.alarms.create(ALARM_NAME, { delayInMinutes: 0.5, periodInMinutes: 0.5 });
+  });
+}
+chrome.runtime.onInstalled.addListener(ensureAlarm);
+chrome.runtime.onStartup.addListener(ensureAlarm);
+ensureAlarm();   // also runs whenever the service worker wakes up
+
+async function recoverDeadTab(tab) {
+  const s = await chrome.storage.local.get({ autoMode: false, index: 0, images: [], lastReloadTs: 0 });
+  const unfinished = s.images.length > 0 && s.index < s.images.length;
+  if (!s.autoMode || !unfinished) return;                          // user stopped it, or all done
+  if (Date.now() - s.lastReloadTs < RELOAD_COOLDOWN_MS) return;    // avoid reload loops
+  await chrome.storage.local.set({ lastReloadTs: Date.now() });
+  console.warn("[bg] alarm: tab not responding, reloading", tab.id);
+  chrome.tabs.reload(tab.id);
+}
+
+chrome.alarms.onAlarm.addListener(async (alarm) => {
+  if (alarm.name !== ALARM_NAME) return;
+  const tabs = await chrome.tabs.query({ url: "https://duck.ai/*" });
+  for (const tab of tabs) {
+    try {
+      await chrome.tabs.sendMessage(tab.id, { type: "alarm-ping" });
+    } catch {
+      await recoverDeadTab(tab);
+    }
+  }
+});
