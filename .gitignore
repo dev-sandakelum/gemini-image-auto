@@ -11,10 +11,11 @@ Thumbs.db
 
 
 duck-ai/img
+duck-ai/img2
 macro-recorder/data/
 macro-recorder/queue/
 macro-recorder/queue2/
 vertex-collector_gpt/brand/
 new/
-duck-ai-collector/brand-logos/
+# duck-ai-collector/brand-logos/
 new_system/

@@ -126,6 +126,84 @@
   min-height: 16px;
   word-break: break-all;
 }
+/* ── Watchdog card (countdown ring) ──────── */
+.dai-watchdog {
+  --wd: #888;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 10px;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 8px;
+  background: rgba(255,255,255,0.04);
+  font-size: 11px;
+  transition: background 0.25s, border-color 0.25s;
+}
+.dai-watchdog[data-wd="ok"] {
+  --wd: #4CBA3C;
+  border-color: rgba(76,186,60,0.35);
+  background: rgba(76,186,60,0.08);
+}
+.dai-watchdog[data-wd="stalled"] {
+  --wd: #f5a623;
+  border-color: rgba(245,166,35,0.5);
+  background: rgba(245,166,35,0.1);
+  animation: dai-wd-pulse 1.4s ease-in-out infinite;
+}
+.dai-watchdog[data-wd="done"] {
+  --wd: #adc2fc;
+  border-color: rgba(114,149,246,0.3);
+  background: rgba(57,105,239,0.08);
+}
+.dai-wd-ring {
+  position: relative;
+  flex: none;
+  width: 38px;
+  height: 38px;
+}
+.dai-wd-ring svg {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+.dai-wd-track,
+.dai-wd-arc {
+  fill: none;
+  stroke-width: 3;
+}
+.dai-wd-track { stroke: rgba(255,255,255,0.1); }
+.dai-wd-arc {
+  stroke: var(--wd);
+  stroke-linecap: round;
+  stroke-dasharray: 94.25;            /* 2π × r(15) */
+  transition: stroke-dashoffset 1s linear, stroke 0.25s;
+}
+.dai-wd-num {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  color: var(--wd);
+}
+.dai-wd-info { flex: 1; min-width: 0; }
+.dai-wd-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--wd);
+}
+.dai-wd-sub {
+  color: #888;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@keyframes dai-wd-pulse {
+  50% { box-shadow: 0 0 0 3px rgba(245,166,35,0.18); }
+}
 
 /* ── Footer / file import ────────────────── */
 .dai-foot {
@@ -174,6 +252,18 @@
 .dai-pill:hover {
   background: rgba(57,105,239,0.4);
   border-color: rgba(114,149,246,0.6);
+}
+.dai-watchdog-pill {
+  cursor: default;
+  color: #aaa;
+  font-variant-numeric: tabular-nums;
+}
+.dai-watchdog-pill[data-wd="ok"]      { color: #8fd885; border-color: rgba(76,186,60,0.45); }
+.dai-watchdog-pill[data-wd="stalled"] { color: #f5a623; border-color: rgba(245,166,35,0.6); animation: dai-wd-pulse 1.4s ease-in-out infinite; }
+.dai-watchdog-pill[data-wd="done"]    { color: #adc2fc; }
+.dai-watchdog-pill:hover {
+  background: rgba(26,26,26,0.92);
+  border-color: rgba(255,255,255,0.18);
 }
 
 /* ── Tabs ────────────────────────────────── */
