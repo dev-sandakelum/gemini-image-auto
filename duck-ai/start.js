@@ -48,7 +48,7 @@ if (arg("manifest", null)) {
 } else {
   // Auto-detect: find the first manifest that still has unfinished work
   const imgDir = path.resolve(path.join(__dirname, "img"));
-  const IMG_EXTS = new Set([".jpg",".jpeg",".png",".gif",".webp",".bmp",".tiff",".tif"]);
+  const IMG_EXTS = new Set([".jpg",".jpeg",".jfif",".png",".gif",".webp",".bmp",".tiff",".tif"]);
 
   function countImages(dir) {
     let n = 0;

@@ -29,7 +29,7 @@ const fs   = require("fs");
 const path = require("path");
 const os   = require("os");
 
-const IMG_EXTS = new Set([".jpg", ".jpeg", ".png", ".gif", ".webp", ".bmp", ".tiff", ".tif"]);
+const IMG_EXTS = new Set([".jpg", ".jpeg", ".jfif", ".png", ".gif", ".webp", ".bmp", ".tiff", ".tif"]);
 const HERE     = __dirname;
 
 // ── ANSI colours (no deps) ────────────────────────────────────────────────────
@@ -115,13 +115,18 @@ function processImage(srcFile, outRoot, manifest) {
   const entry   = manifest[idx];
   const rel     = stripPrefix(entry.path);
   const destDir = path.join(outRoot, rel);
-  const dest    = path.join(destDir, entry.name);
+  // Always store as .jpg — .jfif and .jpeg are the same format, just rename the ext
+  const srcExt  = path.extname(srcFile).toLowerCase();
+  const destName = (srcExt === ".jfif" || srcExt === ".jpeg")
+    ? entry.name.replace(/\.[^.]+$/, ".jpg")
+    : entry.name;
+  const dest    = path.join(destDir, destName);
 
   div(`IMAGE #${idx + 1}`);
-  info(`${p(C.bwhite + C.bold, entry.name)}  [${p(C.byellow, String(idx+1))}/${manifest.length}]  ${bar(idx+1, manifest.length)}`);
+  info(`${p(C.bwhite + C.bold, destName)}  [${p(C.byellow, String(idx+1))}/${manifest.length}]  ${bar(idx+1, manifest.length)}`);
   info(`  alt : ${p(C.gray,  entry.alt  || "")}`);
-  info(`  dest: ${p(C.bblue, path.join(rel, entry.name).replace(/\\/g,"/"))}`);
-
+  info(`  dest: ${p(C.bblue, path.join(rel, destName).replace(/\\/g,"/"))}`);
+  if (srcExt === ".jfif") info(`  ${p(C.gray, "jfif → jpg (renamed, no re-encode needed)")}`);
   fs.mkdirSync(destDir, { recursive: true });
 
   if (fs.existsSync(dest)) {

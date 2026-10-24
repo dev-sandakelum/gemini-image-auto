@@ -25,7 +25,7 @@ function arg(name, fallback) {
 
 const PORT    = parseInt(arg("port",   "7843"), 10);
 const IMG_DIR = path.resolve(arg("imgdir", path.join(__dirname, "img")));
-const IMG_EXTS = new Set([".jpg",".jpeg",".png",".gif",".webp",".bmp",".tiff",".tif"]);
+const IMG_EXTS = new Set([".jpg",".jpeg",".jfif",".png",".gif",".webp",".bmp",".tiff",".tif"]);
 
 function countImages(dir) {
   let n = 0;
