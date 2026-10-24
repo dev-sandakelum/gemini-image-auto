@@ -40,6 +40,11 @@ if (arg("manifest", null)) {
   manifestPath = path.resolve(arg("manifest"));
 } else if (part) {
   manifestPath = path.resolve(path.join(__dirname, "..", "new", "images", `images_part${part}.json`));
+  if (!fs.existsSync(manifestPath)) {
+    console.error(`\n  ✘ Manifest not found: ${manifestPath}`);
+    console.error(`  Make sure the ../new/images/ folder was copied alongside duck-ai/\n`);
+    process.exit(1);
+  }
 } else {
   // Auto-detect: find the first manifest that still has unfinished work
   const imgDir = path.resolve(path.join(__dirname, "img"));

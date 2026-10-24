@@ -171,9 +171,21 @@ function main() {
   // Load manifest
   let manifest;
   try {
+    if (!fs.existsSync(manifestPath)) {
+      fail(`Manifest file not found: ${manifestPath}`);
+      fail(`Make sure the ../new/images/ folder was copied alongside duck-ai/`);
+      fail(`Valid parts are --part 1  through  --part 7`);
+      process.exit(1);
+    }
     manifest = loadManifest(manifestPath);
   } catch (e) {
     fail(`Cannot load manifest: ${e.message}`);
+    process.exit(1);
+  }
+
+  if (manifest.length === 0) {
+    fail(`Manifest loaded but contains 0 images: ${manifestPath}`);
+    fail(`Check the file is a valid images_partN.json (parts are numbered 1–7, not 0)`);
     process.exit(1);
   }
 
@@ -219,29 +231,38 @@ function main() {
   }
 
   // Process any files already sitting in queue (leftover from previous run)
+  // knownFiles tracks what we've already seen — used by scanForNew() and the poll fallback
+  let knownFiles = new Set();
   if (fs.existsSync(queueDir)) {
     const existing = fs.readdirSync(queueDir).filter(isImg);
+    existing.forEach((f) => knownFiles.add(f));
     if (existing.length) {
       info(`Processing ${existing.length} leftover file(s) in queue…`);
       existing.forEach((f) => handleFile(f));
     }
   }
 
-  // ── Watch / poll ─────────────────────────────────────────────────────────────
+  function scanForNew() {
+    if (!fs.existsSync(queueDir)) return;
+    const cur = new Set(fs.readdirSync(queueDir).filter(isImg));
+    for (const f of cur) if (!knownFiles.has(f)) handleFile(f);
+    knownFiles = cur;
+  }
+
   try {
     fs.watch(queueDir, { persistent: true }, (type, filename) => {
-      if (type === "rename") handleFile(filename);
+      if (type !== "rename") return;
+      if (filename) {
+        handleFile(filename);
+      } else {
+        // Windows can fire with filename=null — scan the folder to find what changed
+        scanForNew();
+      }
     });
     info(p(C.bgreen, `  fs.watch active`) + p(C.gray, " (instant)"));
   } catch {
     warn(`fs.watch unavailable — polling every ${pollMs}ms`);
-    let known = new Set(fs.existsSync(queueDir) ? fs.readdirSync(queueDir).filter(isImg) : []);
-    setInterval(() => {
-      if (!fs.existsSync(queueDir)) return;
-      const cur = new Set(fs.readdirSync(queueDir).filter(isImg));
-      for (const f of cur) if (!known.has(f)) handleFile(f);
-      known = cur;
-    }, pollMs);
+    setInterval(scanForNew, pollMs);
   }
 
   // ── Idle spinner ──────────────────────────────────────────────────────────────
